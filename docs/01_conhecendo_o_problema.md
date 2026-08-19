@@ -1,7 +1,8 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 12/08/2026
+
+**Status:** iniciada  
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -58,16 +59,22 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 ## 0.1 Membros
 
 | Nome completo | Matrícula | GitHub |
-|---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+
+| Rafaela Altheman de Campos | 22.125.062-4 | RafaAltheman |
+
+| Manuella Filipe Peres | 24.224.039-3 | manu3lla |
+
+| Letizia Lowatzki Baptistella | 22.125.063-2 | le-bap |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+**Aprendizado por reforço profundo para locomoção bípede de um robô humanoide em simulação**
 
 ## 0.3 Orientador(a)
 
-{{...}}
+Orientador: Isaac Jesus
+
+Coorientador: Reinaldo Bianchi
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
@@ -75,7 +82,7 @@ Marque e descreva:
 
 - [ ] sistema/aplicação interativa;
 - [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
+- [X] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
 - [ ] estudo/benchmark/avaliação experimental;
@@ -83,15 +90,15 @@ Marque e descreva:
 - [ ] componente embarcado/IoT;
 - [ ] outro: {{...}}.
 
-**Descrição:** {{...}}
+**Descrição:** Modelo de aprendizado por reforço profundo responsável por aprender uma política de controle para a locomoção bípede do robô humanoide Atom, buscando uma caminhada estável e eficiente em ambiente simulado da RoboCup 3D.
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
 - [ ] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
-- [ ] Não. O TCC é predominantemente técnico e não previa interface.
+- [X] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+**Explique o que está formalmente previsto no TCC:** O TCC prevê a modelagem do robô humanoide Atom e sua integração à plataforma de simulação MuJoCo, onde serão realizados o treinamento e a avaliação do modelo de aprendizado por reforço profundo. A interação ocorre com o ambiente de simulação para configurar, executar e analisar os experimentos, mas não está previsto o desenvolvimento de uma interface específica voltada ao usuário.
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -101,31 +108,40 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+O TCC busca desenvolver uma estratégia de locomoção bípede estável e eficiente para o robô humanoide Atom por meio de aprendizado por reforço profundo em ambiente simulado.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+[F] A motivação surgiu a partir da experiência das integrantes em competições de robótica, principalmente no Brasil, onde foi possível observar a dificuldade das equipes em desenvolver um walking estável e eficiente. Problemas na locomoção, como quedas e baixa velocidade, acabam prejudicando diretamente o desempenho do robô durante as partidas.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-Complete, se ajudar:
+[F] Nosso TCC busca melhorar a forma como o robô humanoide Atom caminha, usando aprendizado por reforço profundo para que ele aprenda uma política de controle capaz de manter o equilíbrio, se deslocar com mais estabilidade e velocidade e lidar melhor com situações inesperadas durante a simulação. A ideia é que esse walking contribua para um desempenho melhor do robô nas partidas.
 
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
-
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
-
-{{...}}
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+[F] Se a proposta funcionar bem, ela pode contribuir não só para a RoboFEI, mas também servir como referência para outras equipes de futebol de robôs humanoides que enfrentam dificuldades parecidas com locomoção. O estudo pode ajudar no desenvolvimento de walkings mais estáveis e eficientes e mostrar como o aprendizado por reforço profundo pode ser aplicado nesse tipo de problema.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
-|---|---|
-| {{...}} | {{...}} |
+
+Mérito/contribuição técnica:
+
+- Desenvolvimento e avaliação de uma política de controle com aprendizado por reforço profundo para a locomoção bípede do robô Atom.
+  
+- Análise do desempenho do agente considerando aspectos como estabilidade, velocidade e distância.
+  
+- Estudo do DRL como alternativa aos métodos tradicionais de controle de caminhada.
+
+Possível aplicação/valor em uso:
+
+- Melhorar o walking do Atom nas competições.
+  
+- Ajudar a RoboFEI a ter uma locomoção mais estável e eficiente.
+  
+- Servir como estudo e referência para outras equipes de robótica que enfrentam problemas semelhantes de locomoção humanoide.
 
 ---
 
@@ -133,29 +149,39 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
+NÃO SE APLICA AO ESCOPO ORIGINAL
 
-{{[F/H/?] ...}}
+[F] O TCC não prevê uma interface própria para usuário. A interação atual acontece diretamente com o ambiente de simulação já existente (MuJoCo).
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
 Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
-|---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+
+| Pesquisadores e estudantes de robótica | Poderiam utilizar o estudo como referência ou base para novos experimentos | Comparariam algoritmos, parâmetros e resultados de locomoção | F |
+
+| Integrantes de equipes de futebol de robôs humanoides | Usuários mais próximos da aplicação prática | Configurariam treinamentos, acompanhariam resultados e avaliariam a qualidade do walking | F |
+
+| Desenvolvedores responsáveis pelo robô |Poderiam integrar ou adaptar a política de locomoção ao restante do sistema | Ajustariam configurações do robô e avaliariam a integração com outras funções | [H] H01 |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
-|---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+
+| Demais integrantes da equipe RoboFEI | São beneficiados caso a melhoria da locomoção aumente o desempenho do robô nas competições | não | [F] |
+
+| Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos | não | [F] |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-{{[F/H/?] ...}}
+[H] H02 — Os principais usuários provavelmente terão algum conhecimento técnico em robótica, inteligência artificial ou aprendizado por reforço, então a interface pode utilizar termos como recompensa, episódio, velocidade, taxa de quedas e parâmetros de treinamento.
+
+[F] Também é importante que os resultados sejam apresentados de forma visual, porque o desempenho não é avaliado por uma única métrica. O TCC considera distância, velocidade, altura do centro de massa, taxa de quedas e também avaliação visual do comportamento e desempenho do robô.
+
+[H] H03 — Como treinamentos de aprendizado por reforço podem envolver várias tentativas e ajustes, esses usuários podem precisar comparar execuções diferentes e identificar rapidamente quais configurações produziram melhores resultados.
 
 ---
 
@@ -165,23 +191,25 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+[F] O usuário busca conseguir uma locomoção mais estável, eficiente e competitiva para o robô humanoide, reduzindo quedas e melhorando sua capacidade de se deslocar e se recuperar durante situações de jogo.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
-|---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+
+| A01 | Configurar e iniciar treinamentos do agente | Integrantes/desenvolvedores da equipe de robótica | Frequente / alta | [F] |
+
+| A02 | Acompanhar e interpretar métricas de desempenho do treinamento | Integrantes da equipe e pesquisadores | Frequente / alta | [F] |
+
+| A03 | Comparar os resultados dos treinamentos e avaliar visualmente a qualidade do walking | Integrantes da equipe | Frequente / alta | [F] |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+[F] A atividade que parece mais frequente é acompanhar os treinamentos e analisar seus resultados, porque o desenvolvimento envolve vários ciclos de treinamento, avaliação e ajuste de parâmetros até chegar a um comportamento bom para o robô.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-{{[F/H/?] ...}}
+[F] A atividade mais crítica é interpretar corretamente os resultados do treinamento e decidir quais ajustes devem ser feitos. Uma interpretação errada pode levar a equipe a manter parâmetros ou uma função de recompensa inadequados, fazendo o agente aprender comportamentos que parecem bons pelas métricas, mas que não representam uma caminhada eficiente. O próprio TCC destaca que apenas a recompensa não é suficiente para avaliar o comportamento do agente.
 
 ---
 
@@ -191,31 +219,45 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-{{[F/H/?] ...}}
+[F] Atualmente, o treinamento e a avaliação são feitos diretamente no ambiente de simulação MuJoCo. Nós configuramos os experimentos, executamos o treinamento do agente, acompanhamos as métricas como recompensa, velocidade, distância percorrida e taxa de quedas, além de observar visualmente o comportamento do robô no simulador. Os resultados dos diferentes ciclos de treinamento precisam ser registrados e analisados.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+[F] O processo exige vários ciclos de treinamento, análise e ajuste de parâmetros, o que pode ser demorado e repetitivo. Além disso, não é suficiente analisar apenas a recompensa do agente, já que ela pode aumentar mesmo quando o comportamento aprendido não representa um bom walking. Por isso, é necessário analisar várias métricas e também observar o robô visualmente.
+
+[H] H04 — Comparar diferentes treinamentos e entender quais alterações realmente melhoraram o desempenho pode ser difícil quando as informações ficam distribuídas entre execuções, métricas e observações visuais.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
+[F] O profissional precisa interpretar informações como:
+
+-recompensa obtida durante o treinamento
+-distância percorrida
+-velocidade média
+-taxa de quedas
+-estabilidade e equilíbrio do robô
+-comportamento visual do walking
+-configurações e parâmetros utilizados em cada treinamento
+
+Essas informações ajudam a decidir se o treinamento está evoluindo e quais ajustes devem ser feitos para os próximos experimentos
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-{{[F/H/?] ...}}
+[F] Uma interpretação incorreta pode fazer a equipe considerar um treinamento como bom mesmo quando o agente aprendeu um comportamento inadequado. Por exemplo, o agente pode aumentar sua recompensa mantendo-se parado e equilibrado, sem realmente aprender a caminhar de forma eficiente. Também podem ser feitos ajustes inadequados nos parâmetros ou na função de recompensa, comprometendo os treinamentos seguintes.
 
 ## 4.5 Conte uma situação concreta.
 
 Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
 
-{{[F/H/?] narrativa...}}
+[F] Uma integrante da equipe roda um treinamento para tentar melhorar o walking do robô. No final, vê que a recompensa aumentou e pode parecer que o resultado foi bom. Mas, olhando outras métricas e o robô no simulador, percebe que ele até consegue ficar mais equilibrado, porém quase não anda. Nesse caso, olhar só para a recompensa poderia levar a uma conclusão errada sobre o treinamento.
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
-|---|---|---|
-| {{...}} | {{...}} | {{...}} |
+
+| Experimentos realizados com o robô BahiaRT | Mostram que o treinamento passa por diferentes fases e exige acompanhamento do comportamento do agente | Os testes ainda não foram realizados completamente com o Atom |
+
+| Experiência das integrantes com a RoboFEI e competições | Sustenta a dificuldade prática relacionada ao desenvolvimento de um walking competitivo | É uma experiência do grupo e ainda não representa outras equipes |
 
 ---
 
@@ -223,31 +265,33 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+[H] H03 — A interação poderia acontecer principalmente em laboratórios de robótica ou em computadores utilizados pelas equipes durante o desenvolvimento e teste dos robôs. O uso aconteceria principalmente durante a configuração, execução e análise de treinamentos de locomoção.
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+[H] Principalmente em computadores ou notebooks utilizados para executar o ambiente de simulação, realizar os treinamentos e analisar os resultados.
 
 ## 5.3 Existem condições físicas relevantes?
 
 Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
 
-{{[F/H/?] ...}}
+[H] H04 — Não foram identificadas condições físicas muito específicas para o uso. Como a interação deve ocorrer principalmente em computadores, os pontos mais relevantes são a disponibilidade do equipamento e a estabilidade do ambiente durante a execução dos treinamentos, além de um hardware equivalente 
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-{{[F/H/?] ...}}
+[H] Sim. O desenvolvimento acontece dentro de uma equipe de robótica, então diferentes integrantes podem participar da configuração dos experimentos, análise dos resultados e tomada de decisões.
+
+[F] Também existe acompanhamento de professores e orientadores, que participam das decisões técnicas do projeto.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+[F] Existe necessidade de histórico e rastreabilidade dos experimentos, já que o TCC prevê ciclos de ajuste dos parâmetros e da função de recompensa, registrando as métricas de cada treinamento para acompanhar o impacto das mudanças realizadas.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-{{[F/H/?] ...}}
+[F] Sim. Uma configuração inadequada ou uma interpretação errada dos resultados pode fazer o agente aprender um comportamento ruim, comprometer a convergência do treinamento e gerar perda de tempo computacional. Em alguns casos, uma escolha inadequada das observações fornecidas ao agente pode comprometer o aprendizado mesmo que o algoritmo esteja correto.
 
 ---
 
