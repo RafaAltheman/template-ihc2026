@@ -2,7 +2,7 @@
 
 **Data:** 12/08/2026
 
-**Status:** iniciada  
+**Status:** EM ANDAMENTO 
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -173,6 +173,14 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos | não | [F] |
 
+| Narradores e comentaristas das competições | Podem ter mais informações sobre desempenho, evolução e comportamento dos robôs para contextualizar as partidas | não | [H] |
+
+| Fabricantes de componentes e robôs humanoides | Podem se beneficiar de análises sobre desempenho e limitações dos robôs para entender necessidades técnicas das equipes | não | [H] |
+
+| Público que acompanha as competições | É impactado indiretamente pela qualidade e competitividade das partidas, que podem ficar mais interessantes com robôs mais estáveis e eficientes | não | [H] |
+
+| Espectadores e ouvintes de transmissões | Podem compreender melhor o desempenho dos robôs quando resultados e métricas são apresentados de forma mais clara durante ou após as competições | não | [H] |
+
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
@@ -302,30 +310,63 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 ## 6.1 Como pessoas resolvem problemas semelhantes hoje?
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
-|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+
+| Métodos tradicionais de controle, como ZMP | Equipes e pesquisadores de robótica humanoide | Criar e controlar padrões de caminhada do robô | [F] |
+
+| Testes diretos em simulação e comparação com resultados de outras equipes | Pesquisadores e equipes de robótica | Avaliar velocidade, estabilidade, quedas e desempenho em jogo | [F] |
+
+| Uso de aprendizado por reforço em outras equipes e pesquisas de robótica humanoide | Pesquisadores e equipes de competição | Treinar comportamentos de locomoção de forma automática em simulação | [F] |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-{{[F/H/?] ...}}
+[F] Sim. Existem diferentes plataformas e ambientes de simulação utilizados em robótica e aprendizado por reforço. No próprio TCC, por exemplo, são considerados MuJoCo e PyBullet como ambientes possíveis para simulação de robôs, embora o MuJoCo tenha sido escolhido pela maior fidelidade na modelagem.
+
+Também existem ambientes ligados à RoboCup 3D, utilizados por diferentes equipes para testar e comparar comportamentos de robôs humanoides. 
+Esse é um exemplo do simulador da RoboCup 3D com robôs do Bahia-RT
+
+<img width="926" height="384" alt="image" src="https://github.com/user-attachments/assets/226e028f-ee8b-49f5-af50-0fa42757a217" />
+
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
 Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-{{[F/H/?] ...}}
+[H] H05 — Esse público provavelmente já está acostumado com:
+
+- ambientes de simulação de robótica
+- IDEs e ferramentas de desenvolvimento
+- gráficos de treinamento
+- ferramentas para acompanhamento de métricas
+- visualização 3D do comportamento do robô
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-{{[F/H/?] ...}}
+[F] Os simuladores permitem executar muitos experimentos sem depender diretamente do robô físico e possibilitam observar o comportamento do agente em diferentes situações. No caso do MuJoCo, o nosso TCC destaca principalmente a boa simulação de contatos e articulações e sua eficiência para treinamentos com muitos passos
+
+[H] Ferramentas de gráficos e métricas também podem facilitar o acompanhamento da evolução do treinamento
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-{{[F/H/?] ...}}
+[H] H06 — As ferramentas atuais podem exigir que o usuário consulte separadamente parâmetros, métricas e comportamento visual do robô, dificultando uma comparação rápida entre diferentes treinamentos.
+
+[F] Além disso, nenhuma métrica individual é suficiente para determinar a qualidade do walking, sendo necessário combinar análise quantitativa com avaliação visual.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
-{{[F/H/?] ...}}
+[H] Por ser um público mais técnico, alguns termos e padrões provavelmente são familiares, como:
+
+- episódio
+- recompensa
+- agente
+- treinamento
+- política
+- hiperparâmetros
+- velocidade
+- distância percorrida
+- taxa de quedas
+- gráficos de evolução
+- comparação entre execuções
+- visualização da simulação
 
 ---
 
@@ -337,7 +378,7 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
 
-{{...}}
+Não possui interface, vamos seguir o caminho B.
 
 ### Caminho B — TCC não possui interface prevista
 
@@ -347,24 +388,49 @@ Faça o exercício de transferência de uso:
 
 Responda:
 
-1. quem poderia contratar/adotar a solução? {{...}}
-2. quem seria o usuário direto? {{...}}
-3. quem administraria/configuraria? {{...}}
+1. quem poderia contratar/adotar a solução? 
+
+Equipes de robótica, laboratórios de pesquisa, universidades e organizações que desenvolvem robôs humanoides.
+
+2. quem seria o usuário direto? 
+
+Integrantes de equipes de robótica, pesquisadores e desenvolvedores responsáveis por acompanhar o desempenho dos robôs.
+
+3. quem administraria/configuraria? 
+
+Integrantes técnicos da equipe, responsáveis por cadastrar robôs, inserir resultados de testes e configurar métricas de comparação.
+
 4. quem interpretaria resultados? {{...}}
+
+Desenvolvedores, pesquisadores, professores e responsáveis técnicos pela evolução do robô.
+
 5. quem tomaria decisões? {{...}}
-6. quais dados/entradas seriam necessários? {{...}}
-7. quais resultados deveriam ser compreendidos? {{...}}
-8. que erros/rupturas seriam possíveis? {{...}}
+
+A própria equipe de desenvolvimento, que utilizaria os resultados para decidir quais aspectos do robô precisam ser melhorados e evoluir na caminhada do robô
+
+6. quais dados/entradas seriam necessários? 
+
+Dados de desempenho do robô, como velocidade, estabilidade, número de quedas, distância percorrida, tempo de recuperação e resultados de diferentes testes ou competições.
+
+7. quais resultados deveriam ser compreendidos? 
+
+O desempenho geral do robô, seus pontos fortes e fracos, evolução ao longo do tempo e comparação com outros robôs ou versões anteriores.
+
+8. que erros/rupturas seriam possíveis? 
+
+Inserção de dados incorretos, comparação entre testes realizados em condições diferentes, interpretação errada das métricas ou ausência de informações importantes para avaliar o desempenho.
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-{{...}}
+Integrante de uma equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô.
 
-**Por que esse perfil foi escolhido?** {{...}}
+**Por que esse perfil foi escolhido?** 
+
+Porque esse usuário precisa acompanhar vários aspectos do desempenho do robô e transformar os resultados dos testes em decisões sobre o que deve ser melhorado. A interface pode ajudar a organizar essas informações e tornar a comparação entre resultados mais simples.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-{{...}}
+Entender o desempenho do robô humanoide, identificar seus principais pontos de melhoria e acompanhar sua evolução ao longo dos testes, além de coletar estatísticas dele durante as partidas.
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -372,19 +438,19 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-{{...}}
+Para fins da disciplina de IHC, será projetada uma interface voltada a integrantes de equipes de robótica humanoide, permitindo acompanhar, visualizar e comparar o desempenho dos robôs em testes, treinamentos e competições. A proposta é centralizar métricas e resultados de diferentes execuções, facilitando a identificação de pontos fortes, limitações e possíveis melhorias. Assim, a equipe poderá acompanhar a evolução do robô e utilizar essas informações para orientar decisões sobre ajustes e próximos passos no seu desenvolvimento.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
 - [ ] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
-- [ ] É uma extensão conceitual criada para a disciplina.
-- [ ] É um protótipo demonstrativo de aplicação potencial.
+- [X] É uma extensão conceitual criada para a disciplina.
+- [X] É um protótipo demonstrativo de aplicação potencial.
 - [ ] Outra: {{...}}.
 
 > **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
 
----
+A interface não faz parte do escopo formal do TCC. Ela utiliza o contexto de robótica humanoide e avaliação de desempenho como ponto de partida, mas amplia o foco para permitir que equipes acompanhem, comparem e interpretem o desempenho de seus robôs de forma mais geral.
 
 # 8. Levantando possibilidades de interação — sem desenhar ainda
 
@@ -393,21 +459,34 @@ A equipe pode registrar possibilidades para investigação. **Não significa que
 Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
-|---|---|---|---|
-| Dashboard/visão geral | sim/não/talvez | {{...}} | {{...}} |
-| Configuração/parametrização | sim/não/talvez | {{...}} | {{...}} |
-| Entrada/upload/seleção de dados | sim/não/talvez | {{...}} | {{...}} |
-| Acompanhamento de processamento | sim/não/talvez | {{...}} | {{...}} |
-| Relatório/resultados | sim/não/talvez | {{...}} | {{...}} |
-| Histórico com busca/filtros | sim/não/talvez | {{...}} | {{...}} |
-| Comparação de resultados | sim/não/talvez | {{...}} | {{...}} |
-| Explicabilidade/detalhamento | sim/não/talvez | {{...}} | {{...}} |
-| Administração/configurações globais | sim/não/talvez | {{...}} | {{...}} |
-| Usuários/perfis/permissões | sim/não/talvez | {{...}} | {{...}} |
-| CRUD de entidade do domínio | sim/não/talvez | {{...}} | {{...}} |
-| Auditoria/logs | sim/não/talvez | {{...}} | {{...}} |
-| Alertas/ocorrências | sim/não/talvez | {{...}} | {{...}} |
-| Ajuda/documentação | sim/não/talvez | {{...}} | {{...}} |
+
+| Dashboard/visão geral | sim | Ter uma visão rápida do desempenho geral do robô e das principais métricas | [H] |
+
+| Configuração/parametrização | talvez | Permitir escolher quais métricas, robôs ou testes serão analisados | [H] |
+
+| Entrada/upload/seleção de dados | sim | Inserir ou selecionar resultados de testes, treinamentos e competições para análise | [H] |
+
+| Acompanhamento de processamento | talvez | Acompanhar o carregamento e processamento de novos resultados | [H] |
+
+| Relatório/resultados | sim | Visualizar os resultados de desempenho de forma organizada e facilitar a tomada de decisão | [H] |
+
+| Histórico com busca/filtros | sim | Consultar testes anteriores e encontrar resultados por robô, data, competição ou tipo de teste | [H] |
+
+| Comparação de resultados | sim | Comparar diferentes robôs, versões ou execuções e identificar onde houve melhora ou piora | [H] |
+
+| Explicabilidade/detalhamento | sim | Entender quais métricas contribuíram para um resultado e identificar pontos fortes e fracos do robô | [H] |
+
+| Administração/configurações globais | não | Não parece necessária para o objetivo principal da interface neste momento | [H] |
+
+| Usuários/perfis/permissões | talvez | Pode ser útil caso diferentes integrantes da equipe tenham responsabilidades ou níveis de acesso diferentes | [?] |
+
+| CRUD de entidade do domínio | talvez | Poderia permitir cadastrar e atualizar robôs, equipes ou testes, caso isso seja necessário para organizar os dados | [H] |
+
+| Auditoria/logs | não | Não parece necessária para o objetivo principal da interface neste momento  | [H] |
+
+| Alertas/ocorrências | talvez | Destacar quedas relevantes de desempenho ou resultados fora do esperado | [H] |
+
+| Ajuda/documentação | sim | Explicar métricas e facilitar o uso por integrantes com diferentes níveis de experiência | [H] |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -418,22 +497,49 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 ## 9.1 Qual benefício concreto o projeto de IHC pretende oferecer?
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
-|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+
+| Facilitar a análise do desempenho do robô | As informações de desempenho podem estar espalhadas entre diferentes métricas, testes e observações | Integrantes de equipes de robótica humanoide | [H] |
+
+| Facilitar a comparação entre testes e versões do robô | Pode ser difícil perceber rapidamente se uma mudança realmente melhorou ou piorou o desempenho | Integrantes de equipes de robótica humanoide | [H] |
+
+| Ajudar a identificar pontos de melhoria | A equipe precisa entender em quais aspectos o robô apresenta melhor ou pior desempenho | Integrantes de equipes de robótica humanoide | [H] |
+
+| Acompanhar a evolução do robô ao longo do tempo | Durante as partidas temos dificuldade de colher informações, sem ser visuais | Integrantes e pesquisadores | [H] |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
-|---|---|---|---|
-| F01 | {{ação}} | {{objetivo}} | alta/média/baixa |
+
+| F01 | Visualizar as principais métricas de desempenho do robô | Entender rapidamente como o robô está se saindo | alta |
+
+| F02 | Comparar resultados entre diferentes testes, robôs ou versões | Identificar melhorias e pioras no desempenho | alta |
+
+| F03 | Consultar o histórico de testes e resultados | Acompanhar a evolução do robô ao longo do tempo | alta |
+
+| F04 | Filtrar resultados por robô, teste, período ou competição | Encontrar informações específicas com mais facilidade | média |
+
+| F05 | Visualizar detalhes dos testes | Entender melhor os pontos fortes e fracos do desempenho | média |
+
+| F06 | Inserir ou selecionar novos dados de desempenho | Manter as análises atualizadas com novos testes | média |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
 A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
-|---|---|---|
-| {{...}} | {{...}} | {{...}} |
+
+| MuJoCo | É o simulador utilizado para modelar e executar os experimentos de locomoção | A interface pode precisar trabalhar com dados e resultados gerados nesse ambiente |
+
+| RoboCup 3D | É o ambiente de competição utilizado para avaliar o comportamento do robô | Os resultados analisados podem estar relacionados a partidas e testes nesse ambiente |
+
+| Aprendizado por Reforço Profundo | É a abordagem utilizada para treinar a política de locomoção do robô | A interação pode envolver métricas específicas de treinamento, como recompensa, episódios e desempenho |
+
+| Modelo do robô em formato compatível com o MuJoCo | O robô precisa estar representado no simulador para que os experimentos possam ser executados | Pode limitar quais robôs conseguem ser utilizados diretamente no mesmo fluxo |
+
+| Necessidade de hardware com capacidade computacional adequada | Os treinamentos podem exigir grande quantidade de processamento | Pode afetar o tempo de execução dos experimentos e a disponibilidade dos resultados |
+
+| Execução em Linux | O ambiente e as ferramentas utilizadas no projeto foram configurados para esse sistema operacional | Limita a execução dos treinamentos e experimentos a máquinas compatíveis com Linux |
+
 
 ---
 
@@ -441,7 +547,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | {{...}} | {{...}} | Entrega 2/3/7/... |
+| H01 | Integrantes de equipes de robótica teriam dificuldade em reunir e comparar métricas de desempenho dos robôs ao longo de testes e competições. | É o principal problema que justificaria a criação da plataforma. | Entrega 2/3/7/... |
 | H02 | {{...}} | {{...}} | {{...}} |
 | H03 | {{...}} | {{...}} | {{...}} |
 
@@ -453,23 +559,35 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | {{...}} |
-| O TCC já previa interface? | {{...}} |
-| Quem é o usuário prioritário de IHC? | {{...}} |
-| O que ele precisa alcançar? | {{...}} |
-| Qual problema/atividade será estudado? | {{...}} |
-| Como isso acontece hoje? | {{...}} |
-| Qual é o contexto de uso? | {{...}} |
-| Que interface/recorte será explorado? | {{...}} |
-| Como a interface se relaciona ao TCC? | {{...}} |
-| Quais pontos ainda são hipóteses? | {{H01...}} |
+| Qual é a contribuição central do TCC? | Desenvolver uma política de controle baseada em aprendizado por reforço profundo para melhorar a locomoção bípede do robô humanoide Atom. |
+
+| O TCC já previa interface? | Não. O TCC é predominantemente técnico e utiliza ambientes de simulação já existentes. |
+
+| Quem é o usuário prioritário de IHC? | Integrantes de equipes de robótica humanoide responsáveis por acompanhar, analisar e melhorar o desempenho dos robôs. |
+
+| O que ele precisa alcançar? | Entender como o robô está se saindo, identificar pontos de melhoria e acompanhar sua evolução ao longo de testes e competições. |
+
+| Qual problema/atividade será estudado? | A análise e comparação de diferentes métricas e resultados de desempenho de robôs humanoides. |
+
+| Como isso acontece hoje? | Os resultados são analisados a partir de métricas, testes, simulações e observação do comportamento do robô, podendo exigir consulta a diferentes informações separadamente. |
+
+| Qual é o contexto de uso? | Principalmente equipes e laboratórios de robótica durante o desenvolvimento, testes e competições de robôs humanoides. |
+
+| Que interface/recorte será explorado? | Uma plataforma para visualizar, acompanhar e comparar métricas e resultados de desempenho dos robôs. |
+
+| Como a interface se relaciona ao TCC? | É uma extensão conceitual inspirada no contexto de robótica humanoide do TCC, mas não faz parte do seu escopo formal. |
+
+| Quais pontos ainda são hipóteses? | H01 — dificuldade em reunir e comparar métricas; H02 — utilidade de uma visão centralizada; H03 — necessidade de comparação entre testes e robôs; H04 — possibilidade e utilidade de coletar dados durante testes e partidas. |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** {{...}}  
-**Fora do escopo de IHC:** {{...}}  
-**Dentro do escopo formal do TCC:** {{...}}  
-**Interface da disciplina será implementada no TCC?** não definido / sim / não — {{justificativa, se houver}}
+**Dentro do escopo de IHC:** Projetar e avaliar uma interface que permita visualizar métricas, consultar históricos, comparar resultados e identificar pontos de melhoria no desempenho de robôs humanoides.
+
+**Fora do escopo de IHC:** Desenvolver ou modificar algoritmos de locomoção, controlar diretamente o robô, criar um novo simulador ou implementar o sistema completo de coleta automática dos dados.
+
+**Dentro do escopo formal do TCC:** Modelagem do Atom, treinamento de uma política de locomoção utilizando aprendizado por reforço profundo e avaliação do desempenho do robô em ambiente simulado.
+
+**Interface da disciplina será implementada no TCC?** não definido — Não definido — a interface é uma extensão conceitual criada para a disciplina de IHC e sua implementação no TCC não está prevista atualmente.
 
 ---
 
@@ -493,9 +611,11 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** {{...}}
-2. **Contribuição técnica do TCC:** {{...}}
-3. **Como uma pessoa poderia utilizar essa contribuição:** {{...}}
+1. **Problema/atividade humana:** Equipes de robótica precisam acompanhar e interpretar diferentes métricas para entender o desempenho de seus robôs e identificar o que pode ser melhorado.
+
+2. **Contribuição técnica do TCC:** O TCC busca desenvolver uma política de controle baseada em aprendizado por reforço profundo para melhorar a locomoção bípede do robô humanoide Atom.
+
+3. **Como uma pessoa poderia utilizar essa contribuição:** Uma equipe poderia acompanhar e comparar os resultados de desempenho do robô para identificar pontos fortes, limitações e orientar decisões sobre seu desenvolvimento.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
@@ -503,21 +623,21 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 
 # Checklist de qualidade
 
-- [ ] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
-- [ ] A equipe declarou se o TCC já previa interface.
-- [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso.
-- [ ] A interface de IHC não foi apresentada como obrigação automática do TCC.
-- [ ] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
-- [ ] Usuários diretos e stakeholders foram diferenciados.
-- [ ] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
-- [ ] Objetivo do usuário não foi confundido com objetivo do projeto.
-- [ ] Processo/problema atual foi descrito antes da solução.
-- [ ] Existe situação concreta de uso/problema.
-- [ ] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
-- [ ] Mercado/alternativas existentes foram levantados inicialmente.
-- [ ] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
-- [ ] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
-- [ ] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
-- [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
-- [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
-- [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+- [X] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
+- [X] A equipe declarou se o TCC já previa interface.
+- [X] Se não previa, foi derivado um usuário plausível e um objetivo de uso.
+- [X] A interface de IHC não foi apresentada como obrigação automática do TCC.
+- [X] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
+- [X] Usuários diretos e stakeholders foram diferenciados.
+- [X] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
+- [X] Objetivo do usuário não foi confundido com objetivo do projeto.
+- [X] Processo/problema atual foi descrito antes da solução.
+- [X] Existe situação concreta de uso/problema.
+- [X] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
+- [X] Mercado/alternativas existentes foram levantados inicialmente.
+- [X] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
+- [X] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
+- [X] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
+- [X] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
+- [X] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
+- [X] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
