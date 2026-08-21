@@ -7,17 +7,18 @@ Para projetos cujo TCC não previa interface, esta matriz é especialmente impor
 ## 1. Derivação do escopo de IHC a partir do TCC
 
 | Elemento | Registro da equipe | Evidência/justificativa | Estado |
-|---|---|---|---|
-| Tema do TCC | {{...}} | {{documento/TCC}} | definido |
-| Resultado técnico esperado | {{algoritmo, análise, sistema, modelo, API...}} | {{...}} | definido |
-| O TCC previa interface? | sim / não / parcialmente | {{...}} | definido |
-| Capacidade/contribuição central | {{o que a tecnologia permite}} | {{...}} | definido |
-| Possíveis beneficiários/stakeholders | {{...}} | {{fonte ou hipótese}} | F / H / ? |
-| Usuário escolhido para IHC | {{...}} | {{por que esse perfil}} | F / H / ? |
-| Objetivo principal do usuário | {{...}} | {{...}} | F / H / ? |
-| Contexto de uso adotado | {{...}} | {{...}} | F / H / ? |
-| Interface/recorte de IHC | {{...}} | {{como deriva dos itens acima}} | proposta / revisada |
-| Relação com o TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra | {{...}} | definido |
+|---|---|---|---
+| Tema do TCC                          | Aprendizado por reforço profundo para locomoção bípede de um robô humanoide em simulação                                                                                                            | Tema definido no TCC                                                                                                                              | definido |
+| Resultado técnico esperado           | Modelo de aprendizado por reforço profundo capaz de aprender uma política de controle para a locomoção bípede do robô humanoide Atom                                                                | Objetivo e metodologia do TCC                                                                                                                     | definido |
+| O TCC previa interface?              | Não                                                                                                                                                                                                 | O TCC é predominantemente técnico e utiliza ferramentas e ambientes de simulação já existentes                                                    | definido |
+| Capacidade/contribuição central      | Desenvolver e avaliar uma política de controle que permita ao Atom realizar uma locomoção mais estável e eficiente                                                                                  | Objetivo e metodologia do TCC                                                                                                                     | definido |
+| Possíveis beneficiários/stakeholders | Integrantes de equipes de robótica humanoide, pesquisadores, desenvolvedores, professores e orientadores; como públicos secundários, narradores, comentaristas e pessoas que acompanham competições | Perfis levantados na Entrega 1                                                                                                                    | H        |
+| Usuário escolhido para IHC           | Integrante de uma equipe de robótica humanoide responsável por acompanhar, analisar e contribuir para a melhoria do desempenho do robô                                                              | É o perfil que precisa interpretar resultados e transformá-los em decisões para a equipe                                                          | H        |
+| Objetivo principal do usuário        | Entender o desempenho do robô, identificar pontos fortes, limitações e oportunidades de melhoria e acompanhar sua evolução                                                                          | Hipótese definida na Entrega 1                                                                                                                    | H        |
+| Contexto de uso adotado              | Laboratórios de robótica e situações de desenvolvimento, testes, treinamentos e competições                                                                                                         | Hipótese de contexto definida na Entrega 1                                                                                                        | H        |
+| Interface/recorte de IHC             | Plataforma para reunir, visualizar, acompanhar e comparar métricas e resultados de desempenho de robôs humanoides                                                                                   | Derivada do contexto técnico do TCC e da necessidade de análise de resultados                                                                     | proposta |
+| Relação com o TCC                    | Extensão conceitual e protótipo demonstrativo de aplicação potencial                                                                                                                                | A interface não faz parte do escopo formal do TCC, mas utiliza seu contexto de robótica humanoide e avaliação de desempenho como ponto de partida | definido |
+
 
 > Se o escopo de IHC mudar ao longo do semestre, preserve a decisão anterior no histórico e registre **qual evidência motivou a mudança**.
 
@@ -27,8 +28,10 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 
 | ID | Afirmação / dúvida inicial | Tipo | Por que importa | Como/onde investigar | Evidência obtida | Estado atual | Impacto no projeto |
 |---|---|---|---|---|---|---|---|
-| H01 | {{...}} | H / ? | {{...}} | Entrega 2 / 3 / 7 / outra | {{link/fonte ou PENDENTE}} | aberta / sustentada / refutada / refinada | {{...}} |
-| H02 | {{...}} | H / ? | {{...}} | {{...}} | {{...}} | aberta | {{...}} |
+| H01 | Integrantes de equipes de robótica têm dificuldade em reunir e comparar diferentes métricas e informações de desempenho dos robôs ao longo de testes e competições. | H    | É o principal problema que justificaria a criação da plataforma  | Entregas 3, 4 e 7    | PENDENTE         | aberta       | Pode confirmar, refinar ou enfraquecer a necessidade de centralização das informações |
+| H02 | Centralizar e comparar resultados de diferentes testes, versões ou robôs ajudaria as equipes a identificar melhorias, pioras e limitações de desempenho.            | H    | Sustenta uma das principais propostas de interação da plataforma | Entregas 5, 6 e 7    | PENDENTE         | aberta       | Influencia comparação de resultados, histórico e organização das informações          |
+| H03 | Os usuários possuem familiaridade suficiente com métricas e vocabulário técnico de robótica para utilizar uma interface de análise de desempenho.                   | H    | Influencia a linguagem e o nível de detalhamento da interface    | Entregas 3 e 7       | PENDENTE         | aberta       | Pode alterar terminologia, explicações, ajuda e nível de detalhamento da interface    |
+
 
 ## 3. Rastreabilidade entre contribuição técnica, necessidades e artefatos
 
