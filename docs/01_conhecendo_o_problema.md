@@ -200,6 +200,8 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 [F] O usuário busca conseguir uma locomoção mais estável, eficiente e competitiva para o robô humanoide, reduzindo quedas e melhorando sua capacidade de se deslocar e se recuperar durante situações de jogo.
 
+Origem: objetivo e contexto competitivo apresentados no TCC.
+
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
@@ -345,7 +347,6 @@ Origem: metodologia e discussão do TCC.
 Também existem ambientes ligados à RoboCup 3D, utilizados por diferentes equipes para testar e comparar comportamentos de robôs humanoides. 
 Esse é um exemplo do simulador da RoboCup 3D com robôs do Bahia-RT
 
-<img width="926" height="384" alt="image" src="https://github.com/user-attachments/assets/226e028f-ee8b-49f5-af50-0fa42757a217" />
 
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
@@ -557,11 +558,12 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 # 10. Hipóteses e dúvidas prioritárias
 
-| ID  | Hipótese/dúvida                                                                                                                                         | Por que importa                                                   | Como poderá ser investigada |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------- |
-| H01 | Integrantes de equipes de robótica têm dificuldade em reunir e comparar métricas de desempenho de locomoção obtidas em diferentes testes e competições. | É o principal problema que justificaria a criação da plataforma.  | Entregas 3, 4 e 7           |
-| H02 | Centralizar e comparar resultados de diferentes testes ou versões ajudaria as equipes a identificar melhorias e pioras na locomoção.                    | Sustenta uma das principais propostas de interação da plataforma. | Entregas 5, 6 e 7           |
-| H03 | Os usuários possuem familiaridade suficiente com métricas e vocabulário técnico de robótica para utilizar uma interface de análise de desempenho.       | Influencia a linguagem e o nível de detalhamento da interface.    | Entregas 3 e 7              |
+| ID  | Hipótese/dúvida                                                                                                                                                     | Por que importa                                                   | Como poderá ser investigada |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------- |
+| H01 | Integrantes de equipes de robótica têm dificuldade em reunir e comparar diferentes métricas e informações de desempenho dos robôs ao longo de testes e competições. | É o principal problema que justificaria a criação da plataforma.  | Entregas 3, 4 e 7           |
+| H02 | Centralizar e comparar resultados de diferentes testes, versões ou robôs ajudaria as equipes a identificar melhorias, pioras e limitações de desempenho.            | Sustenta uma das principais propostas de interação da plataforma. | Entregas 5, 6 e 7           |
+| H03 | Os usuários possuem familiaridade suficiente com métricas e vocabulário técnico de robótica para utilizar uma interface de análise de desempenho.                   | Influencia a linguagem e o nível de detalhamento da interface.    | Entregas 3 e 7              |
+
 
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
@@ -570,27 +572,19 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 # 11. Síntese da equipe
 
-| Pergunta | Síntese atual |
-|---|---|
-| Qual é a contribuição central do TCC? | Desenvolver uma política de controle baseada em aprendizado por reforço profundo para melhorar a locomoção bípede do robô humanoide Atom. |
+| Pergunta                               | Síntese atual                                                                                                                                                                                                          |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Qual é a contribuição central do TCC?  | Desenvolver e avaliar uma política de controle baseada em aprendizado por reforço profundo para melhorar a locomoção bípede do robô humanoide Atom.                                                                    |
+| O TCC já previa interface?             | Não. O TCC é predominantemente técnico e utiliza ferramentas e ambientes de simulação já existentes.                                                                                                                   |
+| Quem é o usuário prioritário de IHC?   | Integrantes de equipes de robótica humanoide responsáveis por acompanhar, analisar e contribuir para a melhoria do desempenho dos robôs.                                                                               |
+| O que ele precisa alcançar?            | Entender o desempenho do robô, identificar pontos fortes, limitações e oportunidades de melhoria e acompanhar sua evolução ao longo do tempo.                                                                          |
+| Qual problema/atividade será estudado? | A análise, organização e comparação de métricas e resultados de desempenho obtidos em testes, treinamentos e competições.                                                                                              |
+| Como isso acontece hoje?               | No contexto do TCC, os resultados são avaliados por métricas e observação do comportamento do robô. Ainda será investigado como outras equipes organizam e comparam informações de desempenho em diferentes situações. |
+| Qual é o contexto de uso?              | Equipes e laboratórios de robótica durante desenvolvimento, testes, treinamentos e competições.                                                                                                                        |
+| Que interface/recorte será explorado?  | Uma plataforma para visualizar, acompanhar e comparar métricas e resultados de desempenho de robôs humanoides.                                                                                                         |
+| Como a interface se relaciona ao TCC?  | É uma extensão conceitual que parte do contexto de locomoção e avaliação de desempenho estudado no TCC e amplia esse uso para uma análise mais geral do desempenho de robôs humanoides.                                |
+| Quais pontos ainda são hipóteses?      | H01 — dificuldade em reunir e comparar informações; H02 — valor da centralização e comparação; H03 — familiaridade técnica dos usuários.                                                                               |
 
-| O TCC já previa interface? | Não. O TCC é predominantemente técnico e utiliza ambientes de simulação já existentes. |
-
-| Quem é o usuário prioritário de IHC? | Integrantes de equipes de robótica humanoide responsáveis por acompanhar, analisar e melhorar o desempenho dos robôs. |
-
-| O que ele precisa alcançar? | Entender como o robô está se saindo, identificar pontos de melhoria e acompanhar sua evolução ao longo de testes e competições. |
-
-| Qual problema/atividade será estudado? | A análise e comparação de diferentes métricas e resultados de desempenho de robôs humanoides. |
-
-| Como isso acontece hoje? | Os resultados são analisados a partir de métricas, testes, simulações e observação do comportamento do robô, podendo exigir consulta a diferentes informações separadamente. |
-
-| Qual é o contexto de uso? | Principalmente equipes e laboratórios de robótica durante o desenvolvimento, testes e competições de robôs humanoides. |
-
-| Que interface/recorte será explorado? | Uma plataforma para visualizar, acompanhar e comparar métricas e resultados de desempenho dos robôs. |
-
-| Como a interface se relaciona ao TCC? | É uma extensão conceitual inspirada no contexto de robótica humanoide do TCC, mas não faz parte do seu escopo formal. |
-
-| Quais pontos ainda são hipóteses? | H01 — dificuldade em reunir e comparar métricas; H02 — utilidade de uma visão centralizada; H03 — necessidade de comparação entre testes e robôs; H04 — possibilidade e utilidade de coletar dados durante testes e partidas. |
 
 ### Delimitação
 
@@ -624,11 +618,11 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** Equipes de robótica precisam acompanhar e interpretar diferentes métricas para entender o desempenho de seus robôs e identificar o que pode ser melhorado.
+1. **Problema/atividade humana:** Equipes de robótica precisam acompanhar e comparar diferentes informações para entender o desempenho de locomoção de seus robôs e identificar o que pode ser melhorado.
 
 2. **Contribuição técnica do TCC:** O TCC busca desenvolver uma política de controle baseada em aprendizado por reforço profundo para melhorar a locomoção bípede do robô humanoide Atom.
 
-3. **Como uma pessoa poderia utilizar essa contribuição:** Uma equipe poderia acompanhar e comparar os resultados de desempenho do robô para identificar pontos fortes, limitações e orientar decisões sobre seu desenvolvimento.
+3. **Como uma pessoa poderia utilizar essa contribuição:** Uma equipe poderia acompanhar e comparar os resultados de desempenho do robô para identificar pontos fortes, limitações e orientar decisões sobre seu desenvolvimento, para competir ou melhorar os estudos acadêmicos sobre isso.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
