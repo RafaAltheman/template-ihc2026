@@ -347,7 +347,7 @@ Origem: metodologia e discussão do TCC.
 Também existem ambientes ligados à RoboCup 3D, utilizados por diferentes equipes para testar e comparar comportamentos de robôs humanoides. 
 Esse é um exemplo do simulador da RoboCup 3D com robôs do Bahia-RT
 
-
+![Simulação do Bahia-RT](../assets/bahia-rt-simulation.png)
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
