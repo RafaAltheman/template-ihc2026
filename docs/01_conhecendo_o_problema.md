@@ -3,6 +3,7 @@
 **Data:** 12/08/2026
 
 **Status:** 🟨 EM ANDAMENTO 
+
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -351,7 +352,7 @@ Esse é um exemplo do simulador da RoboCup 3D com robôs do Bahia-RT
 
 Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-[H] H05 — Esse público provavelmente já está acostumado com:
+[H] Esse público provavelmente já está acostumado com:
 
 - ambientes de simulação de robótica
 - IDEs e ferramentas de desenvolvimento
@@ -365,11 +366,14 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 [H] Ferramentas de gráficos e métricas também podem facilitar o acompanhamento da evolução do treinamento
 
+Fonte: Todorov, Erez e Tassa (2012), referência [31] do TCC — MuJoCo: A Physics Engine for Model-Based Control.
+
+URL: https://ieeexplore.ieee.org/document/6386109/
+
+
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-[H] H06 — As ferramentas atuais podem exigir que o usuário consulte separadamente parâmetros, métricas e comportamento visual do robô, dificultando uma comparação rápida entre diferentes treinamentos.
-
-[F] Além disso, nenhuma métrica individual é suficiente para determinar a qualidade do walking, sendo necessário combinar análise quantitativa com avaliação visual.
+[H] As ferramentas atuais podem exigir que o usuário consulte separadamente parâmetros, métricas e comportamento visual do robô, dificultando uma comparação rápida entre diferentes treinamentos.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
@@ -446,7 +450,7 @@ Integrante de uma equipe de robótica humanoide responsável por analisar e melh
 
 **Por que esse perfil foi escolhido?** 
 
-Porque esse usuário precisa acompanhar vários aspectos do desempenho do robô e transformar os resultados dos testes em decisões sobre o que deve ser melhorado. A interface pode ajudar a organizar essas informações e tornar a comparação entre resultados mais simples.
+Porque esse usuário participa diretamente do processo de desenvolvimento e precisa interpretar diferentes informações sobre o comportamento e o desempenho do robô ao longo de testes, treinamentos e competições. Isso pode envolver métricas como velocidade, estabilidade, quedas, desempenho em partidas, evolução entre versões e resultados de diferentes execuções. A partir dessas informações, ele precisa identificar pontos fortes, limitações e possíveis melhorias, além de comparar resultados para apoiar decisões da equipe. A interface pode ajudar a reunir e organizar esses dados, facilitando a análise do desempenho e o acompanhamento da evolução do robô ao longo do tempo.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
@@ -458,7 +462,9 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-Para fins da disciplina de IHC, será projetada uma interface voltada a integrantes de equipes de robótica humanoide, permitindo acompanhar, visualizar e comparar o desempenho dos robôs em testes, treinamentos e competições. A proposta é centralizar métricas e resultados de diferentes execuções, facilitando a identificação de pontos fortes, limitações e possíveis melhorias. Assim, a equipe poderá acompanhar a evolução do robô e utilizar essas informações para orientar decisões sobre ajustes e próximos passos no seu desenvolvimento.
+Para fins da disciplina de IHC, será projetada uma interface voltada principalmente a integrantes de equipes de robótica humanoide, permitindo acompanhar, visualizar e comparar o desempenho dos robôs em testes, treinamentos e competições. A proposta é reunir em um só lugar métricas, resultados e informações de diferentes execuções, facilitando a identificação de pontos fortes, limitações, falhas e possíveis melhorias ao longo do desenvolvimento.
+
+A interface também poderá ajudar a acompanhar a evolução do robô entre diferentes versões, testes e partidas, permitindo que a equipe use essas informações para orientar decisões sobre ajustes e próximos passos. Em contextos de competição, parte dessas informações também pode ser útil para outros públicos, como narradores, comentaristas e pessoas que acompanham as transmissões, ajudando a contextualizar melhor o desempenho e a evolução dos robôs durante as partidas.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
@@ -480,33 +486,23 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 
-| Dashboard/visão geral | sim | Ter uma visão rápida do desempenho geral do robô e das principais métricas | [H] |
+| Possibilidade                       | Pode fazer sentido? | Objetivo/tarefa que justificaria                                                                                        | Evidência atual |
+| ----------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Dashboard/visão geral               | Sim                 | Ter uma visão rápida do desempenho geral do robô e das principais métricas                                              | [H]             |
+| Configuração/parametrização         | Talvez              | Permitir escolher quais métricas, robôs, testes ou competições serão analisados                                         | [H]             |
+| Entrada/upload/seleção de dados     | Sim                 | Inserir ou selecionar resultados de testes, treinamentos e competições para análise                                     | [H]             |
+| Acompanhamento de processamento     | Talvez              | Acompanhar o carregamento e o processamento de novos resultados                                                         | [H]             |
+| Relatório/resultados                | Sim                 | Visualizar os resultados de forma organizada e apoiar a tomada de decisão                                               | [H]             |
+| Histórico com busca/filtros         | Sim                 | Consultar resultados anteriores e localizar informações por robô, data, competição ou tipo de teste                     | [H]             |
+| Comparação de resultados            | Sim                 | Comparar diferentes robôs, versões, testes ou execuções e identificar onde houve melhora ou piora                       | [H]             |
+| Explicabilidade/detalhamento        | Sim                 | Entender melhor as métricas, os resultados e os pontos fortes e fracos do robô                                          | [H]             |
+| Administração/configurações globais | Não                 | Neste momento, não foi identificada uma necessidade clara para esse tipo de administração                               | [?]             |
+| Usuários/perfis/permissões          | Talvez              | Pode ser útil caso diferentes integrantes ou públicos tenham responsabilidades e níveis de acesso distintos             | [?]             |
+| CRUD de entidade do domínio         | Talvez              | Permitir cadastrar e atualizar robôs, equipes, testes ou competições, caso isso seja necessário para organizar os dados | [H]             |
+| Auditoria/logs                      | Não                 | Neste momento, não foi identificada uma necessidade clara de auditoria ou registro detalhado das alterações             | [?]             |
+| Alertas/ocorrências                 | Talvez              | Destacar quedas de desempenho, resultados fora do esperado ou acontecimentos importantes durante testes e competições   | [H]             |
+| Ajuda/documentação                  | Sim                 | Explicar métricas, informações da interface e facilitar o uso por pessoas com diferentes níveis de conhecimento técnico | [H]             |
 
-| Configuração/parametrização | talvez | Permitir escolher quais métricas, robôs ou testes serão analisados | [H] |
-
-| Entrada/upload/seleção de dados | sim | Inserir ou selecionar resultados de testes, treinamentos e competições para análise | [H] |
-
-| Acompanhamento de processamento | talvez | Acompanhar o carregamento e processamento de novos resultados | [H] |
-
-| Relatório/resultados | sim | Visualizar os resultados de desempenho de forma organizada e facilitar a tomada de decisão | [H] |
-
-| Histórico com busca/filtros | sim | Consultar testes anteriores e encontrar resultados por robô, data, competição ou tipo de teste | [H] |
-
-| Comparação de resultados | sim | Comparar diferentes robôs, versões ou execuções e identificar onde houve melhora ou piora | [H] |
-
-| Explicabilidade/detalhamento | sim | Entender quais métricas contribuíram para um resultado e identificar pontos fortes e fracos do robô | [H] |
-
-| Administração/configurações globais | não | Não parece necessária para o objetivo principal da interface neste momento | [H] |
-
-| Usuários/perfis/permissões | talvez | Pode ser útil caso diferentes integrantes da equipe tenham responsabilidades ou níveis de acesso diferentes | [?] |
-
-| CRUD de entidade do domínio | talvez | Poderia permitir cadastrar e atualizar robôs, equipes ou testes, caso isso seja necessário para organizar os dados | [H] |
-
-| Auditoria/logs | não | Não parece necessária para o objetivo principal da interface neste momento  | [H] |
-
-| Alertas/ocorrências | talvez | Destacar quedas relevantes de desempenho ou resultados fora do esperado | [H] |
-
-| Ajuda/documentação | sim | Explicar métricas e facilitar o uso por integrantes com diferentes níveis de experiência | [H] |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -518,13 +514,13 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 
-| Facilitar a análise do desempenho do robô | As informações de desempenho podem estar espalhadas entre diferentes métricas, testes e observações | Integrantes de equipes de robótica humanoide | [H] |
+| Benefício esperado                                    | Problema/necessidade                                                                                                                | Usuário                                            | Status/evidência |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------- |
+| Facilitar a análise do desempenho do robô             | As informações de desempenho podem estar espalhadas entre diferentes métricas, testes e observações                                 | Integrantes de equipes de robótica humanoide       | [H]              |
+| Facilitar a comparação entre testes e versões do robô | Pode ser difícil perceber rapidamente se uma mudança realmente melhorou ou piorou o desempenho                                      | Integrantes de equipes de robótica humanoide       | [H]              |
+| Ajudar a identificar pontos de melhoria               | A equipe precisa entender em quais aspectos o robô apresenta melhor ou pior desempenho                                              | Integrantes de equipes de robótica humanoide       | [H]              |
+| Acompanhar a evolução do robô ao longo do tempo       | As informações obtidas durante testes e partidas podem não ficar organizadas de forma que facilite a análise e comparação posterior | Integrantes de equipes de robótica e pesquisadores | [H]              |
 
-| Facilitar a comparação entre testes e versões do robô | Pode ser difícil perceber rapidamente se uma mudança realmente melhorou ou piorou o desempenho | Integrantes de equipes de robótica humanoide | [H] |
-
-| Ajudar a identificar pontos de melhoria | A equipe precisa entender em quais aspectos o robô apresenta melhor ou pior desempenho | Integrantes de equipes de robótica humanoide | [H] |
-
-| Acompanhar a evolução do robô ao longo do tempo | Durante as partidas temos dificuldade de colher informações, sem ser visuais | Integrantes e pesquisadores | [H] |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
@@ -546,30 +542,27 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 A tecnologia aparece **agora**, depois do entendimento do uso.
 
-| Tecnologia/restrição | Por que existe | Possível impacto na interação |
+| Tecnologia/restrição                                          | Por que existe                                                                                     | Possível impacto na interação                                                                          |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| MuJoCo                                                        | É o simulador utilizado para modelar e executar os experimentos de locomoção                       | A interface pode precisar trabalhar com dados e resultados gerados nesse ambiente                      |
+| RoboCup 3D                                                    | É o ambiente de competição utilizado para avaliar o comportamento do robô                          | Os resultados analisados podem estar relacionados a partidas e testes realizados nesse ambiente        |
+| Aprendizado por Reforço Profundo                              | É a abordagem utilizada para treinar a política de locomoção do robô                               | A interação pode envolver métricas específicas de treinamento, como recompensa, episódios e desempenho |
+| Modelo do robô em formato compatível com o MuJoCo             | O robô precisa estar representado no simulador para que os experimentos possam ser executados      | Pode limitar quais robôs conseguem ser utilizados diretamente no mesmo fluxo                           |
+| Necessidade de hardware com capacidade computacional adequada | Os treinamentos podem exigir grande quantidade de processamento                                    | Pode afetar o tempo de execução dos experimentos e a disponibilidade dos resultados                    |
+| Execução em Linux                                             | O ambiente e as ferramentas utilizadas no projeto foram configurados para esse sistema operacional | Limita a execução dos treinamentos e experimentos a máquinas compatíveis com Linux                     |
 
-| MuJoCo | É o simulador utilizado para modelar e executar os experimentos de locomoção | A interface pode precisar trabalhar com dados e resultados gerados nesse ambiente |
-
-| RoboCup 3D | É o ambiente de competição utilizado para avaliar o comportamento do robô | Os resultados analisados podem estar relacionados a partidas e testes nesse ambiente |
-
-| Aprendizado por Reforço Profundo | É a abordagem utilizada para treinar a política de locomoção do robô | A interação pode envolver métricas específicas de treinamento, como recompensa, episódios e desempenho |
-
-| Modelo do robô em formato compatível com o MuJoCo | O robô precisa estar representado no simulador para que os experimentos possam ser executados | Pode limitar quais robôs conseguem ser utilizados diretamente no mesmo fluxo |
-
-| Necessidade de hardware com capacidade computacional adequada | Os treinamentos podem exigir grande quantidade de processamento | Pode afetar o tempo de execução dos experimentos e a disponibilidade dos resultados |
-
-| Execução em Linux | O ambiente e as ferramentas utilizadas no projeto foram configurados para esse sistema operacional | Limita a execução dos treinamentos e experimentos a máquinas compatíveis com Linux |
 
 
 ---
 
 # 10. Hipóteses e dúvidas prioritárias
 
-| ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
-|---|---|---|---|
-| H01 | Integrantes de equipes de robótica teriam dificuldade em reunir e comparar métricas de desempenho dos robôs ao longo de testes e competições. | É o principal problema que justificaria a criação da plataforma. | Entrega 2/3/7/... |
-| H02 | {{...}} | {{...}} | {{...}} |
-| H03 | {{...}} | {{...}} | {{...}} |
+| ID  | Hipótese/dúvida                                                                                                                                         | Por que importa                                                   | Como poderá ser investigada |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------- |
+| H01 | Integrantes de equipes de robótica têm dificuldade em reunir e comparar métricas de desempenho de locomoção obtidas em diferentes testes e competições. | É o principal problema que justificaria a criação da plataforma.  | Entregas 3, 4 e 7           |
+| H02 | Centralizar e comparar resultados de diferentes testes ou versões ajudaria as equipes a identificar melhorias e pioras na locomoção.                    | Sustenta uma das principais propostas de interação da plataforma. | Entregas 5, 6 e 7           |
+| H03 | Os usuários possuem familiaridade suficiente com métricas e vocabulário técnico de robótica para utilizar uma interface de análise de desempenho.       | Influencia a linguagem e o nível de detalhamento da interface.    | Entregas 3 e 7              |
+
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
