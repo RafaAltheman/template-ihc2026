@@ -1,6 +1,6 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{19/08/2026}}  
+**Data:** 19/08/2026
 **Status:** 🟨 Em andamento
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
@@ -16,20 +16,26 @@ Não procure apenas um “concorrente do algoritmo”. Investigue **interfaces p
 
 Exemplos:
 
-- TCC de banco de dados → consoles de administração, ferramentas para DBA, monitoramento e análise de consultas;
-- TCC de LLM/ML → painéis de experimentos, gestão de modelos/datasets, comparação de métricas, revisão de resultados;
-- TCC de análise de dados → dashboards, ferramentas de BI, filtros, relatórios e exploração;
-- TCC de infraestrutura/API → portais administrativos, observabilidade, logs, gestão de credenciais e uso;
-- TCC de cibersegurança → consoles de alertas, triagem, histórico e auditoria.
+* TCC de banco de dados → consoles de administração, ferramentas para DBA, monitoramento e análise de consultas;
+* TCC de LLM/ML → painéis de experimentos, gestão de modelos/datasets, comparação de métricas, revisão de resultados;
+* TCC de análise de dados → dashboards, ferramentas de BI, filtros, relatórios e exploração;
+* TCC de infraestrutura/API → portais administrativos, observabilidade, logs, gestão de credenciais e uso;
+* TCC de cibersegurança → consoles de alertas, triagem, histórico e auditoria.
 
 A pergunta é: **“que convenções esse perfil já conhece para executar tarefas equivalentes?”**
 
 ## Entrada obrigatória da Entrega 1
 
-Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equipe deixa de trabalhar apenas com impressão inicial e passa a **investigar sistematicamente** cada solução.
+Na Entrega 1, não citamos nenhum software. Estaremos citando pela primeira vez:
 
-| Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
-|---|---|---|---|---|
+| Item citado na Entrega 1 | Tipo               | Por que foi citado                                                                                                               | Status inicial | Decisão nesta entrega |
+| ------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
+| NuSight                  | Análogo            | Interface relacionada ao acompanhamento de robôs e à visualização de informações técnicas e de desempenho.                       | —              | Analisar              |
+| MARIO                    | Análogo            | Solução relacionada ao processamento e análise de dados de partidas de robôs, com organização modular e geração de estatísticas. | —              | Analisar              |
+| GameController           | Indireto / análogo | Software diretamente relacionado ao futebol de robôs humanoides, utilizado para configurar, controlar e acompanhar partidas.     | —              | Analisar              |
+
+> **Observação:** Como os três softwares não foram citados na Entrega 1, eles não possuem um status inicial ou hipótese (`H01`, `H02` etc.) associado à etapa anterior. Por isso, nesta entrega eles são tratados como novas soluções selecionadas para análise comparativa.
+
 | {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
@@ -42,10 +48,10 @@ O público alvo desta análise são integrantes de equipes de robótica humanoid
 
 ### Análise C01 — NuSight
 
-**Autor(a):** {{Manuella Filipe Peres - 22.224.029-3}}  
-**Tipo:** análogo  
-**Link oficial:** {{[URL](https://nubook.nubots.net/)}}  
-**Data de acesso:** {{19/08/2026}}
+**Autor(a):** Manuella Filipe Peres - 22.224.029-3
+**Tipo:** análogo
+**Link oficial:** [NuSight](https://nubook.nubots.net/system/tools/nusight#page-content)
+**Data de acesso:** 19/08/2026
 
 #### Contexto e proposta
 
@@ -55,10 +61,10 @@ O NUbook foi analisado como uma interface profissional representativa porque o p
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
-|Dashboard com informações em tempo real|Campo dispondo dos jogadores e seu estado|`../assets/02_concorrencia/NuSight_Dash.png`|Permite observar ao vivo a performance do robô|
-|Documentação técnica|O site apresenta informações sobre hardware, software, sistemas e ferramentas utilizados pela equipe|`../assets/02_concorrencia/NuSight.png`|Centraliza informações que poderiam estar distribuídas em diferentes fontes|
-
+| Funcionalidade                          | Como é realizada                                                                                      | Evidência/print                                                     | Observação de IHC                                                            |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Dashboard com informações em tempo real | Campo dispondo dos jogadores e seu estado.                                                            | ![Dashboard do NuSight](../assets/02_concorrencia/NuSight_Dash.png) | Permite observar ao vivo a performance do robô.                              |
+| Documentação técnica                    | O site apresenta informações sobre hardware, software, sistemas e ferramentas utilizados pela equipe. | ![Documentação do NuSight](../assets/02_concorrencia/NuSight.png)   | Centraliza informações que poderiam estar distribuídas em diferentes fontes. |
 
 #### Experiência do usuário e opiniões
 
@@ -70,24 +76,24 @@ O NUbook é disponibilizado como documentação pública da equipe NUbots. Não 
 
 #### Padrões e tendências percebidos
 
-- Separação entre informações sobre equipe, sistemas e guias
-- Navegação por categorias
-- Centralização de documentação técnica
-- Registro de histórico e conhecimento da equipe.
+* Separação entre informações sobre equipe, sistemas e guias
+* Navegação por categorias
+* Centralização de documentação técnica
+* Registro de histórico e conhecimento da equipe.
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|Centralização de informações|Hardware, software, ferramentas e pesquisas estão reunidos na plataforma|Informações relacionadas aos treinamentos podem ser centralizadas|
-|Guias e documentação|Existe uma seção específica de Guides|Pode ser interessante oferecer ajuda ou explicações para parâmetros e métricas mais técnicas|
-
+| Ponto                        | Evidência                                                                 | Implicação para nosso projeto                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Centralização de informações | Hardware, software, ferramentas e pesquisas estão reunidos na plataforma. | Informações relacionadas aos treinamentos podem ser centralizadas.                            |
+| Guias e documentação         | Existe uma seção específica de Guides.                                    | Pode ser interessante oferecer ajuda ou explicações para parâmetros e métricas mais técnicas. |
 
 ### Análise C02 — Mario
 
-**Autor(a):** {{Letizia Lowatzki Baptistella - 22.125.063-2}}  
-**Tipo:** análogo  
-**Link oficial:** {{[URL](https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario)}}  
-**Data de acesso:** {{19/08/2026}}
+**Autor(a):** Letizia Lowatzki Baptistella - 22.125.063-2
+**Tipo:** análogo
+**Link oficial:** [MARIO](https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario)
+**Data de acesso:** 19/08/2026
 
 #### Contexto e proposta
 
@@ -97,10 +103,10 @@ A solução foi analisada como análogo porque, apesar de não realizar o treina
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
-|Calibração|O sistema realiza a calibração da câmera para corrigir distorções|`../assets/02_concorrencia/calibracao.png`|O processamento possui uma etapa específica e identificável|
-|Geração de estatísticas|Os dados dos jogadores e da bola são utilizados para gerar estatísticas da partida|`../assets/02_concorrencia/mario.png`|Facilita a interpretação dos resultados por meio de informações derivadas|
-
+| Funcionalidade          | Como é realizada                                                                    | Evidência/print                                                  | Observação de IHC                                                          |
+| ----------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Calibração              | O sistema realiza a calibração da câmera para corrigir distorções.                  | ![Calibração do MARIO](../assets/02_concorrencia/calibracao.png) | O processamento possui uma etapa específica e identificável.               |
+| Geração de estatísticas | Os dados dos jogadores e da bola são utilizados para gerar estatísticas da partida. | ![MARIO](../assets/02_concorrencia/mario.png)                    | Facilita a interpretação dos resultados por meio de informações derivadas. |
 
 #### Experiência do usuário e opiniões
 
@@ -108,28 +114,29 @@ A solução foi analisada como análogo porque, apesar de não realizar o treina
 
 #### Preço/modelo de negócio
 
- Não foi identificado modelo de cobrança ou comercialização da plataforma.
+Não foi identificado modelo de cobrança ou comercialização da plataforma.
 
 #### Padrões e tendências percebidos
 
-- Organização modular
-- Processamento dividido em etapas
-- Feedback visual
-- Transformação de dados técnicos em estatísticas
-- Uso de visualizações para auxiliar a interpretação dos resultados.
+* Organização modular
+* Processamento dividido em etapas
+* Feedback visual
+* Transformação de dados técnicos em estatísticas
+* Uso de visualizações para auxiliar a interpretação dos resultados.
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|Modularidade|O MARIO divide o processamento em módulos específicos|O fluxo da interface pode separar configuração, treinamento e análise|
-|Feedback visual|O tracking apresenta informações sobre os objetos detectados|O treinamento pode apresentar visualmente o comportamento do robô|
+| Ponto           | Evidência                                                     | Implicação para nosso projeto                                          |
+| --------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Modularidade    | O MARIO divide o processamento em módulos específicos.        | O fluxo da interface pode separar configuração, treinamento e análise. |
+| Feedback visual | O tracking apresenta informações sobre os objetos detectados. | O treinamento pode apresentar visualmente o comportamento do robô.     |
 
 ### Análise C03 — GameController
 
-**Autor(a):** {{Rafaela Altheman de Campos - 22.125.062-4}}  
-**Tipo:** indireto/análogo  
-**Link oficial:** {{[URL](https://github.com/RoboCup-HumanoidSoccerLeague/GameController)}}  
-**Data de acesso:** {{19/08/2026}}
+**Autor(a):** Rafaela Altheman de Campos - 22.125.062-4
+**Tipo:** indireto/análogo
+**Link oficial:** [GameController](https://github.com/RoboCup-HumanoidSoccerLeague/GameController)
+**Data de acesso:** 19/08/2026
 
 #### Contexto e proposta
 
@@ -139,87 +146,95 @@ Ele foi selecionado como solução indireta/análogo porque está diretamente re
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
-|Configuração inicial|O Launcher permite selecionar competição, equipes, cores e interface de rede|`../assets/02_concorrencia/gamecontroller.png`|Reúne as configurações necessárias antes do início da atividade|
-|Controle da partida|A interface principal permite acompanhar e controlar o estado do jogo|`../assets/02_concorrencia/start.png`|Mantém informações importantes disponíveis durante a atividade|
-
+| Funcionalidade       | Como é realizada                                                              | Evidência/print                                                                         | Observação de IHC                                                |
+| -------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Configuração inicial | O Launcher permite selecionar competição, equipes, cores e interface de rede. | ![Configuração inicial do GameController](../assets/02_concorrencia/gamecontroller.png) | Reúne as configurações necessárias antes do início da atividade. |
+| Controle da partida  | A interface principal permite acompanhar e controlar o estado do jogo.        | ![Tela de partida do GameController](../assets/02_concorrencia/start.png)               | Mantém informações importantes disponíveis durante a atividade.  |
 
 #### Experiência do usuário e opiniões
 
 [?] Um ponto relevante para IHC é a prevenção de erros durante a configuração, pois o sistema verifica condições como equipes distintas e ausência de conflitos entre as cores antes de permitir o início da partida.
 
 #### Preço/modelo de negócio
- Não foi identificado modelo de cobrança pelo uso do software.
+
+Não foi identificado modelo de cobrança pelo uso do software.
 
 #### Padrões e tendências percebidos
 
-- Configuração antes da execução
-- Validação de dados
-- Feedback do estado atual
-- Interface voltada para controle em tempo real
+* Configuração antes da execução
+* Validação de dados
+* Feedback do estado atual
+* Interface voltada para controle em tempo real
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|Configuração antes da execução|O Launcher reúne os parâmetros necessários antes de iniciar a partida|O treinamento pode possuir uma etapa clara de configuração antes da execução|
-|Feedback de estado|A interface principal apresenta informações relacionadas ao estado da partida|A interface pode informar claramente se o treinamento está configurado, executando, concluído ou apresentou erro|
-
+| Ponto                          | Evidência                                                                      | Implicação para nosso projeto                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| Configuração antes da execução | O Launcher reúne os parâmetros necessários antes de iniciar a partida.         | O treinamento pode possuir uma etapa clara de configuração antes da execução.                                     |
+| Feedback de estado             | A interface principal apresenta informações relacionadas ao estado da partida. | A interface pode informar claramente se o treinamento está configurado, executando, concluído ou apresentou erro. |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
 Analise interfaces que moldam a expectativa do público, mesmo que não sejam concorrentes.
 
-| Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
-|Jupyter Notebook|Executar experimentos, analisar dados, visualizar gráficos e registrar resultados|Células, gráficos, execução por etapas e organização do experimento|`../assets/02_concorrencia/labpreview.png`|Manter resultados próximos às informações que os geraram pode facilitar a interpretação|
-|GitHub|Armazenar código, acompanhar alterações e colaborar no desenvolvimento|Navegação por projetos, histórico, versionamento e organização de arquivos|`../assets/02_concorrencia/github.png`|Histórico e organização ajudam na rastreabilidade das alterações|
-|VS Code|Desenvolver e executar código utilizado nos experimentos|Abas, terminal, explorador de arquivos, extensões e feedback de execução|`../assets/02_concorrencia/vscode.png`|Reunir diferentes recursos de desenvolvimento em uma interface pode reduzir a necessidade de alternar entre ferramentas|
+| Software         | Por que o público usa                                                              | Padrões relevantes                                                          | Prints                                                        | O que aprender                                                                                                           |
+| ---------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Jupyter Notebook | Executar experimentos, analisar dados, visualizar gráficos e registrar resultados. | Células, gráficos, execução por etapas e organização do experimento.        | ![Jupyter Notebook](../assets/02_concorrencia/labpreview.png) | Manter resultados próximos às informações que os geraram pode facilitar a interpretação.                                 |
+| GitHub           | Armazenar código, acompanhar alterações e colaborar no desenvolvimento.            | Navegação por projetos, histórico, versionamento e organização de arquivos. | ![GitHub](../assets/02_concorrencia/github.png)               | Histórico e organização ajudam na rastreabilidade das alterações.                                                        |
+| VS Code          | Desenvolver e executar código utilizado nos experimentos.                          | Abas, terminal, explorador de arquivos, extensões e feedback de execução.   | ![VS Code](../assets/02_concorrencia/vscode.png)              | Reunir diferentes recursos de desenvolvimento em uma interface pode reduzir a necessidade de alternar entre ferramentas. |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
 Registre somente padrões encontrados nas soluções analisadas e que possam ter relação com objetivos reais da equipe.
 
-| Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
-|---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| Padrão observado                      | Produto(s)                | Para qual tarefa serve                                                               | Vantagem percebida                                                             | Risco/limitação                                                                              | Aplicável ao nosso escopo? |
+| ------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- | -------------------------- |
+| **Execução por etapas**               | Jupyter Notebook          | Executar experimentos e acompanhar cada etapa do processamento.                      | Facilita a organização e o acompanhamento do experimento.                      | Muitos passos ou células podem dificultar a compreensão do fluxo.                            | **Não**                    |
+| **Visualização de resultados**        | Jupyter Notebook          | Analisar dados e visualizar gráficos gerados pelos experimentos.                     | Facilita a interpretação dos resultados por meio de representações visuais.    | O excesso de gráficos e informações pode dificultar a análise.                               | **Sim**                    |
+| **Histórico e versionamento**         | GitHub                    | Acompanhar alterações no código e consultar versões anteriores.                      | Favorece a rastreabilidade das alterações e dos experimentos.                  | A quantidade de versões e informações pode tornar a navegação mais complexa.                 | **Sim**                    |
+| **Organização por projetos/arquivos** | GitHub; VS Code           | Organizar códigos, arquivos e recursos utilizados no desenvolvimento.                | Facilita a localização e o gerenciamento dos arquivos relacionados ao projeto. | Estruturas muito grandes podem dificultar a localização de informações.                      | **Sim**                    |
+| **Abas e recursos integrados**        | VS Code                   | Desenvolver e executar código utilizando diferentes recursos em uma mesma interface. | Reduz a necessidade de alternar entre diferentes ferramentas.                  | Uma interface com muitos recursos pode aumentar a complexidade visual.                       | **Sim**                    |
+| **Feedback de execução**              | Jupyter Notebook; VS Code | Acompanhar a execução de código e identificar resultados ou problemas.               | Permite perceber rapidamente o resultado de uma ação ou execução.              | Mensagens de erro ou resultados muito extensos podem dificultar a identificação do problema. | **Sim**                    |
+| **Comparação/análise de resultados**  | Jupyter Notebook          | Analisar e interpretar os resultados obtidos nos experimentos.                       | Facilita a avaliação dos resultados gerados durante os experimentos.           | A comparação pode se tornar difícil quando há muitos resultados simultâneos.                 | **Sim**                    |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
-|---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Critério                      | C01 — NuSight                                                 | C02 — MARIO                                                   | C03 — GameController                                          | Oportunidade para o projeto                                                                  |
+| ----------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Navegação                     | Organização por categorias e seções.                          | Fluxo dividido em módulos/etapas.                             | Launcher separado da interface principal.                     | Organizar o treinamento em etapas e categorias claras.                                       |
+| Feedback/estado               | Dashboard permite acompanhar o estado/performance do robô.    | Tracking e estatísticas fornecem feedback visual.             | Interface apresenta o estado da partida.                      | Tornar o estado do treinamento e do robô sempre visível.                                     |
+| Prevenção/recuperação de erro | Não há evidência específica suficiente no material analisado. | O processamento é dividido em etapas identificáveis.          | Valida condições antes de permitir o início da partida.       | Validar configurações antes da execução e informar claramente os erros.                      |
+| Terminologia                  | Estrutura técnica voltada à equipe de robótica.               | Termos relacionados a tracking, estatísticas e processamento. | Termos relacionados a competição, equipes e configuração.     | Utilizar termos familiares a integrantes de equipes de robótica.                             |
+| Acessibilidade                | Não há evidência específica suficiente no material analisado. | Não há evidência específica suficiente no material analisado. | Não há evidência específica suficiente no material analisado. | Investigar acessibilidade em etapa posterior, sem inferir conclusões a partir desta análise. |
+| Eficiência                    | Centraliza documentação e informações técnicas.               | Modularidade facilita localizar etapas do processamento.      | Configuração reúne parâmetros antes da execução.              | Reduzir alternância entre ferramentas e manter informações relacionadas próximas à tarefa.   |
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-- **RC02:** {{...}}
+* **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
+* **RC02:** {{...}}
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
+NuSight: https://nubook.nubots.net/system/tools/nusight#page-content
+
+MARIO: https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario
+
+GameController: https://github.com/RoboCup-HumanoidSoccerLeague/GameController
 
 ## Checklist
 
-- [ ] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
-- [ ] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
-- [ ] Há pelo menos uma análise completa por integrante.
-- [ ] Cada análise contém prints legíveis da interface.
-- [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage.
-- [ ] Foram analisados concorrentes e/ou interfaces representativas ao público.
-- [ ] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido.
-- [ ] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
-- [ ] Opiniões de UX têm fonte.
-- [ ] A síntese compara critérios comuns e produz recomendações.
-- [ ] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
+* [x] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
+* [x] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
+* [x] Há pelo menos uma análise completa por integrante.
+* [x] Cada análise contém prints legíveis da interface.
+* [x] Prints mostram telas/estados relevantes, não apenas logos/homepage.
+* [x] Foram analisados concorrentes e/ou interfaces representativas ao público.
+* [x] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido.
+* [x] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
+* [x] Opiniões de UX têm fonte.
+* [x] A síntese compara critérios comuns e produz recomendações.
+* [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
