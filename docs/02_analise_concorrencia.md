@@ -1,7 +1,8 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 19/08/2026
-**Status:** 🟨 Em andamento
+**Status:** 🟩 Concluído
+
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -148,7 +149,7 @@ Ele foi selecionado como solução indireta/análogo porque está diretamente re
 
 | Funcionalidade       | Como é realizada                                                              | Evidência/print                                                                         | Observação de IHC                                                |
 | -------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Configuração inicial | O Launcher permite selecionar competição, equipes, cores e interface de rede. | ![Configuração inicial do GameController](../assets/02_concorrencia/gamecontroller.png) | Reúne as configurações necessárias antes do início da atividade. |
+| Configuração inicial | O Launcher permite selecionar competição, equipes, cores e interface de rede. | ![Configuração inicial do GameController](../assets/02_concorrencia/MAIN-gamecontroller.jpg) | Reúne as configurações necessárias antes do início da atividade. |
 | Controle da partida  | A interface principal permite acompanhar e controlar o estado do jogo.        | ![Tela de partida do GameController](../assets/02_concorrencia/start.png)               | Mantém informações importantes disponíveis durante a atividade.  |
 
 #### Experiência do usuário e opiniões
@@ -214,8 +215,13 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 Liste recomendações com origem explícita.
 
-* **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-* **RC02:** {{...}}
+* **RC01:** Manter o estado do treinamento e do robô visível durante a execução - derivada de **C01 (NuSight)** e **C03 (GameController)**.
+* **RC02:** Organizar o fluxo de treinamento em etapas claras de configuração, execução e análise dos resultados - derivada de **C02 (MARIO)** e **C03 (GameController)**.
+* **RC03:** Apresentar métricas e resultados do treinamento por meio de visualizações que facilitem sua interpretação - derivada de **C02 (MARIO)** e **Jupyter Notebook**.
+* **RC04:** Validar os parâmetros antes do início do treinamento e apresentar mensagens claras quando houver configurações inválidas - derivada de **C03 (GameController)**.
+* **RC05:** Centralizar informações relacionadas ao treinamento em uma mesma interface, reduzindo a necessidade de alternar entre diferentes ferramentas - derivada de **C01 (NuSight)** e **VS Code**.
+* **RC06:** Manter histórico dos treinamentos e dos resultados obtidos para permitir comparação e rastreabilidade dos experimentos - derivada de **GitHub**.
+
 
 ## Referências
 
