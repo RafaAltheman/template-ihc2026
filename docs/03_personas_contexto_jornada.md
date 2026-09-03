@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
 **Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Status:** 🟨 Em andamento
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -32,38 +32,114 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P01 — Rafael Martins
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Rafaela Altheman de Campos — 22.125.062-4  
+**Tipo:** primária  
+**Base de evidências:** experiência da equipe
+**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 24 anos; participa ativamente de uma equipe de robótica humanoide e está envolvido no desenvolvimento e testes do robô. [H] |
+| Ocupação/papel | Integrante técnico de equipe de robótica humanoide, responsável por desenvolver, testar e avaliar comportamentos do robô. [H] |
+| Conhecimento do domínio | Conhece conceitos de robótica humanoide, locomoção bípede, treinamento e métricas de desempenho. [H] |
+| Experiência tecnológica | Alta: utiliza ambientes de simulação, ferramentas de desenvolvimento, scripts e ferramentas para análise de dados. [H] |
+| Objetivos | Melhorar o desempenho, reduzir quedas, aumentar a estabilidade e velocidade e identificar quais alterações realmente melhoram o robô. [F/H] |
+| Necessidades | Visualizar métricas de forma rápida, comparar diferentes treinamentos e versões, consultar histórico e relacionar métricas com o comportamento observado do robô. [H] |
+| Dores/frustrações | Precisa analisar informações distribuídas entre diferentes execuções, métricas e observações visuais. Pode interpretar um treinamento de forma incorreta quando uma métrica isolada apresenta bons resultados. [F/H] |
+| Motivadores | Obter um robô mais estável e competitivo, economizar tempo nos ciclos de treinamento e tomar decisões técnicas com base em evidências. [H] |
+| Restrições/acessibilidade | Pode trabalhar sob pressão durante períodos de testes e preparação para competições. Necessita de informações técnicas sem excesso de simplificação. [H] |
+| Ambiente típico de uso | Laboratório de robótica ou ambiente de desenvolvimento, utilizando computador ou notebook durante treinamentos, testes e preparação para competições. [H] |
+| Comportamentos relevantes | Executa diversos ciclos de treinamento, acompanha métricas, observa o comportamento do robô, compara resultados e ajusta parâmetros para novos experimentos. [F/H] |
 
 **Decisões de design influenciadas por P01:**
 
-- {{...}}
+- Priorizar uma visão rápida das principais métricas de desempenho, sem esconder informações técnicas importantes.
+- Permitir comparação direta entre diferentes treinamentos, versões e execuções.
+- Apresentar métricas como velocidade, distância percorrida, recompensa, taxa de quedas, número de gols e números de passes, evitando que o usuário dependa de uma única métrica.
+- Disponibilizar histórico e filtros para localizar rapidamente testes anteriores.
+- Utilizar vocabulário técnico familiar ao usuário, como recompensa, agente, velocidade, torque e taxa de quedas.
+- Facilitar a relação entre resultados quantitativos e o comportamento visual do robô.
 
-> Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
+---
+
+### Persona P02 — Marina Oliveira
+
+**Autor(a):** Manuella Filipe Peres — 22.224.029-3  
+**Tipo:** primária  
+**Base de evidências:** experiência da equipe
+**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
+
+![Persona P02](../assets/03_personas/persona_p02.svg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | 27 anos; pesquisadora que atua diretamente no desenvolvimento de um robô de robótica humanoide [H] |
+| Ocupação/papel | Pesquisadora de robótica responsável por estudar, testar e aprimorar o comportamento e a locomoção do robô. [H] |
+| Conhecimento do domínio | Avançado em robótica e aprendizado de máquina, com conhecimento sobre locomoção humanoide, treinamento de agentes e avaliação de desempenho de robôs. [H] |
+| Experiência tecnológica | Tem experiência alta: utiliza ferramentas de programação, simulação, treinamento, coleta de dados, visualização de métricas e análise de resultados. [H] |
+| Objetivos | Melhorar o desempenho do robô, testar diferentes estratégias de locomoção, identificar configurações mais eficientes e compreender os resultados obtidos durante os treinamentos. [H] |
+| Necessidades | Acessar rapidamente os resultados dos treinamentos, comparar diferentes experimentos, visualizar métricas de desempenho e consultar os parâmetros utilizados em cada execução. [H] |
+| Dores/frustrações | A quantidade de experimentos e dados gerados durante os treinamentos pode dificultar a comparação entre resultados. Também pode ser trabalhoso identificar quais alterações nos parâmetros realmente contribuíram para a melhora ou piora do robô. [H] |
+| Motivadores | Melhorar o desempenho do robô, reduzir o tempo necessário para análise dos experimentos, encontrar configurações mais eficientes e obter resultados confiáveis para orientar os próximos treinamentos. [H] |
+| Restrições/acessibilidade | Possui conhecimento técnico elevado, mas trabalha com grande quantidade de informações e resultados simultaneamente. A interface deve facilitar a análise sem esconder informações importantes para a pesquisa. [H] |
+| Ambiente típico de uso | Laboratório de robótica ou ambiente de desenvolvimento, utilizando computador para executar treinamentos, acompanhar testes e analisar os resultados do robô. [H] |
+| Comportamentos relevantes | Executa treinamentos e testes, altera parâmetros do robô, acompanha métricas, compara diferentes execuções, analisa o comportamento do robô e utiliza os resultados para definir novos experimentos. [H] |
+
+**Decisões de design influenciadas por P02:**
+
+- Permitir comparar diferentes treinamentos e execuções do robô.
+- Exibir as principais métricas de desempenho de maneira clara e objetiva.
+- Permitir consultar os parâmetros utilizados em cada treinamento.
+- Facilitar a identificação de melhorias ou regressões no desempenho do robô.
+- Disponibilizar histórico dos experimentos para evitar a perda de informações de treinamentos anteriores.
+- Apresentar informações técnicas suficientes para apoiar decisões de pesquisa sem sobrecarregar a visualização inicial.
+- Permitir relacionar os resultados quantitativos das métricas com o comportamento observado no robô.
+
+---
+
+### Persona P03 — Carlos Almeida
+
+**Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2  
+**Tipo:** secundária  
+**Base de evidências:** participação de professores e orientadores no projeto
+**Hipóteses da Entrega 1 relacionadas:** H01, H02
+
+![Persona P03](../assets/03_personas/persona_p03.svg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | 52 anos; acompanha projetos de pesquisa ou equipes de robótica e participa de decisões técnicas. [H] |
+| Ocupação/papel | Professor, orientador ou responsável técnico que acompanha o desenvolvimento de robôs humanoides. [F/H] |
+| Conhecimento do domínio | Alto conhecimento em robótica e pesquisa, mas pode não acompanhar todos os detalhes das implementações e dos treinamentos realizados pela equipe. [H] |
+| Experiência tecnológica | Alta, especialmente em ferramentas de pesquisa, análise de resultados e acompanhamento de experimentos. [H] |
+| Objetivos | Avaliar a evolução do projeto, identificar problemas relevantes e orientar a equipe na escolha de próximos experimentos e melhorias. [F/H] |
+| Necessidades | Obter uma visão consolidada do desempenho, comparar resultados importantes e compreender rapidamente quais aspectos evoluíram ou pioraram. [H] |
+| Dores/frustrações | Não participa necessariamente de todos os experimentos e pode precisar compreender resultados produzidos por outros integrantes. Consultar informações fragmentadas pode dificultar o acompanhamento da evolução do projeto. [H] |
+| Motivadores | Acompanhar o progresso da equipe, apoiar decisões técnicas e verificar se os resultados obtidos são coerentes com os objetivos do projeto. [H] |
+| Restrições/acessibilidade | Possui pouco tempo disponível para analisar cada experimento individualmente. A interface deve permitir uma leitura rápida, mas possibilitar acesso aos detalhes quando necessário. [H] |
+| Ambiente típico de uso | Universidade, laboratório ou reuniões da equipe, utilizando computador ou notebook para acompanhar resultados e discutir decisões técnicas. [H] |
+| Comportamentos relevantes | Consulta resultados consolidados, compara versões ou experimentos relevantes, questiona resultados inesperados e utiliza as informações para orientar a equipe. [H] |
+
+**Decisões de design influenciadas por P03:**
+
+- Disponibilizar uma visão geral do desempenho antes de apresentar detalhes técnicos.
+- Destacar mudanças relevantes entre versões e experimentos.
+- Permitir acessar detalhes de uma execução quando houver necessidade de investigação.
+- Utilizar gráficos e indicadores que facilitem a interpretação rápida da evolução do robô.
+- Evitar sobrecarregar a visão inicial com parâmetros de baixo nível.
+- Permitir gerar ou consultar relatórios que possam apoiar discussões e decisões da equipe.
 
 ### Síntese das personas
 
-Explique diferenças entre os perfis e qual persona é prioritária. Evite personas duplicadas que só mudam nome/foto.
+As três personas representam diferentes formas de interação com os resultados do desenvolvimento de robôs humanoides. Rafael é o usuário técnico e primário, que realiza treinamentos, acompanha métricas e toma decisões diretamente relacionadas ao desenvolvimento do walking. Marina representa o contexto de pesquisa, no qual a comparação e a reprodutibilidade dos experimentos são importantes. Carlos representa o papel de orientação e tomada de decisão, necessitando principalmente compreender a evolução geral e identificar problemas relevantes sem necessariamente acompanhar cada execução.
+
+A Persona P01 (Rafael Martins) é considerada prioritária para o projeto de IHC, pois corresponde mais diretamente ao perfil definido na Entrega 1: integrante de uma equipe de robótica humanoide responsável por acompanhar, analisar e contribuir para a melhoria do desempenho do robô. O objetivo principal da interface é justamente apoiar esse usuário na visualização, comparação e interpretação dos resultados. [F] 
+
+As características de Marina e Carlos permanecem parcialmente como proto-personas, pois a Entrega 1 ainda não apresenta entrevistas ou questionários específicos com pesquisadores externos e professores/orientadores. Portanto, suas características devem ser validadas nas próximas etapas, especialmente na investigação das hipóteses H01, H02 e H03.
 
 ## 2. Mapa de empatia — equipe
 
