@@ -24,11 +24,16 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ## Entradas da Entrega 1
 
-Antes de criar personas, retome os tipos de usuários, características relevantes, objetivos e hipóteses registradas na Entrega 1. A persona **não deve transformar uma hipótese inicial em fato por meio de uma história fictícia**.
+Antes de criar personas, foram retomados os principais usuários, objetivos, características e hipóteses identificados na Entrega 1. As informações que ainda não possuem validação com usuários continuam sendo tratadas como hipóteses nesta entrega.
 
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| {{usuário/objetivo/característica/H01...}} | F / H / ? | {{...}} | incorporar / manter como hipótese / descartar / investigar |
+| Integrante de equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô | [F] | Esse foi o perfil priorizado pela equipe para o projeto de IHC na Entrega 1. | Incorporar como persona primária P01. |
+| Usuários possuem conhecimento técnico em robótica e familiaridade com métricas de desempenho | [H] | A análise de concorrentes da Entrega 2 mostrou o uso de interfaces e ferramentas técnicas nesse contexto, mas não houve validação direta com usuários. | Manter como hipótese na persona. |
+| O usuário precisa analisar diferentes métricas para avaliar corretamente o desempenho do robô | [F] | a metodologia utiliza métricas como recompensa, velocidade, distância percorrida e taxa de quedas, além da observação do comportamento do robô. | Incorporar aos objetivos, tarefas e necessidades da persona. |
+| Organizar as informações de forma visual e comparável pode facilitar a interpretação dos resultados | [H] | A Entrega 2 identificou padrões de visualização, histórico e comparação em ferramentas semelhantes, mas a necessidade ainda não foi validada diretamente com usuários. | Manter como hipótese e investigar nas próximas etapas. |
+| Manter histórico de testes e resultados pode ajudar a acompanhar a evolução do robô | [H] | O projeto já possui necessidade de registrar configurações e resultados para comparação e reprodutibilidade, mas o formato da futura interface ainda é uma hipótese. | Incorporar como necessidade provável da persona e manter como hipótese. |
+| O usuário busca entender o desempenho do robô e identificar pontos de melhoria | [F] | Esse objetivo está relacionado ao processo de treinamento, avaliação e ajuste realizado no próprio projeto. | Incorporar como objetivo principal da persona P01. |
 
 ## 1. Personas
 
@@ -104,7 +109,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P03 — Carlos Almeida
 
 **Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2  
-**Tipo:** secundária  
+**Tipo:** primária  
 **Base de evidências:** participação de professores e orientadores no projeto
 **Hipóteses da Entrega 1 relacionadas:** H01, H02
 
@@ -146,31 +151,60 @@ As características de Marina e Carlos permanecem parcialmente como proto-person
 **Persona escolhida:** P01 — Rafael Martins
 **Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o integrante técnico de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
 
-![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
+![Mapa de empatia](../assets/03_personas/mapadaempatia.png)
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
+
+O que vê
+
+[F/H] Rafael acompanha treinamentos, gráficos e métricas como recompensa, velocidade, distância e taxa de quedas, além de observar o comportamento do robô. Essas informações podem estar distribuídas entre diferentes execuções e ferramentas.
+
+O que ouve
+
+[F/H] Participa de discussões com integrantes da equipe, professores e orientadores sobre o desempenho do robô e possíveis ajustes nos próximos experimentos.
+
+O que diz e faz
+
+[F/H] Executa ou acompanha treinamentos, analisa métricas, observa o robô e compara resultados para decidir quais ajustes devem ser realizados.
+
+O que pensa e sente
+
+[H] Quer ter confiança de que os resultados realmente representam uma melhora no comportamento do robô e pode ter dúvidas quando diferentes métricas apontam conclusões distintas.
+
+Dores
+
+[F/H] Pode ter dificuldade para comparar execuções, recuperar parâmetros antigos e interpretar corretamente o desempenho quando as informações estão dispersas ou quando uma única métrica parece positiva.
+
+Ganhos
+
+[H] Busca visualizar e comparar resultados com mais facilidade, consultar o histórico dos experimentos e identificar rapidamente melhorias ou regressões para apoiar as decisões da equipe.
 
 ## 3. Contexto de uso — consolidação
 
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | {{...}} | {{...}} |
-| Tarefas | {{...}} | {{...}} |
-| Equipamentos | {{...}} | {{...}} |
-| Ambiente físico | {{...}} | {{...}} |
-| Ambiente social/organizacional | {{...}} | {{...}} |
-| Papéis/permissões/governança | {{...}} | {{...}} |
-| Volume de dados/histórico | {{...}} | {{...}} |
+| Usuários | [F] No contexto do TCC, os principais envolvidos são integrantes da equipe de robótica que realizam treinamentos, analisam resultados e participam das decisões técnicas. [H] Pesquisadores e professores/orientadores também podem utilizar a interface para acompanhar e interpretar os resultados. | Priorizar o integrante técnico da equipe como usuário principal, mantendo informações detalhadas para análise e uma visão mais resumida para acompanhamento. |
+| Tarefas | [F] A equipe executa treinamentos, acompanha métricas, observa o comportamento do robô e compara resultados para decidir os próximos ajustes. [H] A futura interface pode reunir essas informações em um único ambiente para facilitar a análise. | A interface deve facilitar a visualização de métricas, comparação de resultados, consulta de parâmetros e identificação de melhorias ou regressões. |
+| Equipamentos | [F] No TCC, os treinamentos e análises são realizados em computadores utilizados pela equipe. [H] A futura interface provavelmente será utilizada principalmente em computadores ou notebooks. | Projetar a interface prioritariamente para telas de computador, com espaço adequado para gráficos, tabelas, métricas e comparações. |
+| Ambiente físico | [H] A utilização pode ocorrer principalmente em laboratórios de robótica, ambientes de desenvolvimento ou durante reuniões da equipe. Também pode existir maior pressão de tempo em períodos próximos a testes e competições. | Organizar as informações de forma clara e evitar excesso de elementos, permitindo que o usuário encontre rapidamente os dados mais importantes. |
+| Ambiente social/organizacional | [F] O desenvolvimento do projeto ocorre de forma colaborativa entre integrantes da equipe e possui acompanhamento de professores e orientadores. [H] Os resultados da interface podem ser utilizados durante discussões para decidir os próximos experimentos e ajustes. | Manter informações de contexto de cada treinamento ou teste para que os resultados possam ser compreendidos e discutidos por diferentes integrantes da equipe. |
+| Papéis/permissões/governança | [?] Ainda não sabemos se será necessário definir diferentes níveis de acesso ou permissões entre integrantes da equipe, pesquisadores e orientadores. | Não criar um sistema complexo de permissões nesta etapa. Essa necessidade deve ser investigada antes de ser incluída no projeto. |
+| Volume de dados/histórico | [F] O projeto envolve diversos ciclos de treinamento e avaliação, gerando resultados que precisam ser analisados e comparados. [H] Em uma aplicação futura, o histórico pode incluir diferentes treinamentos, versões do robô, testes e competições. | Disponibilizar histórico, filtros e mecanismos de comparação para facilitar a localização e análise de resultados anteriores. |
 
 ## 4. Jornada do usuário — equipe
 
-**Persona:** {{P01}}  
-**Objetivo da jornada:** {{...}}  
-**Início e fim da jornada:** {{...}}
+**Persona:** P01 — Rafael Martins  
+**Objetivo da jornada:** Analisar o resultado de um treinamento ou teste do robô, comparar com execuções anteriores e decidir quais ajustes devem ser realizados.  
+**Início e fim da jornada:** A jornada começa quando um novo treinamento ou teste é concluído e termina quando Rafael consegue interpretar os resultados e definir, junto à equipe, o próximo passo do desenvolvimento.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| 1 | Rafael finaliza ou recebe o resultado de um novo treinamento ou teste do robô. | Verificar se o desempenho obtido merece uma análise mais detalhada. | [H] Quer entender rapidamente se o resultado apresentou alguma melhora relevante. | [H] Pode ser difícil identificar de imediato quais informações são mais importantes. | Apresentar de forma clara os principais dados da execução, como robô, versão, teste e parâmetros utilizados. | [F] O projeto realiza diferentes ciclos de treinamento e avaliação. |
+| 2 | Rafael analisa as métricas e observa o comportamento do robô no simulador. | Compreender o desempenho do robô utilizando diferentes informações. | [H] Quer ter certeza de que os números representam uma melhora real no comportamento do robô. | [F] Uma única métrica, como a recompensa, pode indicar um bom resultado mesmo quando a locomoção não é adequada. | Exibir as principais métricas de forma conjunta e permitir relacioná-las ao comportamento observado do robô. | [F] O projeto utiliza diferentes métricas e observação visual para avaliar o desempenho. |
+| 3 | Rafael procura treinamentos ou testes anteriores para utilizar como referência. | Encontrar uma execução semelhante para realizar uma comparação. | [H] Quer saber se o novo resultado realmente representa uma evolução. | [H] Pode ser trabalhoso localizar resultados e parâmetros de execuções anteriores. | Disponibilizar histórico, busca e filtros para facilitar a localização de treinamentos anteriores. | [H] Necessidade ainda não validada diretamente com usuários. |
+| 4 | Rafael compara os resultados de diferentes treinamentos ou versões. | Identificar melhorias, regressões e diferenças de desempenho. | [H] Pode ficar em dúvida quando algumas métricas melhoram e outras pioram. | [H] Comparar muitas informações ao mesmo tempo pode dificultar a interpretação. | Permitir comparação direta entre execuções, destacando diferenças nas principais métricas. | [H] A comparação centralizada ainda é uma hipótese do projeto de IHC. |
+| 5 | Rafael consulta os parâmetros utilizados em cada execução. | Entender quais alterações podem ter contribuído para a mudança de desempenho. | [H] Busca relacionar as alterações realizadas com os resultados obtidos. | [H] Pode ser difícil lembrar quais parâmetros foram utilizados em treinamentos antigos. | Manter parâmetros e resultados associados à mesma execução e permitir acesso aos detalhes quando necessário. | [F] O projeto realiza ajustes de parâmetros entre diferentes experimentos. |
+| 6 | Rafael discute os resultados com a equipe e decide o próximo experimento ou ajuste. | Utilizar as evidências coletadas para orientar a próxima decisão técnica. | [H] Quer tomar uma decisão com mais segurança e evitar repetir testes desnecessariamente. | [H] Informações dispersas podem dificultar a justificativa da decisão para outros integrantes. | Apresentar um resumo dos resultados e das comparações que possa apoiar a discussão e a tomada de decisão da equipe. | [F] O desenvolvimento do projeto envolve decisões técnicas realizadas em equipe. |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
@@ -178,15 +212,19 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 Quais necessidades e objetivos devem obrigatoriamente aparecer nos cenários e nas tarefas seguintes?
 
+Os próximos cenários e tarefas devem considerar principalmente as necessidades da persona P01. É importante que apareçam atividades relacionadas a visualização e interpretação das principais métricas de desempenho do robô, a comparação entre diferentes treinamentos, testes e versões e a consulta de resultados e parâmetros anteriores.
+Também devem ser considerados objetivos como identificar melhorias e regressões no desempenho, relacionar os resultados numéricos com o comportamento observado do robô e utilizar essas informações para decidir quais ajustes ou novos experimentos devem ser realizados.
+Além disso, os cenários devem representar situações em que a persona precisa encontrar informações de forma rápida, compreender resultados sem depender de uma única métrica e discutir suas conclusões com os demais integrantes da equipe para apoiar a tomada de decisão técnica.
+
 ## Checklist
 
-- [ ] Existe pelo menos uma persona por integrante.
-- [ ] As personas não são apenas diferenças demográficas superficiais.
-- [ ] Está claro o que é dado real e o que é hipótese/proto-persona.
-- [ ] A persona não “validou por ficção” uma hipótese da Entrega 1; afirmações continuam marcadas como hipótese quando não há evidência.
-- [ ] Objetivos e dores têm consequência para o design.
-- [ ] Contexto de uso está coerente com a Entrega 1.
-- [ ] Em TCC sem interface original, a persona possui relação explícita com a contribuição técnica.
-- [ ] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
-- [ ] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
-- [ ] IDs das personas foram adicionados à rastreabilidade.
+- [X] Existe pelo menos uma persona por integrante.
+- [X] As personas não são apenas diferenças demográficas superficiais.
+- [X] Está claro o que é dado real e o que é hipótese/proto-persona.
+- [X] A persona não “validou por ficção” uma hipótese da Entrega 1; afirmações continuam marcadas como hipótese quando não há evidência.
+- [X] Objetivos e dores têm consequência para o design.
+- [X] Contexto de uso está coerente com a Entrega 1.
+- [X] Em TCC sem interface original, a persona possui relação explícita com a contribuição técnica.
+- [X] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
+- [X] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
+- [X] IDs das personas foram adicionados à rastreabilidade.
