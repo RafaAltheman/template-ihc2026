@@ -157,15 +157,15 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 O que vê
 
-[F/H] Rafael acompanha treinamentos, gráficos e métricas como recompensa, velocidade, distância e taxa de quedas, além de observar o comportamento do robô. Essas informações podem estar distribuídas entre diferentes execuções e ferramentas.
+[F] Rafael acompanha treinamentos, gráficos e métricas como recompensa, velocidade, distância e taxa de quedas, além de observar o comportamento do robô. Essas informações podem estar distribuídas entre diferentes execuções e ferramentas.
 
 O que ouve
 
-[F/H] Participa de discussões com integrantes da equipe, professores e orientadores sobre o desempenho do robô e possíveis ajustes nos próximos experimentos.
+[H] Participa de discussões com integrantes da equipe, professores e orientadores sobre o desempenho do robô e possíveis ajustes nos próximos experimentos.
 
 O que diz e faz
 
-[F/H] Executa ou acompanha treinamentos, analisa métricas, observa o robô e compara resultados para decidir quais ajustes devem ser realizados.
+[H] Executa ou acompanha treinamentos, analisa métricas, observa o robô e compara resultados para decidir quais ajustes devem ser realizados.
 
 O que pensa e sente
 
@@ -173,7 +173,7 @@ O que pensa e sente
 
 Dores
 
-[F/H] Pode ter dificuldade para comparar execuções, recuperar parâmetros antigos e interpretar corretamente o desempenho quando as informações estão dispersas ou quando uma única métrica parece positiva.
+[H] Pode ter dificuldade para comparar execuções, recuperar parâmetros antigos e interpretar corretamente o desempenho quando as informações estão dispersas ou quando uma única métrica parece positiva.
 
 Ganhos
 
