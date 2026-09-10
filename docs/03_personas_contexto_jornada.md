@@ -1,6 +1,6 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{dd/mm/aaaa}}  
+**Data:** {{02/09/2026}}  
 **Status:** 🟨 Em andamento
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
@@ -39,7 +39,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** experiência da equipe
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+![Persona P01](../assets/03_personas/rafael.png)
 
 | Campo | Descrição |
 |---|---|
@@ -73,7 +73,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** experiência da equipe
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
-![Persona P02](../assets/03_personas/persona_p02.svg)
+![Persona P02](../assets/03_personas/marina.png)
 
 | Campo | Descrição |
 |---|---|
@@ -108,7 +108,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** participação de professores e orientadores no projeto
 **Hipóteses da Entrega 1 relacionadas:** H01, H02
 
-![Persona P03](../assets/03_personas/persona_p03.svg)
+![Persona P03](../assets/03_personas/carlos.png)
 
 | Campo | Descrição |
 |---|---|
@@ -143,8 +143,8 @@ As características de Marina e Carlos permanecem parcialmente como proto-person
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** {{P01}}  
-**Justificativa:** {{por que esse perfil é relevante}}
+**Persona escolhida:** P01 — Rafael Martins
+**Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o integrante técnico de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
 
 ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
 
