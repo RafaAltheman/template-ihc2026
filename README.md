@@ -17,7 +17,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
+**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  Grupo 27
 **TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
 **Orientador(a):** {{NOME}}  
 **Disciplina:** Interação Humano-Computador  

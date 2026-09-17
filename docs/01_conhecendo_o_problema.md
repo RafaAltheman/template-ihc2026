@@ -6,6 +6,7 @@
 
 **Responsabilidade:** 1 solução consolidada por equipe
 
+Equipe nº 27
 ## Objetivo da atividade
 
 Reinterpretar o tema do TCC sob a perspectiva de Interação Humano-Computador e construir um **entendimento comum entre os integrantes da equipe**.
