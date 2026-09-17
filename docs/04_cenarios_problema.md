@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 16/09;2026
+**Status:** 🟧 Em andamento
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -22,10 +22,10 @@ A interface da disciplina aparecerá somente depois, nos cenários de interaçã
 
 Se o integrante escolher um novo problema/situação, explique por que ele passou a ser relevante e indique a evidência que motivou sua inclusão.
 
-## Cenário C01 — {{título}}
+## Cenário C01 — Análise de Performance do Robô
 
-**Autor(a):** {{nome — matrícula}}  
-**Persona(s) relacionada(s):** {{P01}}  
+**Autor(a):** Letizia L. Baptistella
+**Persona(s) relacionada(s):** 
 **Necessidade relacionada:** {{R01}}  
 **Situação concreta da Entrega 1 relacionada:** {{seção 4.4 / H01 / outra ou “nova situação justificada”}}  
 **Hipóteses ainda presentes:** {{H01, H02 ou —}}
