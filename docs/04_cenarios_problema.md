@@ -1,4 +1,4 @@
-# Entrega 4 — Cenários de análise/problema
+# Entrega 4  Cenários de análise/problema
 
 **Data:** 16/09/2026
 **Status:** 🟧 Em andamento
@@ -22,7 +22,7 @@ A interface da disciplina aparecerá somente depois, nos cenários de interaçã
 
 Se o integrante escolher um novo problema/situação, explique por que ele passou a ser relevante e indique a evidência que motivou sua inclusão.
 
-## Cenário C01 — Análise de Performance do Robô
+## Cenário C01  Análise de Performance do Robô
 
 **Autor(a):** Letizia L. Baptistella
 **Persona(s) relacionada(s):** Rafael Martins
@@ -100,7 +100,71 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 
 A partir do cenário analisado, as próximas entregas devem aprofundar como Rafael realiza a avaliação dos treinamentos e a comparação entre diferentes execuções. É necessário compreender quais métricas são utilizadas, como ele relaciona essas métricas ao comportamento observado do robô e como interpreta situações em que alguns resultados melhoram enquanto outros pioram. Também deve ser investigado como os resultados e parâmetros dos treinamentos anteriores são registrados, consultados e utilizados como referência para definir novos ajustes. Além disso, é importante identificar quais informações Rafael considera necessárias para comparar diferentes treinamentos e quais critérios utiliza para determinar se um treinamento foi bem-sucedido ou se um novo ciclo de ajustes é necessário.
 
-> Repita para C02, C03... com autoria individual.
+---
+## Cenário C02 - Recuperação da configuração de um treinamento anterior
+
+**Autor(a):** Manuella Filipe Peres
+**Persona(s) relacionada(s):** Marina Oliveira
+**Necessidade relacionada:** Acessar rapidamente os resultados dos treinamentos, comparar diferentes experimentos e consultar os parâmetros utilizados em cada execução.
+**Situação concreta da Entrega 1 relacionada:** O histórico dos experimentos e das configurações é registrado manualmente pela equipe e não fica centralizado, o que dificulta saber o que já foi tentado e comparar diferentes execuções. Também foi apontado o risco de comparar testes realizados em condições diferentes.
+**Hipóteses ainda presentes:** H01 e H02
+
+### 1. Cenário inicial
+
+Marina Oliveira, pesquisadora de robótica, está estudando diferentes estratégias para melhorar a caminhada do robô humanoide em simulação. Depois de algumas execuções recentes sem melhora, ela se lembra de um treinamento feito algumas semanas antes em que o robô percorria uma distância maior e caía menos. Ela decide usar esse treinamento como ponto de partida e alterar apenas o peso de um termo da função de recompensa.
+
+Para isso, Marina precisa saber exatamente quais parâmetros foram utilizados naquele treinamento. Os parâmetros são configurados diretamente no código antes de cada execução, e o código foi alterado várias vezes desde então. Ela encontra a pasta com o melhor modelo salvo daquela execução e as anotações feitas pela equipe, mas as anotações não reúnem todos os valores que estavam configurados no código naquele momento.
+
+Marina compara as métricas desse treinamento com as das execuções recentes, mas não tem certeza de que todas foram realizadas nas mesmas condições. Se ela iniciar um novo treinamento a partir de uma configuração reconstruída de forma errada, o experimento, que pode levar de 10 a 48 horas, será feito sobre uma base diferente da que ela imagina, e a comparação com os resultados antigos deixa de ser válida.
+
+### 2. Questões de refinamento
+
+| ID | Questão | O que ainda falta no cenário | Como investigar |
+| --- | --- | --- | --- |
+| Q1 | Como Marina identifica qual treinamento anterior apresentou o melhor resultado? | O cenário informa que ela se lembra do treinamento, mas não explica como encontra essa execução entre as demais. | Entrevista com integrantes da equipe e análise das pastas e anotações dos treinamentos. |
+| Q2 | Quais informações sobre o treinamento são registradas nas anotações? | O cenário informa que as anotações não reúnem todos os valores, mas não detalha o que é registrado. | Análise das anotações existentes comparadas com os parâmetros que influenciam o treinamento. |
+| Q3 | Como Marina verifica se dois treinamentos foram realizados nas mesmas condições? | O cenário apresenta a dúvida, mas não descreve o que ela confere para resolvê-la. | Observação de uma comparação real e entrevista com Marina. |
+| Q4 | Quem registra e quem altera os parâmetros ao longo do tempo? | O cenário não informa se o código e as anotações são mantidos por uma ou por várias pessoas. | Entrevista com a equipe sobre a divisão do trabalho. |
+| Q5 | O que Marina faz quando não consegue reconstruir a configuração com segurança? | O cenário apresenta o risco, mas não mostra qual decisão ela toma diante dele. | Entrevista com Marina e relato de situações anteriores. |
+| Q6 | Quanto tempo a reconstrução da configuração leva em relação à análise dos resultados? | O custo da atividade atual ainda não aparece no cenário. | Observação de uma reconstrução real, registrando o tempo gasto. |
+
+### 3. Cenário refinado
+
+Marina Oliveira, pesquisadora de robótica, está estudando diferentes estratégias para melhorar a caminhada do robô humanoide em simulação. Depois de algumas execuções recentes sem melhora, ela se lembra de um treinamento feito algumas semanas antes em que o robô percorria uma distância maior e caía menos. Ela decide usar esse treinamento como ponto de partida e alterar apenas o peso de um termo da função de recompensa.
+
+**[NOVO: Para encontrar esse treinamento, Marina procura entre as pastas das execuções e abre os arquivos de métricas de algumas delas até encontrar a que corresponde ao que ela lembrava.] [Q1]**
+
+Para isso, Marina precisa saber exatamente quais parâmetros foram utilizados naquele treinamento. Os parâmetros são configurados diretamente no código antes de cada execução, e o código foi alterado várias vezes desde então. Ela encontra a pasta com o melhor modelo salvo daquela execução e as anotações feitas pela equipe, mas as anotações não reúnem todos os valores que estavam configurados no código naquele momento.
+
+**[NOVO: As anotações registram a mudança principal de cada experimento e todas as observações. Os demais valores configurados no código, como a quantidade de timesteps, precisam ser recuperados a partir do próprio código.] [Q2]**
+
+**[NOVO: O código e as anotações são alterados por mais de uma integrante da equipe.] [Q4]**
+
+Marina compara as métricas desse treinamento com as das execuções recentes, mas não tem certeza de que todas foram realizadas nas mesmas condições.
+
+**[NOVO: Para verificar, ela consulta o histórico de versões do código e compara os arquivos de configuração da época do treinamento com os atuais. Mesmo assim, nem sempre consegue confirmar quais valores estavam sendo usados no momento exato da execução.] [Q3]**
+
+**[NOVO: Essa reconstrução da configuração leva mais tempo do que a própria análise das métricas.] [Q6]**
+
+**[NOVO: Quando não consegue confirmar todos os valores, Marina precisa escolher entre repetir o treinamento antigo para ter uma referência confiável, gastando um ciclo inteiro de treinamento, ou continuar com a configuração reconstruída sabendo que a comparação pode não ser válida.] [Q5]**
+
+Se ela iniciar um novo treinamento a partir de uma configuração reconstruída de forma errada, o experimento, que pode levar de 10 a 48 horas, será feito sobre uma base diferente da que ela imagina, e a comparação com os resultados antigos deixa de ser válida.
+
+### 4. Elementos extraídos
+
+| Elemento | Descrição |
+| --- | --- |
+| Ator(es) | Marina Oliveira (pesquisadora de robótica) e demais integrantes que alteram o código e as anotações. |
+| Objetivo(s) | Utilizar um treinamento anterior com bom desempenho como ponto de partida e garantir que a comparação com os novos resultados seja válida. |
+| Contexto | Pesquisa sobre locomoção bípede com aprendizado por reforço em simulação, com treinamentos que levam de 10 a 48 horas, parâmetros configurados no código e histórico registrado manualmente pela equipe. |
+| Recursos/informações | Pastas das execuções, melhor modelo salvo, arquivos de métricas, anotações da equipe, histórico de versões do código, parâmetros da função de recompensa e demais valores configurados no código. |
+| Ações | Localizar o treinamento de referência; abrir os arquivos de métricas; consultar as anotações; consultar o histórico de versões do código; reconstruir a configuração; decidir se repete o treinamento antigo ou continua com a configuração reconstruída. |
+| Problemas/rupturas | As anotações não reúnem todos os valores configurados no código; a configuração precisa ser reconstruída a partir do histórico de versões; nem sempre é possível confirmar a configuração usada no momento da execução; não é possível garantir que os treinamentos comparados foram realizados nas mesmas condições. |
+| Consequências | Comparações que podem não ser válidas, um ciclo de treinamento gasto para recuperar uma referência, tempo perdido reconstruindo configurações e perda da reprodutibilidade dos experimentos. |
+
+### 5. Implicações para as próximas entregas
+
+As próximas entregas devem investigar como a equipe registra atualmente as configurações de cada treinamento e quais informações precisam ser recuperadas a partir do código. Também é necessário entender o que Marina considera como "mesmas condições" para que dois treinamentos possam ser comparados e com que frequência a dúvida sobre a configuração atrasa ou impede uma comparação. Na modelagem de tarefas, localizar um treinamento de referência e confirmar sua configuração deve ser tratado como uma tarefa separada da comparação das métricas, pois envolve informações e dificuldades diferentes. As hipóteses H01 e H02 continuam presentes, já que a evidência atual vem da experiência da própria equipe e ainda precisa ser verificada com outros integrantes e equipes.
 
 ## Checklist
 
