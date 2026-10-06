@@ -61,11 +61,9 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 ## 0.1 Membros
 
 | Nome completo | Matrícula | GitHub |
-
+|---|---|---|
 | Rafaela Altheman de Campos | 22.125.062-4 | RafaAltheman |
-
 | Manuella Filipe Peres | 24.224.039-3 | manu3lla |
-
 | Letizia Lowatzki Baptistella | 22.125.063-2 | le-bap |
 
 ## 0.2 Título atual do TCC
@@ -146,26 +144,31 @@ Origem: objetivo e metodologia do próprio TCC.
 
 NÃO SE APLICA AO ESCOPO ORIGINAL
 
-[F] O TCC não prevê uma interface própria para usuário. A interação atual acontece diretamente com o ambiente de simulação já existente (MuJoCo).
+[F] O TCC não prevê uma interface própria para usuário. A interação atual acontece diretamente com o ambiente de simulação já existente (MuJoCo), código fonte, relatório gerado ao fim do treino e leitura do terminal.
 
-## 2.2 Quem poderia usar, configurar, administrar, operar, interpretar ou tomar decisões a partir da contribuição técnica?
-
+## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
+3.4
 Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
-| Perfil                                                                   | Relação com a contribuição                                                               | O que faria                                                                                                                                                          | Status/evidência                                |
-| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| Integrante da equipe responsável pelo desenvolvimento da locomoção       | Participa diretamente dos treinamentos e da avaliação do robô                            | Executaria treinamentos, analisaria métricas, observaria o comportamento do robô, compararia resultados e decidiria quais ajustes realizar nos próximos experimentos | [F] — experiência direta das integrantes no TCC |
-| Responsável pelo acompanhamento técnico                                  | Acompanha os resultados e orienta decisões relacionadas ao desenvolvimento do TCC        | Interpretaria resultados e discutiria com a equipe possíveis ajustes ou próximos experimentos                                                                        | [F] — participação no projeto                   |
-| Pesquisador ou estudante de robótica que utilize os resultados do estudo | Poderia utilizar os resultados e aprendizados do TCC como referência para outros estudos | Analisaria os resultados apresentados e poderia comparar diferentes abordagens em trabalhos futuros                                                                  | [H] — ainda não investigado                     |
+| Perfil | Relação com a contribuição | O que faria | Status/evidência |
+
+| Perfil                                                                  | Relação com a contribuição                                                           | O que faria                                                                                                                                                          | Status/evidência                                |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Integrante da equipe responsável pelo desenvolvimento (usuário priário)    | Participa diretamente dos treinamentos e da avaliação do robô               | Executaria treinamentos, analisaria métricas, observaria o comportamento do robô, compararia resultados e decidiria quais ajustes realizar nos próximos experimentos (A01, A02, A03, A04) | [F] — experiência direta das integrantes no TCC |
+| Responsável pelo acompanhamento técnico (usuário secundário)          | Acompanha os resultados e orienta decisões relacionadas ao desenvolvimento do projeto   | Interpretaria resultados e discutiria com a equipe possíveis ajustes ou próximos experimentos (A02, A03)                                                                         | [F] — participação no projeto                   |
+| Pesquisador do ramo de robótica (usuário secundário) | Poderia utilizar a organização dos experimentos como referência para estudos futuros |  Analisaria resultados de treinamentos e compararia diferentes abordagens (A02, A03)                                                                                             | [H] — ainda não investigado                     |
+
+
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
-| Stakeholder                                   | Como é afetado                                                                                                  | Usa interface?      | Status/evidência              |
-| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
-| Demais integrantes da equipe RoboFEI          | Podem ser beneficiados caso melhorias nos treinos contribuam para o desempenho do robô nas competições          | não                 | [F] — participação no projeto |
-| Professores e orientadores                    | Acompanham o desenvolvimento e podem utilizar os resultados para orientar decisões técnicas e trabalhos futuros | não necessariamente | [F] — participação no projeto |
-| Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos             | não                 | [H] — ainda não investigado   |
-| Pesquisadores da área de robótica humanoide   | Podem utilizar os resultados como referência para comparação e continuidade de pesquisas                        | não                 | [H] — ainda não investigado   |
+| Stakeholder | Como é afetado | Usa interface? | Status/evidência |
+
+| Stakeholder                                   | Como é afetado                                                                                                                                          | Usa interface?      | Status/evidência              |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
+| Demais integrantes da equipe RoboFEI          | Podem ser beneficiados caso melhorias nos treinos contribuam para o desempenho do robô nas competições                                                 | não | [F] - participação no projeto                         |
+| Professores e orientadores                    | Acompanham o desenvolvimento e podem utilizar os resultados para orientar decisões técnicas e trabalhos futuros                                         | não | [F] — participação no projeto |
+| Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos                                                     | não | [H]                           |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
@@ -181,6 +184,11 @@ Origem: metodologia do TCC.
 
 [H] Organizar essas informações de forma visual e comparável pode facilitar a interpretação dos resultados.
 
+[F] Para atingir resultados satisfatórios, é necessário uma intereção frequente e testes contínuos que visam o aperfeiçoamento das parametrizações 
+Origem: metodologia do TCC.
+
+[H] O ideal é que o usuário não vise resultados imediatos, visto que um treinamento pode demoarar para finalizar.
+
 ---
 
 # 3. Entendendo objetivos e atividades
@@ -195,12 +203,14 @@ Origem: experiência das integrantes durante os experimentos do TCC e processo d
 
 ## 3.2 Quais são as atividades mais importantes?
 
-| ID  | Atividade/objetivo                                                     | Quem realiza                      | Frequência/criticidade inicial | Status/evidência         |
-| --- | ---------------------------------------------------------------------- | --------------------------------- | ------------------------------ | ------------------------ |
-| A01 | Configurar e iniciar treinamentos do agente                            | Integrantes da equipe de robótica | Frequente / alta               | [F] — metodologia do TCC |
-| A02 | Acompanhar e interpretar métricas de desempenho do treinamento         | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
+| ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
+
+| ID  | Atividade/objetivo                                                        | Quem realiza                      | Frequência/criticidade inicial | Status/evidência         |
+| --- | ------------------------------------------------------------------------- | --------------------------------- | ------------------------------ | ------------------------ |
+| A01 | Configurar e iniciar treinamentos do agente                               | Integrantes da equipe de robótica | Frequente / alta               | [F] — metodologia do TCC |
+| A02 | Acompanhar e interpretar métricas de desempenho do treinamento            | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
 | A03 | Comparar resultados dos treinamentos e avaliar o comportamento do robô | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
-| A04 | Ajustar parâmetros                                                     | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
+| A04 | Ajustar parâmetros | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
@@ -210,7 +220,7 @@ Origem: processo de treinamento e avaliação descrito no TCC.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-[F] A atividade mais crítica é acompanhar e interpretar corretamente os resultados do treinamento (A02), pois essa interpretação subsidia a comparação dos resultados e a decisão sobre quais ajustes realizar nos próximos experimentos. Uma interpretação errada pode levar a equipe a manter parâmetros ou uma função de recompensa inadequados, fazendo o agente aprender comportamentos que parecem bons pelas métricas, mas que não representam uma caminhada eficiente.
+[F] A atividade mais crítica é acompanhar e interpretar corretamente os resultados do treinamento (A02). Uma interpretação errada pode levar a equipe a manter parâmetros ou uma função de recompensa inadequados, fazendo o agente aprender comportamentos que parecem bons pelas métricas, mas que não representam uma caminhada eficiente. O próprio TCC destaca que apenas a recompensa não é suficiente para avaliar o comportamento do agente.
 
 Origem: metodologia e métricas de avaliação do TCC.
 
@@ -224,11 +234,9 @@ Origem: metodologia e métricas de avaliação do TCC.
 
 [F] Durante e após a execução, são observadas as métricas geradas pelo treinamento, como recompensa, distância percorrida e velocidade. Também é realizada uma análise visual do comportamento do robô no simulador, utilizando a melhor execução obtida no treinamento (best_model.zip).
 
-[F] Após analisar os resultados, a equipe compara o comportamento e as métricas obtidas com resultados de treinamentos anteriores. Para isso, são consultados separadamente os resultados dos experimentos, os arquivos e registros associados e a visualização do comportamento do robô no simulador.
+[F] Após analisar os resultados, a equipe compara o comportamento e as métricas obtidas com resultados de treinamentos anteriores. Com base nessa comparação, decide quais parâmetros ou aspectos do treinamento devem ser alterados e inicia uma nova execução.
 
 [F] O histórico dos experimentos e das configurações utilizadas também precisa ser registrado pela equipe para permitir a comparação entre diferentes execuções e a recuperação das decisões tomadas anteriormente.
-
-[F] A decisão sobre quais parâmetros ou aspectos do treinamento devem ser alterados é tomada a partir da interpretação conjunta das métricas, das configurações utilizadas e do comportamento observado no simulador. Em seguida, uma nova execução é iniciada.
 
 [?] Ainda não sabemos como outras equipes de robótica humanoide registram, organizam e comparam seus experimentos de treinamento.
 
@@ -424,11 +432,11 @@ Equipes de robótica, laboratórios de pesquisa, universidades e organizações 
 
 2. quem seria o usuário direto? 
 
-Estudantes que participam de equipes de robótica, pesquisadores e desenvolvedores responsáveis por acompanhar o desempenho do robô.
+Integrantes de equipes de robótica, pesquisadores e desenvolvedores de robôs humanoides.
 
 3. quem administraria/configuraria? 
 
-Integrantes técnicos da equipe, responsáveis por inserir parâmetros de testes, extrair os dados de diferentes experimentos, configurar métricas de comparação e realizar treinos
+Integrantes técnicos da equipe de robôs, pesquisadores ou desenvolvedores
 
 4. quem interpretaria resultados?
 
