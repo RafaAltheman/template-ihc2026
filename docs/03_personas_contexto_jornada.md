@@ -28,7 +28,7 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| Integrante de equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô | [F] | Esse foi o perfil priorizado pela equipe para o projeto de IHC na Entrega 1. | Incorporar como persona primária P01. |
+| Estudante de equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô | [F] | Esse foi o perfil priorizado pela equipe para o projeto de IHC na Entrega 1. | Incorporar como persona primária P01. |
 | Usuários possuem conhecimento técnico em robótica e familiaridade com métricas de desempenho | [H] | A análise de concorrentes da Entrega 2 mostrou o uso de interfaces e ferramentas técnicas nesse contexto, mas não houve validação direta com usuários. | Manter como hipótese na persona. |
 | O usuário precisa analisar diferentes métricas para avaliar corretamente o desempenho do robô | [F] | a metodologia utiliza métricas como recompensa, velocidade, distância percorrida e taxa de quedas, além da observação do comportamento do robô. | Incorporar aos objetivos, tarefas e necessidades da persona. |
 | Organizar as informações de forma visual e comparável pode facilitar a interpretação dos resultados | [H] | A Entrega 2 identificou padrões de visualização, histórico e comparação em ferramentas semelhantes, mas a necessidade ainda não foi validada diretamente com usuários. | Manter como hipótese e investigar nas próximas etapas. |
@@ -49,7 +49,7 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 | Campo | Descrição |
 |---|---|
 | Faixa etária / contexto relevante | 24 anos; participa ativamente de uma equipe de robótica humanoide e está envolvido no desenvolvimento e testes do robô. [H] |
-| Ocupação/papel | Integrante técnico de equipe de robótica humanoide, responsável por desenvolver, testar e avaliar comportamentos do robô. [H] |
+| Ocupação/papel | Estudante de equipe de robótica humanoide, responsável por desenvolver, testar e avaliar comportamentos do robô. [H] |
 | Conhecimento do domínio | Conhece conceitos de robótica humanoide, locomoção bípede, treinamento e métricas de desempenho. [H] |
 | Experiência tecnológica | Alta: utiliza ambientes de simulação, ferramentas de desenvolvimento, scripts e ferramentas para análise de dados. [H] |
 | Objetivos | Melhorar o desempenho, reduzir quedas, aumentar a estabilidade e velocidade e identificar quais alterações realmente melhoram o robô. [F/H] |
@@ -142,14 +142,14 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 
 As três personas representam diferentes formas de interação com os resultados do desenvolvimento de robôs humanoides. Rafael é o usuário técnico e primário, que realiza treinamentos, acompanha métricas e toma decisões diretamente relacionadas ao desenvolvimento do walking. Marina representa o contexto de pesquisa, no qual a comparação e a reprodutibilidade dos experimentos são importantes. Carlos representa o papel de orientação e tomada de decisão, necessitando principalmente compreender a evolução geral e identificar problemas relevantes sem necessariamente acompanhar cada execução.
 
-A Persona P01 (Rafael Martins) é considerada prioritária para o projeto de IHC, pois corresponde mais diretamente ao perfil definido na Entrega 1: integrante de uma equipe de robótica humanoide responsável por acompanhar, analisar e contribuir para a melhoria do desempenho do robô. O objetivo principal da interface é justamente apoiar esse usuário na visualização, comparação e interpretação dos resultados. [F] 
+A Persona P01 (Rafael Martins) é considerada prioritária para o projeto de IHC, pois corresponde mais diretamente ao perfil definido na Entrega 1: estudante de uma equipe de robótica humanoide responsável por acompanhar, analisar e contribuir para a melhoria do desempenho do robô. O objetivo principal da interface é justamente apoiar esse usuário na visualização, comparação e interpretação dos resultados. [F] 
 
 As características de Marina e Carlos permanecem parcialmente como proto-personas, pois a Entrega 1 ainda não apresenta entrevistas ou questionários específicos com pesquisadores externos e professores/orientadores. Portanto, suas características devem ser validadas nas próximas etapas, especialmente na investigação das hipóteses H01, H02 e H03.
 
 ## 2. Mapa de empatia — equipe
 
 **Persona escolhida:** P01 — Rafael Martins
-**Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o integrante técnico de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
+**Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o estudante que faz parte de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
 
 ![Mapa de empatia](../assets/03_personas/mapadaempatia.png)
 

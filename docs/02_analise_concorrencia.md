@@ -43,7 +43,7 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-O público alvo desta análise são integrantes de equipes de robótica humanoide e pesquisadores ou desenvolvedores da área.
+O público alvo desta análise são estudantes que fazem parte de equipes de robótica humanoide e pesquisadores ou desenvolvedores da área.
 
 ## 2. Concorrentes diretos/indiretos
 

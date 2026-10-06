@@ -2,7 +2,7 @@
 
 **Data:** 12/08/2026
 
-**Status:** 🟩 CONCLUÍDA
+**Status:** 🟦 revisada após feedback
 
 **Responsabilidade:** 1 solução consolidada por equipe
 
@@ -120,26 +120,23 @@ Origem: experiência das integrantes da equipe em competições de robótica e l
 
 Fonte: MacAlpine e Stone (2018), referência [19] do TCC — https://link.springer.com/chapter/10.1007/978-3-030-00308-1_39
 
-## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
+## 1.3 Qual é a capacidade/contribuição central produzida pelo TCC?
 
 [F] Nosso TCC busca melhorar a forma como o robô humanoide Atom caminha, usando aprendizado por reforço profundo para que ele aprenda uma política de controle capaz de manter o equilíbrio, se deslocar com mais estabilidade e velocidade e lidar melhor com situações inesperadas durante a simulação. A ideia é que esse walking contribua para um desempenho melhor do robô nas partidas.
 
 Origem: objetivo e metodologia do próprio TCC.
 
-## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
+## 1.4 O que se espera que esteja diferente para pessoas, organizações ou processos se essa contribuição for bem-sucedida?
 
 [H] Se a proposta funcionar bem, ela pode contribuir não só para a RoboFEI, mas também servir como referência para outras equipes de futebol de robôs humanoides que enfrentam dificuldades parecidas com locomoção. O estudo pode ajudar no desenvolvimento de walkings mais estáveis e eficientes e mostrar como o aprendizado por reforço profundo pode ser aplicado nesse tipo de problema.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
-
-| Mérito/contribuição técnica | Possível aplicação/valor em uso |
 
 | Mérito/contribuição técnica                                                                                                  | Possível aplicação/valor em uso                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | Desenvolvimento e avaliação de uma política de controle com aprendizado por reforço profundo para a locomoção bípede do Atom | Melhorar o walking do Atom e contribuir para uma locomoção mais estável e eficiente |
 | Avaliação por diferentes métricas de desempenho                                                                              | Permitir uma análise mais completa da qualidade da locomoção                        |
 | Estudo do DRL como alternativa aos métodos tradicionais de controle                                                          | Servir como referência para outras equipes e pesquisas de robótica humanoide        |
-
 
 ---
 
@@ -151,43 +148,36 @@ NÃO SE APLICA AO ESCOPO ORIGINAL
 
 [F] O TCC não prevê uma interface própria para usuário. A interação atual acontece diretamente com o ambiente de simulação já existente (MuJoCo).
 
-## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
+## 2.2 Quem poderia usar, configurar, administrar, operar, interpretar ou tomar decisões a partir da contribuição técnica?
 
 Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
-| Perfil | Relação com a contribuição | O que faria | Status/evidência |
-
-| Perfil                                                | Relação com a contribuição                                                       | O que faria                                                             | Status/evidência |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------- |
-| Pesquisadores e estudantes de robótica                | Poderiam utilizar o estudo como referência ou base para novos experimentos       | Comparariam métodos, parâmetros e resultados de locomoção               | [H]              |
-| Integrantes de equipes de futebol de robôs humanoides | Poderiam aplicar os aprendizados do estudo em problemas semelhantes de locomoção | Analisariam resultados e avaliariam a qualidade do walking              | [H]              |
-| Desenvolvedores responsáveis pelo robô                | Poderiam integrar ou adaptar a política de locomoção ao restante do sistema      | Avaliariam configurações e a integração da locomoção com outras funções | [H]              |
-
+| Perfil                                                                   | Relação com a contribuição                                                               | O que faria                                                                                                                                                          | Status/evidência                                |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Integrante da equipe responsável pelo desenvolvimento da locomoção       | Participa diretamente dos treinamentos e da avaliação do robô                            | Executaria treinamentos, analisaria métricas, observaria o comportamento do robô, compararia resultados e decidiria quais ajustes realizar nos próximos experimentos | [F] — experiência direta das integrantes no TCC |
+| Responsável pelo acompanhamento técnico                                  | Acompanha os resultados e orienta decisões relacionadas ao desenvolvimento do TCC        | Interpretaria resultados e discutiria com a equipe possíveis ajustes ou próximos experimentos                                                                        | [F] — participação no projeto                   |
+| Pesquisador ou estudante de robótica que utilize os resultados do estudo | Poderia utilizar os resultados e aprendizados do TCC como referência para outros estudos | Analisaria os resultados apresentados e poderia comparar diferentes abordagens em trabalhos futuros                                                                  | [H] — ainda não investigado                     |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
-| Stakeholder | Como é afetado | Usa interface? | Status/evidência |
-
-| Stakeholder                                   | Como é afetado                                                                                                                                          | Usa interface?      | Status/evidência              |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
-| Demais integrantes da equipe RoboFEI          | Podem ser beneficiados caso melhorias na locomoção contribuam para o desempenho do robô nas competições                                                 | não | [H]                           |
-| Professores e orientadores                    | Acompanham o desenvolvimento e podem utilizar os resultados para orientar decisões técnicas e trabalhos futuros                                         | não | [F] — participação no projeto |
-| Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos                                                     | não | [H]                           |
-| Pesquisadores da área de robótica humanoide   | Podem utilizar os resultados como referência para comparação e continuidade de pesquisas                                                                | não                 | [H]                           |
-| Narradores e comentaristas das competições    | Podem se beneficiar de informações sobre desempenho, evolução e comportamento dos robôs para contextualizar melhor as partidas                          | não                 | [H]                           |
-| Fabricantes de componentes e robôs humanoides | Podem se beneficiar de análises sobre desempenho e limitações dos robôs para compreender necessidades técnicas das equipes                              | não                 | [H]                           |
-| Público que acompanha as competições          | Pode ser afetado indiretamente pela qualidade e competitividade das partidas, principalmente quando os robôs apresentam maior estabilidade e eficiência | não                 | [H]                           |
-| Espectadores e ouvintes das transmissões      | Podem compreender melhor o desempenho e a evolução dos robôs caso essas informações sejam apresentadas durante ou após as competições                   | não                 | [H]                           |
-
+| Stakeholder                                   | Como é afetado                                                                                                  | Usa interface?      | Status/evidência              |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------- |
+| Demais integrantes da equipe RoboFEI          | Podem ser beneficiados caso melhorias nos treinos contribuam para o desempenho do robô nas competições          | não                 | [F] — participação no projeto |
+| Professores e orientadores                    | Acompanham o desenvolvimento e podem utilizar os resultados para orientar decisões técnicas e trabalhos futuros | não necessariamente | [F] — participação no projeto |
+| Outras equipes de futebol de robôs humanoides | Podem utilizar os resultados e aprendizados do trabalho como referência para seus próprios projetos             | não                 | [H] — ainda não investigado   |
+| Pesquisadores da área de robótica humanoide   | Podem utilizar os resultados como referência para comparação e continuidade de pesquisas                        | não                 | [H] — ainda não investigado   |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-[H] Os principais usuários provavelmente terão conhecimento técnico em robótica e familiaridade com métricas de desempenho, embora o nível de experiência possa variar entre estudantes, desenvolvedores e pesquisadores.
+[H] O usuário prioritário provavelmente terá conhecimento técnico em robótica e familiaridade com métricas de desempenho, embora o nível de experiência possa variar entre estudantes e integrantes mais experientes da equipe.
 
 [F] O TCC utiliza diferentes métricas para avaliar a locomoção, como distância percorrida, velocidade média, altura do centro de massa e taxa de quedas, já que a recompensa isolada não é suficiente para avaliar o comportamento do agente.
+
 Origem: metodologia do TCC.
+
+[H] O acompanhamento dos experimentos pode ocorrer de forma recorrente durante períodos de desenvolvimento e preparação para competições, podendo haver pressão de tempo para interpretar resultados e decidir quais ajustes realizar.
 
 [H] Organizar essas informações de forma visual e comparável pode facilitar a interpretação dos resultados.
 
@@ -199,20 +189,18 @@ Origem: metodologia do TCC.
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-[F] O usuário busca conseguir uma locomoção mais estável, eficiente e competitiva para o robô humanoide, reduzindo quedas e melhorando sua capacidade de se deslocar e se recuperar durante situações de jogo.
+[F] O usuário busca interpretar os resultados dos experimentos de treinamento do robô humanoide, identificar se as alterações realizadas produziram melhorias ou comportamentos indesejados e decidir quais ajustes devem ser realizados nos próximos treinamentos.
 
-Origem: objetivo e contexto competitivo apresentados no TCC.
+Origem: experiência das integrantes durante os experimentos do TCC e processo de treinamento e avaliação da locomoção.
 
 ## 3.2 Quais são as atividades mais importantes?
 
-| ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
-
-| ID  | Atividade/objetivo                                                        | Quem realiza                      | Frequência/criticidade inicial | Status/evidência         |
-| --- | ------------------------------------------------------------------------- | --------------------------------- | ------------------------------ | ------------------------ |
-| A01 | Configurar e iniciar treinamentos do agente                               | Integrantes da equipe de robótica | Frequente / alta               | [F] — metodologia do TCC |
-| A02 | Acompanhar e interpretar métricas de desempenho do treinamento            | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
-| A03 | Comparar resultados dos treinamentos e avaliar o comportamento do walking | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
-
+| ID  | Atividade/objetivo                                                     | Quem realiza                      | Frequência/criticidade inicial | Status/evidência         |
+| --- | ---------------------------------------------------------------------- | --------------------------------- | ------------------------------ | ------------------------ |
+| A01 | Configurar e iniciar treinamentos do agente                            | Integrantes da equipe de robótica | Frequente / alta               | [F] — metodologia do TCC |
+| A02 | Acompanhar e interpretar métricas de desempenho do treinamento         | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
+| A03 | Comparar resultados dos treinamentos e avaliar o comportamento do robô | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
+| A04 | Ajustar parâmetros                                                     | Integrantes da equipe             | Frequente / alta               | [F] — metodologia do TCC |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
@@ -222,7 +210,7 @@ Origem: processo de treinamento e avaliação descrito no TCC.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-[F] A atividade mais crítica é interpretar corretamente os resultados do treinamento e decidir quais ajustes devem ser feitos. Uma interpretação errada pode levar a equipe a manter parâmetros ou uma função de recompensa inadequados, fazendo o agente aprender comportamentos que parecem bons pelas métricas, mas que não representam uma caminhada eficiente. O próprio TCC destaca que apenas a recompensa não é suficiente para avaliar o comportamento do agente.
+[F] A atividade mais crítica é acompanhar e interpretar corretamente os resultados do treinamento (A02), pois essa interpretação subsidia a comparação dos resultados e a decisão sobre quais ajustes realizar nos próximos experimentos. Uma interpretação errada pode levar a equipe a manter parâmetros ou uma função de recompensa inadequados, fazendo o agente aprender comportamentos que parecem bons pelas métricas, mas que não representam uma caminhada eficiente.
 
 Origem: metodologia e métricas de avaliação do TCC.
 
@@ -232,58 +220,78 @@ Origem: metodologia e métricas de avaliação do TCC.
 
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
-Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
+[F] Atualmente, a equipe realiza o processo de treinamento diretamente no ambiente de simulação MuJoCo. Primeiro, as integrantes configuram no código os parâmetros do experimento e iniciam o treinamento pelo terminal. Dependendo da quantidade de timesteps, um treinamento pode levar aproximadamente de 10 a 48 horas.
 
-[F] No contexto atual do nosso TCC, o treinamento e a avaliação são feitos diretamente no ambiente de simulação MuJoCo. Nós configuramos os experimentos, executamos o treinamento do agente, acompanhamos as métricas como recompensa, velocidade, distância percorrida e taxa de quedas, além de observar visualmente o comportamento do robô no simulador. Os resultados dos diferentes ciclos de treinamento precisam ser registrados e analisados.
+[F] Durante e após a execução, são observadas as métricas geradas pelo treinamento, como recompensa, distância percorrida e velocidade. Também é realizada uma análise visual do comportamento do robô no simulador, utilizando a melhor execução obtida no treinamento (best_model.zip).
 
-Origem: metodologia e experimentos do TCC.
+[F] Após analisar os resultados, a equipe compara o comportamento e as métricas obtidas com resultados de treinamentos anteriores. Para isso, são consultados separadamente os resultados dos experimentos, os arquivos e registros associados e a visualização do comportamento do robô no simulador.
 
-[?] Ainda não sabemos exatamente como outras equipes de robótica organizam e comparam os resultados de seus testes e treinamentos.
+[F] O histórico dos experimentos e das configurações utilizadas também precisa ser registrado pela equipe para permitir a comparação entre diferentes execuções e a recuperação das decisões tomadas anteriormente.
+
+[F] A decisão sobre quais parâmetros ou aspectos do treinamento devem ser alterados é tomada a partir da interpretação conjunta das métricas, das configurações utilizadas e do comportamento observado no simulador. Em seguida, uma nova execução é iniciada.
+
+[?] Ainda não sabemos como outras equipes de robótica humanoide registram, organizam e comparam seus experimentos de treinamento.
+
+Origem: experiência direta das integrantes nos experimentos do TCC e metodologia do projeto.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-[F] O processo exige vários ciclos de treinamento, análise e ajuste de parâmetros, o que pode ser demorado e repetitivo. Além disso, não é suficiente analisar apenas a recompensa do agente, já que ela pode aumentar mesmo quando o comportamento aprendido não representa um bom walking. Por isso, é necessário analisar várias métricas e também observar o robô visualmente.
+[F] O processo exige vários ciclos de treinamento, análise e ajuste de parâmetros. Como as informações de diferentes experimentos não ficam centralizadas, a equipe precisa consultar separadamente métricas, arquivos, registros e observações do comportamento do robô.
 
-[H] Comparar diferentes treinamentos e entender quais mudanças realmente melhoraram o desempenho pode ser difícil quando as informações estão distribuídas entre métricas, execuções e observações visuais.
+[F] Comparar diferentes treinamentos e entender quais alterações realmente contribuíram para uma melhoria pode ser difícil quando os resultados e as configurações utilizadas em cada execução precisam ser recuperados manualmente.
+
+[F] A equipe também precisa registrar manualmente informações sobre os experimentos para conseguir lembrar quais configurações foram utilizadas e quais resultados foram obtidos anteriormente.
+
+[F] Essa dificuldade pode aumentar o risco de uma interpretação incompleta dos resultados. Por exemplo, observar apenas a recompensa pode fazer um treinamento parecer melhor mesmo quando outras métricas e o comportamento visual indicam que o robô praticamente não está caminhando.
+
+Origem: experiência direta das integrantes nos experimentos do TCC.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
 [F] O profissional precisa interpretar informações como:
 
--recompensa obtida durante o treinamento
--distância percorrida
--velocidade média
--taxa de quedas
--estabilidade e equilíbrio do robô
--comportamento visual do walking
--configurações e parâmetros utilizados em cada treinamento
+* recompensa obtida durante o treinamento;
+* distância percorrida;
+* velocidade média;
+* taxa de quedas;
+* estabilidade e equilíbrio do robô;
+* comportamento visual do walking;
+* configurações e parâmetros utilizados em cada treinamento;
+* consumo da bateria.
 
-Essas informações ajudam a decidir se o treinamento está evoluindo e quais ajustes devem ser feitos para os próximos experimentos
+Essas informações ajudam a decidir se o treinamento está evoluindo e quais ajustes devem ser feitos para os próximos experimentos.
 
 Origem: metodologia e métricas de avaliação do TCC.
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-[F] Uma interpretação incorreta pode fazer a equipe considerar um treinamento como bom mesmo quando o agente aprendeu um comportamento inadequado. Por exemplo, o agente pode aumentar sua recompensa mantendo-se parado e equilibrado, sem realmente aprender a caminhar de forma eficiente. Também podem ser feitos ajustes inadequados nos parâmetros ou na função de recompensa, comprometendo os treinamentos seguintes.
+[F] Uma interpretação incorreta pode fazer a equipe considerar um treinamento como bom mesmo quando o agente aprendeu um comportamento inadequado. Por exemplo, o agente pode aumentar sua recompensa mantendo-se parado e equilibrado, sem realmente aprender a caminhar de forma eficiente.
+
+[F] Nesse caso, a equipe pode utilizar como referência um treinamento inadequado ou realizar ajustes nos parâmetros com base em uma interpretação incompleta dos resultados, comprometendo os treinamentos seguintes.
+
+[F] A função de recompensa, a escolha das observações do agente e a convergência do treinamento também podem produzir problemas técnicos, mas esses aspectos pertencem principalmente ao desenvolvimento do algoritmo e à infraestrutura do TCC, não constituindo diretamente problemas de interação da interface proposta.
 
 Origem: metodologia e avaliação de resultados gerados no TCC.
 
 ## 4.5 Conte uma situação concreta.
 
-Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
+Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. Não descreva ainda a futura solução.
 
-[H] Uma integrante da equipe roda um treinamento para tentar melhorar o walking do robô. No final, percebe que a recompensa aumentou e inicialmente o resultado parece bom. Porém, ao analisar outras métricas, observa que o robô está mais equilibrado, mas quase não se desloca. Nesse caso, olhar apenas para a recompensa poderia levar a uma interpretação errada do treinamento.
+[F] Durante um dos experimentos de treinamento da locomoção do Atom, uma integrante analisou os resultados de uma execução após o término do treinamento. O objetivo era verificar se aquela execução apresentava uma evolução em relação aos treinamentos anteriores.
+
+[F] Ao consultar inicialmente a recompensa, foi observado um aumento em relação a execuções anteriores, o que poderia indicar uma evolução positiva do treinamento.
+
+[F] Em seguida, a integrante comparou esse resultado com outras métricas e observou o comportamento do robô no simulador. Foi possível perceber que o agente estava mais equilibrado, mas quase não se deslocava.
+
+[F] A situação exigiu analisar conjuntamente diferentes métricas, os parâmetros utilizados e o comportamento visual do robô antes de decidir se o treinamento deveria ser considerado uma evolução. Uma interpretação baseada apenas na recompensa poderia levar a equipe a utilizar como referência um treinamento inadequado e realizar novos experimentos a partir de uma conclusão incorreta.
 
 ## 4.6 Que evidência existe hoje?
-
-| Evidência/fonte | O que sustenta | Limitação |
 
 | Evidência/fonte                                         | O que sustenta                                                                          | Limitação                                                     |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | Experimentos preliminares realizados no TCC             | Mostram que configurações e treinamentos precisam ser acompanhados e avaliados          | Representam principalmente o processo da própria equipe       |
 | Metodologia e literatura utilizada no TCC               | Sustentam a necessidade de analisar várias métricas e não apenas recompensa             | Não mostram como outras equipes organizam essa análise        |
 | Experiência das integrantes com a RoboFEI e competições | Sustenta a dificuldade prática relacionada ao desenvolvimento de um walking competitivo | A experiência não representa necessariamente todas as equipes |
-
 
 ---
 
@@ -313,86 +321,78 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-[F] No TCC existe necessidade de registrar configurações e resultados dos experimentos para permitir comparação e reprodutibilidade.
-Origem: metodologia do TCC.
+[F] Existe necessidade de histórico dos experimentos, pois a equipe precisa recuperar configurações, métricas e resultados anteriores para comparar diferentes execuções e compreender a evolução do treinamento.
 
-[H] Para a futura interface, manter um histórico de testes e resultados pode ser importante para acompanhar a evolução da locomoção ao longo do tempo.
+[F] Uma interpretação inadequada dos resultados pode levar a equipe a tomar decisões incorretas sobre os próximos experimentos e gerar perda de tempo computacional.
+
+[F] Para interpretar corretamente um treinamento, é necessário considerar diferentes métricas e o comportamento observado do robô, pois uma única métrica pode não representar adequadamente a qualidade da locomoção.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-[F] Sim. Uma configuração inadequada ou uma interpretação errada dos resultados pode fazer o agente aprender um comportamento ruim, comprometer a convergência do treinamento e gerar perda de tempo computacional. Em alguns casos, uma escolha inadequada das observações fornecidas ao agente pode comprometer o aprendizado mesmo que o algoritmo esteja correto.
+[F] Sim. Uma configuração inadequada ou uma interpretação errada dos resultados pode fazer a equipe realizar novos experimentos a partir de uma avaliação incorreta, gerando perda de tempo computacional.
+
+[F] A interface poderia influenciar principalmente problemas relacionados à visibilidade, comparação, recuperação de informações e interpretação dos resultados. Já problemas como função de recompensa inadequada, escolha das observações do agente, convergência do treinamento e necessidade de hardware adequado permanecem como questões técnicas do TCC e restrições do contexto.
 
 Origem: metodologia e discussão do TCC.
 
 ---
 
-# 6. Entendendo mercado e alternativas existentes
+## 6. Entendendo mercado e alternativas existentes
 
-> Nesta entrega faça apenas um **levantamento inicial**. A análise aprofundada ocorre na Entrega 2.
+Nesta entrega faça apenas um levantamento inicial. A análise aprofundada ocorre na Entrega 2.
 
 ## 6.1 Como pessoas resolvem problemas semelhantes hoje?
 
-| Alternativa atual | Quem usa | Para quê | Status/evidência |
-
-| Alternativa atual                                                | Quem usa                                      | Para quê                                                                            | Status/evidência                      |
-| ---------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------- |
-| Controladores tradicionais de locomoção baseados em ZMP          | Equipes e pesquisadores de robótica humanoide | Gerar e controlar padrões de caminhada por meio de modelos de equilíbrio            | [F] — literatura do TCC               |
-| Técnicas de aprendizado por reforço profundo                     | Pesquisadores e equipes de robótica           | Aprender políticas de locomoção em ambiente simulado                                | [F] — literatura do TCC               |
-| Simulação e avaliação por métricas e observação do comportamento | Pesquisadores e equipes de robótica           | Testar, avaliar e comparar a qualidade da locomoção antes de situações competitivas | [F] — metodologia e literatura do TCC |
-
+| Alternativa atual                                                                         | Quem usa                                           | Para quê                                                                             | Status/evidência                |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------- |
+| Relatórios e gráficos gerados pelos treinamentos                                          | Integrantes da equipe que executam os experimentos | Acompanhar a evolução das métricas durante e após o treinamento                      | [F] — experiência direta no TCC |
+| Arquivos e registros dos experimentos                                                     | Integrantes da equipe                              | Recuperar configurações e resultados de execuções anteriores                         | [F] — experiência direta no TCC |
+| Observação visual no simulador                                                            | Integrantes da equipe                              | Verificar se o comportamento aprendido corresponde ao que as métricas indicam        | [F] — experiência direta no TCC |
+| Análise manual combinando métricas, configurações e comportamento visual                  | Integrantes da equipe                              | Interpretar os resultados e decidir quais ajustes realizar nos próximos treinamentos | [F] — experiência direta no TCC |
+| Ferramentas de organização de dados, planilhas ou registros utilizados por outras equipes | Outras equipes de robótica                         | Registrar, organizar e comparar experimentos de treinamento                          | [?] — ainda não investigado     |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-[F] Sim. Existem diferentes plataformas e ambientes de simulação utilizados em robótica e aprendizado por reforço. No próprio TCC, por exemplo, são considerados MuJoCo e PyBullet como ambientes possíveis para simulação de robôs, embora o MuJoCo tenha sido escolhido pela maior fidelidade na modelagem.
+[F] No processo atual do TCC, os resultados dos treinamentos são acompanhados por meio dos próprios arquivos e gráficos gerados durante as execuções, pelos registros das configurações utilizadas e pela visualização do robô no simulador.
 
-Também existem ambientes ligados à RoboCup 3D, utilizados por diferentes equipes para testar e comparar comportamentos de robôs humanoides. 
-Esse é um exemplo do simulador da RoboCup 3D com robôs do Bahia-RT
+[F] Ambientes de simulação, como MuJoCo e PyBullet, também fazem parte do contexto técnico em que experimentos de robótica e aprendizado por reforço podem ser executados. Entretanto, eles não constituem soluções equivalentes à interface de análise proposta nesta disciplina.
 
-![Simulação do Bahia-RT](../assets/bahia-rt-simulation.png)
+[F] No contexto atual do TCC, o MuJoCo é utilizado para executar os experimentos de locomoção e observar o comportamento aprendido pelo robô.
+
+Fonte: metodologia do TCC e literatura utilizada no projeto.
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
-Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
+[F] No processo atual da equipe, as principais interfaces utilizadas para acompanhar os experimentos são o terminal, os arquivos e gráficos gerados pelo treinamento e a visualização do robô no simulador.
 
-[H] Esse público provavelmente já está acostumado com:
-
-- ambientes de simulação de robótica
-- IDEs e ferramentas de desenvolvimento
-- gráficos de treinamento
-- ferramentas para acompanhamento de métricas
-- visualização 3D do comportamento do robô
+[?] Ainda não foi investigado quais ferramentas específicas outras equipes utilizam para organizar, registrar e comparar seus experimentos.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-[F] Os simuladores permitem executar muitos experimentos sem depender diretamente do robô físico e possibilitam observar o comportamento do agente em diferentes situações. No caso do MuJoCo, o nosso TCC destaca principalmente a boa simulação de contatos e articulações e sua eficiência para treinamentos com muitos passos
+[F] Os arquivos e gráficos gerados pelos treinamentos permitem acompanhar as métricas produzidas durante as execuções e recuperar resultados para análise posterior.
 
-[H] Ferramentas de gráficos e métricas também podem facilitar o acompanhamento da evolução do treinamento
+[F] A visualização do robô no simulador permite observar diretamente o comportamento aprendido e verificar se ele corresponde ao que as métricas indicam.
 
-Fonte: Todorov, Erez e Tassa (2012), referência [31] do TCC — MuJoCo: A Physics Engine for Model-Based Control.
+[F] A combinação dessas fontes permite que a equipe realize atualmente a análise dos resultados dos treinamentos, ainda que de forma distribuída entre diferentes artefatos.
 
-URL: https://ieeexplore.ieee.org/document/6386109/
-
+[?] Ainda não foi investigado quais ferramentas ou formas de organização utilizadas por outras equipes apresentam melhores resultados para comparação de experimentos.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-[H] As ferramentas atuais podem exigir que o usuário consulte separadamente parâmetros, métricas e comportamento visual do robô, dificultando uma comparação rápida entre diferentes treinamentos.
+[F] No processo atual da equipe, as informações necessárias para interpretar um treinamento estão distribuídas entre diferentes fontes, como métricas, arquivos de configuração, registros e observação do simulador. Isso exige que a equipe faça manualmente a relação entre essas informações.
+
+[F] A comparação entre diferentes treinamentos também depende da recuperação manual dos resultados e das configurações utilizadas em cada execução.
+
+[H] Essa organização distribuída pode dificultar uma comparação rápida entre experimentos e aumentar o esforço necessário para recuperar o contexto de um treinamento anterior.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
-[H] Por ser um público mais técnico, alguns termos e padrões provavelmente são familiares, como:
+[F] No processo atual, o público já está familiarizado com métricas de treinamento, gráficos de resultados, arquivos de configuração, registros de experimentos e visualização do robô no simulador.
 
-- episódio
-- recompensa
-- agente
-- treinamento
-- política
-- hiperparâmetros
-- velocidade
-- distância percorrida
-- taxa de quedas
-- gráficos de evolução
-- comparação entre execuções
-- visualização da simulação
+[F] Também é familiar a necessidade de relacionar diferentes métricas para interpretar o comportamento do robô, já que a recompensa isolada não é suficiente para avaliar adequadamente a locomoção.
+
+[?] Ainda não foi investigado quais padrões específicos de interfaces de análise e comparação são utilizados por outras equipes de robótica humanoide.
+
 
 ---
 
@@ -412,7 +412,11 @@ Faça o exercício de transferência de uso:
 
 > **Imagine que o TCC foi concluído com sucesso e uma empresa, laboratório ou organização quer transformar a contribuição em algo utilizável. Quem precisaria interagir com ela e para quê?**
 
+
 Responda:
+
+NOTA: Como o TCC não possui interface, validamos com o professor sobre modificar a proposta do projeto para além do escopo de locomoção do robô: As respostas agora dizem respeito ao treinamento de um robô humanoide que joga futebol.
+
 
 1. quem poderia contratar/adotar a solução? 
 
@@ -420,27 +424,27 @@ Equipes de robótica, laboratórios de pesquisa, universidades e organizações 
 
 2. quem seria o usuário direto? 
 
-Integrantes de equipes de robótica, pesquisadores e desenvolvedores responsáveis por acompanhar o desempenho dos robôs.
+Estudantes que participam de equipes de robótica, pesquisadores e desenvolvedores responsáveis por acompanhar o desempenho do robô.
 
 3. quem administraria/configuraria? 
 
-Integrantes técnicos da equipe, responsáveis por cadastrar robôs, inserir resultados de testes e configurar métricas de comparação.
+Integrantes técnicos da equipe, responsáveis por inserir parâmetros de testes, extrair os dados de diferentes experimentos, configurar métricas de comparação e realizar treinos
 
-4. quem interpretaria resultados? {{...}}
+4. quem interpretaria resultados?
 
 Desenvolvedores, pesquisadores, professores e responsáveis técnicos pela evolução do robô.
 
-5. quem tomaria decisões? {{...}}
+5. quem tomaria decisões?
 
-A própria equipe de desenvolvimento, que utilizaria os resultados para decidir quais aspectos do robô precisam ser melhorados e evoluir na caminhada do robô
+A própria equipe de desenvolvimento, que utilizaria os resultados para decidir quais aspectos do robô precisam ser melhorados e evoluir
 
 6. quais dados/entradas seriam necessários? 
 
-Dados de desempenho do robô, como velocidade, estabilidade, número de quedas, distância percorrida, tempo de recuperação e resultados de diferentes testes ou competições.
+Dados de desempenho do robô, como velocidade, força exercida nos motores, agrecividade nas investidas, nível de colaboração e nível de confiança.
 
 7. quais resultados deveriam ser compreendidos? 
 
-O desempenho geral do robô, seus pontos fortes e fracos, evolução ao longo do tempo e comparação com outros robôs ou versões anteriores.
+O desempenho geral do robô, seus pontos fortes e fracos, evolução ao longo do tempo,  comparação com outros experimentos, entendendo  quantas faltas foram feitas, quantos gols marcados, quantos gols tomados, velocidade média e consumo da bateria
 
 8. que erros/rupturas seriam possíveis? 
 
@@ -448,15 +452,16 @@ Inserção de dados incorretos, comparação entre testes realizados em condiç�
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-Integrante de uma equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô.
+Estudante de uma equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô que joga futebol.
 
 **Por que esse perfil foi escolhido?** 
 
-Porque esse usuário participa diretamente do processo de desenvolvimento e precisa interpretar diferentes informações sobre o comportamento e o desempenho do robô ao longo de testes, treinamentos e competições. Isso pode envolver métricas como velocidade, estabilidade, quedas, desempenho em partidas, evolução entre versões e resultados de diferentes execuções. A partir dessas informações, ele precisa identificar pontos fortes, limitações e possíveis melhorias, além de comparar resultados para apoiar decisões da equipe. A interface pode ajudar a reunir e organizar esses dados, facilitando a análise do desempenho e o acompanhamento da evolução do robô ao longo do tempo.
+Porque esse usuário participa diretamente do processo de desenvolvimento e precisa interpretar diferentes informações sobre o comportamento e o desempenho do robô ao longo de testes, treinamentos e competições. Isso pode envolver métricas como velocidade, estabilidade, quedas, desempenho em partidas, evolução entre versões e resultados de diferentes execuções. A partir dessas informações, ele precisa identificar pontos fortes, limitações e possíveis melhorias, além de comparar resultados para apoiar decisões da equipe, no contexto da faculdade. A interface pode ajudar a reunir e organizar esses dados, facilitando a análise do desempenho e o acompanhamento da evolução do robô ao longo do tempo.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-Entender o desempenho do robô humanoide, identificar seus principais pontos de melhoria e acompanhar sua evolução ao longo dos testes, além de coletar estatísticas dele durante as partidas.
+O objetivo priorizado será analisar e interpretar o desempenho do robô a partir dos resultados de seus treinamentos e partidas, identificando problemas, pontos de melhoria e possíveis relações entre as métricas observadas para apoiar decisões sobre os próximos ajustes do robô.
+Esse objetivo está relacionado à atividade crítica A02: Acompanhar e interpretar métricas de desempenho. Essa atividade é crítica porque uma interpretação incorreta dos resultados pode levar a equipe a considerar um treinamento como adequado quando o comportamento aprendido não representa uma boa locomoção, resultando em ajustes inadequados nos experimentos seguintes.
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -464,16 +469,14 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-Para fins da disciplina de IHC, será projetada uma interface voltada principalmente a integrantes de equipes de robótica humanoide, permitindo acompanhar, visualizar e comparar o desempenho dos robôs em testes, treinamentos e competições. A proposta é reunir em um só lugar métricas, resultados e informações de diferentes execuções, facilitando a identificação de pontos fortes, limitações, falhas e possíveis melhorias ao longo do desenvolvimento.
-
-A interface também poderá ajudar a acompanhar a evolução do robô entre diferentes versões, testes e partidas, permitindo que a equipe use essas informações para orientar decisões sobre ajustes e próximos passos. Em contextos de competição, parte dessas informações também pode ser útil para outros públicos, como narradores, comentaristas e pessoas que acompanham as transmissões, ajudando a contextualizar melhor o desempenho e a evolução dos robôs durante as partidas.
+*Para fins da disciplina de IHC, será projetada uma interface que permite* um estudante de uma equipe de robótica humanoide responsável por analisar e melhorar o desempenho do robô que joga futebol *utilizar* a comparação entre experimentos, iniciação de treinamentos, ajustes de parâmetros e análise de métricas *para* entender o desempenho do robô humanoide, identificar seus principais pontos de melhoria, acompanhar sua evolução ao longo dos testes e coletar estatísticas dele durante as partidas, *no contexto de* competições nacionais e internacionais de robótica humanoide.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
 - [ ] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
 - [X] É uma extensão conceitual criada para a disciplina.
-- [X] É um protótipo demonstrativo de aplicação potencial.
+- [] É um protótipo demonstrativo de aplicação potencial.
 - [ ] Outra: {{...}}.
 
 > **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
@@ -526,19 +529,17 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
-| ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
+| **ID** | **O usuário precisa conseguir...**                                                   | **Para alcançar...**                                                                                                                                                           | **Prioridade inicial** |
+| ------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| AC01    | Visualizar as principais métricas de desempenho do robô em um treinamento ou partida (A02) | Compreender rapidamente o comportamento do robô e apoiar a atividade crítica, evitando depender de uma única métrica | alta                   |
+| AC02    | Comparar resultados de diferentes treinamentos, versões ou partidas (A03)                  | Identificar se uma alteração realmente melhorou ou piorou o desempenho do robô e apoiar a decisão sobre os próximos ajustes                                                    | alta                   |
+| AC03    | Consultar o histórico de treinamentos, testes e partidas (A03)                             | Acompanhar a evolução do robô ao longo do tempo e recuperar resultados anteriores para comparação                                                                              | alta                   |
+| AC04    | Filtrar resultados por robô, período, versão, treinamento ou competição (A02)               | Encontrar com mais facilidade as informações relevantes para uma análise específica, reduzindo a dificuldade de consultar diferentes resultados                                | média                  |
+| AC05    | Visualizar detalhes de um resultado, incluindo suas métricas e configurações (A02)         | Entender o contexto em que determinado desempenho foi obtido e evitar interpretações incorretas dos resultados                                                                 | média                  |
+| AC06    | Relacionar diferentes métricas de desempenho (A02)                                         | Avaliar o resultado de forma mais completa, evitando considerar apenas a recompensa quando ela não representa adequadamente o comportamento do robô                            | alta                   |
+| AC07    | Identificar pontos de melhoria a partir dos resultados analisados (A04)                    | Decidir quais aspectos do robô devem ser investigados ou ajustados nos próximos treinamentos e testes                                                                          | alta                   |
+| AC08    | Consultar e comparar estatísticas de desempenho durante partidas (A02)                     | Analisar o desempenho do robô no contexto competitivo e relacioná-lo às características da performance apresentada                                                                       | média                  |
 
-| F01 | Visualizar as principais métricas de desempenho do robô | Entender rapidamente como o robô está se saindo | alta |
-
-| F02 | Comparar resultados entre diferentes testes, robôs ou versões | Identificar melhorias e pioras no desempenho | alta |
-
-| F03 | Consultar o histórico de testes e resultados | Acompanhar a evolução do robô ao longo do tempo | alta |
-
-| F04 | Filtrar resultados por robô, teste, período ou competição | Encontrar informações específicas com mais facilidade | média |
-
-| F05 | Visualizar detalhes dos testes | Entender melhor os pontos fortes e fracos do desempenho | média |
-
-| F06 | Inserir ou selecionar novos dados de desempenho | Manter as análises atualizadas com novos testes | média |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -561,7 +562,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID  | Hipótese/dúvida                                                                                                                                                     | Por que importa                                                   | Como poderá ser investigada |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------- |
-| H01 | Integrantes de equipes de robótica têm dificuldade em reunir e comparar diferentes métricas e informações de desempenho dos robôs ao longo de testes e competições. | É o principal problema que justificaria a criação da plataforma.  | Entregas 3, 4 e 7           |
+| H01 | Estudantes de equipes de robótica têm dificuldade em reunir e comparar diferentes métricas e informações de desempenho dos robôs ao longo de testes e competições. | É o principal problema que justificaria a criação da plataforma.  | Entregas 3, 4 e 7           |
 | H02 | Centralizar e comparar resultados de diferentes testes, versões ou robôs ajudaria as equipes a identificar melhorias, pioras e limitações de desempenho.            | Sustenta uma das principais propostas de interação da plataforma. | Entregas 5, 6 e 7           |
 | H03 | Os usuários possuem familiaridade suficiente com métricas e vocabulário técnico de robótica para utilizar uma interface de análise de desempenho.                   | Influencia a linguagem e o nível de detalhamento da interface.    | Entregas 3 e 7              |
 
