@@ -1,7 +1,7 @@
 # Entrega 4  Cenários de análise/problema
 
-**Data:** 16/09/2026
-**Status:** 🟧 Em andamento
+**Data:** 05/10/2026
+**Status:** 🟧 Finalizado
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -166,14 +166,79 @@ Se ela iniciar um novo treinamento a partir de uma configuração reconstruída 
 
 As próximas entregas devem investigar como a equipe registra atualmente as configurações de cada treinamento e quais informações precisam ser recuperadas a partir do código. Também é necessário entender o que Marina considera como "mesmas condições" para que dois treinamentos possam ser comparados e com que frequência a dúvida sobre a configuração atrasa ou impede uma comparação. Na modelagem de tarefas, localizar um treinamento de referência e confirmar sua configuração deve ser tratado como uma tarefa separada da comparação das métricas, pois envolve informações e dificuldades diferentes. As hipóteses H01 e H02 continuam presentes, já que a evidência atual vem da experiência da própria equipe e ainda precisa ser verificada com outros integrantes e equipes.
 
+## Cenário C03 - Avaliação de treinamentos em reunião de orientação
+
+**Autor(a):** Rafaela Altheman de Campos
+**Persona(s) relacionada(s):** Carlos Almeida
+**Necessidade relacionada:** Obter uma visão consolidada do desempenho, comparar resultados importantes e compreender rapidamente quais aspectos evoluíram ou pioraram.
+**Situação concreta da Entrega 1 relacionada:** Situação em que a recompensa aumenta, mas o robô fica equilibrado e quase não se desloca. Também foi registrado que professores e orientadores acompanham os resultados e participam das decisões técnicas do projeto.
+**Hipóteses ainda presentes:** H01 e H02
+
+### 1. Cenário inicial
+
+Carlos Almeida, professor e orientador, acompanha o desenvolvimento da caminhada do robô humanoide feito por um grupo de estudantes. Ele não participa de todos os treinamentos e acompanha os resultados principalmente pelas reuniões com a equipe.
+
+Na reunião da semana, uma das estudantes apresenta o treinamento mais recente, e o gráfico da recompensa mostra um aumento em relação à semana anterior. Carlos pergunta quanto o robô se deslocou, quantas vezes caiu e como esse resultado se compara ao treinamento anterior. A estudante não tem essas informações na apresentação. Ela procura as saídas do treinamento no terminal, executa a visualização do melhor modelo no simulador e consulta as anotações da equipe.
+
+Na visualização, o robô aparece equilibrado, mas quase não se desloca. A recompensa alta não representava uma caminhada melhor. Como parte das comparações não pode ser feita durante a reunião, a decisão sobre o próximo experimento fica para a reunião seguinte.
+
+### 2. Questões de refinamento
+
+| ID | Questão | O que ainda falta no cenário | Como investigar |
+| --- | --- | --- | --- |
+| Q1 | Com que frequência e de que forma os resultados são apresentados a Carlos? | O cenário mostra uma reunião, mas não como os resultados são preparados e apresentados. | Entrevista com orientadores e estudantes e observação de uma reunião. |
+| Q2 | Quais perguntas Carlos costuma fazer para avaliar um treinamento? | O cenário mostra algumas perguntas, mas não o critério que ele usa para avaliar o resultado. | Entrevista com Carlos e análise de anotações de reuniões anteriores. |
+| Q3 | Por que as informações pedidas por Carlos não estavam na apresentação? | O cenário informa que a estudante não tinha os números na apresentação, mas não explica o motivo. | Observação da preparação da reunião e entrevista com as estudantes. |
+| Q4 | O que faz Carlos desconfiar de um resultado que parece bom? | O cenário mostra a desconfiança, mas não o que a provoca. | Entrevista com Carlos. |
+| Q5 | Como a decisão sobre o próximo experimento é registrada depois da reunião? | O cenário não mostra o que acontece com a decisão e com as justificativas discutidas. | Análise dos registros das reuniões e entrevista com a equipe. |
+| Q6 | O que acontece com o trabalho da equipe quando a decisão é adiada? | A consequência do adiamento ainda não foi detalhada. | Entrevista com a equipe e análise do cronograma de treinamentos. |
+
+### 3. Cenário refinado
+
+Carlos Almeida, professor e orientador, acompanha o desenvolvimento da caminhada do robô humanoide feito por um grupo de estudantes. Ele não participa de todos os treinamentos e acompanha os resultados principalmente pelas reuniões com a equipe.
+
+**[NOVO: As reuniões acontecem toda semana e têm pouco tempo. Os resultados são apresentados a partir do que cada estudante preparou, geralmente um gráfico da recompensa e, às vezes, um vídeo do robô no simulador. Não existe um formato padrão para essas apresentações.] [Q1]**
+
+Na reunião da semana, uma das estudantes apresenta o treinamento mais recente, e o gráfico da recompensa mostra um aumento em relação à semana anterior. Carlos pergunta quanto o robô se deslocou, quantas vezes caiu e como esse resultado se compara ao treinamento anterior.
+
+**[NOVO: Carlos costuma fazer sempre as mesmas perguntas: o que mudou em relação ao experimento anterior, se o robô realmente está andando e se ele cai. Ele sabe que a recompensa sozinha não é suficiente para avaliar a locomoção.] [Q2]**
+
+**[NOVO: Carlos desconfia quando a recompensa aumenta muito e a apresentação não mostra o deslocamento do robô, porque já viu casos em que o agente aprendeu a ficar parado e equilibrado para acumular recompensa.] [Q4]**
+
+A estudante não tem essas informações na apresentação. Ela procura as saídas do treinamento no terminal, executa a visualização do melhor modelo no simulador e consulta as anotações da equipe.
+
+**[NOVO: As métricas de deslocamento, quedas e recompensa ficam no mesmo arquivo, e todos os resultados ficam no mesmo computador. Mesmo assim, como a apresentação foi preparada a partir do gráfico da recompensa, as outras métricas precisam ser procuradas e comparadas durante a reunião.] [Q3]**
+
+Na visualização, o robô aparece equilibrado, mas quase não se desloca. A recompensa alta não representava uma caminhada melhor. Como parte das comparações não pode ser feita durante a reunião, a decisão sobre o próximo experimento fica para a reunião seguinte.
+
+**[NOVO: A equipe possui um registro compartilhado, onde ficam anotadas as decisões e o que foi discutido nas reuniões.] [Q5]**
+
+**[NOVO: Enquanto a decisão não é tomada, a equipe espera para iniciar um novo treinamento longo, e uma semana de desenvolvimento passa sem um novo experimento.] [Q6]**
+
+### 4. Elementos extraídos
+
+| Elemento | Descrição |
+| --- | --- |
+| Ator(es) | Carlos Almeida (professor e orientador), a estudante que apresenta os resultados e os demais integrantes da equipe. |
+| Objetivo(s) | Avaliar se o treinamento mais recente representa uma melhora real na caminhada do robô e orientar a decisão sobre o próximo experimento. |
+| Contexto | Reunião semanal de orientação com pouco tempo disponível. Carlos não acompanha todos os treinamentos, e cada estudante apresenta os resultados de uma forma diferente. |
+| Recursos/informações | Gráfico da recompensa, arquivo com as métricas do treinamento, visualização do melhor modelo no simulador, anotações da equipe, registro compartilhado das reuniões e resultados do treinamento anterior. |
+| Ações | Apresentar o treinamento; perguntar sobre deslocamento, quedas e comparação com o treinamento anterior; procurar as métricas durante a reunião; visualizar o robô no simulador; registrar a discussão; adiar a decisão. |
+| Problemas/rupturas | A recompensa aumenta sem que a caminhada melhore; a apresentação não traz as métricas necessárias para avaliar o treinamento; as comparações precisam ser feitas durante a reunião e nem todas são concluídas a tempo. |
+| Consequências | Risco de considerar bom um treinamento inadequado, decisão adiada e uma semana sem novo experimento. |
+
+### 5. Implicações para as próximas entregas
+
+As próximas entregas devem investigar como os resultados são preparados e apresentados ao orientador e quais informações ele considera necessárias para avaliar um treinamento. Na modelagem de tarefas, a avaliação feita em reunião deve ser tratada como uma tarefa diferente da análise individual do cenário C01, pois acontece com pouco tempo, envolve pessoas que não acompanharam os treinamentos e termina em uma decisão em grupo. Também é necessário verificar com que frequência as métricas e comparações necessárias não estão prontas no momento da discussão, o que se relaciona com a hipótese H01. Como Carlos ainda é uma proto-persona, suas características devem ser validadas com professores e orientadores.
+
 ## Checklist
 
-- [ ] Há um cenário completo por integrante.
-- [ ] Cada cenário tem título, ator, objetivo, contexto e problema.
-- [ ] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
-- [ ] O texto descreve a situação atual, sem antecipar a solução.
-- [ ] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não “a falta de uma tela”.
-- [ ] Questões de refinamento acrescentam informação nova.
-- [ ] O refinamento mostra claramente o que foi adicionado/alterado.
-- [ ] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
-- [ ] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+- [x] Há um cenário completo por integrante.
+- [x] Cada cenário tem título, ator, objetivo, contexto e problema.
+- [x] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
+- [x] O texto descreve a situação atual, sem antecipar a solução.
+- [x] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não "a falta de uma tela".
+- [x] Questões de refinamento acrescentam informação nova.
+- [x] O refinamento mostra claramente o que foi adicionado/alterado.
+- [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
+- [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
