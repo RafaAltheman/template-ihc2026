@@ -44,6 +44,8 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 
 Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
 
+| ID | Questão | O que ainda falta no cenário | Como investigar |
+| --- | --- | --- | --- |
 | Q1 | Quais informações Rafael precisa ter para decidir se o treinamento deve ser considerado uma melhoria em relação aos anteriores? | O cenário apresenta o objetivo de avaliar o treinamento, mas ainda não deixa claro quais informações são necessárias para essa decisão. | Entrevista com integrantes da equipe e observação de uma sessão de avaliação. |
 | Q2 | Em que momento e em quais condições Rafael realiza essa análise dos resultados do treinamento? | O cenário informa que a análise ocorre durante os ciclos de desenvolvimento, mas não detalha quando e em quais condições ela acontece. | Observação do processo de treinamento e entrevista com Rafael e equipe. |
 | Q3 | Quais características e conhecimentos de Rafael influenciam a forma como ele interpreta os resultados do treinamento? | O cenário identifica Rafael como integrante técnico, mas não especifica quais conhecimentos ou características são necessários para realizar a atividade. | Entrevista com Rafael e demais integrantes da equipe. |
@@ -51,6 +53,7 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q5 | Como Rafael realiza atualmente a comparação entre as métricas e os parâmetros de diferentes treinamentos? | A comparação é uma ação central do cenário, mas ainda não foi detalhado como ela é executada na prática. | Observação da atividade e análise dos arquivos/registros utilizados pela equipe. |
 | Q6 | O que faz Rafael perceber que precisa investigar os resultados de treinamentos anteriores? | O cenário apresenta uma diferença entre as métricas, mas não especifica qual acontecimento desencadeia a busca por outros resultados. | Observação de uma sessão de avaliação e entrevista com Rafael. |
 | Q7 | Como Rafael determina, ao final da análise, se o treinamento foi bem-sucedido ou se é necessário realizar um novo ajuste? | O cenário mostra que ele precisa avaliar o treinamento, mas ainda não define como ele chega à conclusão sobre o resultado. | Entrevista com Rafael/equipe e análise de treinamentos anteriores. |
+
 
 ### 3. Cenário refinado
 
@@ -82,6 +85,8 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 
 ### 4. Elementos extraídos
 
+| Elemento | Descrição |
+| --- | --- |
 | Ator(es) | Rafael Martins (integrante de desenvolvimento do time de robótica humanoide) |
 | Objetivo(s) | Avaliar se o treinamento apresentou uma melhoria no comportamento do robô, comparar o resultado com treinamentos anteriores e definir quais ajustes realizar no próximo treinamento. |
 | Contexto | Rafael está desenvolvendo e testando o comportamento de um robô humanoide para uma partida de futebol, realizando ciclos de treinamento e ajustes em um computador. |
@@ -89,6 +94,7 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 | Ações | Executar um treinamento; observar o comportamento do robô; analisar as métricas; ajustar os parâmetros da caminhada; comparar métricas e configurações com treinamentos anteriores; consultar resultados anteriores; definir novos parâmetros para o próximo treinamento. |
 | Problemas/rupturas | A melhora em uma métrica, como a velocidade, pode ocorrer junto à piora de outras características, como estabilidade e frequência de quedas. Além disso, as informações de diferentes treinamentos precisam ser consultadas e relacionadas para permitir uma comparação. |
 | Consequências | Rafael pode interpretar incorretamente o resultado do treinamento e escolher parâmetros inadequados para a próxima execução, gerando novos treinamentos desnecessários, desperdício de tempo computacional e prolongamento do desenvolvimento. |
+
 
 ### 5. Implicações para as próximas entregas
 
