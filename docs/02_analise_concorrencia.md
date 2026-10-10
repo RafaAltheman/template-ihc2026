@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 19/08/2026
-**Status:** 🟩 Concluído
+**Status:** 🟦 revisada após feedback
 
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
@@ -33,7 +33,7 @@ Na Entrega 1, não citamos nenhum software. Estaremos citando pela primeira vez:
 | ------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
 | NuSight                  | Análogo            | Interface relacionada ao acompanhamento de robôs e à visualização de informações técnicas e de desempenho.                       | —              | Analisar              |
 | MARIO                    | Análogo            | Solução relacionada ao processamento e análise de dados de partidas de robôs, com organização modular e geração de estatísticas. | —              | Analisar              |
-| GameController           | Indireto / análogo | Software diretamente relacionado ao futebol de robôs humanoides, utilizado para configurar, controlar e acompanhar partidas.     | —              | Analisar              |
+| GameController           | Indireto / Análogo | Software diretamente relacionado ao futebol de robôs humanoides, utilizado para configurar, controlar e acompanhar partidas.     | —              | Analisar              |
 
 > **Observação:** Como os três softwares não foram citados na Entrega 1, eles não possuem um status inicial ou hipótese (`H01`, `H02` etc.) associado à etapa anterior. Por isso, nesta entrega eles são tratados como novas soluções selecionadas para análise comparativa.
 
@@ -43,7 +43,7 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-O público alvo desta análise são estudantes que fazem parte de equipes de robótica humanoide e pesquisadores ou desenvolvedores da área.
+O público alvo desta análise são estudantes que fazem parte de equipes de robótica humanoide que joga futebol e pesquisadores ou desenvolvedores da área de robótica humanoide
 
 ## 2. Concorrentes diretos/indiretos
 
@@ -52,20 +52,20 @@ O público alvo desta análise são estudantes que fazem parte de equipes de rob
 **Autor(a):** Manuella Filipe Peres - 22.224.029-3
 **Tipo:** análogo
 **Link oficial:** [NuSight](https://nubook.nubots.net/system/tools/nusight#page-content)
-**Data de acesso:** 19/08/2026
+**Data de acesso:** 10/10/2026
 
 #### Contexto e proposta
 
 O NUbook é a documentação e handbook da equipe NUbots, grupo de pesquisa em robótica da University of Newcastle voltado ao desenvolvimento de robôs humanoides para futebol na RoboCup. A plataforma reúne informações sobre a equipe, áreas de pesquisa, publicações, histórico, hardware, sistemas de software, ferramentas e guias para contribuição na equipe.
 
-O NUbook foi analisado como uma interface profissional representativa porque o público do projeto possui características semelhantes às dos usuários considerados para o projeto, ou seja, integrantes de equipes de robótica e pesquisadores que precisam consultar, organizar e compreender informações técnicas relacionadas ao desenvolvimento de robôs humanoides.
+Entre os projetos há o NUsignt, analisado como uma interface profissional representativa porque o público do projeto possui características semelhantes às dos usuários considerados para o projeto, ou seja, integrantes de equipes de robótica e pesquisadores que precisam consultar, organizar e compreender informações técnicas relacionadas ao desenvolvimento de robôs humanoides que jogam futebol.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade                          | Como é realizada                                                                                      | Evidência/print                                                     | Observação de IHC                                                            |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Dashboard com informações em tempo real | Campo dispondo dos jogadores e seu estado.                                                            | ![Dashboard do NuSight](../assets/02_concorrencia/NuSight_Dash.png) | Permite observar ao vivo a performance do robô.                              |
-| Documentação técnica                    | O site apresenta informações sobre hardware, software, sistemas e ferramentas utilizados pela equipe. | ![Documentação do NuSight](../assets/02_concorrencia/NuSight.png)   | Centraliza informações que poderiam estar distribuídas em diferentes fontes. |
+| Dashboard com informações em tempo real | Campo dispondo dos jogadores e seu estado.                                                            | ![Dashboard do NuSight](../assets/02_concorrencia/NuSight_Dash.png) tela de Dashboard da NUSight| [F] Permite observar ao vivo a performance do robô. Para nosso projeto, poderíamo incluir um recurso similar, visto que a análise em tempo real pode ser esclarecedora em um treinamento (experiência do TCC)                              |
+| Chart tab: dados de séries temporais em um plano de coordenadas                    | Permite a visualização simultânea de múltiplos fluxos de dados em determinado período do tempo  | ![Documentação do NuSight](../assets/02_concorrencia/NUsight_chart.webp) tela de Chart do NUSight  | Centraliza informações que poderiam estar distribuídas em diferentes fontes. Este é o principal objetivo do projeto, portanto, servirá como forte referência para nosso desenvolvimento |
 
 #### Experiência do usuário e opiniões
 
@@ -73,28 +73,31 @@ O NUbook foi analisado como uma interface profissional representativa porque o p
 
 #### Preço/modelo de negócio
 
-O NUbook é disponibilizado como documentação pública da equipe NUbots. Não foi identificado modelo de cobrança ou comercialização da plataforma.
+A NUSight é disponibilizada como documentação pública da equipe NUbots. Não foi identificado modelo de cobrança ou comercialização da plataforma.
 
 #### Padrões e tendências percebidos
 
 * Separação entre informações sobre equipe, sistemas e guias
 * Navegação por categorias
 * Centralização de documentação técnica
-* Registro de histórico e conhecimento da equipe.
+* Registro de histórico e conhecimento da equipe
+* Gráficos e Logs para análise de desempenho
+* Informações dos sensores dos robôs para análise mais técnica.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto                        | Evidência                                                                 | Implicação para nosso projeto                                                                 |
 | ---------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Centralização de informações | Hardware, software, ferramentas e pesquisas estão reunidos na plataforma. | Informações relacionadas aos treinamentos podem ser centralizadas.                            |
-| Guias e documentação         | Existe uma seção específica de Guides.                                    | Pode ser interessante oferecer ajuda ou explicações para parâmetros e métricas mais técnicas. |
+| Guias e documentação         | Existe uma seção específica de Guides.                                    | O guia pode explicar o que se encontra em cada sessão (útil para ajudar pessoas que estão ingressando na área). |
+| Aparência e linguagem técnica         | Informações de sensores, Logs e Gráficos precisam de conhecimento técnico sobre robôs para entendimento (temperatura dos servos, graus, odometria, YoLo).                                    | Pode ser interessante oferecer ajuda ou explicações para parâmetros e métricas mais técnicas. |
 
 ### Análise C02 — Mario
 
 **Autor(a):** Letizia Lowatzki Baptistella - 22.125.063-2
 **Tipo:** análogo
 **Link oficial:** [MARIO](https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario)
-**Data de acesso:** 19/08/2026
+**Data de acesso:** 10/10/2026
 
 #### Contexto e proposta
 
@@ -106,12 +109,14 @@ A solução foi analisada como análogo porque, apesar de não realizar o treina
 
 | Funcionalidade          | Como é realizada                                                                    | Evidência/print                                                  | Observação de IHC                                                          |
 | ----------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Calibração              | O sistema realiza a calibração da câmera para corrigir distorções.                  | ![Calibração do MARIO](../assets/02_concorrencia/calibracao.png) | O processamento possui uma etapa específica e identificável.               |
-| Geração de estatísticas | Os dados dos jogadores e da bola são utilizados para gerar estatísticas da partida. | ![MARIO](../assets/02_concorrencia/mario.png)                    | Facilita a interpretação dos resultados por meio de informações derivadas. |
+| Análises              | Gráficos de análise sobre a partida.                  | ![Analysis do MARIO](../assets/02_concorrencia/MARIO-gui-analises.png) | Para o projeto, talvez fosse interessante adicionar para além de informações de desempenho do robô, informações da partida de futebol jogada por ele.               |
+| Tracking | Upload de um vídeo da partida real mostra na interface o comportamento dos robôs. | ![Tracking MARIO](../assets/02_concorrencia/MARIO-gui-tracking.png)                    | Visualizar comportamento do robô em partida. [F] Trazer visualiazação da tentativa de treino mais promissora é útil como métrica para melhora de performance (experiência do TCC) |
 
 #### Experiência do usuário e opiniões
 
 [?] Um aspecto positivo é a modularidade do sistema, pois diferentes etapas possuem funções específicas. Isso pode facilitar a compreensão do fluxo de processamento e a identificação da etapa em que determinado resultado foi produzido.
+
+[F] Apesar de ter uma sessão voltada a isso, a função central do MARIO não é analise de resultados e desempenho dos robôs. 
 
 #### Preço/modelo de negócio
 
@@ -123,14 +128,15 @@ Não foi identificado modelo de cobrança ou comercialização da plataforma.
 * Processamento dividido em etapas
 * Feedback visual
 * Transformação de dados técnicos em estatísticas
-* Uso de visualizações para auxiliar a interpretação dos resultados.
+* Uso de visualizações para auxiliar a interpretação dos resultados
 
 #### Pontos positivos, limitações e lições
 
 | Ponto           | Evidência                                                     | Implicação para nosso projeto                                          |
 | --------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Modularidade    | O MARIO divide o processamento em módulos específicos.        | O fluxo da interface pode separar configuração, treinamento e análise. |
-| Feedback visual | O tracking apresenta informações sobre os objetos detectados. | O treinamento pode apresentar visualmente o comportamento do robô.     |
+| Feedback visual | O tracking representa jogo na interface. | O treinamento pode apresentar visualmente o comportamento do robô.     |
+| Falta de elementos para identificar performance | MARIO está mais centrado em análise geral da partida. | Apesar de ser útil ter o panorama geral da partida como métrica, nosso projeto visa aperceiçoar o desempenho de um robô com análise de dados centrados nele.     |
 
 ### Análise C03 — GameController
 
@@ -143,13 +149,13 @@ Não foi identificado modelo de cobrança ou comercialização da plataforma.
 
 O GameController é um software utilizado para controlar partidas de futebol de robôs da RoboCup Humanoid Soccer League. A aplicação permite configurar a competição, selecionar as equipes, definir parâmetros relacionados à partida e controlar informações durante sua execução. O projeto possui uma interface gráfica e componentes responsáveis por comunicação, execução, logs e gerenciamento do estado da partida.
 
-Ele foi selecionado como solução indireta/análogo porque está diretamente relacionado ao contexto de futebol de robôs humanoides e apresenta uma interface utilizada para configurar, controlar e acompanhar uma atividade realizada por robôs.
+Ele foi selecionado como solução indireta/análogo porque está diretamente relacionado ao contexto de futebol de robôs humanoides e apresenta uma interface utilizada para configurar, controlar e acompanhar as atividades realizadas por robôs.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade       | Como é realizada                                                              | Evidência/print                                                                         | Observação de IHC                                                |
 | -------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Configuração inicial | O Launcher permite selecionar competição, equipes, cores e interface de rede. | ![Configuração inicial do GameController](../assets/02_concorrencia/MAIN-gamecontroller.jpg) | Reúne as configurações necessárias antes do início da atividade. |
+| Tela principal | A tela principal permite visualizar os robôs conectados, as equipes que estão jogando, placar, controlar os tempos e fases, utlizandos rede. | ![Configuração inicial do GameController](../assets/02_concorrencia/MAIN-gamecontroller.jpg) | Ao controlar a partida em tempo real, fica explicito o estado de cada robô no momento do jogo. Isso é interessante pois espelha na interface o que o robô real e, futuramente, os dados coletados poderiam ser processados e virar métricas de análise. |
 | Controle da partida  | A interface principal permite acompanhar e controlar o estado do jogo.        | ![Tela de partida do GameController](../assets/02_concorrencia/start.png)               | Mantém informações importantes disponíveis durante a atividade.  |
 
 #### Experiência do usuário e opiniões

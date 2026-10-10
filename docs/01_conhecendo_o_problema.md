@@ -63,7 +63,7 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 | Nome completo | Matrícula | GitHub |
 |---|---|---|
 | Rafaela Altheman de Campos | 22.125.062-4 | RafaAltheman |
-| Manuella Filipe Peres | 24.224.039-3 | manu3lla |
+| Manuella Filipe Peres | 24.224.029-3 | manu3lla |
 | Letizia Lowatzki Baptistella | 22.125.063-2 | le-bap |
 
 ## 0.2 Título atual do TCC
