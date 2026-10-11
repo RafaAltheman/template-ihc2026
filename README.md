@@ -28,8 +28,9 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Rafaela Altheman de Campos | 22.125.062-4 | RafaAltheman |
+| Manuella Filipe Peres | 22.224.029-3 | manu3lla |
+| Letizia Lowatzki Baptistella | 22.125.063-2 | le-bap |
 
 ## Relação entre TCC e projeto de IHC
 
