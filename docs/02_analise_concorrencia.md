@@ -55,9 +55,9 @@ Pesquisadores e desenvolvedores da área de robótica humanoide também são con
 
 ### Análise C01 — NuSight
 
-**Autor(a):** Manuella Filipe Peres - 22.224.029-3
-**Tipo:** análogo
-**Link oficial:** [NuSight](https://nubook.nubots.net/system/tools/nusight#page-content)
+**Autor(a):** Manuella Filipe Peres - 22.224.029-3 <br>
+**Tipo:** análogo <br>
+**Link oficial:** [NuSight](https://nubook.nubots.net/system/tools/nusight#page-content) <br>
 **Data de acesso:** 10/10/2026
 
 #### Contexto e proposta
@@ -70,8 +70,8 @@ O NUsight foi selecionado como interface análoga porque apresenta recursos de v
 
 | Funcionalidade                          | Como é realizada                                                                                      | Evidência/print                                                     | Observação de IHC                                                            |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Dashboard com informações em tempo real | Campo dispondo dos jogadores e seu estado.                                                            | ![Dashboard do NuSight](../assets/02_concorrencia/NuSight_Dash.png) tela de Dashboard da NUSight| [F] Permite observar ao vivo a performance do robô. Para nosso projeto, poderíamo incluir um recurso similar, visto que a análise em tempo real pode ser esclarecedora em um treinamento (experiência do TCC)                              |
-| Chart tab: dados de séries temporais em um plano de coordenadas                    | Permite a visualização simultânea de múltiplos fluxos de dados em determinado período do tempo  | ![Documentação do NuSight](../assets/02_concorrencia/NUsight_chart.webp) tela de Chart do NUSight  | Centraliza informações que poderiam estar distribuídas em diferentes fontes. Este é o principal objetivo do projeto, portanto, servirá como forte referência para nosso desenvolvimento |
+| Dashboard com informações em tempo real | Campo dispondo dos jogadores e seu estado.                                                            | ![Dashboard do NuSight](../assets/02_concorrencia/NuSight_Dash.png) | [F] Permite observar ao vivo a performance do robô. Para nosso projeto, poderíamo incluir um recurso similar, visto que a análise em tempo real pode ser esclarecedora em um treinamento (experiência do TCC)                              |
+| Chart tab: dados de séries temporais em um plano de coordenadas                    | Permite a visualização simultânea de múltiplos fluxos de dados em determinado período do tempo  | ![Documentação do NuSight](../assets/02_concorrencia/NUsight_chart.webp)  | Centraliza informações que poderiam estar distribuídas em diferentes fontes. Este é o principal objetivo do projeto, portanto, servirá como forte referência para nosso desenvolvimento |
 
 #### Experiência do usuário e opiniões
 
@@ -104,9 +104,9 @@ A NUSight é disponibilizada como documentação pública da equipe NUbots. Não
 
 ### Análise C02 — Mario
 
-**Autor(a):** Letizia Lowatzki Baptistella - 22.125.063-2
-**Tipo:** análogo
-**Link oficial:** [MARIO](https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario)
+**Autor(a):** Letizia Lowatzki Baptistella - 22.125.063-2 <br>
+**Tipo:** análogo <br>
+**Link oficial:** [MARIO](https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario) <br>
 **Data de acesso:** 10/10/2026
 
 #### Contexto e proposta
@@ -150,9 +150,9 @@ Não foi identificado modelo de cobrança ou comercialização da plataforma.
 
 ### Análise C03 — GameController
 
-**Autor(a):** Rafaela Altheman de Campos - 22.125.062-4
-**Tipo:** indireto/análogo
-**Link oficial:** [GameController](https://github.com/RoboCup-HumanoidSoccerLeague/GameController)
+**Autor(a):** Rafaela Altheman de Campos - 22.125.062-4 <br>
+**Tipo:** indireto/análogo <br>
+**Link oficial:** [GameController](https://github.com/RoboCup-HumanoidSoccerLeague/GameController) <br>
 **Data de acesso:** 19/08/2026
 
 #### Contexto e proposta
@@ -168,13 +168,15 @@ A análise concentra-se nos elementos de interface observáveis e em sua possív
 | Funcionalidade       | Como é realizada                                                              | Evidência/print                                                                         | Observação de IHC                                                |
 | -------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Tela principal | A interface de controle da partida apresenta informações como placar, cronômetro, identificação das equipes e cartões relacionados aos jogadores. Os elementos estão distribuídos em regiões que permitem acompanhar o andamento do jogo e realizar ações operacionais. | ![Configuração inicial do GameController](../assets/02_concorrencia/MAIN-gamecontroller.jpg) | Ao controlar a partida em tempo real, fica explicito o estado de cada robô no momento do jogo. Isso é interessante pois espelha na interface o que o robô real e, futuramente, os dados coletados poderiam ser processados e virar métricas de análise. |
-|  |  | ![GameController](../assets/02_concorrencia/gamecontroller.png) |  |
+| Tela inicialização | Nessa tela é selecionado os times, a cor de cada um deles e a interface | ![GameController](../assets/02_concorrencia/gamecontroller.png) | A tela de parametrização traz uma referência (neste caso, mais simples) para nossa tela de parametrização antes da partida  |
 
 #### Experiência do usuário e opiniões
 
 [F] A interface do GameController apresenta informações organizadas por equipe, com destaque para o tempo e o placar da partida. O agrupamento de controles e indicadores favorece a identificação de informações relacionadas ao mesmo contexto.
 
 [F] Na imagem analisada, diferentes elementos utilizam cores e variações de aparência para representar informações ou condições da partida, incluindo controles visualmente esmaecidos.
+
+[F] O fluxo de uso do GameController apresenta semelhanças ao projeto que estamos construindo: a partir de uma parametrização, acontece uma partida. Entretanto, iremos nos diferenciar a medida que as parametrizações também estão relacionadas ao robô e, após o jogo, traremos métricas de desempenho do robô e da partida.
 
 [?] A imagem analisada não demonstra, por si só, quais validações ocorrem durante a configuração inicial da partida. Portanto, não é possível confirmar visualmente regras de prevenção de erros relacionadas à seleção das equipes ou às cores utilizadas.
 
