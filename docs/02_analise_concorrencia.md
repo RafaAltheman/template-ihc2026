@@ -214,4 +214,162 @@ Sua análise permite identificar padrões de apresentação de séries temporais
 | --- | --- | --- | --- |
 | Visualização de métricas | Apresenta gráficos com os valores registrados durante os experimentos, permitindo acompanhar a evolução das métricas ao longo das etapas de treinamento. | ![Visualização de métricas no TensorBoard](../assets/02_concorrencia/tensorboard-metricas.png) | [F] Os gráficos organizam valores das métricas em séries, permitindo observar alterações ao longo do treinamento. [H] A representação gráfica pode facilitar a identificação de tendências, mas exige atenção aos eixos, escalas e unidades para evitar interpretações equivocadas. |
 | Comparação de execuções | Permite visualizar métricas de diferentes execuções de treinamento, utilizando séries identificadas para facilitar a comparação dos resultados. | ![Comparação de execuções no TensorBoard](../assets/02_concorrencia/tensorboard-comparacao.png) | [F] A visualização de diferentes execuções permite observar seus resultados em um mesmo contexto gráfico. [H] A comparação pode ajudar a identificar diferenças de desempenho, mas muitas séries simultâneas podem dificultar a leitura e a identificação de cada experimento. |
-| Organização de gráficos | Disponibiliza recursos de organização e seleção das informações apresentadas, facilitando a consulta de métricas
+| Organização de gráficos | Disponibiliza recursos de organização e seleção das informações apresentadas, facilitando a consulta de métricas específicas. | ![Organização de gráficos no TensorBoard](../assets/02_concorrencia/tensorboard-organizacao.png) | [F] Os recursos de organização permitem localizar conjuntos de gráficos e métricas. [H] O agrupamento pode facilitar a navegação, mas uma quantidade elevada de painéis e indicadores pode aumentar a complexidade visual. |
+
+#### Experiência do usuário e opiniões
+
+[H] A visualização de métricas em gráficos pode facilitar a identificação de tendências durante os treinamentos, principalmente quando diferentes execuções são apresentadas com identificação consistente.
+
+[H] A quantidade de séries e indicadores exibidos simultaneamente pode dificultar a leitura e a comparação dos resultados. A interpretação dos gráficos também depende do conhecimento das métricas, das escalas e das condições dos experimentos.
+
+Para o projeto, o TensorBoard constitui uma referência relevante para pensar a organização das métricas, a comparação entre experimentos e a apresentação de informações que apoiem decisões sobre ajustes nos treinamentos.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+| --- | --- | --- |
+| Visualização de métricas | O TensorBoard apresenta gráficos que mostram a evolução das métricas ao longo do treinamento. | Apresentar a evolução de métricas relevantes, facilitando a interpretação do desempenho do robô. |
+| Comparação de execuções | A ferramenta permite visualizar diferentes execuções de treinamento, identificadas nos gráficos. | Facilitar a comparação entre treinamentos e a identificação de diferenças nos resultados. |
+| Excesso de gráficos | A apresentação simultânea de diversas séries e painéis pode dificultar a leitura das informações. | Disponibilizar filtros e opções de seleção de métricas para reduzir a complexidade visual. |
+| Necessidade de contexto | A interpretação dos gráficos depende da identificação dos eixos, escalas, unidades e execuções. | Identificar claramente as métricas, os experimentos e os períodos analisados para evitar interpretações equivocadas. |
+
+
+## 3. Softwares que o público-alvo usa no cotidiano
+
+Analise interfaces que moldam a expectativa do público, mesmo que não sejam concorrentes.
+
+| Software         | Por que o público usa                                                              | Padrões relevantes                                                          | Prints                                                        | O que aprender                                                                                                           |
+| ---------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| JupyterLab | Executar experimentos, analisar dados, visualizar gráficos e registrar resultados. | Células, gráficos, execução por etapas e organização do experimento.        | ![Jupyter Notebook](../assets/02_concorrencia/labpreview.png) | A organização de código, resultados e gráficos em um mesmo ambiente permite relacionar os dados às operações que os produziram. Para o projeto, essa característica sugere apresentar métricas com identificação clara dos experimentos e de seus parâmetros, evitando que os gráficos fiquem isolados de seu contexto.             |
+| GitHub Desktop       | Armazenar código, acompanhar alterações e colaborar no desenvolvimento.            | Navegação por projetos, histórico, versionamento e organização de arquivos. | ![GitHub](../assets/02_concorrencia/github.png)               | A organização por histórico e a visualização de diferenças entre versões permitem identificar alterações realizadas ao longo do tempo. Para o projeto, o padrão pode servir como referência para a comparação entre resultados de experimentos, embora diferenças de código e diferenças de desempenho sejam informações de naturezas distintas.             |
+| VS Code          | Desenvolver e executar código utilizado nos experimentos.                          | Abas, terminal, explorador de arquivos, extensões e feedback de execução.   | ![VS Code](../assets/02_concorrencia/vscode.png)              | A organização em áreas de trabalho, com recursos acessíveis em uma mesma interface, favorece a concentração de ferramentas relacionadas. Entretanto, a presença de muitos painéis pode aumentar a complexidade visual. Para o projeto, recomenda-se priorizar os elementos necessários à interpretação dos resultados. |
+
+## 3.1 Padrões de interface relevantes ao escopo de IHC
+
+Registre somente padrões encontrados nas soluções analisadas e que possam ter relação com objetivos reais da equipe.
+
+| Padrão observado                      | Produto(s)                | Para qual tarefa serve                                                               | Vantagem percebida                                                             | Risco/limitação                                                                              | Aplicável ao nosso escopo? |
+| ------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- | -------------------------- |
+| **Execução por etapas**               | Jupyter Notebook          | Executar experimentos e acompanhar cada etapa do processamento.                      | Facilita a organização e o acompanhamento do experimento.                      | Muitos passos ou células podem dificultar a compreensão do fluxo.                            | **Não**                    |
+| **Visualização de resultados**        | Jupyter Notebook          | Analisar dados e visualizar gráficos gerados pelos experimentos.                     | Facilita a interpretação dos resultados por meio de representações visuais.    | O excesso de gráficos e informações pode dificultar a análise.                               | **Sim**                    |
+| **Histórico e versionamento**         | GitHub                    | Acompanhar alterações no código e consultar versões anteriores.                      | Favorece a rastreabilidade das alterações e dos experimentos.                  | A quantidade de versões e informações pode tornar a navegação mais complexa.                 | **Sim**                    |
+| **Organização por projetos/arquivos** | GitHub; VS Code           | Organizar códigos, arquivos e recursos utilizados no desenvolvimento.                | Facilita a localização e o gerenciamento dos arquivos relacionados ao projeto. | Estruturas muito grandes podem dificultar a localização de informações.                      | **Sim**                    |
+| **Abas e recursos integrados**        | VS Code                   | Desenvolver e executar código utilizando diferentes recursos em uma mesma interface. | Reduz a necessidade de alternar entre diferentes ferramentas.                  | Uma interface com muitos recursos pode aumentar a complexidade visual.                       | **Sim**                    |
+| **Feedback de execução**              | Jupyter Notebook; VS Code | Acompanhar a execução de código e identificar resultados ou problemas.               | Permite perceber rapidamente o resultado de uma ação ou execução.              | Mensagens de erro ou resultados muito extensos podem dificultar a identificação do problema. | **Sim**                    |
+| **Comparação/análise de resultados**  | Jupyter Notebook          | Analisar e interpretar os resultados obtidos nos experimentos.                       | Facilita a avaliação dos resultados gerados durante os experimentos.           | A comparação pode se tornar difícil quando há muitos resultados simultâneos.                 | **Sim**                    |
+
+> O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
+
+> A execução de treinamentos por etapas não foi considerada como funcionalidade central da interface proposta, pois o escopo prioriza a consulta, interpretação e comparação dos resultados obtidos.
+
+> Por outro lado, a organização da análise em etapas de seleção de experimento, visualização de métricas e comparação de resultados poderá ser considerada como alternativa de navegação, desde que esteja relacionada às tarefas identificadas para o público-alvo.
+
+
+## 4. Síntese comparativa da equipe
+
+| Critério | C01 — NUsight | C02 — MARIO | C03 — GameController | C04 — TensorBoard | Oportunidade para o projeto |
+| --- | --- | --- | --- | --- | --- |
+| Navegação | Organiza informações técnicas em categorias e abas. | Não há evidência suficiente para avaliar a navegação da interface. | Agrupa informações e controles relacionados às equipes e à partida. | Organiza gráficos e métricas em painéis de visualização. | Organizar experimentos e métricas de maneira clara e acessível. |
+| Feedback/estado | Apresenta informações sobre o estado dos robôs. | Utiliza representações gráficas para comunicar dados de partidas. | Apresenta o estado da partida, placar e cronômetro. | Apresenta a evolução das métricas registradas nos experimentos. | Permitir identificar o estado dos experimentos e interpretar os resultados obtidos. |
+| Prevenção/recuperação de erros | Não há evidência visual suficiente sobre mecanismos de prevenção de erros. | Não há evidência suficiente sobre mecanismos de validação e recuperação de erros. | A documentação descreve validações de configuração, mas os prints não demonstram essas regras. | A identificação dos gráficos e das execuções pode reduzir ambiguidades, mas não comprova mecanismos de validação. | Utilizar identificações claras e mensagens compreensíveis para evitar interpretações equivocadas. |
+| Terminologia | Utiliza termos técnicos relacionados ao monitoramento de robôs. | Apresenta termos relacionados a estatísticas e processamento de dados de partidas. | Utiliza termos relacionados a equipes, jogadores e controle de partidas. | Utiliza termos relacionados a métricas, gráficos e execuções de treinamento. | Empregar termos familiares ao público-alvo e explicar indicadores mais técnicos quando necessário. |
+| Acessibilidade | A quantidade de indicadores exige atenção à legibilidade. | A interpretação das representações depende de legendas e contexto. | O uso de cores para diferenciar informações exige cuidados de acessibilidade. | A apresentação de múltiplas séries exige atenção ao contraste e à identificação dos gráficos. | Utilizar rótulos, legendas, contraste adequado e evitar a dependência exclusiva de cores. |
+| Eficiência | Reúne diferentes informações técnicas em uma mesma ferramenta. | Apresenta resultados visuais que podem apoiar a interpretação de dados. | Organiza informações prioritárias em regiões específicas da interface. | Permite consultar métricas e comparar diferentes execuções. | Facilitar a localização das informações e reduzir a necessidade de alternar entre ferramentas. |
+| Aplicação ao projeto de IHC | Referência para organização de informações técnicas e apresentação de estados. | Referência para representação visual de dados relacionados ao comportamento dos robôs. | Referência para hierarquia visual e agrupamento de indicadores. | Referência para acompanhamento de métricas e comparação de experimentos. | Desenvolver uma interface voltada à visualização, interpretação e comparação dos resultados de treinamentos. |
+
+A comparação demonstra que as ferramentas analisadas apresentam diferentes soluções para organizar e visualizar informações técnicas. Entretanto, NUsight, MARIO e GameController estão relacionados principalmente ao acompanhamento de robôs e partidas, enquanto o TensorBoard possui funcionalidades mais diretamente relacionadas à análise de experimentos de aprendizado de máquina.
+
+Dessa forma, os padrões observados serão considerados como referências para o projeto, respeitando a diferença entre monitorar uma partida e interpretar os resultados de treinamentos. A prioridade será facilitar a consulta de métricas, a identificação de experimentos e a comparação dos resultados, sem ampliar automaticamente o escopo para o controle ou a execução de treinamentos.
+
+
+## 5. Recomendações derivadas
+
+**RC01 — Apresentação clara do estado dos experimentos**
+
+- **Origem:** C01 (NUsight) e C03 (GameController).
+- **Evidência:** O dashboard do NUsight apresenta indicadores de estado dos robôs, enquanto o GameController organiza informações sobre o andamento de uma partida.
+- **Tarefa relacionada:** Identificar e consultar informações de uma execução de treinamento.
+- **Recomendação:** Apresentar de maneira clara a identificação e o estado registrado de cada experimento, diferenciando informações de execução dos indicadores de desempenho.
+- **Risco:** A quantidade excessiva de indicadores pode dificultar a identificação das informações relevantes.
+- **Prioridade proposta:** Média.
+
+**RC02 — Organização da navegação para análise dos resultados**
+
+- **Origem:** C01 (NUsight) e interfaces de análise de experimentos.
+- **Evidência:** O NUsight utiliza categorias para organizar informações técnicas, enquanto ferramentas de análise de experimentos oferecem recursos para consultar diferentes conjuntos de métricas.
+- **Tarefa relacionada:** Selecionar um experimento, consultar suas métricas e acessar os resultados disponíveis.
+- **Recomendação:** Organizar a navegação de forma que o usuário consiga localizar experimentos e consultar seus resultados sem depender de funcionalidades de controle ou execução de treinamentos.
+- **Risco:** Uma estrutura com muitas categorias ou etapas pode aumentar a complexidade da navegação.
+- **Prioridade proposta:** Alta.
+
+**RC03 — Visualização de métricas e resultados**
+
+- **Origem:** C01 (NUsight), C02 (MARIO), JupyterLab e ferramenta de análise de experimentos.
+- **Evidência:** As referências analisadas apresentam diferentes formas de representar informações técnicas por meio de gráficos e visualizações de resultados.
+- **Tarefa relacionada:** Interpretar o desempenho do robô a partir das métricas registradas durante os treinamentos.
+- **Recomendação:** Apresentar métricas relevantes por meio de gráficos com identificação das variáveis, unidades, escalas e experimentos associados.
+- **Risco:** O excesso de gráficos ou a ausência de contexto pode dificultar a interpretação.
+- **Prioridade proposta:** Alta.
+
+**RC04 — Clareza e identificação das informações consultadas**
+
+- **Origem:** C01 (NUsight), C03 (GameController) e JupyterLab.
+- **Evidência:** As interfaces utilizam diferentes formas de organização, identificação visual e agrupamento de informações técnicas.
+- **Tarefa relacionada:** Identificar corretamente os experimentos, métricas e informações apresentados na interface.
+- **Recomendação:** Utilizar rótulos claros, agrupamentos consistentes e identificação das informações para reduzir ambiguidades durante a análise.
+- **Risco:** A utilização isolada de cores, abreviações ou termos técnicos pode prejudicar a compreensão dos dados.
+- **Prioridade proposta:** Alta.
+
+**RC05 — Organização das informações relacionadas aos experimentos**
+
+- **Origem:** C01 (NUsight), VS Code e JupyterLab.
+- **Evidência:** As ferramentas apresentam recursos para organizar diferentes categorias de informações em regiões ou áreas de trabalho relacionadas.
+- **Tarefa relacionada:** Consultar métricas e informações associadas a um mesmo treinamento.
+- **Recomendação:** Organizar os resultados e seus respectivos contextos de forma integrada, buscando reduzir a alternância desnecessária entre diferentes visualizações.
+- **Risco:** A concentração excessiva de informações pode tornar a interface visualmente complexa.
+- **Prioridade proposta:** Média.
+
+**RC06 — Histórico e comparação dos resultados**
+
+- **Origem:** GitHub Desktop e ferramenta de análise de experimentos.
+- **Evidência:** O GitHub Desktop utiliza histórico e comparação visual de alterações, enquanto ferramentas de acompanhamento de experimentos oferecem referências para visualizar resultados de diferentes execuções.
+- **Tarefa relacionada:** Comparar treinamentos e identificar diferenças entre os resultados obtidos.
+- **Recomendação:** Permitir consultar o histórico de experimentos e apresentar informações que auxiliem a comparação entre diferentes execuções de treinamento.
+- **Risco:** A comparação de muitos experimentos simultaneamente pode dificultar a identificação das diferenças relevantes.
+- **Prioridade proposta:** Alta.
+
+### Recomendações revisadas ou descartadas
+
+A formulação original de RC02, que propunha organizar etapas de configuração, execução e análise de treinamentos, foi substituída por uma recomendação voltada à navegação para consulta de resultados.
+
+A formulação original de RC04, que propunha validar parâmetros antes da execução do treinamento, foi substituída por uma recomendação de identificação e clareza das informações consultadas.
+
+Essas alterações preservam o foco definido para a interface do projeto: análise e comparação de resultados, sem ampliar automaticamente o escopo para orquestração ou controle dos treinamentos.
+
+As recomendações deverão ser associadas aos códigos específicos de atividades e hipóteses da Entrega 1 na matriz de rastreabilidade.
+
+
+## Referências
+
+NuSight: https://nubook.nubots.net/system/tools/nusight#page-content
+
+MARIO: https://sites.google.com/unibas.it/wolves/robocup/robocup-2022/mario
+
+GameController: https://github.com/RoboCup-HumanoidSoccerLeague/GameController
+
+TensorBoard: https://www.tensorflow.org/tensorboard
+
+
+## Checklist
+
+* [x] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
+* [x] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
+* [x] Há pelo menos uma análise completa por integrante.
+* [x] Cada análise contém prints legíveis da interface.
+* [x] Prints mostram telas/estados relevantes, não apenas logos/homepage.
+* [x] Foram analisados concorrentes e/ou interfaces representativas ao público.
+* [x] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido.
+* [x] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
+* [x] Opiniões de UX têm fonte.
+* [x] A síntese compara critérios comuns e produz recomendações.
+* [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
