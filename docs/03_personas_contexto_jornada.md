@@ -41,7 +41,7 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 
 **Autor(a):** Rafaela Altheman de Campos — 22.125.062-4  
 **Tipo:** primária  
-**Base de evidências:** experiência da equipe
+**Base de evidências:** experiência da equipe <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
 ![Persona P01](../assets/03_personas/rafael.png)
@@ -60,6 +60,8 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 | Ambiente típico de uso | Laboratório de robótica ou ambiente de desenvolvimento, utilizando computador ou notebook durante treinamentos, testes e preparação para competições. [H] |
 | Comportamentos relevantes | Executa diversos ciclos de treinamento, acompanha métricas, observa o comportamento do robô, compara resultados e ajusta parâmetros para novos experimentos. [F/H] |
 
+Rafael é um estudante de Engenharia de Robôs e participa ativamente da equipe de robótica humanoide da faculdade. Além dos estudos relacionados ao curso, ele dedica parte de sua rotina ao desenvolvimento e à avaliação do robô de sua equipe. Durante os treinamentos, acompanha métricas e observa o comportamento do robô para identificar possíveis problemas. Ao finalizar uma execução, interpreta os resultados para decidir se as alterações realizadas contribuíram para a evolução do desempenho ou se novos ajustes são necessários. Ele interage com seus colegas de equipe, e ocasionalmente utiliza da ajuda deles para reajustar os parâmetros. Após realizar suas atividades no projeto, Rafael vai às aulas de seu curso e, ao fim, volta de transporte público para casa. Chegando lá, ele procura descansar para iniciar o dia seguinte se sentindo bem.
+
 **Decisões de design influenciadas por P01:**
 
 - Priorizar uma visão rápida das principais métricas de desempenho, sem esconder informações técnicas importantes.
@@ -75,7 +77,7 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 
 **Autor(a):** Manuella Filipe Peres — 22.224.029-3  
 **Tipo:** primária  
-**Base de evidências:** experiência da equipe
+**Base de evidências:** experiência da equipe <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
 ![Persona P02](../assets/03_personas/marina.png)
@@ -109,8 +111,8 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 ### Persona P03 — Carlos Almeida
 
 **Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2  
-**Tipo:** primária  
-**Base de evidências:** participação de professores e orientadores no projeto
+**Tipo:** secundária  
+**Base de evidências:** participação de professores e orientadores no projeto <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H02
 
 ![Persona P03](../assets/03_personas/carlos.png)
@@ -128,6 +130,8 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 | Restrições/acessibilidade | Possui pouco tempo disponível para analisar cada experimento individualmente. A interface deve permitir uma leitura rápida, mas possibilitar acesso aos detalhes quando necessário. [H] |
 | Ambiente típico de uso | Universidade, laboratório ou reuniões da equipe, utilizando computador ou notebook para acompanhar resultados e discutir decisões técnicas. [H] |
 | Comportamentos relevantes | Consulta resultados consolidados, compara versões ou experimentos relevantes, questiona resultados inesperados e utiliza as informações para orientar a equipe. [H] |
+
+Carlos Almeida da aulas de robótica em uma faculdade e atua como professor orientador de um projeto de robôs humanoides que jogam futebol. Todo dia, Carlos acorda, toma café da manhã, veste uma jeans e uma camiseta (muitas vezes, a camiseta da equipe que orienta) e vai pra faculdade. Lá, ele dá aulas, almoça com os professores e socializa com estudantes. Por ter uma grade de aulas cheia, sua participação no projeto se dá durante a semana de forma distribuida. Ele participa da reunião geral junto com os alunos e utiliza métricas para ajudá-los a interpretar possíveis melhorias e entender o que foi feito durante a semana. Nos dias em que não tem reunião, os alunos o contactam por mensagem, se necessário. Após a faculdade, ele volta pra casa para descansar.
 
 **Decisões de design influenciadas por P03:**
 
