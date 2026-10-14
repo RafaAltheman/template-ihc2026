@@ -53,8 +53,6 @@ Recomendações conforme a versão **revisada após feedback** da Entrega 2. As 
 | RC05 | Organizar os resultados e seus contextos de forma integrada, reduzindo a alternância desnecessária entre diferentes visualizações | C01 (NuSight), VS Code, JupyterLab | H01a | PENDENTE (Entrega 2: consultar métricas e informações associadas a um mesmo treinamento) | F01 | revisada |
 | RC06 | Permitir consultar o histórico de experimentos e apresentar informações que auxiliem a comparação entre execuções de treinamento | GitHub Desktop, TensorBoard | H01a, H01b, H02 | PENDENTE (Entrega 2: comparar treinamentos e identificar diferenças entre resultados) | F02, F03 | revisada |
 
-**Pendências da Entrega 2:** substituir o print e ajustar a descrição/textos da análise C03 — GameController. Após o ajuste, conferir se RC01 e RC04 continuam coerentes com a evidência e atualizar o estado para `revisada` sem ressalvas.
-
 ## 2.3 Registro de cenários da Entrega 4
 
 | ID | Cenário | Autor(a) | Persona | Necessidade relacionada | Situação concreta da Entrega 1 | Hipóteses relacionadas | Estado |
