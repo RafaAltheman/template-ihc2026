@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{02/09/2026}}  
-**Status:** 🟩 Concluida
+**Data:** {{02/09/2026}}  <br>
+**Status:** 🟩 Concluida <br>
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -76,7 +76,7 @@ Rafael é um estudante de Engenharia de Robôs e participa ativamente da equipe 
 ### Persona P02 — Marina Oliveira
 
 **Autor(a):** Manuella Filipe Peres — 22.224.029-3  
-**Tipo:** primária  
+**Tipo:** secundário 
 **Base de evidências:** experiência da equipe <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
 
@@ -84,27 +84,28 @@ Rafael é um estudante de Engenharia de Robôs e participa ativamente da equipe 
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | 27 anos; pesquisadora que atua diretamente no desenvolvimento de um robô de robótica humanoide [H] |
-| Ocupação/papel | Pesquisadora de robótica responsável por estudar, testar e aprimorar o comportamento e a locomoção do robô. [H] |
-| Conhecimento do domínio | Avançado em robótica e aprendizado de máquina, com conhecimento sobre locomoção humanoide, treinamento de agentes e avaliação de desempenho de robôs. [H] |
-| Experiência tecnológica | Tem experiência alta: utiliza ferramentas de programação, simulação, treinamento, coleta de dados, visualização de métricas e análise de resultados. [H] |
-| Objetivos | Melhorar o desempenho do robô, testar diferentes estratégias de locomoção, identificar configurações mais eficientes e compreender os resultados obtidos durante os treinamentos. [H] |
-| Necessidades | Acessar rapidamente os resultados dos treinamentos, comparar diferentes experimentos, visualizar métricas de desempenho e consultar os parâmetros utilizados em cada execução. [H] |
-| Dores/frustrações | A quantidade de experimentos e dados gerados durante os treinamentos pode dificultar a comparação entre resultados. Também pode ser trabalhoso identificar quais alterações nos parâmetros realmente contribuíram para a melhora ou piora do robô. [H] |
-| Motivadores | Melhorar o desempenho do robô, reduzir o tempo necessário para análise dos experimentos, encontrar configurações mais eficientes e obter resultados confiáveis para orientar os próximos treinamentos. [H] |
-| Restrições/acessibilidade | Possui conhecimento técnico elevado, mas trabalha com grande quantidade de informações e resultados simultaneamente. A interface deve facilitar a análise sem esconder informações importantes para a pesquisa. [H] |
-| Ambiente típico de uso | Laboratório de robótica ou ambiente de desenvolvimento, utilizando computador para executar treinamentos, acompanhar testes e analisar os resultados do robô. [H] |
-| Comportamentos relevantes | Executa treinamentos e testes, altera parâmetros do robô, acompanha métricas, compara diferentes execuções, analisa o comportamento do robô e utiliza os resultados para definir novos experimentos. [H] |
+| Faixa etária / contexto relevante | 27 anos; pesquisadora que desenvolve estudos relacionados à robótica e ao funcionamento de robôs humanoides. [H] |
+| Ocupação/papel | Pesquisadora de robótica que utiliza ferramentas de simulação, experimentação e análise para estudar o comportamento de robôs humanoides. [H] |
+| Conhecimento do domínio | Possui conhecimentos em robótica e interesse em aprofundar sua compreensão sobre o funcionamento, as capacidades e as limitações de robôs humanoides. [H] |
+| Experiência tecnológica | Utiliza ferramentas digitais para consultar resultados, realizar experimentos e analisar dados relacionados à robótica. [H] |
+| Objetivos | Compreender o comportamento de robôs humanoides, explorar suas capacidades e realizar experimentos que contribuam para suas investigações. [H] |
+| Necessidades | Consultar resultados de experimentos, compreender o significado das métricas e relacionar os dados apresentados ao comportamento observado do robô. [H] |
+| Dores/frustrações | Informações apresentadas sem contexto e métricas muito específicas podem dificultar a compreensão dos resultados, especialmente quando não está familiarizada com as técnicas utilizadas no experimento. [H] |
+| Motivadores | Ampliar seus conhecimentos sobre robótica humanoide, investigar comportamentos e utilizar resultados experimentais para desenvolver suas pesquisas. [H] |
+| Restrições/acessibilidade | Pode não conhecer todos os parâmetros, métodos de treinamento ou critérios de avaliação empregados no projeto. [H] |
+| Ambiente típico de uso | Universidade, laboratório ou ambiente de pesquisa, utilizando computador para consultar resultados e realizar ou acompanhar experimentos. [H] |
+| Comportamentos relevantes | Explora resultados de experimentos, observa o comportamento do robô, consulta informações sobre métricas e utiliza os dados disponíveis para compreender resultados e orientar novas investigações. [H] |
+
+Marina Oliveira acorda pela manhã, toma café e se prepara para mais um dia dedicado às suas pesquisas em robótica. Ao chegar ao laboratório, organiza as atividades que pretende realizar e inicia o trabalho consultando os resultados de experimentos anteriores com robôs humanoides. Curiosa para compreender melhor o funcionamento dessas máquinas, Marina observa os comportamentos apresentados e analisa métricas que possam ajudá-la a identificar suas capacidades e limitações. Quando encontra resultados difíceis de interpretar ou indicadores com os quais não está familiarizada, procura informações adicionais para compreender o que eles representam e como se relacionam ao comportamento do robô. Ao longo do dia, utiliza essas observações para levantar novas questões, explorar possibilidades e planejar outros experimentos que contribuam para sua pesquisa. Antes de encerrar o expediente, registra suas observações e organiza os pontos que deseja investigar posteriormente. Marina termina o dia satisfeita por ter ampliado sua compreensão sobre a robótica humanoide, mesmo sabendo que novas perguntas surgirão a cada experimento.
 
 **Decisões de design influenciadas por P02:**
 
-- Permitir comparar diferentes treinamentos e execuções do robô.
-- Exibir as principais métricas de desempenho de maneira clara e objetiva.
-- Permitir consultar os parâmetros utilizados em cada treinamento.
-- Facilitar a identificação de melhorias ou regressões no desempenho do robô.
-- Disponibilizar histórico dos experimentos para evitar a perda de informações de treinamentos anteriores.
-- Apresentar informações técnicas suficientes para apoiar decisões de pesquisa sem sobrecarregar a visualização inicial.
-- Permitir relacionar os resultados quantitativos das métricas com o comportamento observado no robô.
+- Apresentar explicações sobre o significado das métricas de desempenho, facilitando sua interpretação.
+- Relacionar os indicadores apresentados ao comportamento observado do robô durante os experimentos.
+- Disponibilizar informações contextuais sobre os experimentos para auxiliar na compreensão dos resultados.
+- Permitir explorar os resultados de diferentes execuções para investigar comportamentos e capacidades do robô.
+- Organizar as informações de modo que usuários com diferentes níveis de familiaridade com as técnicas empregadas consigam compreender os resultados.
+- Permitir consultar detalhes técnicos adicionais quando necessário, sem exigir que todas essas informações estejam presentes na visualização inicial.
 
 ---
 
@@ -144,15 +145,17 @@ Carlos Almeida da aulas de robótica em uma faculdade e atua como professor orie
 
 ### Síntese das personas
 
-As três personas representam diferentes formas de interação com os resultados do desenvolvimento de robôs humanoides. Rafael é o usuário técnico e primário, que realiza treinamentos, acompanha métricas e toma decisões diretamente relacionadas ao desenvolvimento do walking. Marina representa o contexto de pesquisa, no qual a comparação e a reprodutibilidade dos experimentos são importantes. Carlos representa o papel de orientação e tomada de decisão, necessitando principalmente compreender a evolução geral e identificar problemas relevantes sem necessariamente acompanhar cada execução.
+## 2. Síntese das personas
 
-A Persona P01 (Rafael Martins) é considerada prioritária para o projeto de IHC, pois corresponde mais diretamente ao perfil definido na Entrega 1: estudante de uma equipe de robótica humanoide responsável por acompanhar, analisar e contribuir para a melhoria do desempenho do robô. O objetivo principal da interface é justamente apoiar esse usuário na visualização, comparação e interpretação dos resultados. [F] 
+As três personas representam diferentes formas de utilizar a interface para compreender e avaliar o desempenho de robôs humanoides. Rafael Martins é a persona primária e representa o estudante que participa diretamente do desenvolvimento do robô de sua equipe de futebol. Seu foco está em analisar métricas, comparar treinamentos e identificar ajustes que contribuam para melhorar o desempenho do robô. Marina Oliveira é uma persona secundária que representa a pesquisadora interessada em aprofundar seus conhecimentos sobre robótica humanoide. Ela utiliza os resultados dos experimentos para compreender o comportamento dos robôs, investigar suas capacidades e limitações e orientar novas pesquisas. Já Carlos Almeida é uma persona secundária que representa o professor orientador, que consulta informações consolidadas para acompanhar a evolução do projeto e orientar as decisões da equipe.
+
+Embora compartilhem o interesse pelos resultados dos experimentos, as personas possuem necessidades distintas. Rafael prioriza a análise técnica voltada à melhoria do robô; Marina valoriza informações contextualizadas que facilitem a compreensão e a investigação do comportamento dos robôs humanoides; e Carlos necessita de uma visão geral que permita acompanhar o progresso do projeto sem precisar analisar individualmente cada execução. Dessa forma, as personas orientam diferentes decisões de design, mantendo Rafael como foco principal da interface e considerando as necessidades complementares de Marina e Carlos.
 
 As características de Marina e Carlos permanecem parcialmente como proto-personas, pois a Entrega 1 ainda não apresenta entrevistas ou questionários específicos com pesquisadores externos e professores/orientadores. Portanto, suas características devem ser validadas nas próximas etapas, especialmente na investigação das hipóteses H01, H02 e H03.
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** P01 — Rafael Martins
+**Persona escolhida:** P01 — Rafael Martins <br>
 **Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o estudante que faz parte de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
 
 ![Mapa de empatia](../assets/03_personas/mapadaempatia.png)
@@ -161,27 +164,33 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 O que vê
 
-[F] Rafael acompanha treinamentos, gráficos e métricas como recompensa, velocidade, distância e taxa de quedas, além de observar o comportamento do robô. Essas informações podem estar distribuídas entre diferentes execuções e ferramentas.
+[F] A equipe acompanha treinamentos, gráficos e métricas, como recompensa, velocidade, distância percorrida e taxa de quedas, além de observar o comportamento do robô. Essas informações podem estar distribuídas entre diferentes execuções e ferramentas.
 
 O que ouve
 
-[H] Participa de discussões com integrantes da equipe, professores e orientadores sobre o desempenho do robô e possíveis ajustes nos próximos experimentos.
+[F] A equipe participa de discussões técnicas entre seus integrantes e recebe orientações de professores e orientadores sobre o desempenho do robô.
+
+[H] Rafael também pode ouvir opiniões e sugestões sobre ajustes de parâmetros e possíveis experimentos futuros.
 
 O que diz e faz
 
-[H] Executa ou acompanha treinamentos, analisa métricas, observa o robô e compara resultados para decidir quais ajustes devem ser realizados.
+[F] A equipe executa treinamentos e testes, analisa métricas, observa o comportamento do robô e compara os resultados obtidos.
+
+[H] Rafael utiliza essas informações para avaliar o desempenho, identificar possíveis problemas e decidir quais ajustes devem ser realizados.
 
 O que pensa e sente
 
-[H] Quer ter confiança de que os resultados realmente representam uma melhora no comportamento do robô e pode ter dúvidas quando diferentes métricas apontam conclusões distintas.
+[H] Rafael quer melhorar o desempenho do robô e busca tomar decisões técnicas com base em evidências. Pode sentir dúvidas quando diferentes métricas apontam conclusões distintas e deseja confiar que os resultados representam uma melhora real no comportamento do robô.
 
 Dores
 
-[H] Pode ter dificuldade para comparar execuções, recuperar parâmetros antigos e interpretar corretamente o desempenho quando as informações estão dispersas ou quando uma única métrica parece positiva.
+[H] Rafael pode ter dificuldade para comparar execuções, recuperar parâmetros utilizados anteriormente e relacionar os resultados numéricos ao comportamento observado. Também pode interpretar uma única métrica positiva como uma melhora geral, mesmo quando outros indicadores apontam problemas. 
+
+[F] A pressão para obter bons resultados em testes pode tornar essas análises ainda mais desafiadora se a equipe dele participar de competições.
 
 Ganhos
 
-[H] Busca visualizar e comparar resultados com mais facilidade, consultar o histórico dos experimentos e identificar rapidamente melhorias ou regressões para apoiar as decisões da equipe.
+[H] Rafael busca visualizar métricas de forma rápida, comparar treinamentos e versões do robô, consultar o histórico de parâmetros e identificar melhorias ou regressões. O objetivo é utilizar essas informações para tomar decisões técnicas mais fundamentadas e contribuir para a evolução do desempenho do robô.
 
 ## 3. Contexto de uso — consolidação
 
@@ -190,8 +199,9 @@ Ganhos
 | Usuários | [F] No contexto do TCC, os principais envolvidos são integrantes da equipe de robótica que realizam treinamentos, analisam resultados e participam das decisões técnicas. [H] Pesquisadores e professores/orientadores também podem utilizar a interface para acompanhar e interpretar os resultados. | Priorizar o integrante técnico da equipe como usuário principal, mantendo informações detalhadas para análise e uma visão mais resumida para acompanhamento. |
 | Tarefas | [F] A equipe executa treinamentos, acompanha métricas, observa o comportamento do robô e compara resultados para decidir os próximos ajustes. [H] A futura interface pode reunir essas informações em um único ambiente para facilitar a análise. | A interface deve facilitar a visualização de métricas, comparação de resultados, consulta de parâmetros e identificação de melhorias ou regressões. |
 | Equipamentos | [F] No TCC, os treinamentos e análises são realizados em computadores utilizados pela equipe. [H] A futura interface provavelmente será utilizada principalmente em computadores ou notebooks. | Projetar a interface prioritariamente para telas de computador, com espaço adequado para gráficos, tabelas, métricas e comparações. |
-| Ambiente físico | [H] A utilização pode ocorrer principalmente em laboratórios de robótica, ambientes de desenvolvimento ou durante reuniões da equipe. Também pode existir maior pressão de tempo em períodos próximos a testes e competições. | Organizar as informações de forma clara e evitar excesso de elementos, permitindo que o usuário encontre rapidamente os dados mais importantes. |
-| Ambiente social/organizacional | [F] O desenvolvimento do projeto ocorre de forma colaborativa entre integrantes da equipe e possui acompanhamento de professores e orientadores. [H] Os resultados da interface podem ser utilizados durante discussões para decidir os próximos experimentos e ajustes. | Manter informações de contexto de cada treinamento ou teste para que os resultados possam ser compreendidos e discutidos por diferentes integrantes da equipe. |
+| Dimensão | Descrição | Implicação de design |
+| Ambiente físico | [H] A interface poderá ser utilizada tanto em um laboratório, durante treinamentos e análises mais detalhadas e ambiente estável, quanto em ambientes de competição, como quadras e ginásios. Nesta última situação, o usuário poderá estar sujeito a ruídos, iluminação variável, instabilidade de rede e pouco tempo disponível entre partidas. | Priorizar uma interface legível em diferentes condições de iluminação, com hierarquia visual clara e destaque para métricas e indicadores críticos. Considerar uma visualização resumida que permita identificar rapidamente o desempenho do robô, sem impedir o acesso a análises detalhadas em situações com mais tempo disponível. |
+| Ambiente social/organizacional | [F] O desenvolvimento do projeto ocorre de forma colaborativa entre integrantes da equipe de robótica, com acompanhamento de professores e orientadores. [H] Durante treinamentos e competições, diferentes integrantes poderão consultar os mesmos resultados para discutir o desempenho do robô e decidir quais ajustes realizar. Em períodos entre partidas, essas discussões poderão ocorrer sob pressão de tempo, enquanto análises realizadas no laboratório poderão permitir uma avaliação mais aprofundada. A quantidade de pessoas que consultará a interface simultaneamente pode variar entre 2 a 3 pessoas e a divisão de responsabilidades nessas situações precisa ser investigada. | Facilitar o compartilhamento e a compreensão dos resultados por diferentes integrantes da equipe, apresentando métricas com nomes, unidades e contextos claros. Priorizar o acesso rápido às informações essenciais em situações de pressão e permitir comparações mais detalhadas para apoiar discussões técnicas e decisões sobre os próximos testes e ajustes. |
 | Papéis/permissões/governança | [?] Ainda não sabemos se será necessário definir diferentes níveis de acesso ou permissões entre integrantes da equipe, pesquisadores e orientadores. | Não criar um sistema complexo de permissões nesta etapa. Essa necessidade deve ser investigada antes de ser incluída no projeto. |
 | Volume de dados/histórico | [F] O projeto envolve diversos ciclos de treinamento e avaliação, gerando resultados que precisam ser analisados e comparados. [H] Em uma aplicação futura, o histórico pode incluir diferentes treinamentos, versões do robô, testes e competições. | Disponibilizar histórico, filtros e mecanismos de comparação para facilitar a localização e análise de resultados anteriores. |
 
