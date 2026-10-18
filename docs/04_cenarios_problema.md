@@ -44,15 +44,16 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 
 Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
 
-| ID | Questão | O que ainda falta no cenário | Como investigar |
-| --- | --- | --- | --- |
-| Q1 | Quais informações Rafael precisa ter para decidir se o treinamento deve ser considerado uma melhoria em relação aos anteriores? | O cenário apresenta o objetivo de avaliar o treinamento, mas ainda não deixa claro quais informações são necessárias para essa decisão. | Entrevista com integrantes da equipe e observação de uma sessão de avaliação. |
-| Q2 | Em que momento e em quais condições Rafael realiza essa análise dos resultados do treinamento? | O cenário informa que a análise ocorre durante os ciclos de desenvolvimento, mas não detalha quando e em quais condições ela acontece. | Observação do processo de treinamento e entrevista com Rafael e equipe. |
-| Q3 | Quais características e conhecimentos de Rafael influenciam a forma como ele interpreta os resultados do treinamento? | O cenário identifica Rafael como integrante técnico, mas não especifica quais conhecimentos ou características são necessários para realizar a atividade. | Entrevista com Rafael e demais integrantes da equipe. |
-| Q4 | Como Rafael decide quais resultados anteriores utilizar como referência e quais parâmetros modificar no próximo treinamento? | O cenário informa que ele compara resultados e ajusta parâmetros, mas não explica como essas decisões são planejadas. | Entrevista e observação de um ciclo real de treinamento. |
-| Q5 | Como Rafael realiza atualmente a comparação entre as métricas e os parâmetros de diferentes treinamentos? | A comparação é uma ação central do cenário, mas ainda não foi detalhado como ela é executada na prática. | Observação da atividade e análise dos arquivos/registros utilizados pela equipe. |
-| Q6 | O que faz Rafael perceber que precisa investigar os resultados de treinamentos anteriores? | O cenário apresenta uma diferença entre as métricas, mas não especifica qual acontecimento desencadeia a busca por outros resultados. | Observação de uma sessão de avaliação e entrevista com Rafael. |
-| Q7 | Como Rafael determina, ao final da análise, se o treinamento foi bem-sucedido ou se é necessário realizar um novo ajuste? | O cenário mostra que ele precisa avaliar o treinamento, mas ainda não define como ele chega à conclusão sobre o resultado. | Entrevista com Rafael/equipe e análise de treinamentos anteriores. |
+| ID | Elemento característico | Questão | O que ainda falta no cenário | Como investigar |
+| --- | --- | --- | --- | --- |
+| Q1 | Avaliação | Quais informações Rafael precisa ter para decidir se o treinamento deve ser considerado uma melhoria em relação aos anteriores? | O cenário apresenta o objetivo de avaliar o treinamento, mas ainda não deixa claro quais informações são necessárias para essa decisão. | Entrevista com integrantes da equipe e observação de uma sessão de avaliação. |
+| Q2 | Ambiente/contexto | Em que momento e em quais condições Rafael realiza essa análise dos resultados do treinamento? | O cenário informa que a análise ocorre durante os ciclos de desenvolvimento, mas não detalha quando e em quais condições ela acontece. | Observação do processo de treinamento e entrevista com Rafael e equipe. |
+| Q3 | Atores | Quais características e conhecimentos de Rafael influenciam a forma como ele interpreta os resultados do treinamento? | O cenário identifica Rafael como integrante técnico, mas não especifica quais conhecimentos ou características são necessários para realizar a atividade. | Entrevista com Rafael e demais integrantes da equipe. |
+| Q4 | Planejamento | Como Rafael decide quais resultados anteriores utilizar como referência e quais parâmetros modificar no próximo treinamento? | O cenário informa que ele compara resultados e ajusta parâmetros, mas não explica como essas decisões são planejadas. | Entrevista e observação de um ciclo real de treinamento. |
+| Q5 | Ações | Como Rafael realiza atualmente a comparação entre as métricas e os parâmetros de diferentes treinamentos? | A comparação é uma ação central do cenário, mas ainda não foi detalhado como ela é executada na prática. | Observação da atividade e análise dos arquivos/registros utilizados pela equipe. |
+| Q6 | Eventos | O que faz Rafael perceber que precisa investigar os resultados de treinamentos anteriores? | O cenário apresenta uma diferença entre as métricas, mas não especifica qual acontecimento desencadeia a busca por outros resultados. | Observação de uma sessão de avaliação e entrevista com Rafael. |
+| Q7 | Avaliação | Como Rafael determina, ao final da análise, se o treinamento foi bem-sucedido ou se é necessário realizar um novo ajuste? | O cenário mostra que ele precisa avaliar o treinamento, mas ainda não define como ele chega à conclusão sobre o resultado. | Entrevista com Rafael/equipe e análise de treinamentos anteriores. |
+| Q8 | Objetivos | Que objetivo de desempenho Rafael e a equipe definem para um treinamento antes de executá-lo, e como esse objetivo se relaciona ao desempenho desejado do robô na partida? | O cenário apresenta o objetivo de avaliar o treinamento, mas não esclarece qual meta de desempenho orienta o treinamento nem como ela é definida. | Entrevista com Rafael e demais integrantes da equipe e análise dos registros de treinamentos anteriores. |
 
 
 ### 3. Cenário refinado
@@ -62,6 +63,8 @@ Rafael Martins, estudante e integrante técnico de uma equipe de robótica human
 Durante o desenvolvimento, Rafael observa se o treinamento apresentou um resultado positivo a partir do comportamento do robô e das métricas obtidas. Nessa análise, ele verifica a velocidade média, a distância percorrida, a taxa de quedas, a estabilidade durante o movimento e a localização do robô.
 
 **[NOVO: Rafael utiliza essas informações em conjunto para decidir se o treinamento representa uma melhoria, pois uma melhora isolada em uma métrica não é suficiente para considerar o resultado positivo.] [Q1]**
+
+**[NOVO: Antes de executar um treinamento, Rafael e a equipe definem metas de desempenho relacionadas à distância percorrida, à velocidade, à frequência de quedas e ao equilíbrio do robô, pois, para conseguir marcar o gol, o robô precisa caminhar de forma estável durante a partida.] [Q8]**
 
 **[NOVO: Essa análise é realizada após a execução de cada treinamento, durante os ciclos de desenvolvimento e ajuste do comportamento de caminhada do robô.] [Q2]**
 
@@ -88,10 +91,13 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 | Elemento | Descrição |
 | --- | --- |
 | Ator(es) | Rafael Martins (integrante de desenvolvimento do time de robótica humanoide) |
-| Objetivo(s) | Avaliar se o treinamento apresentou uma melhoria no comportamento do robô, comparar o resultado com treinamentos anteriores e definir quais ajustes realizar no próximo treinamento. |
+| Objetivo(s) | Avaliar se o treinamento apresentou uma melhoria no comportamento do robô, comparar o resultado com treinamentos anteriores e definir quais ajustes realizar no próximo treinamento. Para isso, a equipe define metas de distância percorrida, velocidade, quedas e equilíbrio, já que o robô precisa caminhar de forma estável na partida para conseguir marcar o gol. |
 | Contexto | Rafael está desenvolvendo e testando o comportamento de um robô humanoide para uma partida de futebol, realizando ciclos de treinamento e ajustes em um computador. |
 | Recursos/informações | Velocidade média, distância percorrida, taxa de quedas, estabilidade durante o movimento, localização do robô, parâmetros da caminhada, configurações e resultados de treinamentos anteriores. |
+| Planejamento | Escolher, como referência, treinamentos anteriores com características semelhantes à execução atual e decidir, a partir das diferenças observadas, quais parâmetros modificar no próximo treinamento. |
 | Ações | Executar um treinamento; observar o comportamento do robô; analisar as métricas; ajustar os parâmetros da caminhada; comparar métricas e configurações com treinamentos anteriores; consultar resultados anteriores; definir novos parâmetros para o próximo treinamento. |
+| Eventos | Uma métrica, como a velocidade, apresenta melhora enquanto outras, como a estabilidade e a frequência de quedas, indicam piora; esse acontecimento leva Rafael a investigar treinamentos anteriores. |
+| Avaliação | Ao final de cada treinamento, Rafael considera o conjunto das métricas e o comportamento observado do robô para decidir se o resultado representa uma melhoria e se mantém os parâmetros ou realiza novos ajustes. |
 | Problemas/rupturas | A melhora em uma métrica, como a velocidade, pode ocorrer junto à piora de outras características, como estabilidade e frequência de quedas. Além disso, as informações de diferentes treinamentos precisam ser consultadas e relacionadas para permitir uma comparação. |
 | Consequências | Rafael pode interpretar incorretamente o resultado do treinamento e escolher parâmetros inadequados para a próxima execução, gerando novos treinamentos desnecessários, desperdício de tempo computacional e prolongamento do desenvolvimento. |
 
@@ -107,7 +113,10 @@ A partir do cenário analisado, as próximas entregas devem aprofundar como Rafa
 **Persona(s) relacionada(s):** P02 — Marina Oliveira  
 **Necessidade relacionada:** Consultar resultados de experimentos anteriores, compreender as métricas de desempenho, recuperar informações sobre as configurações utilizadas e relacionar alterações nos parâmetros ao comportamento observado do robô.
 
-**Situação concreta da Entrega 1 relacionada:** O histórico dos experimentos e das configurações é registrado manualmente pela equipe e não fica centralizado, o que dificulta identificar configurações anteriores e comparar diferentes execuções. Também foi apontado o risco de comparar testes realizados em condições diferentes.
+**Situação concreta da Entrega 1 relacionada:** Os parâmetros dos treinamentos são configurados diretamente no código (Entrega 1, §4.1). As informações de cada execução ficam distribuídas entre diferentes arquivos e registros e a comparação entre treinamentos é feita manualmente (Entrega 1, §4.2), o que dificulta identificar configurações anteriores e comparar diferentes execuções. Também foi apontado o risco de comparar testes realizados em condições diferentes (Entrega 1, §7.1, item 8).
+
+**Situação nova incluída nesta entrega:** As anotações da equipe sobre os experimentos não reúnem todos os parâmetros utilizados, e parte das informações precisa ser consultada nos arquivos de configuração e no histórico do código. Essa situação é relevante porque determina como Marina recupera as configurações de um treinamento anterior.
+**Evidência que motivou a inclusão:** [F] experiência direta da equipe durante os treinamentos do TCC. Não estava registrada na Entrega 1.
 
 **Hipóteses ainda presentes:** H01 e H02. As características e necessidades específicas da persona P02 também permanecem sujeitas à validação.
 
@@ -125,20 +134,23 @@ Essa situação dificulta a interpretação dos resultados e pode comprometer a 
 
 ### 2. Questões de refinamento
 
-| ID | Questão | O que ainda falta no cenário | Como investigar |
-|---|---|---|---|
-| Q1 | Como Marina identifica qual treinamento anterior apresentou os resultados mais relevantes para sua investigação? | O cenário informa que ela se lembra de um treinamento, mas não explica como localiza a execução correspondente entre os registros disponíveis. | Entrevista com integrantes da equipe e análise das pastas e registros dos treinamentos. |
-| Q2 | Quais informações sobre os treinamentos são registradas nas anotações da equipe? | O cenário informa que os registros estão incompletos, mas não especifica quais informações estão disponíveis e quais precisam ser recuperadas. | Análise das anotações existentes e comparação com os parâmetros utilizados nos treinamentos. |
-| Q3 | Como Marina verifica se diferentes treinamentos foram realizados em condições comparáveis? | O cenário apresenta a dificuldade de comparação, mas não descreve quais informações precisam ser verificadas para confirmar a equivalência das condições. | Observação de uma atividade de análise e entrevista com integrantes responsáveis pelos treinamentos. |
-| Q4 | Quem registra as informações dos experimentos e quem realiza alterações nos parâmetros ao longo do desenvolvimento? | O cenário não esclarece como as responsabilidades relacionadas ao registro e à configuração dos treinamentos são distribuídas entre os integrantes da equipe. | Entrevista com a equipe sobre a organização e a divisão das atividades. |
-| Q5 | O que Marina faz quando não consegue confirmar as configurações utilizadas em um treinamento anterior? | O cenário apresenta a dificuldade, mas não esclarece como essa limitação influencia a continuidade da investigação. | Entrevista com pesquisadores e integrantes da equipe e análise de situações anteriores. |
-| Q6 | Como a necessidade de recuperar informações de diferentes registros interfere no processo de análise dos resultados? | O cenário não detalha as consequências da recuperação manual das configurações para o tempo e a continuidade da investigação. | Observação do processo de consulta aos registros e levantamento das dificuldades relatadas pelos integrantes. |
+| ID | Elemento característico | Questão | O que ainda falta no cenário | Como investigar |
+|---|---|---|---|---|
+| Q1 | Ações | Como Marina identifica qual treinamento anterior apresentou os resultados mais relevantes para sua investigação? | O cenário informa que ela se lembra de um treinamento, mas não explica como localiza a execução correspondente entre os registros disponíveis. | Entrevista com integrantes da equipe e análise das pastas e registros dos treinamentos. |
+| Q2 | Ambiente/contexto | Quais informações sobre os treinamentos são registradas nas anotações da equipe? | O cenário informa que os registros estão incompletos, mas não especifica quais informações estão disponíveis e quais precisam ser recuperadas. | Análise das anotações existentes e comparação com os parâmetros utilizados nos treinamentos. |
+| Q3 | Avaliação | Como Marina verifica se diferentes treinamentos foram realizados em condições comparáveis? | O cenário apresenta a dificuldade de comparação, mas não descreve quais informações precisam ser verificadas para confirmar a equivalência das condições. | Observação de uma atividade de análise e entrevista com integrantes responsáveis pelos treinamentos. |
+| Q4 | Atores | Quem registra as informações dos experimentos e quem realiza alterações nos parâmetros ao longo do desenvolvimento? | O cenário não esclarece como as responsabilidades relacionadas ao registro e à configuração dos treinamentos são distribuídas entre os integrantes da equipe. | Entrevista com a equipe sobre a organização e a divisão das atividades. |
+| Q5 | Planejamento | O que Marina faz quando não consegue confirmar as configurações utilizadas em um treinamento anterior? | O cenário apresenta a dificuldade, mas não esclarece como essa limitação influencia a continuidade da investigação. | Entrevista com pesquisadores e integrantes da equipe e análise de situações anteriores. |
+| Q6 | Eventos | Como a necessidade de recuperar informações de diferentes registros interfere no processo de análise dos resultados? | O cenário não detalha as consequências da recuperação manual das configurações para o tempo e a continuidade da investigação. | Observação do processo de consulta aos registros e levantamento das dificuldades relatadas pelos integrantes. |
+| Q7 | Objetivos | Qual objetivo de pesquisa leva Marina a recuperar a configuração desse treinamento (reproduzi-lo, compreender a diferença de desempenho ou utilizá-lo como referência)? | O cenário informa que ela quer entender quais configurações contribuíram para o resultado, mas não esclarece o que pretende fazer com essa informação em sua pesquisa. | Entrevista com pesquisadores e integrantes da equipe. |
 
 ### 3. Cenário refinado
 
 Marina Oliveira, pesquisadora de robótica, está investigando diferentes estratégias utilizadas para melhorar a caminhada de um robô humanoide em simulação. Durante sua pesquisa, ela analisa resultados de treinamentos anteriores para compreender como as alterações nos parâmetros influenciam o comportamento do robô e identificar experimentos que possam servir de referência para novas investigações.
 
 Após consultar resultados recentes que não apresentaram melhorias significativas, Marina se lembra de um treinamento realizado algumas semanas antes, no qual o robô percorreu uma distância maior e apresentou menor frequência de quedas. Ela decide investigar esse experimento para compreender quais configurações contribuíram para o resultado obtido.
+
+**[NOVO: Marina pretende utilizar esse treinamento como referência para avaliar, após ajustes nos parâmetros, se o desempenho do robô melhorou ou piorou, além de manter as informações do experimento como backup.] [Q7]**
 
 **[NOVO: Para localizar o treinamento, Marina consulta as pastas das execuções e examina os arquivos de métricas disponíveis, procurando identificar aquele que apresenta os resultados de desempenho que deseja investigar.] [Q1]**
 
@@ -165,10 +177,13 @@ Essa situação dificulta a interpretação dos resultados, compromete a utiliza
 | Elemento | Descrição |
 |---|---|
 | **Ator(es)** | Marina Oliveira (pesquisadora de robótica) e integrantes da equipe responsáveis pelos treinamentos, registros e alterações dos parâmetros. |
-| **Objetivo(s)** | Recuperar informações sobre um treinamento anterior, compreender as configurações utilizadas, comparar resultados de diferentes experimentos e identificar condições que possam explicar as diferenças observadas no comportamento do robô. |
+| **Objetivo(s)** | Recuperar informações sobre um treinamento anterior, compreender as configurações utilizadas, comparar resultados de diferentes experimentos e identificar condições que possam explicar as diferenças observadas no comportamento do robô. Utilizar o treinamento como referência para avaliar, após ajustes, se o desempenho do robô melhorou ou piorou, mantendo também as informações do experimento como backup. |
 | **Contexto** | Pesquisa sobre locomoção de robôs humanoides em simulação, envolvendo diferentes ciclos de treinamento, alterações nos parâmetros e análise de resultados registrados em arquivos e anotações da equipe. |
 | **Recursos/informações** | Pastas das execuções, modelos salvos, arquivos de métricas, anotações da equipe, histórico de versões do código, parâmetros de treinamento, configurações anteriores e informações sobre as condições dos experimentos. |
+| **Planejamento** | Quando não consegue confirmar as configurações, Marina avalia, junto à equipe, se o treinamento anterior pode ser utilizado como referência ou se será necessário obter informações adicionais ou realizar uma nova execução. |
 | **Ações** | Consultar resultados anteriores; localizar um treinamento de referência; examinar arquivos de métricas; consultar anotações e configurações; investigar alterações realizadas no código; buscar esclarecimentos com integrantes da equipe; comparar as condições dos experimentos; avaliar a confiabilidade das informações disponíveis. |
+| **Eventos** | Marina se lembra de um treinamento anterior com melhor desempenho; as informações disponíveis não reúnem todos os parâmetros utilizados; a necessidade de consultar diferentes arquivos, registros e integrantes interrompe a análise dos resultados. |
+| **Avaliação** | Marina verifica se os treinamentos foram realizados em condições comparáveis e avalia a confiabilidade das informações disponíveis para determinar quais alterações podem ter influenciado as diferenças de desempenho. |
 | **Problemas/rupturas** | Informações incompletas ou distribuídas entre diferentes registros; dificuldade para identificar os parâmetros utilizados em execuções anteriores; necessidade de consultar diferentes fontes; impossibilidade de confirmar se os treinamentos foram realizados nas mesmas condições. |
 | **Consequências** | Dificuldade para interpretar diferenças de desempenho, aumento do esforço necessário para recuperar informações, risco de realizar comparações inadequadas, necessidade de repetir análises ou experimentos e comprometimento da reprodutibilidade dos resultados. |
 
@@ -192,6 +207,8 @@ As hipóteses H01 e H02 permanecem presentes, uma vez que as necessidades de org
 **Persona(s) relacionada(s):** P03 — Carlos Almeida  
 **Necessidade relacionada:** Obter uma visão consolidada do desempenho do robô, comparar resultados importantes e compreender rapidamente quais aspectos evoluíram ou pioraram, de modo a orientar as decisões técnicas da equipe.
 
+**Foco do cenário:** a estudante que apresenta os resultados é o alvo principal da situação; Carlos participa como orientador que avalia e questiona os resultados apresentados.
+
 **Situação concreta da Entrega 1 relacionada:** Situação em que a recompensa aumenta, mas o robô permanece equilibrado e quase não se desloca. Também foi registrado que professores e orientadores acompanham os resultados e participam das decisões técnicas do projeto.
 
 **Hipóteses ainda presentes:** H01 e H02. As características e necessidades específicas da persona P03 permanecem sujeitas à validação.
@@ -210,14 +227,16 @@ Como algumas informações precisam ser recuperadas e comparadas durante a reuni
 
 ### 2. Questões de refinamento
 
-| ID | Questão | O que ainda falta no cenário | Como investigar |
-|---|---|---|---|
-| Q1 | Com que frequência e de que forma os resultados dos treinamentos são apresentados a Carlos? | O cenário menciona uma reunião de acompanhamento, mas não detalha como os estudantes preparam e organizam os resultados para apresentação. | Entrevista com professores, orientadores e estudantes, além da observação de reuniões de acompanhamento. |
-| Q2 | Quais informações Carlos considera necessárias para avaliar se um treinamento apresentou melhoria? | O cenário apresenta perguntas sobre deslocamento e quedas, mas não esclarece todos os critérios utilizados para interpretar o desempenho. | Entrevista com orientadores e análise de avaliações anteriores realizadas pela equipe. |
-| Q3 | Por que as informações solicitadas por Carlos não estavam disponíveis na apresentação? | O cenário mostra que a estudante precisa consultar outros registros, mas não explica como as informações são selecionadas e organizadas antes da reunião. | Observação da preparação das apresentações e entrevista com integrantes da equipe. |
-| Q4 | O que leva Carlos a questionar um resultado aparentemente positivo? | O cenário apresenta a diferença entre recompensa e comportamento, mas não detalha como o orientador identifica a necessidade de uma análise adicional. | Entrevista com professores e orientadores sobre a interpretação das métricas. |
-| Q5 | Como as decisões e orientações discutidas nas reuniões são registradas e utilizadas posteriormente? | O cenário não esclarece como a equipe documenta as conclusões e recupera as decisões tomadas. | Análise dos registros de acompanhamento do projeto e entrevista com os integrantes da equipe. |
-| Q6 | Quais consequências o adiamento de uma decisão pode provocar no planejamento dos próximos treinamentos? | O cenário menciona possíveis dificuldades no planejamento, mas não detalha como o adiamento interfere nas atividades da equipe. | Entrevista com integrantes da equipe e análise do planejamento dos experimentos. |
+| ID | Elemento característico | Questão | O que ainda falta no cenário | Como investigar |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Com que frequência e de que forma os resultados dos treinamentos são apresentados a Carlos? | O cenário menciona uma reunião de acompanhamento, mas não detalha como os estudantes preparam e organizam os resultados para apresentação. | Entrevista com professores, orientadores e estudantes, além da observação de reuniões de acompanhamento. |
+| Q2 | Avaliação | Quais informações Carlos considera necessárias para avaliar se um treinamento apresentou melhoria? | O cenário apresenta perguntas sobre deslocamento e quedas, mas não esclarece todos os critérios utilizados para interpretar o desempenho. | Entrevista com orientadores e análise de avaliações anteriores realizadas pela equipe. |
+| Q3 | Planejamento | Por que as informações solicitadas por Carlos não estavam disponíveis na apresentação? | O cenário mostra que a estudante precisa consultar outros registros, mas não explica como as informações são selecionadas e organizadas antes da reunião. | Observação da preparação das apresentações e entrevista com integrantes da equipe. |
+| Q4 | Eventos | O que leva Carlos a questionar um resultado aparentemente positivo? | O cenário apresenta a diferença entre recompensa e comportamento, mas não detalha como o orientador identifica a necessidade de uma análise adicional. | Entrevista com professores e orientadores sobre a interpretação das métricas. |
+| Q5 | Ações | Como as decisões e orientações discutidas nas reuniões são registradas e utilizadas posteriormente? | O cenário não esclarece como a equipe documenta as conclusões e recupera as decisões tomadas. | Análise dos registros de acompanhamento do projeto e entrevista com os integrantes da equipe. |
+| Q6 | Eventos | Quais consequências o adiamento de uma decisão pode provocar no planejamento dos próximos treinamentos? | O cenário menciona possíveis dificuldades no planejamento, mas não detalha como o adiamento interfere nas atividades da equipe. | Entrevista com integrantes da equipe e análise do planejamento dos experimentos. |
+| Q7 | Atores | Que conhecimentos e experiência da estudante que apresenta influenciam a forma como ela prepara e conduz a apresentação dos resultados? | O cenário descreve a estudante apenas como quem apresenta o resultado, sem indicar características que influenciam sua preparação para a reunião. | Entrevista com estudantes que apresentam resultados e observação de reuniões de acompanhamento. |
+| Q8 | Objetivos | Qual é o objetivo da estudante ao apresentar os resultados na reunião de acompanhamento? | O cenário apresenta o objetivo de Carlos (avaliar e orientar), mas não esclarece o que a estudante pretende alcançar com a apresentação. | Entrevista com estudantes e observação de reuniões de acompanhamento. |
 
 ### 3. Cenário refinado
 
@@ -226,6 +245,8 @@ Carlos Almeida, professor e orientador de uma equipe universitária de robótica
 **[NOVO: As reuniões de acompanhamento representam momentos em que os estudantes apresentam resultados selecionados dos treinamentos realizados. Como o tempo disponível para discussão é limitado, Carlos precisa compreender as informações mais relevantes sem necessariamente consultar todos os detalhes de cada execução. A frequência das reuniões e os formatos de apresentação ainda precisam ser confirmados com os participantes.] [Q1]**
 
 Durante uma reunião de acompanhamento, uma estudante apresenta os resultados de um treinamento recente. O gráfico da recompensa indica um aumento em relação à execução anterior, sugerindo inicialmente uma possível melhoria.
+
+**[NOVO: Ao apresentar os resultados, a estudante busca mostrar o progresso obtido no treinamento e receber orientação de Carlos.] [Q8]**
 
 Entretanto, Carlos precisa compreender se essa evolução numérica corresponde a um avanço real no comportamento do robô.
 
@@ -238,6 +259,8 @@ Para isso, pergunta qual foi a distância percorrida, quantas quedas ocorreram e
 A estudante não incluiu todas essas informações na apresentação e precisa consultar os arquivos de métricas, as anotações da equipe e a visualização do modelo no simulador.
 
 **[NOVO: A apresentação foi preparada com foco no gráfico da recompensa, sem reunir previamente todos os indicadores necessários à comparação. Embora a equipe possua registros dos treinamentos, a necessidade de consultar diferentes informações durante a reunião dificulta a análise conjunta dos resultados.] [Q3]**
+
+**[NOVO: A forma como a estudante prepara e conduz a apresentação depende de sua familiaridade com as métricas e de sua experiência anterior com projetos semelhantes.] [Q7]**
 
 Ao observar o comportamento do robô, Carlos percebe que ele permanece equilibrado durante parte da execução, mas apresenta pouco deslocamento. Dessa forma, o aumento da recompensa não representa necessariamente uma melhoria na capacidade de caminhar.
 
@@ -255,11 +278,14 @@ Essa situação evidencia a importância de compreender como os resultados são 
 
 | Elemento | Descrição |
 |---|---|
-| **Ator(es)** | Carlos Almeida (professor e orientador), estudante responsável pela apresentação e demais integrantes da equipe de robótica humanoide. |
-| **Objetivo(s)** | Avaliar se o treinamento recente representa uma melhoria real na caminhada do robô, compreender as diferenças em relação às execuções anteriores e orientar a decisão sobre os próximos experimentos. |
+| **Ator(es)** | Carlos Almeida (professor e orientador), estudante responsável pela apresentação e demais integrantes da equipe de robótica humanoide. A familiaridade da estudante com as métricas e sua experiência anterior com projetos semelhantes influenciam a preparação da apresentação. |
+| **Objetivo(s)** | Avaliar se o treinamento recente representa uma melhoria real na caminhada do robô, compreender as diferenças em relação às execuções anteriores e orientar a decisão sobre os próximos experimentos. A estudante busca mostrar o progresso obtido e receber orientação. |
 | **Contexto** | Reunião de acompanhamento de um projeto universitário de robótica humanoide, na qual estudantes apresentam resultados de treinamentos e discutem com o orientador possíveis ajustes e melhorias. |
 | **Recursos/informações** | Gráficos de recompensa, distância percorrida, velocidade, frequência de quedas, estabilidade, arquivos de métricas, resultados anteriores, parâmetros de treinamento, anotações da equipe e visualização do comportamento do robô no simulador. |
+| **Planejamento** | A apresentação é preparada pela estudante com foco no gráfico da recompensa, sem reunir previamente todos os indicadores necessários à comparação; após a avaliação, a equipe e o orientador definem os próximos ajustes e experimentos. |
 | **Ações** | Apresentar os resultados; analisar métricas; questionar diferenças entre os treinamentos; consultar registros; observar o comportamento do robô; comparar resultados; discutir possíveis ajustes; registrar conclusões e orientar próximos experimentos. |
+| **Eventos** | O gráfico da recompensa mostra aumento em relação à execução anterior; Carlos solicita informações adicionais que não estavam na apresentação; a estudante precisa consultar arquivos, anotações e o simulador durante a reunião; o tempo disponível se esgota antes da conclusão da avaliação. |
+| **Avaliação** | Carlos e a equipe avaliam se o aumento da recompensa corresponde a um avanço real na locomoção, relacionando-o à distância percorrida, à frequência de quedas, à estabilidade e ao comportamento observado no simulador. |
 | **Problemas/rupturas** | Recompensa elevada sem melhoria correspondente na locomoção; ausência de métricas importantes na apresentação; necessidade de recuperar informações durante a reunião; dificuldade para concluir comparações no tempo disponível. |
 | **Consequências** | Risco de interpretar incorretamente os resultados, dificuldade para justificar decisões técnicas, necessidade de análises complementares, possível adiamento das decisões e impacto no planejamento dos próximos treinamentos. |
 
