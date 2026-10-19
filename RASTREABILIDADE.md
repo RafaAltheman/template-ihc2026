@@ -88,7 +88,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 
 | Data | O que mudou | Evidência/feedback que motivou | Artefatos afetados | Responsável |
 |---|---|---|---|---|
-| 06/10/2026 | Definição do recorte para IHC | Feedback Entrega 1: "O recorte de IHC se afasta da evidência que vocês levantaram" | H01, H03 | - |
+| 06/10/2026 | Definição do recorte para IHC | Feedback Entrega 1: "O recorte de IHC se afasta da evidência que vocês levantaram" | H01b, H03 | - |
 | PENDENTE | Revisão das recomendações da Entrega 2: RC02 (de "etapas de configuração, execução e análise" para "navegação para consulta de resultados") e RC04 (de "validar parâmetros antes do treinamento" para "clareza e identificação das informações consultadas"). Execução/controle de treinamentos fica fora do escopo da interface. | Feedback da Entrega 2 e alinhamento ao recorte de IHC (análise e comparação de resultados) | RC02, RC04, F01–F03, H01a, H02 | - |
 | - | Nenhuma outra mudança de escopo registrada até a Entrega 4. | - | - | - |
 
