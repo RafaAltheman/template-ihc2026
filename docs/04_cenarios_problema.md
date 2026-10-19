@@ -28,7 +28,7 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 **Persona(s) relacionada(s):** Rafael Martins
 **Necessidade relacionada:** Visualizar métricas de forma rápida, comparar diferentes treinamentos e versões, consultar histórico e relacionar métricas com o comportamento observado do robô.
 **Situação concreta da Entrega 1 relacionada:** Interpretação incorreta dos resultados de treinamento; situação concreta em que a recompensa aumenta, mas o robô apresenta pouco deslocamento.
-**Hipóteses ainda presentes:** H01 e H02
+**Hipóteses ainda presentes:** H01b e H02
 
 ### 1. Cenário inicial
 
@@ -118,7 +118,7 @@ A partir do cenário analisado, as próximas entregas devem aprofundar como Rafa
 **Situação nova incluída nesta entrega:** As anotações da equipe sobre os experimentos não reúnem todos os parâmetros utilizados, e parte das informações precisa ser consultada nos arquivos de configuração e no histórico do código. Essa situação é relevante porque determina como Marina recupera as configurações de um treinamento anterior.
 **Evidência que motivou a inclusão:** [F] experiência direta da equipe durante os treinamentos do TCC. Não estava registrada na Entrega 1.
 
-**Hipóteses ainda presentes:** H01 e H02. As características e necessidades específicas da persona P02 também permanecem sujeitas à validação.
+**Hipóteses ainda presentes:** H01b e H02. As características e necessidades específicas da persona P02 também permanecem sujeitas à validação.
 
 ### 1. Cenário inicial
 
@@ -199,7 +199,7 @@ Na modelagem de tarefas, a localização de um treinamento de referência, a rec
 
 Além disso, deve ser avaliado como a ausência de informações completas influencia a continuidade da pesquisa, incluindo possíveis atrasos, repetição de análises e necessidade de novos treinamentos.
 
-As hipóteses H01 e H02 permanecem presentes, uma vez que as necessidades de organização, recuperação e comparação dos resultados ainda precisam ser verificadas com outros usuários. As características específicas da persona Marina Oliveira também devem ser validadas com pesquisadores que desempenhem atividades semelhantes.
+As hipóteses H01b e H02 permanecem presentes, uma vez que as necessidades de organização, recuperação e comparação dos resultados ainda precisam ser verificadas com outros usuários. As características específicas da persona Marina Oliveira também devem ser validadas com pesquisadores que desempenhem atividades semelhantes.
 
 ## Cenário C03 — Avaliação de treinamentos em reunião de orientação
 
@@ -211,7 +211,7 @@ As hipóteses H01 e H02 permanecem presentes, uma vez que as necessidades de org
 
 **Situação concreta da Entrega 1 relacionada:** Situação em que a recompensa aumenta, mas o robô permanece equilibrado e quase não se desloca. Também foi registrado que professores e orientadores acompanham os resultados e participam das decisões técnicas do projeto.
 
-**Hipóteses ainda presentes:** H01 e H02. As características e necessidades específicas da persona P03 permanecem sujeitas à validação.
+**Hipóteses ainda presentes:** H01b e H02. As características e necessidades específicas da persona P03 permanecem sujeitas à validação.
 
 ### 1. Cenário inicial
 
@@ -301,7 +301,7 @@ Na modelagem de tarefas, a avaliação realizada durante uma reunião deve ser t
 
 Além disso, as próximas etapas devem investigar como as decisões e orientações são registradas e utilizadas posteriormente, verificando se a ausência de informações completas pode provocar atrasos ou dificultar o planejamento de novos experimentos.
 
-As hipóteses H01 e H02 permanecem presentes, pois a necessidade de organizar, comparar e apresentar resultados de maneira mais eficiente ainda precisa ser validada diretamente com os usuários.
+As hipóteses H01b e H02 permanecem presentes, pois a necessidade de organizar, comparar e apresentar resultados de maneira mais eficiente ainda precisa ser validada diretamente com os usuários.
 
 Como Carlos Almeida permanece parcialmente caracterizado como proto-persona, suas necessidades, comportamentos e critérios de avaliação deverão ser verificados com professores e orientadores que desempenhem atividades semelhantes.
 
