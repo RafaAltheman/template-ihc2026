@@ -42,7 +42,7 @@ Antes de criar personas, foram retomados os principais usuários, objetivos, car
 **Autor(a):** Rafaela Altheman de Campos — 22.125.062-4  
 **Tipo:** primária  
 **Base de evidências:** experiência da equipe <br>
-**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
+**Hipóteses da Entrega 1 relacionadas:** H01b, H02, H03
 
 ![Persona P01](../assets/03_personas/rafael.png)
 
@@ -78,7 +78,7 @@ Rafael é um estudante de Engenharia de Robôs e participa ativamente da equipe 
 **Autor(a):** Manuella Filipe Peres — 22.224.029-3  
 **Tipo:** secundário 
 **Base de evidências:** experiência da equipe <br>
-**Hipóteses da Entrega 1 relacionadas:** H01, H02, H03
+**Hipóteses da Entrega 1 relacionadas:** H01b, H02, H03
 
 ![Persona P02](../assets/03_personas/marina.png)
 
@@ -114,7 +114,7 @@ Marina Oliveira acorda pela manhã, toma café e se prepara para mais um dia ded
 **Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2  
 **Tipo:** secundária  
 **Base de evidências:** participação de professores e orientadores no projeto <br>
-**Hipóteses da Entrega 1 relacionadas:** H01, H02
+**Hipóteses da Entrega 1 relacionadas:** H01b, H02
 
 ![Persona P03](../assets/03_personas/carlos.png)
 
@@ -151,7 +151,7 @@ As três personas representam diferentes formas de utilizar a interface para com
 
 Embora compartilhem o interesse pelos resultados dos experimentos, as personas possuem necessidades distintas. Rafael prioriza a análise técnica voltada à melhoria do robô; Marina valoriza informações contextualizadas que facilitem a compreensão e a investigação do comportamento dos robôs humanoides; e Carlos necessita de uma visão geral que permita acompanhar o progresso do projeto sem precisar analisar individualmente cada execução. Dessa forma, as personas orientam diferentes decisões de design, mantendo Rafael como foco principal da interface e considerando as necessidades complementares de Marina e Carlos.
 
-As características de Marina e Carlos permanecem parcialmente como proto-personas, pois a Entrega 1 ainda não apresenta entrevistas ou questionários específicos com pesquisadores externos e professores/orientadores. Portanto, suas características devem ser validadas nas próximas etapas, especialmente na investigação das hipóteses H01, H02 e H03.
+As características de Marina e Carlos permanecem parcialmente como proto-personas, pois a Entrega 1 ainda não apresenta entrevistas ou questionários específicos com pesquisadores externos e professores/orientadores. Portanto, suas características devem ser validadas nas próximas etapas, especialmente na investigação das hipóteses H01b, H02 e H03.
 
 ## 2. Mapa de empatia — equipe
 
