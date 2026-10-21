@@ -158,7 +158,7 @@ As características de Marina e Carlos permanecem parcialmente como proto-person
 **Persona escolhida:** P01 — Rafael Martins <br>
 **Justificativa:** Rafael foi escolhido porque representa o perfil prioritário: o estudante que faz parte de uma equipe de robótica humanoide que acompanha resultados, compara execuções e utiliza essas informações para decidir quais aspectos do robô precisam ser melhorados. Como as características detalhadas desse perfil ainda não foram validadas diretamente com usuários, o mapa mantém como hipótese tudo o que ultrapassa a experiência da própria equipe.
 
-![Mapa de empatia](../assets/03_personas/mapadaempatia.png)
+![Mapa de empatia](../assets/03_personas/mapadaempatia.jpg)
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
