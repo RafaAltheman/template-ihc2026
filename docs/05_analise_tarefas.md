@@ -8,8 +8,6 @@
 
 Modelar tarefas importantes sob perspectivas complementares: decomposição hierárquica (HTA), estrutura de metas/métodos/operações (GOMS) e relações temporais entre tarefas (CTT). O diagrama deve ser acompanhado de interpretação textual.
 
-No projeto de locomoção de robôs, a análise concentra-se no trabalho humano de consultar resultados de treinamento, verificar evidências, comparar execuções e comunicar conclusões. As telas, filtros e formas de registro descritos adiante são **propostas de interação para o protótipo de IHC**, e não uma afirmação de que tais recursos já estejam implementados no TCC.
-
 ## Para projetos cujo TCC não previa interface
 
 Modele **tarefas humanas relacionadas ao uso da contribuição técnica**, e não a implementação interna do algoritmo. Exemplos de boas tarefas para análise:
@@ -27,8 +25,6 @@ Modele **tarefas humanas relacionadas ao uso da contribuição técnica**, e nã
 
 Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece modelagem se tiver significado no domínio (papéis, validações, riscos, permissões, dependências).
 
-**Aplicação ao projeto:** T01 envolve julgar uma melhoria de treinamento, T02 exige recuperar e comparar resultados rastreáveis e T03 transforma indicadores em informações úteis para discussão da equipe. Nenhuma delas descreve etapas de implementação do algoritmo ou execução de código como se fossem tarefas do usuário.
-
 ## Seleção das tarefas
 
 | ID | Tarefa | Persona/cenário | Frequência/criticidade | Responsável |
@@ -38,8 +34,6 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | T03 | Consultar uma síntese do desempenho e comunicar à equipe os pontos que precisam de investigação | P03 Carlos Almeida / C03 | Periódica e alta: orienta reuniões e priorização de investigação | Letizia Lowatzki Baptistella — 22.125.063-2 |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
-
-**Convenção dos planos HTA:** `>` indica precedência; `/` indica alternativas condicionadas; `+` indica subtarefas que precisam ser consideradas, sem ordem fixa. O sinal `/` **não é divisão matemática**. Repetições, exceções e condições são descritas explicitamente. No CTT, a notação temporal é distinta e segue os operadores apresentados na aula.
 
 ---
 
@@ -51,9 +45,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ### Descrição da tarefa
 
-O objetivo é decidir se os resultados de um treinamento indicam uma melhoria útil para a locomoção do robô em partidas de futebol. A tarefa começa quando Rafael (P01), no cenário C01, tem acesso aos resultados de uma execução e termina quando registra uma conclusão fundamentada: considerar o resultado uma melhoria, rejeitá-lo como melhoria ou indicar que são necessárias mais evidências. A avaliação considera velocidade média, distância percorrida, taxa de quedas, estabilidade e localização, além da observação do comportamento do robô, quando houver esse tipo de registro.
-
-**Entrada e condições:** execução identificada, métricas disponíveis e, idealmente, um treinamento de referência sob condições comparáveis. **Saída esperada:** uma classificação acompanhada do identificador da execução, referência empregada, indicadores examinados e justificativa. A ausência de baseline compatível ou de métricas necessárias é um dado importante para a conclusão, e não um motivo para inventar comparabilidade.
+O objetivo é decidir se os resultados de um treinamento indicam uma melhoria útil para o desempenho do robô em partidas de futebol. A tarefa começa quando Rafael (P01), no cenário C01, tem acesso aos resultados de uma execução e termina quando registra uma conclusão fundamentada: considerar o resultado uma melhoria, rejeitá-lo como melhoria ou indicar que são necessárias mais evidências. A avaliação considera velocidade média, distância percorrida, taxa de quedas, estabilidade, gol, força de chute e localização, além da observação do comportamento do robô, quando houver esse tipo de registro.
 
 ### Diagrama
 
@@ -185,9 +177,7 @@ A4 = I41 []>> S42
 
 ### Descrição da tarefa
 
-Marina (P02), no cenário C02, precisa recuperar duas execuções passadas, confirmar que os registros são os corretos e investigar diferenças em métricas e parâmetros. A tarefa começa quando surge uma dúvida sobre desempenhos divergentes e termina quando uma comparação fica documentada com IDs, evidências e **uma hipótese de explicação**, sem alegar causalidade que não tenha sido comprovada.
-
-**Entrada e condições:** histórico de execuções ou identificadores conhecidos; metadados suficientes para conferir versão, conjunto de testes, ambiente e parâmetros. **Saída esperada:** dois resultados identificáveis, diferenças reconhecidas e hipótese com ressalvas. Se um ID não for encontrado, a consulta deve poder ser revista; se não houver dados comparáveis, a limitação deve ser comunicada.
+O objetivo dessa tarefa é comparar treinamenotos. Marina (P02), no cenário C02, precisa recuperar execuções passadas, confirmar que os registros são os corretos e investigar diferenças em métricas e parâmetros. A tarefa começa quando surge uma dúvida sobre desempenhos divergentes e termina quando uma comparação fica documentada com IDs, evidências e uma hipótese de explicação, sem alegar causalidade que não tenha sido comprovada.
 
 ### Diagrama
 
@@ -321,7 +311,6 @@ A4 = I41 []>> S42
 
 Carlos (P03), no cenário C03, precisa preparar e apresentar à equipe uma síntese do desempenho obtido em treinamentos recentes, destacando indícios positivos, regressões e pontos prioritários de investigação. A tarefa começa com a necessidade de uma reunião ou atualização e termina quando a equipe recebe informações compreensíveis e tem seus encaminhamentos, dúvidas e responsáveis registrados.
 
-**Entrada e condições:** período de análise e conjunto de execuções identificados, além de indicadores cujo contexto possa ser consultado. **Saída esperada:** comunicação de tendências com limitações explícitas, evidências rastreáveis e prioridades registradas. Um resultado agregado não deve ocultar uma execução problemática; ausência de dados não deve ser apresentada como bom desempenho.
 
 ### Diagrama
 
@@ -443,34 +432,17 @@ A4 = I41 []>> S42
 
 ## Síntese da equipe
 
-As três técnicas revelam problemas complementares. A **HTA** mostra que comparação e interpretação são metas compostas, não cliques isolados; o **GOMS** identifica caminhos alternativos e condições para escolhê-los; o **CTT** evidencia dependências temporais, escolhas mutuamente excludentes, inspeções em ordem flexível e suspensão/retomada durante a apresentação.
-
-| Problema ou oportunidade | Tarefa de origem | Requisito ou decisão de design | Parte proposta para o protótipo | Verificação no teste de usabilidade |
-|---|---|---|---|---|
-| Concluir melhoria apenas por um indicador | T01 / P01 / C01 | R01: exibir métricas complementares, unidades e contexto | Tela de avaliação com indicadores lado a lado | Verificar se o participante identifica ganho de velocidade com piora nas quedas. |
-| Comparar com baseline incompatível | T01 e T02 / P01–P02 | R02: identificar referência, versão, parâmetros e divergências | Seletor de baseline e comparação contextualizada | Avaliar se o participante reconhece a incompatibilidade antes de concluir. |
-| Não encontrar execuções anteriores ou perder critérios | T02 / P02 / C02 | R03: oferecer busca por ID e filtros preservados | Histórico de execuções e seleção de dupla | Testar recuperação com e sem IDs conhecidos. |
-| Tratar dados ausentes como evidência positiva | T01, T02 e T03 | R04: explicitar lacunas, erros e limites de comparação | Estados de ausência de dados e avisos | Verificar se o usuário expressa incerteza adequadamente. |
-| Panorama geral esconder regressões | T03 / P03 / C03 | R05: associar síntese, alertas e evidências detalhadas | Visão consolidada com acesso ao detalhe | Solicitar que localize a origem de um alerta durante apresentação. |
-| Perder conclusões e encaminhamentos | T01, T02 e T03 | R06: registrar decisão/hipótese, IDs e responsáveis | Registro de análises e encaminhamentos | Conferir se os participantes conseguem salvar e reencontrar o resultado. |
-
-**O que seguirá para o protótipo:** (1) avaliar uma execução frente a uma referência; (2) buscar, filtrar e comparar duas execuções históricas; (3) consultar um panorama e abrir as evidências de um alerta; (4) registrar uma conclusão ou encaminhamento. A equipe deverá alinhar essas propostas à viabilidade técnica e às entregas anteriores antes da implementação.
-
-**O que seguirá para o teste de usabilidade:** **Teste T01:** julgar melhoria em comparação com métricas divergentes e justificar; **Teste T02:** recuperar dois experimentos por dois caminhos e identificar diferenças de condições; **Teste T03:** apresentar síntese, consultar detalhe após interrupção e registrar ação. Em todos, observar conclusão correta para os dados fornecidos, erros de interpretação, clareza de feedback, dificuldade de navegação, capacidade de recuperação e rastreabilidade da decisão. Os critérios de “resultado correto” deverão ser definidos previamente para cada conjunto de dados fictícios do teste; não se deve pressupor uma regra universal de melhor treinamento.
-
-**Rastreabilidade:** HTA, GOMS e CTT da T01 se vinculam a **P01/C01** e à decisão de melhoria; os três modelos da T02 a **P02/C02** e à recuperação/comparação de histórico; os três modelos da T03 a **P03/C03** e à comunicação de prioridades. As ações de consulta, comparação e registro representam **tarefas humanas de uso dos resultados** do TCC, não rotinas internas do treinamento.
+Quais problemas de interação, oportunidade e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
 
 ## Checklist
 
-- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
-- [x] Cada artefato identifica autor e tarefa.
-- [x] Diagramas são legíveis e possuem fonte editável quando possível (SVG e DOT).
-- [x] HTA contém planos, não apenas árvore de tópicos.
-- [x] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [x] CTT usa operadores temporais e tipos de tarefa coerentes com a notação adotada em aula.
-- [x] Há texto explicando cada diagrama.
-- [x] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [x] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [x] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
-
-**Base conceitual:** materiais de aula *CC8122 — HTA* (objetivos, operações, planos e problemas/recomendações) e *CC8122 — GOMS e CTT* (Goals, Operators, Methods, Selection Rules e relações temporais), baseados em Barbosa e Silva (2010). As telas descritas continuam sendo propostas de interface para validar com a equipe e no protótipo.
+- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [ ] Cada artefato identifica autor e tarefa.
+- [ ] Diagramas são legíveis e possuem fonte editável quando possível (SVG e DOT).
+- [ ] HTA contém planos, não apenas árvore de tópicos.
+- [ ] GOMS distingue Goals, Operators, Methods e Selection Rules.
+- [ ] CTT usa operadores temporais e tipos de tarefa coerentes com a notação adotada em aula.
+- [ ] Há texto explicando cada diagrama.
+- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
+- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
