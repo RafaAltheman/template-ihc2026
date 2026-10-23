@@ -51,7 +51,7 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ![HTA T01](../assets/05_tarefas/hta_t01.svg)
 
-**Leitura do diagrama:** o objetivo 0 é decomposto em preparar a comparação (1), examinar evidências (2), classificar (3) e registrar (4). A subdivisão do item 3 representa **uma escolha**, não três ações consecutivas. A linha inferior dos nós 1.1, 1.2, 2.1, 2.2, 2.3, 3.1–3.3 e 4 representa o nível operacional útil à interface.
+**Leitura do diagrama:** o objetivo 0 é decomposto em preparar a comparação (1), examinar evidências (2), classificar (3) e registrar (4). A subdivisão do item 3 representa uma escolha, não três ações consecutivas. A linha inferior dos nós 1.1, 1.2, 2.1, 2.2, 3.1–3.3 e 4 representa o nível operacional.
 
 ### Decomposição e planos
 
@@ -61,17 +61,16 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 | 1 | Identificar execução e referência | `1.1 > 1.2` | Mostrar identificadores, datas, versões, ambiente e parâmetros antes da comparação. |
 | 1.1 | Abrir treinamento avaliado | operação | Diferenciar execução concluída, em andamento, com erro e sem dados disponíveis. |
 | 1.2 | Selecionar baseline comparável | operação; se não existir, registrar a limitação e seguir para a saída de evidências insuficientes | Informar claramente compatibilidade ou divergência de condições; não escolher referência automaticamente sem identificação. |
-| 2 | Examinar evidências | `2.1 + 2.2`; executar também `2.3` se houver registro comportamental | Reunir indicadores complementares sem ocultar pioras em outras métricas. |
-| 2.1 | Comparar métricas de deslocamento | operação | Apresentar velocidade média e distância com unidades, escalas e referência. |
-| 2.2 | Verificar quedas, estabilidade e localização | operação | Destacar regressões, variações e valores ausentes, evitando tratá-los como zero. |
-| 2.3 | Observar comportamento em campo | operação condicional à disponibilidade de vídeo, trajetória ou evidência equivalente | Associar o registro visual à execução correta e indicar sua indisponibilidade quando pertinente. |
+| 2 | Examinar evidências | `2.1 + 2.2` | Reunir indicadores complementares sem ocultar pioras em outras métricas. |
+| 2.1 | Comparar métricas de desempenho | operação | Apresentar velocidade média, distância percorrida, taxa de quedas, gols marcadose e força de chute com unidades. |
+| 2.2 | Observar comportamento em campo, localização e estabilidade | operação | Associar o registro visual à execução correta e indicar sua indisponibilidade quando pertinente. |
 | 3 | Classificar resultado | `3.1 / 3.2 / 3.3`, escolhendo uma única alternativa conforme as evidências | Evitar classificação automática baseada somente em velocidade ou em uma média isolada. |
 | 3.1 | Classificar como melhoria | operação alternativa | Solicitar justificativa apoiada em indicadores e comportamento observado. |
 | 3.2 | Classificar como não melhoria | operação alternativa | Permitir registrar regressão ou compromisso entre ganho de velocidade e aumento de quedas. |
 | 3.3 | Marcar evidências insuficientes | operação alternativa | Permitir explicar falta de baseline, incompatibilidade, ausência de medida ou incerteza. |
 | 4 | Registrar decisão e justificativa | operação | Associar conclusão ao ID e à referência e confirmar que o registro foi salvo. |
 
-**Planos detalhados:** **Plano 0:** concluir 1, depois 2, depois escolher uma saída em 3 e registrar em 4. **Plano 1:** identificar primeiro o treinamento analisado e depois verificar a referência; se não existir referência válida, conservar o estado de insuficiência de evidência. **Plano 2:** analisar deslocamento e estabilidade sem ordem obrigatória; acrescentar comportamento se disponível. **Plano 3:** selecionar exatamente um desfecho; se uma incompatibilidade for descoberta antes do registro, retornar à seleção de referência ou à análise das evidências. **Plano 4:** salvar com justificativa e conferir confirmação.
+**Planos detalhados:** **Plano 0:** concluir 1, depois 2, depois escolher uma saída em 3 e registrar em 4. **Plano 1:** identificar primeiro o treinamento analisado e depois verificar a referência; se não existir referência válida, conservar o estado de insuficiência de evidência. **Plano 2:** analisar métricas quantitativas e visuais do treinamento **Plano 3:** selecionar exatamente um desfecho; se uma incompatibilidade for descoberta antes do registro, retornar à seleção de referência ou à análise das evidências. **Plano 4:** salvar com justificativa e conferir confirmação.
 
 **Verificação do HTA:**
 
