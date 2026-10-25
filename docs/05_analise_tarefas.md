@@ -40,7 +40,6 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 ## HTA — T01: Avaliar se um treinamento melhorou o desempenho
 
 
-
 **Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
 
 ### Descrição da tarefa
@@ -92,39 +91,51 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 `G0: Localizar duas execuções anteriores, comparar seus resultados e registrar uma hipótese rastreável para as diferenças encontradas.`
 
-**Subobjetivos:** `G1` determinar critérios; `G2` localizar a primeira e a segunda execução; `G3` verificar seus contextos; `G4` comparar métricas; `G5` registrar interpretação e ressalvas.
+**Subobjetivos:** `G1` localizar as duas execuções; `G2` comparar métricas e parâmetros; `G3` formular a hipótese; `G4` egistrar hipótese, evidências e ressalvas.
 
 ### Métodos, operadores e regras de seleção
 
-**Method M1 — Localizar execuções por identificadores conhecidos:**
+### G1: Localizar as duas execuções
+#### Method M1: localizar por identificadores conhecidos
+• O1 (cognição): recuperar o ID da primeira execução.
+• O2 (interação): apontar e clicar no campo de busca.
+• O3 (interação): digitar o ID.
+• O4 (interação): acionar a busca.
+• O5 (percepção): conferir se o registro apresentado (ID, data, versão) é o esperado.
+• O6 (interação): adicionar a execução à comparação.
+• O7 (cognição/interação): repetir O1–O6 para a segunda execução.
+#### Method M2: localizar por filtros do histórico
+• O1 (interação): acessar o histórico de execuções.
+• O2 (cognição): definir as pistas disponíveis (período, versão, configuração).
+• O3 (interação): selecionar os filtros e acionar a consulta.
+• O4 (percepção): ler a lista e conferir os metadados dos resultados.
+• O5 (interação): selecionar a primeira e a segunda execução e adicioná-las à comparação.
 
-1. **Operator O1 (cognição):** recuperar os IDs dos dois experimentos de interesse.
-2. **Operator O2 (interação):** apontar, clicar no campo de busca e digitar o primeiro ID.
-3. **Operator O3 (interação/percepção):** executar a busca e confirmar o registro apresentado.
-4. **Operator O4 (interação):** adicionar a primeira execução à comparação.
-5. **Operator O5 (interação):** digitar o segundo ID, executar a busca e selecionar o resultado correto.
-6. **Operator O6 (interação):** abrir a comparação entre os dois registros.
-7. **Operator O7 (percepção/cognição):** examinar valores, parâmetros e versões, identificando divergências.
-8. **Operator O8 (interação):** registrar hipótese, evidências, IDs e ressalvas e confirmar o salvamento.
+#### Regras de seleção de G1
+• SR1: usar M1 quando Marina conhecer os IDs das duas execuções. Usar M2 quando um ou ambos forem desconhecidos, mas houver atributos suficientes para filtrar.
+• SR2: se a busca por ID falhar (O5 do M1 não confere), revisar o ID. Se continuar sem resultado, mudar para M2. Se os filtros do M2 trouxerem resultados demais, refiná-los antes de selecionar (voltar a O3).
 
-**Method M2 — Localizar execuções por filtros de histórico:**
+### G2: Comparar métricas e parâmetros
+#### Method M1
+• O1 (interação): abrir a comparação entre as duas execuções.
+• O2 (percepção): ler lado a lado os valores das métricas, com unidades.
+• O3 (percepção/cognição): identificar quais parâmetros, versões e métricas divergem.
+• O4 (cognição): separar o que foi medido (diferença observada) do que seria apenas uma explicação possível.
 
-1. **Operator O1 (interação):** acessar o histórico de execuções.
-2. **Operator O2 (cognição):** definir pistas disponíveis, como período, versão e configuração.
-3. **Operator O3 (interação):** selecionar filtros e acionar a consulta.
-4. **Operator O4 (percepção):** ler a lista e conferir os metadados dos resultados.
-5. **Operator O5 (interação):** selecionar a primeira execução e a segunda execução.
-6. **Operator O6 (interação):** abrir a comparação mantendo os critérios de filtro acessíveis.
-7. **Operator O7 (percepção/cognição):** conferir métricas, parâmetros e condições para interpretar diferenças.
-8. **Operator O8 (interação):** registrar hipótese, evidências e ressalvas e confirmar o salvamento.
+### G3: Formular a hipótese
+#### Method M1
+• O1 (cognição): relacionar as divergências de parâmetros ou versão às diferenças de desempenho e formular uma hipótese.
+• O2 (cognição): decidir que ressalvas se aplicam. Uma diferença de versão, sozinha, não prova a causa da diferença de desempenho.
 
-**Selection Rule SR1:** escolher **M1** quando os dois IDs forem conhecidos e válidos; escolher **M2** quando um ou ambos forem desconhecidos, mas houver atributos suficientes para filtrar o histórico. **SR2:** se a busca direta falhar, revisar o ID ou mudar para filtros; se os filtros trouxerem muitos resultados, refiná-los antes de selecionar. **SR3:** se os dois registros forem incompatíveis em condições essenciais, registrar a ressalva e buscar outro par quando o objetivo exigir comparação direta.
+### G4: Registrar hipótese, evidências e ressalvas
+#### Method M1
+• O1 (interação): digitar a hipótese, as evidências, os IDs das duas execuções e as ressalvas.
+• O2 (interação): salvar o registro.
+• O3 (percepção): confirmar que o registro foi salvo e ficou associado aos IDs.
 
-**Diagrama GOMS:**
 
-![GOMS T02](../assets/05_tarefas/goms_t02.svg)
-
-**Interpretação do GOMS:** o critério que separa M1 de M2 é informação de que Marina dispõe no início da tarefa, e não uma preferência arbitrária por tela. Ambos alcançam a mesma meta e terminam com um registro contextualizado. A análise revela a necessidade de preservar seleções e filtros entre pesquisa e comparação, além de diferenciar o que foi medido da explicação que Marina propõe. Não se supõe que uma diferença de versão, sozinha, prove a causa da diferença de desempenho.
+### **Interpretação do GOMS:** 
+O critério que separa M1 de M2 é informação de que Marina dispõe no início da tarefa, e não uma preferência arbitrária por tela. Ambos alcançam a mesma meta e terminam com um registro contextualizado. A análise revela a necessidade de preservar seleções e filtros entre pesquisa e comparação, além de diferenciar o que foi medido da explicação que Marina propõe. Não se supõe que uma diferença de versão, sozinha, prove a causa da diferença de desempenho.
 
 ---
 
