@@ -40,7 +40,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 ## HTA — T01: Avaliar se um treinamento melhorou o desempenho
 
 
-**Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
+**Autor(a):** Letizia Lowatzki Baptistella 22.125.063-2
 
 ### Descrição da tarefa
 
@@ -61,7 +61,7 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 | 1.1 | Abrir treinamento avaliado | operação | Diferenciar execução concluída, em andamento, com erro e sem dados disponíveis. |
 | 1.2 | Selecionar baseline comparável | operação; se não existir, registrar a limitação e seguir para a saída de evidências insuficientes | Informar claramente compatibilidade ou divergência de condições; não escolher referência automaticamente sem identificação. |
 | 2 | Examinar evidências | `2.1 + 2.2` | Reunir indicadores complementares sem ocultar pioras em outras métricas. |
-| 2.1 | Comparar métricas de desempenho | operação | Apresentar velocidade média, distância percorrida, taxa de quedas, gols marcadose e força de chute com unidades. |
+| 2.1 | Comparar métricas de desempenho | operação | Apresentar velocidade média, distância percorrida, taxa de quedas, gols marcados e força de chute com unidades. |
 | 2.2 | Observar comportamento em campo, localização e estabilidade | operação | Associar o registro visual à execução correta e indicar sua indisponibilidade quando pertinente. |
 | 3 | Classificar resultado | `3.1 / 3.2 / 3.3`, escolhendo uma única alternativa conforme as evidências | Evitar classificação automática baseada somente em velocidade ou em uma média isolada. |
 | 3.1 | Classificar como melhoria | operação alternativa | Solicitar justificativa apoiada em indicadores e comportamento observado. |
@@ -91,7 +91,7 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 `G0: Localizar duas execuções anteriores, comparar seus resultados e registrar uma hipótese rastreável para as diferenças encontradas.`
 
-**Subobjetivos:** `G1` localizar as duas execuções; `G2` comparar métricas e parâmetros; `G3` formular a hipótese; `G4` egistrar hipótese, evidências e ressalvas.
+**Subobjetivos:** `G1` localizar as duas execuções; `G2` comparar métricas e parâmetros; `G3` formular a hipótese; `G4` Registrar hipótese, evidências e ressalvas.
 
 ### Métodos, operadores e regras de seleção
 
@@ -142,58 +142,71 @@ O critério que separa M1 de M2 é informação de que Marina dispõe no início
 ## CTT — T03: Consultar síntese e comunicar pontos de investigação
 
 
-**Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2
+**Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
 
 ### Descrição
 
-O CTT descreve o encadeamento entre preparar o panorama, interpretar indicadores e alertas, apresentar prioridades e registrar encaminhamentos. A relação temporal mais importante para esse cenário é que Carlos pode **suspender a apresentação** para atender a uma dúvida, abrir a evidência e depois **retomar** a exposição do ponto em que parou. Isso não equivale a encerrar a apresentação e começar outra do zero.
+O CTT descreve o encadeamento entre preparar o panorama, interpretar indicadores e alertas, comunicar prioridades e registrar encaminhamentos. Na T03, Carlos (P03, cenário C03) usa a síntese do desempenho para conduzir uma reunião com a equipe.
+A relação temporal mais importante é que Carlos pode suspender a apresentação para atender a uma dúvida, abrir a evidência e depois retomar a exposição do ponto em que parou (isso não equivale a encerrar a apresentação e começar outra).
 
-**Limites e exceções:** o processamento do sistema prepara a síntese a partir do escopo informado, mas a identificação de prioridades e a comunicação continuam sendo humanas. A consulta de evidência detalhada ocorre quando houver uma pergunta ou necessidade de esclarecimento. Se o sistema não apresentar dados suficientes, Carlos comunica a limitação e não cria encaminhamento baseado em certeza indevida.
+Limites e exceções: <br> 
+O sistema prepara a síntese a partir do escopo informado, mas identificar prioridades e comunicá-las continua sendo trabalho humano. <br>
+A evidência detalhada só é aberta quando há uma pergunta ou necessidade de esclarecimento, e pode ser aberta mais de uma vez.
 
 ### Diagrama
 
 ![CTT T03](../assets/05_tarefas/ctt_t03.svg)
 
-**Hierarquia e tipos de tarefa:** `A0` (comunicar panorama), `A1` (preparar), `A2` (interpretar), `A3` (comunicar) e `A4` (registrar) são **abstratas**. `I11` (escolher período), `I32` (abrir evidência) e `I41` (registrar ações) são **interativas**. `S12` (preparar síntese) e `S42` (persistir encaminhamentos) são **do sistema**. `U21` (interpretar indicadores), `U22` (interpretar alertas), `U23` (definir prioridades) e `U31` (apresentar descobertas) são **do usuário**.
+a tarefa abstrata A0 (consultar painel e comunicar pontos de investigação) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): preparar o painel (A1), interpretar a evolução do desempenho (A2), comunicar a interpretação à equipe (A3) e discutir e delegar (A4). Em A1, a tarefa interativa de escolher o período de análise (I11) habilita, com passagem de informação ([]>>), a tarefa do sistema que prepara as métricas e os parâmetros ao longo do tempo (S12). Em A2, Carlos interpreta a evolução do desempenho (U21) e, em seguida, define os pontos a investigar (U22), ambas tarefas do usuário. Em A3, a apresentação da interpretação (U31) pode ser suspensa pela abertura de uma evidência (I32), que é interativa e repetível (*), e retomada do ponto em que parou (|>). Em A4, as tarefas do usuário de discutir os resultados (U41) e delegar tarefas (U42) ocorrem em qualquer ordem (|||) e fora do sistema, que se limita a preparar o painel e a exibir as evidências.
 
 **Expressão temporal do modelo:**
 
 ```text
 A0 = A1 >> A2 >> A3 >> A4
 A1 = I11 []>> S12
-A2 = (U21 ||| U22) >> U23
-A3 = U31 |> I32  (I32 ocorre quando há necessidade de consultar evidências)
-A4 = I41 []>> S42
+A2 = U21 >> U22
+A3 = U31 |> I32*
+A4 = U41 ||| U42
 ```
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `>>` | Habilitação: exige conclusão da etapa anterior. | `A1 >> A2 >> A3 >> A4`: preparar a síntese antes de interpretá-la e comunicar prioridades. |
-| `[]>>` | Habilitação com passagem de informação. | `I11 []>> S12`: o período selecionado determina os resultados; `I41 []>> S42`: ações informadas são salvas. |
-| `\|\|\|` | Concorrência: atividades que podem ocorrer em qualquer ordem ou concomitantemente. | `U21 \|\|\| U22`: examinar tendências e alertas, antes da priorização. |
-| `\|>` | Suspensão e retomada: uma atividade pode ser interrompida pela outra e prosseguir de onde parou. | `U31 \|> I32`: interromper momentaneamente a apresentação, abrir evidência solicitada e voltar ao ponto anterior. |
-
-**Interpretação e implicações de design:** a preparação dos dados depende diretamente do escopo indicado; por isso, o período selecionado deve estar visível na síntese. Indicadores gerais e alertas precisam ser lidos de maneira complementar para que a priorização tenha fundamento. Durante a reunião, a interface precisa preservar filtros, indicador escolhido e posição da apresentação quando uma evidência é aberta. A confirmação dos encaminhamentos ao final garante que a comunicação gere próximos passos recuperáveis, e não apenas uma conversa sem registro.
-
-**Situação para o teste de usabilidade:** simular uma reunião em que Carlos deve explicar uma regressão, receber uma pergunta sobre sua origem, abrir a execução correspondente e retornar ao panorama sem redefinir período e seleção. Avaliar também se registra pelo menos um próximo passo vinculado ao achado.
+| `>>` | **Habilitação:** indica que uma atividade depende da conclusão de uma etapa anterior para ser iniciada. | `A1 >> A2 >> A3 >> A4`: o painel é preparado antes de ser interpretado, comunicado e discutido. `U21 >> U22`: os pontos a investigar são definidos após a interpretação da evolução. |
+| `[]>>` | **Habilitação com passagem de informação:** indica que, além de habilitar a atividade seguinte, a etapa anterior fornece informações necessárias para sua execução. | `I11 []>> S12`: o período escolhido determina as métricas e os parâmetros exibidos no painel. |
+| `\|\|\|` | **Concorrência:** indica que duas ou mais atividades podem ocorrer simultaneamente ou em qualquer ordem, sem uma sequência obrigatória entre elas. | `U41 \|\|\| U42`: Carlos e os estudantes discutem os resultados e delegam tarefas de acordo com as necessidades da reunião. |
+| `\|>` | **Suspensão e retomada:** indica que uma atividade pode ser temporariamente interrompida para a execução de outra, sendo retomada posteriormente do ponto em que parou. | `U31 \|> I32`: durante a apresentação, Carlos interrompe momentaneamente a exposição para abrir uma evidência solicitada e, em seguida, retoma a apresentação do ponto anterior. |
+| `*` | **Iteração:** indica que uma atividade pode ser repetida uma ou mais vezes durante o processo. | `I32*`: Carlos pode abrir diferentes evidências ou consultar a mesma evidência várias vezes durante a reunião. |
 
 ---
 
 ## Síntese da equipe
 
-Quais problemas de interação, oportunidade e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+Problemas de interação: as três tarefas exigem decidir com contexto. Em T01, o risco é concluir por um único indicador (mais velocidade, mais quedas) ou sem baseline comparável. Em T02, é perder seleções e filtros entre a busca e a comparação, e confundir o que foi medido com a hipótese. Em T03, é perder período, indicador e ponto da apresentação ao abrir uma evidência durante a reunião.
+
+Oportunidades: uma tela de comparação serve a T01 e T02, e o painel temporal de T03 reaproveita as mesmas métricas. Mostrar métricas e parâmetros na mesma linha do tempo ajuda a relacionar mudanças de configuração a mudanças de desempenho.
+
+Requisitos principais:
+- Mostrar o contexto da execução e do baseline (ID, versão, parâmetros) durante toda a análise.
+- Apresentar as métricas lado a lado, com unidades, sem ocultar pioras.
+- Oferecer busca por ID e filtros como caminhos equivalentes, preservando as seleções.
+- Registrar decisão ou hipótese com justificativa, IDs e ressalvas, e confirmar o salvamento.
+- Exibir o período de análise e permitir abrir uma evidência e voltar ao painel sem perder o estado.
+
+Fora do escopo: delegar tarefas e priorizar automaticamente (responsabilidade de Carlos e os estudantes).
+
+Protótipo e teste de usabilidade: as três tarefas entram, em duas frentes, uma tela de histórico e comparação (T01 e T02) e um painel temporal (T03). Os testes simulam uma avaliação (T01), a busca e comparação de duas execuções (T02) e uma reunião com interrupção para abrir evidência (T03).
 
 ## Checklist
 
-- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
-- [ ] Cada artefato identifica autor e tarefa.
-- [ ] Diagramas são legíveis e possuem fonte editável quando possível (SVG e DOT).
-- [ ] HTA contém planos, não apenas árvore de tópicos.
-- [ ] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [ ] CTT usa operadores temporais e tipos de tarefa coerentes com a notação adotada em aula.
-- [ ] Há texto explicando cada diagrama.
+- [X] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [X] Cada artefato identifica autor e tarefa.
+- [X] Diagramas são legíveis e possuem fonte editável quando possível (SVG e DOT).
+- [X] HTA contém planos, não apenas árvore de tópicos.
+- [X] GOMS distingue Goals, Operators, Methods e Selection Rules.
+- [X] CTT usa operadores temporais e tipos de tarefa coerentes com a notação adotada em aula.
+- [X] Há texto explicando cada diagrama.
 - [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+- [X] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
+- [X] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
