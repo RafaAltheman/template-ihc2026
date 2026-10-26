@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** 21/10/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluída 
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -207,6 +207,6 @@ Protótipo e teste de usabilidade: as três tarefas entram, em duas frentes, uma
 - [X] GOMS distingue Goals, Operators, Methods e Selection Rules.
 - [X] CTT usa operadores temporais e tipos de tarefa coerentes com a notação adotada em aula.
 - [X] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [X] Tarefas estão ligadas a cenários/personas na rastreabilidade.
 - [X] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
 - [X] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
