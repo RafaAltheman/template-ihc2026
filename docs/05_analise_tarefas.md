@@ -29,9 +29,9 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário | Frequência/criticidade | Responsável |
 |---|---|---|---|---|
-| T01 | Avaliar se o resultado de um treinamento representa uma melhoria real no desempenho do robô | P01 Rafael Martins / C01 | Frequente e alta: decisão equivocada pode provocar ajustes ineficazes e gasto computacional | Rafaela Altheman de Campos — 22.125.062-4 |
+| T01 | Avaliar se o resultado de um treinamento representa uma melhoria real no desempenho do robô | P01 Rafael Martins / C01 | Frequente e alta: decisão equivocada pode provocar ajustes ineficazes e gasto computacional | Letizia Lowatzki Baptistella 22.125.063-2 |
 | T02 | Localizar e comparar execuções anteriores para explicar diferenças de desempenho | P02 Marina Oliveira / C02 | Recorrente e alta: exige rastreabilidade e comparabilidade entre experimentos | Manuella Filipe Peres — 22.224.029-3 |
-| T03 | Consultar uma síntese do desempenho e comunicar à equipe os pontos que precisam de investigação | P03 Carlos Almeida / C03 | Periódica e alta: orienta reuniões e priorização de investigação | Letizia Lowatzki Baptistella — 22.125.063-2 |
+| T03 | Consultar uma síntese do desempenho e comunicar à equipe os pontos que precisam de investigação | P03 Carlos Almeida / C03 | Periódica e alta: orienta reuniões e priorização de investigação | Rafaela Altheman de Campos — 22.125.062-4 |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -54,9 +54,9 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ### Decomposição e planos
 
-| ID | Objetivo ou operação | Plano/ordem | Problema de interação e decisão de design |
-|---|---|---|---|
-| 0 | Avaliar se um treinamento melhorou o desempenho | `1 > 2 > 3 > 4` | Informações da execução e da referência devem acompanhar toda a decisão para evitar conclusões sem contexto. |
+| ID | Objetivo ou operação | Plano/ordem | Problema de interação e decisão de design | Input | Feedback |
+|---|---|---|---|---|---|
+| 0 | Avaliar se um treinamento melhorou o desempenho | `1 > 2 > 3 > 4` | Informações da execução e da referência devem acompanhar toda a decisão para evitar conclusões sem contexto. | Resultados da execução avaliada (ID, status, data, ambiente, parâmetros e métricas) e registro visual do comportamento. | Confirmação de que a decisão (melhoria, não melhoria ou evidências insuficientes) e a justificativa foram salvas, associadas ao ID da execução e ao baseline. |
 | 1 | Identificar execução e referência | `1.1 > 1.2` | Mostrar identificadores, datas, versões, ambiente e parâmetros antes da comparação. |
 | 1.1 | Abrir treinamento avaliado | operação | Diferenciar execução concluída, em andamento, com erro e sem dados disponíveis. |
 | 1.2 | Selecionar baseline comparável | operação; se não existir, registrar a limitação e seguir para a saída de evidências insuficientes | Informar claramente compatibilidade ou divergência de condições; não escolher referência automaticamente sem identificação. |
@@ -97,19 +97,21 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ### G1: Localizar as duas execuções
 #### Method M1: localizar por identificadores conhecidos
-• O1 (cognição): recuperar o ID da primeira execução.
-• O2 (interação): apontar e clicar no campo de busca.
-• O3 (interação): digitar o ID.
-• O4 (interação): acionar a busca.
-• O5 (percepção): conferir se o registro apresentado (ID, data, versão) é o esperado.
-• O6 (interação): adicionar a execução à comparação.
-• O7 (cognição/interação): repetir O1–O6 para a segunda execução.
+- O1 (cognição): recuperar o ID da primeira execução.
+- O2 (interação): apontar e clicar no campo de busca.
+- O3 (interação): digitar o ID.
+- O4 (interação): acionar a busca.
+- O5 (percepção): conferir se o registro apresentado (ID, data, versão) é o esperado.
+- O6 (interação): adicionar a execução à comparação.
+- O7 (cognição/interação): repetir O1–O6 para a segunda execução.
+- O8 (percepção): confirmar que as duas execuções corretas foram adicionadas à comparação (IDs e versões).
 #### Method M2: localizar por filtros do histórico
-• O1 (interação): acessar o histórico de execuções.
-• O2 (cognição): definir as pistas disponíveis (período, versão, configuração).
-• O3 (interação): selecionar os filtros e acionar a consulta.
-• O4 (percepção): ler a lista e conferir os metadados dos resultados.
-• O5 (interação): selecionar a primeira e a segunda execução e adicioná-las à comparação.
+- O1 (interação): acessar o histórico de execuções.
+- O2 (cognição): definir as pistas disponíveis (período, versão, configuração).
+- O3 (interação): selecionar os filtros e acionar a consulta.
+- O4 (percepção): ler a lista e conferir os metadados dos resultados.
+- O5 (interação): selecionar a primeira e a segunda execução e adicioná-las à comparação.
+- O6 (percepção): confirmar que as duas execuções selecionadas estão na comparação, com os IDs esperados.
 
 #### Regras de seleção de G1
 • SR1: usar M1 quando Marina conhecer os IDs das duas execuções. Usar M2 quando um ou ambos forem desconhecidos, mas houver atributos suficientes para filtrar.
@@ -117,21 +119,23 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ### G2: Comparar métricas e parâmetros
 #### Method M1
-• O1 (interação): abrir a comparação entre as duas execuções.
-• O2 (percepção): ler lado a lado os valores das métricas, com unidades.
-• O3 (percepção/cognição): identificar quais parâmetros, versões e métricas divergem.
-• O4 (cognição): separar o que foi medido (diferença observada) do que seria apenas uma explicação possível.
+- O1 (interação): abrir a comparação entre as duas execuções.
+- O2 (percepção): ler lado a lado os valores das métricas, com unidades.
+- O3 (percepção/cognição): identificar quais parâmetros, versões e métricas divergem.
+- O4 (cognição): separar o que foi medido (diferença observada) do que seria apenas uma explicação possível.
+- O5 (percepção/cognição): confirmar que as divergências identificadas correspondem às duas execuções selecionadas.
 
 ### G3: Formular a hipótese
 #### Method M1
-• O1 (cognição): relacionar as divergências de parâmetros ou versão às diferenças de desempenho e formular uma hipótese.
-• O2 (cognição): decidir que ressalvas se aplicam. Uma diferença de versão, sozinha, não prova a causa da diferença de desempenho.
+- O1 (cognição): relacionar as divergências de parâmetros ou versão às diferenças de desempenho e formular uma hipótese.
+- O2 (cognição): decidir que ressalvas se aplicam. Uma diferença de versão, sozinha, não prova a causa da diferença de desempenho.
+- O3 (cognição): verificar que a hipótese é consistente com as divergências levantadas antes de registrar.
 
 ### G4: Registrar hipótese, evidências e ressalvas
 #### Method M1
-• O1 (interação): digitar a hipótese, as evidências, os IDs das duas execuções e as ressalvas.
-• O2 (interação): salvar o registro.
-• O3 (percepção): confirmar que o registro foi salvo e ficou associado aos IDs.
+- O1 (interação): digitar a hipótese, as evidências, os IDs das duas execuções e as ressalvas.
+- O2 (interação): salvar o registro.
+- O3 (percepção): confirmar que o registro foi salvo e ficou associado aos IDs.
 
 
 ### **Interpretação do GOMS:** 
@@ -157,13 +161,13 @@ A evidência detalhada só é aberta quando há uma pergunta ou necessidade de e
 
 ![CTT T03](../assets/05_tarefas/ctt_t03.svg)
 
-a tarefa abstrata A0 (consultar painel e comunicar pontos de investigação) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): preparar o painel (A1), interpretar a evolução do desempenho (A2), comunicar a interpretação à equipe (A3) e discutir e delegar (A4). Em A1, a tarefa interativa de escolher o período de análise (I11) habilita, com passagem de informação ([]>>), a tarefa do sistema que prepara as métricas e os parâmetros ao longo do tempo (S12). Em A2, Carlos interpreta a evolução do desempenho (U21) e, em seguida, define os pontos a investigar (U22), ambas tarefas do usuário. Em A3, a apresentação da interpretação (U31) pode ser suspensa pela abertura de uma evidência (I32), que é interativa e repetível (*), e retomada do ponto em que parou (|>). Em A4, as tarefas do usuário de discutir os resultados (U41) e delegar tarefas (U42) ocorrem em qualquer ordem (|||) e fora do sistema, que se limita a preparar o painel e a exibir as evidências.
+A tarefa abstrata A0 (consultar painel e comunicar pontos de investigação) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): preparar o painel (A1), interpretar a evolução do desempenho (A2), comunicar a interpretação à equipe (A3) e discutir e delegar (A4). Em A1, Carlos sente a necessidade de consultar o painel para se preparar para a reunião com os estudante (U11). Após isso, ele executa a tarefa interativa de escolher o período de análise (I11), com passagem de informação ([]>>), para tarefa do sistema que prepara as métricas e os parâmetros ao longo do tempo (S12). Em A2, Carlos interpreta a evolução do desempenho (U21) e, em seguida, define os pontos a investigar (U22), ambas tarefas do usuário. Em A3, a apresentação da interpretação (U31) pode ser suspensa pela abertura de uma evidência (I32), que é interativa e repetível (*), e retomada do ponto em que parou (|>). Em A4, as tarefas do usuário de discutir os resultados (U41) e delegar tarefas (U42) ocorrem em qualquer ordem (|||) e fora do sistema, que se limita a preparar o painel e a exibir as evidências.
 
 **Expressão temporal do modelo:**
 
 ```text
 A0 = A1 >> A2 >> A3 >> A4
-A1 = I11 []>> S12
+A1 = U11 >> I12 []>> S13
 A2 = U21 >> U22
 A3 = U31 |> I32*
 A4 = U41 ||| U42
@@ -173,7 +177,7 @@ A4 = U41 ||| U42
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `>>` | **Habilitação:** indica que uma atividade depende da conclusão de uma etapa anterior para ser iniciada. | `A1 >> A2 >> A3 >> A4`: o painel é preparado antes de ser interpretado, comunicado e discutido. `U21 >> U22`: os pontos a investigar são definidos após a interpretação da evolução. |
+| `>>` | **Habilitação:** indica que uma atividade depende da conclusão de uma etapa anterior para ser iniciada. | `A1 >> A2 >> A3 >> A4`: o painel é preparado antes de ser interpretado, comunicado e discutido. `U21 >> U22`: os pontos a investigar são definidos após a interpretação da evolução. `U11 >> I12`:  |
 | `[]>>` | **Habilitação com passagem de informação:** indica que, além de habilitar a atividade seguinte, a etapa anterior fornece informações necessárias para sua execução. | `I11 []>> S12`: o período escolhido determina as métricas e os parâmetros exibidos no painel. |
 | `\|\|\|` | **Concorrência:** indica que duas ou mais atividades podem ocorrer simultaneamente ou em qualquer ordem, sem uma sequência obrigatória entre elas. | `U41 \|\|\| U42`: Carlos e os estudantes discutem os resultados e delegam tarefas de acordo com as necessidades da reunião. |
 | `\|>` | **Suspensão e retomada:** indica que uma atividade pode ser temporariamente interrompida para a execução de outra, sendo retomada posteriormente do ponto em que parou. | `U31 \|> I32`: durante a apresentação, Carlos interrompe momentaneamente a exposição para abrir uma evidência solicitada e, em seguida, retoma a apresentação do ponto anterior. |
