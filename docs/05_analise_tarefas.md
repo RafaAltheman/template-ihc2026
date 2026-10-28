@@ -230,6 +230,155 @@ O critério que separa M1 de M2 é informação de que Marina dispõe no início
 
 ---
 
+## HTA — T03: Consultar síntese e comunicar pontos de investigação
+
+**Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
+
+### Descrição da tarefa
+
+O objetivo é consultar uma síntese do desempenho do robô, interpretar a evolução dos indicadores e comunicar à equipe os principais pontos que precisam de investigação. A tarefa começa quando Carlos (P03), no cenário C03, precisa preparar ou conduzir uma reunião sobre os resultados dos treinamentos e termina quando a equipe discute os resultados e define os encaminhamentos necessários.
+
+A análise considera a evolução de métricas como velocidade média, distância percorrida, taxa de quedas, estabilidade, gols marcados e força de chute, além das alterações de parâmetros ao longo dos treinamentos. O painel apresenta essas informações de forma consolidada, permitindo que Carlos identifique mudanças relevantes, consulte evidências detalhadas quando necessário e comunique suas observações à equipe. A interpretação, priorização e definição dos encaminhamentos permanecem sob responsabilidade humana.
+
+### Diagrama
+
+![HTA T03](../assets/05_tarefas/hta03.svg)
+
+**Leitura do diagrama:** o objetivo 0 é decomposto em preparar o painel (1), interpretar o desempenho (2), comunicar a interpretação (3) e discutir os resultados e definir encaminhamentos (4). A subdivisão do item 3 representa uma apresentação que pode ser temporariamente interrompida para consultar evidências detalhadas, sem necessidade de reiniciar a análise. A linha inferior dos nós 1.1, 1.2, 2.1, 2.2, 3.1, 3.2, 4.1 e 4.2 representa o nível operacional.
+
+### Decomposição e planos
+
+| ID | Objetivo ou operação | Plano/ordem | Problema de interação e decisão de design | Input | Feedback |
+|---|---|---|---|---|---|
+| 0 | Consultar síntese e comunicar pontos de investigação | `1 > 2 > 3 > 4` | Manter o período e o contexto da análise visíveis ao longo da consulta e da apresentação. | Histórico de treinamentos, métricas, parâmetros e período selecionado. | Síntese exibida com período e indicadores identificados. |
+| 1 | Preparar o painel | `1.1 > 1.2` | Permitir selecionar o escopo da análise e identificar claramente quais dados estão sendo apresentados. | Objetivo da reunião e histórico disponível. | Painel preparado para o período selecionado. |
+| 1.1 | Identificar necessidade e escopo da análise | operação | Evitar a consulta de informações sem relação com o objetivo da reunião. | Necessidade de acompanhamento dos treinamentos. | Escopo de análise definido pelo usuário. |
+| 1.2 | Selecionar período e visualizar síntese | operação | Oferecer seleção de período e manter os filtros visíveis, indicando ausência de dados quando pertinente. | Período escolhido e resultados dos treinamentos. | Indicadores e parâmetros apresentados no painel. |
+| 2 | Interpretar o desempenho | `2.1 > 2.2` | Facilitar a identificação de tendências, mudanças relevantes e possíveis regressões. | Métricas e parâmetros consolidados. | Gráficos e valores disponíveis para interpretação. |
+| 2.1 | Analisar evolução das métricas e parâmetros | operação | Apresentar os indicadores com unidades e referência temporal, sem ocultar pioras. | Velocidade, distância, quedas, estabilidade, gols, força de chute e parâmetros. | Evolução dos indicadores exibida ao longo do período. |
+| 2.2 | Definir pontos que exigem investigação | operação | Permitir relacionar variações de desempenho às condições dos treinamentos sem assumir causalidade automaticamente. | Tendências, divergências e resultados observados. | Indicadores e evidências permanecem disponíveis para consulta. |
+| 3 | Comunicar a interpretação à equipe | `3.1`, com `3.2` opcional e repetível quando houver necessidade de esclarecimento | Preservar o contexto do painel durante interrupções da apresentação. | Síntese interpretada e pontos identificados. | Retorno ao painel sem perda do período e dos indicadores selecionados. |
+| 3.1 | Apresentar síntese e prioridades | operação | Exibir informações de forma compreensível para apoiar a comunicação dos resultados. | Conclusões e pontos considerados relevantes. | Síntese permanece disponível durante a exposição. |
+| 3.2 | Abrir evidência detalhada quando necessário | operação condicional e repetível | Permitir consultar registros detalhados e retornar à apresentação sem perder o estado anterior. | Dúvida da equipe ou necessidade de esclarecer um resultado. | Evidência exibida com identificação da execução e retorno ao contexto anterior. |
+| 4 | Discutir e definir encaminhamentos | `4.1 > 4.2` | Disponibilizar as evidências para apoiar a discussão, sem substituir decisões humanas. | Pontos apresentados e questionamentos da equipe. | Informações permanecem acessíveis para consulta durante a discussão. |
+| 4.1 | Discutir resultados com a equipe | operação | Facilitar a consulta aos dados que fundamentam as observações apresentadas. | Resultados, dúvidas e interpretações dos participantes. | Painel e evidências disponíveis para esclarecimentos. |
+| 4.2 | Definir responsáveis e próximos encaminhamentos | operação | Evitar que a interface apresente decisões automáticas sobre prioridades ou responsabilidades. | Conclusões da discussão e necessidades identificadas. | Encaminhamentos definidos pela equipe, fora do sistema. |
+
+**Planos detalhados:**
+
+**Plano 0:** concluir 1, depois 2, comunicar os resultados em 3 e finalizar com a discussão e definição de encaminhamentos em 4.
+
+**Plano 1:** identificar a necessidade de análise e o objetivo da reunião; em seguida, selecionar o período e consultar a síntese preparada pelo sistema. Caso não existam dados para o período escolhido, revisar o intervalo antes de continuar.
+
+**Plano 2:** examinar a evolução das métricas e dos parâmetros e, com base nas informações observadas, definir os principais pontos que precisam de investigação. Se houver dados incompletos ou inconsistentes, considerar essas limitações na interpretação.
+
+**Plano 3:** apresentar os resultados e prioridades à equipe. Caso surja uma dúvida ou necessidade de esclarecimento, abrir a evidência detalhada correspondente e retornar à apresentação. A consulta pode se repetir quantas vezes forem necessárias, sem reiniciar a exposição.
+
+**Plano 4:** discutir os resultados apresentados e definir, com os participantes, os responsáveis e encaminhamentos para as próximas investigações. Essas decisões são realizadas pelos usuários e não automaticamente pelo sistema.
+
+### Verificação do HTA
+
+- **O objetivo 0 representa uma meta do usuário?** Sim. O objetivo é compreender e comunicar os resultados dos treinamentos para orientar a investigação, e não executar procedimentos internos do algoritmo.
+- **As subtarefas são necessárias e suficientes?** Sim. A preparação do painel, interpretação dos indicadores, comunicação dos resultados e discussão dos encaminhamentos representam as principais atividades necessárias para atingir o objetivo.
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim. O símbolo `>` representa a ordem principal, enquanto a consulta às evidências é condicional e repetível durante a apresentação. O retorno à seleção do período ocorre quando os dados disponíveis não atendem à necessidade da análise.
+- **A decomposição parou em nível útil para projeto de interação?** Sim. As operações envolvem seleção de períodos, consulta de indicadores, apresentação e abertura de evidências, sem detalhar o processamento interno dos treinamentos.
+
+**Interpretação:** o principal risco identificado é perder o contexto da análise durante a comunicação dos resultados. Por exemplo, ao apresentar uma queda de desempenho, Carlos pode precisar consultar uma execução específica para esclarecer uma dúvida da equipe. Se o sistema não preservar o período, os indicadores e o ponto da apresentação, a continuidade da discussão será prejudicada. O protótipo deve manter o contexto da análise visível, permitir acesso às evidências detalhadas e oferecer retorno ao painel sem perda das seleções realizadas. A identificação de prioridades e a definição de encaminhamentos continuam sendo responsabilidades de Carlos e da equipe.
+
+
+## GOMS — T03: Consultar síntese e comunicar pontos de investigação
+
+**Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
+
+### Goal
+
+`G0: Consultar uma síntese da evolução do desempenho do robô, identificar pontos relevantes de investigação, comunicar os resultados à equipe e apoiar a definição de encaminhamentos.`
+
+**Subobjetivos:** `G1` preparar o painel e selecionar o período; `G2` interpretar os resultados; `G3` comunicar os pontos de investigação; `G4` discutir resultados e definir encaminhamentos.
+
+### Métodos, operadores e regras de seleção
+
+### G1: Preparar o painel e selecionar o período
+
+#### Method M1: consultar síntese por período
+
+- O1 (cognição): identificar o objetivo da análise e o intervalo de treinamentos relevante para a reunião.
+- O2 (interação): acessar o painel de acompanhamento do desempenho.
+- O3 (interação): selecionar o período desejado.
+- O4 (percepção): verificar se o período aplicado corresponde ao intervalo pretendido.
+- O5 (percepção): conferir se os indicadores e parâmetros foram apresentados corretamente.
+- O6 (percepção/cognição): verificar a disponibilidade e a abrangência dos dados exibidos.
+
+#### Regras de seleção de G1
+
+- SR1: utilizar M1 quando houver dados disponíveis para o período pretendido.
+- SR2: se o período não apresentar dados suficientes, revisar o intervalo selecionado antes de prosseguir.
+- SR3: se persistirem lacunas nos dados, considerar essa limitação nas próximas etapas da análise.
+
+### G2: Interpretar os resultados
+
+#### Method M1: examinar a evolução dos indicadores
+
+- O1 (percepção): observar os gráficos de evolução do desempenho apresentados no painel.
+- O2 (percepção): conferir os valores de velocidade média, distância percorrida, taxa de quedas, estabilidade, gols marcados e força de chute.
+- O3 (percepção/cognição): identificar variações significativas, tendências e possíveis regressões.
+- O4 (percepção/cognição): relacionar mudanças de parâmetros ou configurações com as diferenças de desempenho observadas.
+- O5 (cognição): distinguir os resultados efetivamente medidos das possíveis explicações para suas variações.
+- O6 (cognição): definir quais indicadores ou comportamentos precisam de investigação adicional.
+
+#### Regras de seleção de G2
+
+- SR1: priorizar a análise de indicadores com variações relevantes ou resultados inesperados.
+- SR2: quando houver melhoria em um indicador acompanhada de regressão em outro, considerar ambos antes de definir uma prioridade.
+- SR3: quando os dados não permitirem estabelecer uma interpretação segura, indicar a necessidade de investigação adicional, sem assumir uma causa como comprovada.
+
+### G3: Comunicar os pontos de investigação
+
+#### Method M1: apresentar a síntese sem consulta adicional
+
+- O1 (cognição): organizar os principais resultados e pontos de investigação identificados em G2.
+- O2 (percepção): conferir que o painel apresenta o período e os indicadores correspondentes à análise.
+- O3 (tarefa do usuário): explicar à equipe a evolução do desempenho e os pontos considerados relevantes.
+- O4 (percepção/cognição): verificar se os resultados apresentados são suficientes para sustentar a discussão.
+
+#### Method M2: apresentar a síntese com consulta a evidências detalhadas
+
+- O1 (tarefa do usuário): apresentar a evolução do desempenho e identificar uma dúvida ou solicitação de esclarecimento.
+- O2 (interação): selecionar o indicador ou a execução relacionada à dúvida.
+- O3 (interação): abrir a evidência detalhada correspondente.
+- O4 (percepção): conferir o ID, o período e os resultados da execução consultada.
+- O5 (cognição): interpretar a evidência e relacioná-la à síntese apresentada.
+- O6 (tarefa do usuário): esclarecer a dúvida utilizando as informações consultadas.
+- O7 (interação): retornar ao painel principal.
+- O8 (percepção): confirmar que o período, os indicadores e o contexto anterior foram preservados.
+- O9 (tarefa do usuário): retomar a apresentação do ponto em que foi interrompida.
+
+#### Regras de seleção de G3
+
+- SR1: utilizar M1 quando a síntese apresentar informações suficientes para a comunicação dos resultados.
+- SR2: utilizar M2 quando surgir uma dúvida, divergência ou solicitação de evidência detalhada durante a reunião.
+- SR3: após consultar uma evidência, retornar ao painel e retomar a apresentação sem reiniciar a análise.
+- SR4: repetir a consulta a evidências quando diferentes resultados exigirem esclarecimentos adicionais.
+
+### G4: Discutir resultados e definir encaminhamentos
+
+#### Method M1: discutir e estabelecer próximos encaminhamentos
+
+- O1 (tarefa do usuário): discutir com a equipe os resultados apresentados e as possíveis explicações.
+- O2 (cognição): considerar a relevância e a criticidade dos pontos identificados.
+- O3 (tarefa do usuário): definir, em conjunto com a equipe, quais questões precisam de investigação prioritária.
+- O4 (tarefa do usuário): estabelecer responsáveis e próximos encaminhamentos.
+- O5 (cognição): verificar se os encaminhamentos estão coerentes com os resultados discutidos e as necessidades de investigação.
+
+### Interpretação do GOMS
+
+Carlos deve inicialmente selecionar o período de análise e consultar a síntese preparada pelo sistema. A partir dos indicadores apresentados, interpreta a evolução do desempenho e identifica os pontos que precisam ser investigados. Durante a reunião, a comunicação pode seguir dois métodos: apresentar diretamente as informações consolidadas ou consultar evidências detalhadas quando houver necessidade de esclarecimento.
+
+As regras de seleção de G3 mostram que a abertura de evidências não deve ser obrigatória, mas precisa estar disponível a qualquer momento durante a apresentação. A análise evidencia a necessidade de preservar o período e os indicadores selecionados, permitindo que Carlos retorne ao painel sem perder o contexto anterior.
+
+O modelo também diferencia as ações realizadas na interface das atividades cognitivas e de comunicação. O sistema disponibiliza informações e evidências, enquanto a interpretação, a definição de prioridades e os encaminhamentos permanecem sob responsabilidade de Carlos e da equipe. Dessa forma, o protótipo deve priorizar a continuidade da análise, a clareza dos indicadores e a facilidade de acesso às informações detalhadas.
+
+
 ## CTT — T03: Consultar síntese e comunicar pontos de investigação
 
 
