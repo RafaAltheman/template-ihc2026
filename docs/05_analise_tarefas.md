@@ -82,6 +82,93 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ---
 
+## GOMS — T01: Avaliar se um treinamento melhorou o desempenho
+
+**Autor(a):** Letizia Lowatzki Baptistella 22.125.063-2
+
+### Goal
+
+`G0: Decidir se o resultado de um treinamento representa uma melhoria útil no desempenho do robô e registrar uma conclusão fundamentada (melhoria, não melhoria ou evidências insuficientes).`
+
+**Subobjetivos:** `G1` identificar execução e referência; `G2` examinar evidências; `G3` classificar resultado; `G4` registrar decisão e justificativa.
+
+### Métodos, operadores e regras de seleção
+
+### G1: Identificar execução e referência
+#### Method M1:
+- O1 (interação): abrir a lista de treinamentos e selecionar a execução a ser avaliada.
+- O2 (percepção): conferir status (concluída, em andamento, com erro, sem dados), ID, data, versão, e parâmetros.
+- O3 (interação): abrir a lista de referências e selecionar o treino a ser comparado (baseline).
+- O4 (percepção/cognição): conferir se a versão e parâmetros do baseline são compatíveis com os da execução.
+- O5 (percepção): confirmar que a execução e o baseline corretos estão identificados no contexto da análise.
+
+### G2: Examinar evidências
+#### Method M1
+- O1 (percepção): ler as métricas (velocidade média, distância, quedas, gols, força de chute), com unidades, lado a lado com o baseline quando houver.
+- O2 (cognição): verificar se alguma métrica piorou, mesmo que outra tenha melhorado.
+- O3 (interação/percepção): abrir o registro de comportamento, localização e estabilidade para comparar com baseline.
+- O4 (percepção/cognição): confirmar que métricas e registro visual correspondem à execução e ao baseline identificados em G1.
+
+### G3: Classificar resultado
+#### Method M1
+- O1 (cognição): ponderar as evidências conforme os critérios de decisão.
+- O2 (interação): selecionar a classificação: melhoria, não melhoria ou evidências insuficientes.
+- O3 (percepção): confirmar que a classificação selecionada está destacada e é coerente com as evidências examinadas.
+
+Critérios de decisão (O1 de G3): classificar como "melhoria" quando as métricas principais melhoram, sem piora relevante em quedas e estabilidade, e o comportamento é coerente; como "não melhoria" quando há regressão (por exemplo, mais velocidade com mais quedas); ou como "evidências insuficientes* quando falta baseline, medida ou registro necessário
+
+### G4: Registrar decisão e justificativa
+#### Method M1
+- O1 (interação): digitar a justificativa, citando indicadores e comportamento observado.
+- O2 (interação): salvar o registro.
+- O3 (percepção): confirmar que o registro foi salvo e associado ao ID da execução e ao baseline.
+
+### **Interpretação do GOMS:**
+Rafael deve escolher uma execução de referencia e uma execução de comparação. As três classificações de G3 não são métodos, e sim desfechos de uma decisão apoiada em critérios, por isso aparecem como critérios de decisão e não como métodos alternativos. A análise mostra a necessidade de manter o contexto da execução e do baseline visível, apresentar as métricas lado a lado sem ocultar pioras, oferecer "evidências insuficientes" com o mesmo peso das demais saídas e confirmar o salvamento do registro.
+
+---
+
+## CTT — T01: Avaliar se um treinamento melhorou o desempenho
+
+**Autor(a):** Letizia Lowatzki Baptistella 22.125.063-2
+
+### Descrição
+
+O CTT descreve o encadeamento entre reconhecer a necessidade de avaliar um treinamento, identificar execução e referência, examinar evidências, classificar o resultado e registrar a decisão. Na T01, Rafael (P01, cenário C01) decide se o resultado de uma execução representa uma melhoria útil.
+As relações temporais mais importantes são três. As evidências (métricas e comportamento observado) podem ser examinadas em qualquer ordem. A classificação é uma escolha exclusiva entre melhoria, não melhoria e evidências insuficientes. A seleção do baseline pode se repetir quando a referência escolhida se mostra incompatível.
+
+
+### Diagrama
+
+![CTT T01](../assets/05_tarefas/ctt_t01.svg)
+
+A tarefa abstrata A0 (avaliar se um treinamento melhorou o desempenho) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): identificar execução e referência (A1), examinar evidências (A2), classificar resultado (A3) e registrar decisão e justificativa (A4). Em A1, Rafael reconhece a necessidade de avaliar o treinamento (U11, fora do sistema) e abre o treinamento avaliado (I12), passando a informação (`[]>>`) para a seleção do baseline comparável (I13). Em A2, a comparação das métricas (I21) e a observação do comportamento (I22) ocorrem em qualquer ordem (|||) e habilitam a verificação de pioras e inconsistências entre as evidências (U23, tarefa do usuário). Em A3, Rafael escolhe uma única classificação ([]): melhoria (I31), não melhoria (I32) ou evidências insuficientes (I33). Em A4, a decisão e a justificativa informadas (I41) são passadas ao sistema (`[]>>`), que salva o registro e confirma o salvamento (S42).
+
+**Expressão temporal do modelo:**
+
+```text
+A0 = A1 >> A2 >> A3 >> A4
+A1 = U11 >> I12 []>> I13*
+A2 = (I21 ||| I22) >> U23
+A3 = I31 [] I32 [] I33
+A4 = I41 []>> S42
+```
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| `>>` | **Habilitação:** indica que uma atividade depende da conclusão de uma etapa anterior para ser iniciada. | `A1 >> A2 >> A3 >> A4`: a execução e a referência são identificadas antes de examinar as evidências, classificar e registrar. `U11 >> I12`: Rafael reconhece a necessidade de avaliar antes de abrir o treinamento. |
+| `[]>>` | **Habilitação com passagem de informação:** além de habilitar a atividade seguinte, a etapa anterior fornece informações necessárias para sua execução. | `I12 []>> I13`: a execução aberta determina os baselines candidatos. `I41 []>> S42`: a decisão e a justificativa informadas são o que o sistema salva. |
+| `[]` | **Escolha:** duas ou mais tarefas estão habilitadas, mas, iniciada uma, as outras são desabilitadas. | `I31 [] I32 [] I33`: Rafael escolhe uma única classificação. |
+| `\|\|\|` | **Concorrência:** as atividades podem ocorrer em qualquer ordem ou ao mesmo tempo. | `I21 \|\|\| I22`: métricas e comportamento observado são examinados na ordem que Rafael preferir. |
+
+**Interpretação e implicações de design:** a saída "evidências insuficientes" precisa ser uma opção da escolha, e não uma falha a esconder. A comparação das métricas e a observação do comportamento devem estar acessíveis ao mesmo tempo, para que Rafael cruze as duas evidências antes de classificar. O contexto da execução e do baseline deve acompanhar toda a análise, e a troca de baseline não pode obrigar Rafael a refazer a seleção da execução.
+
+---
+
+
+
 ## GOMS — T02: Localizar e comparar execuções anteriores
 
 
@@ -161,7 +248,7 @@ A evidência detalhada só é aberta quando há uma pergunta ou necessidade de e
 
 ![CTT T03](../assets/05_tarefas/ctt_t03.svg)
 
-A tarefa abstrata A0 (consultar painel e comunicar pontos de investigação) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): preparar o painel (A1), interpretar a evolução do desempenho (A2), comunicar a interpretação à equipe (A3) e discutir e delegar (A4). Em A1, Carlos sente a necessidade de consultar o painel para se preparar para a reunião com os estudante (U11). Após isso, ele executa a tarefa interativa de escolher o período de análise (I11), com passagem de informação ([]>>), para tarefa do sistema que prepara as métricas e os parâmetros ao longo do tempo (S12). Em A2, Carlos interpreta a evolução do desempenho (U21) e, em seguida, define os pontos a investigar (U22), ambas tarefas do usuário. Em A3, a apresentação da interpretação (U31) pode ser suspensa pela abertura de uma evidência (I32), que é interativa e repetível (*), e retomada do ponto em que parou (|>). Em A4, as tarefas do usuário de discutir os resultados (U41) e delegar tarefas (U42) ocorrem em qualquer ordem (|||) e fora do sistema, que se limita a preparar o painel e a exibir as evidências.
+A tarefa abstrata A0 (consultar painel e comunicar pontos de investigação) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (>>): preparar o painel (A1), interpretar a evolução do desempenho (A2), comunicar a interpretação à equipe (A3) e discutir e delegar (A4). Em A1, Carlos sente a necessidade de consultar o painel para se preparar para a reunião com os estudante (U11). Após isso, ele executa a tarefa de escolher o período de análise (I11), com passagem de informação ([]>>), para tarefa do sistema que prepara as métricas e os parâmetros ao longo do tempo (S12). Em A2, Carlos interpreta a evolução do desempenho (U21) e, em seguida, define os pontos a investigar (U22), ambas tarefas do usuário. Em A3, a apresentação da interpretação (U31) pode ser suspensa pela abertura de uma evidência (I32), que é interativa e repetível (*), e retomada do ponto em que parou (|>). Em A4, as tarefas do usuário de discutir os resultados (U41) e delegar tarefas (U42) ocorrem em qualquer ordem (|||) e fora do sistema, que se limita a preparar o painel e a exibir as evidências.
 
 **Expressão temporal do modelo:**
 
