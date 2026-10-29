@@ -378,10 +378,10 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 
 ## Checklist
 
-- [ ] O protótipo cobre tarefas relevantes da Entrega 5.
-- [ ] Cada tela/estado pode ser justificado por uma tarefa, decisão ou informação necessária.
-- [ ] O projeto não criou dashboard/CRUD/login apenas para parecer “completo”.
-- [ ] Telas/estados estão numerados e navegáveis na documentação.
-- [ ] Há pelo menos uma simulação/walkthrough documentado.
-- [ ] Críticas não foram apenas listadas: geraram decisão de revisão.
-- [ ] O protótipo continua em baixa fidelidade; detalhes visuais não mascaram problemas de fluxo.
+- [X] O protótipo cobre tarefas relevantes da Entrega 5.
+- [X] Cada tela/estado pode ser justificado por uma tarefa, decisão ou informação necessária.
+- [X] O projeto não criou dashboard/CRUD/login apenas para parecer “completo”.
+- [X] Telas/estados estão numerados e navegáveis na documentação.
+- [X] Há pelo menos uma simulação/walkthrough documentado.
+- [X] Críticas não foram apenas listadas: geraram decisão de revisão.
+- [X] O protótipo continua em baixa fidelidade; detalhes visuais não mascaram problemas de fluxo.
