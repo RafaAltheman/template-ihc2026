@@ -84,47 +84,104 @@ O objetivo é decidir se os resultados de um treinamento indicam uma melhoria ú
 
 ## GOMS — T01: Avaliar se um treinamento melhorou o desempenho
 
-**Autor(a):** Letizia Lowatzki Baptistella 22.125.063-2
+**Autor(a):** Letizia Lowatzki Baptistella — 22.125.063-2
 
 ### Goal
 
 `G0: Decidir se o resultado de um treinamento representa uma melhoria útil no desempenho do robô e registrar uma conclusão fundamentada (melhoria, não melhoria ou evidências insuficientes).`
 
-**Subobjetivos:** `G1` identificar execução e referência; `G2` examinar evidências; `G3` classificar resultado; `G4` registrar decisão e justificativa.
+**Subgoals sequenciais de G0:** `G1 > G2 > G3 > G4`.
+
+- **G1:** identificar execução e referência.
+- **G2:** examinar evidências de desempenho.
+- **G3:** classificar o resultado.
+- **G4:** registrar a decisão e a justificativa.
+
+A notação `>` indica que os objetivos são cumpridos em sequência. Quando há alternativas (`/`), são descritos métodos diferentes para atingir um mesmo goal; quando há abordagens complementares (`+`), os métodos contribuem em conjunto para o goal. Cada método possui uma regra de seleção explícita.
 
 ### Métodos, operadores e regras de seleção
 
 ### G1: Identificar execução e referência
-#### Method M1:
-- O1 (interação): abrir a lista de treinamentos e selecionar a execução a ser avaliada.
-- O2 (percepção): conferir status (concluída, em andamento, com erro, sem dados), ID, data, versão, e parâmetros.
-- O3 (interação): abrir a lista de referências e selecionar o treino a ser comparado (baseline).
-- O4 (percepção/cognição): conferir se a versão e parâmetros do baseline são compatíveis com os da execução.
-- O5 (percepção): confirmar que a execução e o baseline corretos estão identificados no contexto da análise.
+
+**Subgoals sequenciais:** `G1.1 > G1.2`.
+
+#### G1.1: Identificar o treinamento avaliado
+
+- O1 (interação): acessar a lista de treinamentos.
+- O2 (interação): selecionar a execução que será avaliada.
+- O3 (percepção): conferir ID, data, status, versão, ambiente e parâmetros.
+- O4 (cognição): verificar se a execução possui resultados adequados à avaliação.
+
+#### G1.2: Identificar um baseline comparável
+
+- O1 (interação): acessar as referências disponíveis.
+- O2 (interação): selecionar o baseline candidato.
+- O3 (percepção): conferir ID, versão, ambiente e parâmetros da referência.
+- O4 (cognição): avaliar a compatibilidade com o treinamento selecionado.
+- O5 (percepção): confirmar que os IDs das duas execuções permanecem visíveis.
 
 ### G2: Examinar evidências
-#### Method M1
-- O1 (percepção): ler as métricas (velocidade média, distância, quedas, gols, força de chute), com unidades, lado a lado com o baseline quando houver.
-- O2 (cognição): verificar se alguma métrica piorou, mesmo que outra tenha melhorado.
-- O3 (interação/percepção): abrir o registro de comportamento, localização e estabilidade para comparar com baseline.
-- O4 (percepção/cognição): confirmar que métricas e registro visual correspondem à execução e ao baseline identificados em G1.
 
-### G3: Classificar resultado
-#### Method M1
-- O1 (cognição): ponderar as evidências conforme os critérios de decisão.
-- O2 (interação): selecionar a classificação: melhoria, não melhoria ou evidências insuficientes.
-- O3 (percepção): confirmar que a classificação selecionada está destacada e é coerente com as evidências examinadas.
+#### Method M1 — Comparar métricas quantitativas
 
-Critérios de decisão (O1 de G3): classificar como "melhoria" quando as métricas principais melhoram, sem piora relevante em quedas e estabilidade, e o comportamento é coerente; como "não melhoria" quando há regressão (por exemplo, mais velocidade com mais quedas); ou como "evidências insuficientes* quando falta baseline, medida ou registro necessário
+**SR1:** utilizar M1 sempre que houver métricas disponíveis; quando alguma estiver ausente, sinalizar a lacuna em vez de presumir o resultado.
+
+- O1 (percepção): ler, lado a lado, velocidade média, distância percorrida, taxa de quedas, gols marcados e força de chute, com unidades.
+- O2 (cognição): identificar avanços e regressões em relação ao baseline.
+- O3 (cognição): verificar compromissos entre indicadores, como maior velocidade acompanhada de mais quedas.
+- O4 (percepção): confirmar que os valores se referem às execuções selecionadas.
+
+#### Method M2 — Examinar comportamento, localização e estabilidade
+
+**SR1:** utilizar M2 quando houver registro visual ou comportamental relacionado à execução. Se não houver, assinalar a indisponibilidade e considerar essa limitação em G3.
+
+- O1 (interação): abrir o registro visual ou comportamental do treinamento, quando disponível.
+- O2 (percepção): observar deslocamento, localização, estabilidade e possíveis quedas.
+- O3 (cognição): verificar se o comportamento observado é coerente com os indicadores quantitativos.
+- O4 (percepção): conferir a identificação da execução associada ao registro.
+
+### G3: Classificar o resultado
+
+#### Method M1 — Classificar como melhoria
+
+**SR1:** selecionar M1 quando as evidências disponíveis sustentarem uma melhora útil e a comparação for suficientemente confiável.
+
+- O1 (cognição): avaliar se as métricas relevantes melhoraram sem regressão crítica em quedas ou estabilidade.
+- O2 (cognição): verificar a coerência das demais evidências disponíveis.
+- O3 (interação): selecionar **Melhoria**.
+- O4 (percepção): confirmar a classificação selecionada.
+
+#### Method M2 — Classificar como não melhoria
+
+**SR1:** selecionar M2 quando as evidências indicarem regressão ou ausência de ganho útil, mesmo que algum indicador isolado tenha melhorado.
+
+- O1 (cognição): identificar regressões ou perdas relevantes que comprometam o resultado.
+- O2 (cognição): ponderar ganhos isolados frente a pioras em indicadores críticos.
+- O3 (interação): selecionar **Não melhoria**.
+- O4 (percepção): confirmar a classificação selecionada.
+
+#### Method M3 — Classificar como evidências insuficientes
+
+**SR1:** selecionar M3 quando as informações não permitirem justificar com segurança os desfechos M1 ou M2.
+
+- O1 (cognição): reconhecer falta de baseline comparável, ausência de medida necessária ou inconsistência nos dados.
+- O2 (interação): selecionar **Evidências insuficientes**.
+- O3 (cognição): identificar quais informações faltam ou precisam ser verificadas.
+- O4 (percepção): confirmar a classificação selecionada.
+
 
 ### G4: Registrar decisão e justificativa
-#### Method M1
-- O1 (interação): digitar a justificativa, citando indicadores e comportamento observado.
-- O2 (interação): salvar o registro.
-- O3 (percepção): confirmar que o registro foi salvo e associado ao ID da execução e ao baseline.
 
-### **Interpretação do GOMS:**
-Rafael deve escolher uma execução de referencia e uma execução de comparação. As três classificações de G3 não são métodos, e sim desfechos de uma decisão apoiada em critérios, por isso aparecem como critérios de decisão e não como métodos alternativos. A análise mostra a necessidade de manter o contexto da execução e do baseline visível, apresentar as métricas lado a lado sem ocultar pioras, oferecer "evidências insuficientes" com o mesmo peso das demais saídas e confirmar o salvamento do registro.
+- O1 (interação): preencher a justificativa com os indicadores e comportamentos relevantes, incluindo limitações.
+- O2 (percepção): conferir classificação, ID da execução e baseline associado.
+- O3 (interação): salvar a avaliação.
+- O4 (percepção): verificar a confirmação de salvamento e a associação aos IDs corretos.
+
+
+### Interpretação do GOMS
+
+A estrutura sequencial `G1 > G2 > G3 > G4` representa a progressão da avaliação. Dentro de G1, identificar a execução (`G1.1`) precede selecionar o baseline (`G1.2`). Em G2, a comparação quantitativa e a observação comportamental são métodos complementares (`+`), com regras de aplicação relacionadas à disponibilidade das evidências. Em G3, os métodos são alternativos (`/`), pois a avaliação deve terminar com apenas uma classificação. As regras de seleção deixam explícito quando escolher melhoria, não melhoria ou evidências insuficientes. O modelo reforça a necessidade de preservar o contexto das execuções, mostrar ganhos e regressões e confirmar o registro final.
+
 
 ---
 
@@ -224,62 +281,88 @@ Outro risco é confundir diferenças observadas com relações causais comprovad
 
 ## GOMS — T02: Localizar e comparar execuções anteriores
 
-
 **Autor(a):** Manuella Filipe Peres — 22.224.029-3
 
 ### Goal
 
 `G0: Localizar duas execuções anteriores, comparar seus resultados e registrar uma hipótese rastreável para as diferenças encontradas.`
 
-**Subobjetivos:** `G1` localizar as duas execuções; `G2` comparar métricas e parâmetros; `G3` formular a hipótese; `G4` Registrar hipótese, evidências e ressalvas.
+**Subgoals sequenciais de G0:** `G1 > G2 > G3 > G4`.
+
+- **G1:** localizar e selecionar duas execuções.
+- **G2:** comparar métricas e parâmetros.
+- **G3:** formular uma hipótese e suas ressalvas.
+- **G4:** registrar hipótese, evidências e ressalvas.
+
+O símbolo `>` indica sequência entre goals. A localização por ID ou por filtros é tratada como escolha entre métodos (`/`); a análise de métricas e parâmetros usa métodos complementares (`+`). Cada método apresenta sua própria regra de seleção.
 
 ### Métodos, operadores e regras de seleção
 
-### G1: Localizar as duas execuções
-#### Method M1: localizar por identificadores conhecidos
-- O1 (cognição): recuperar o ID da primeira execução.
-- O2 (interação): apontar e clicar no campo de busca.
-- O3 (interação): digitar o ID.
-- O4 (interação): acionar a busca.
-- O5 (percepção): conferir se o registro apresentado (ID, data, versão) é o esperado.
-- O6 (interação): adicionar a execução à comparação.
-- O7 (cognição/interação): repetir O1–O6 para a segunda execução.
-- O8 (percepção): confirmar que as duas execuções corretas foram adicionadas à comparação (IDs e versões).
-#### Method M2: localizar por filtros do histórico
-- O1 (interação): acessar o histórico de execuções.
-- O2 (cognição): definir as pistas disponíveis (período, versão, configuração).
-- O3 (interação): selecionar os filtros e acionar a consulta.
-- O4 (percepção): ler a lista e conferir os metadados dos resultados.
-- O5 (interação): selecionar a primeira e a segunda execução e adicioná-las à comparação.
-- O6 (percepção): confirmar que as duas execuções selecionadas estão na comparação, com os IDs esperados.
+### G1: Localizar e selecionar duas execuções
 
-#### Regras de seleção de G1
-• SR1: usar M1 quando Marina conhecer os IDs das duas execuções. Usar M2 quando um ou ambos forem desconhecidos, mas houver atributos suficientes para filtrar.
-• SR2: se a busca por ID falhar (O5 do M1 não confere), revisar o ID. Se continuar sem resultado, mudar para M2. Se os filtros do M2 trouxerem resultados demais, refiná-los antes de selecionar (voltar a O3).
+**Subgoals sequenciais:** `G1.1 > G1.2`.
+
+#### G1.1: Localizar a primeira execução
+
+- O1 (cognição): recuperar o identificador da primeira execução.
+- O2 (interação): inserir o ID no campo de busca.
+- O3 (interação): acionar a pesquisa.
+- O4 (percepção): conferir ID, data e versão do resultado.
+- O5 (interação): selecionar a execução encontrada.
+
+#### G1.2: Localizar a segunda execução e confirmar a seleção
+
+- O1 (cognição): recuperar o ID da segunda execução.
+- O2 (interação): pesquisar o identificador.
+- O3 (percepção): conferir os metadados do resultado.
+- O4 (interação): adicionar a execução à comparação.
+- O5 (percepção): verificar se as duas execuções selecionadas possuem os IDs esperados.
 
 ### G2: Comparar métricas e parâmetros
-#### Method M1
-- O1 (interação): abrir a comparação entre as duas execuções.
-- O2 (percepção): ler lado a lado os valores das métricas, com unidades.
-- O3 (percepção/cognição): identificar quais parâmetros, versões e métricas divergem.
-- O4 (cognição): separar o que foi medido (diferença observada) do que seria apenas uma explicação possível.
-- O5 (percepção/cognição): confirmar que as divergências identificadas correspondem às duas execuções selecionadas.
 
-### G3: Formular a hipótese
-#### Method M1
-- O1 (cognição): relacionar as divergências de parâmetros ou versão às diferenças de desempenho e formular uma hipótese.
-- O2 (cognição): decidir que ressalvas se aplicam. Uma diferença de versão, sozinha, não prova a causa da diferença de desempenho.
-- O3 (cognição): verificar que a hipótese é consistente com as divergências levantadas antes de registrar.
+#### Method M1 — Comparar métricas de desempenho
+
+**SR1:** utilizar M1 quando houver métricas disponíveis nas execuções selecionadas; marcar lacunas e diferenças de medição quando a comparação não for diretamente possível.
+
+- O1 (interação): abrir a visualização de comparação das duas execuções.
+- O2 (percepção): ler velocidade, distância, quedas, estabilidade, gols e força de chute lado a lado, com unidades.
+- O3 (cognição): identificar aumentos, reduções e demais diferenças relevantes.
+- O4 (percepção): confirmar os IDs associados às métricas exibidas.
+
+#### Method M2 — Comparar versões, parâmetros e condições
+
+**SR1:** utilizar M2 em conjunto com M1 para contextualizar as diferenças de desempenho; registrar como limitação qualquer metadado ausente ou incompatibilidade relevante.
+
+- O1 (percepção): consultar versões, parâmetros e condições dos dois treinamentos.
+- O2 (cognição): identificar alterações de configuração e diferenças entre os contextos.
+- O3 (cognição): verificar se essas diferenças limitam a comparabilidade dos resultados.
+- O4 (percepção): confirmar a correspondência dos dados aos dois IDs selecionados.
+
+### G3: Formular hipótese e ressalvas
+
+#### G3.1: Identificar diferenças observadas
+
+- O1 (cognição): reunir as principais divergências de desempenho e configuração.
+- O2 (cognição): separar fatos medidos de interpretações ainda não verificadas.
+- O3 (percepção/cognição): conferir se cada diferença está associada à execução correta.
+
+#### G3.2: Formular uma explicação possível e suas limitações
+
+- O1 (cognição): relacionar as divergências identificadas a uma possível explicação.
+- O2 (cognição): avaliar hipóteses alternativas e fatores não controlados.
+- O3 (cognição): explicitar ressalvas, incluindo que uma mudança de versão não comprova causalidade.
+- O4 (cognição): conferir se a hipótese é coerente com as evidências observadas.
 
 ### G4: Registrar hipótese, evidências e ressalvas
-#### Method M1
-- O1 (interação): digitar a hipótese, as evidências, os IDs das duas execuções e as ressalvas.
-- O2 (interação): salvar o registro.
-- O3 (percepção): confirmar que o registro foi salvo e ficou associado aos IDs.
 
+- O1 (interação): registrar hipótese, evidências, ressalvas e IDs das duas execuções.
+- O2 (percepção): conferir a vinculação da análise às execuções selecionadas.
+- O3 (interação): salvar o registro.
+- O4 (percepção): confirmar que o salvamento foi realizado corretamente.
 
-### **Interpretação do GOMS:** 
-O critério que separa M1 de M2 é informação de que Marina dispõe no início da tarefa, e não uma preferência arbitrária por tela. Ambos alcançam a mesma meta e terminam com um registro contextualizado. A análise revela a necessidade de preservar seleções e filtros entre pesquisa e comparação, além de diferenciar o que foi medido da explicação que Marina propõe. Não se supõe que uma diferença de versão, sozinha, prove a causa da diferença de desempenho.
+### Interpretação do GOMS
+
+A sequência `G1 > G2 > G3 > G4` mostra que é necessário localizar execuções antes de compará-las, formular uma hipótese e registrá-la. Em G1, a primeira e a segunda execuções são subgoals sequenciais (`G1.1 > G1.2`), enquanto a escolha entre busca por ID e filtros ocorre por métodos alternativos (`/`), com regras próprias. Em G2, comparar métricas e comparar parâmetros são métodos complementares (`+`), necessários para contextualizar as diferenças observadas. Em G3, a identificação dos fatos medidos precede a formulação da hipótese. O modelo evidencia a necessidade de preservar as seleções, manter rastreabilidade e distinguir evidências de explicações possíveis.
 
 
 ## CTT — T02: Localizar e comparar execuções anteriores
@@ -402,89 +485,93 @@ A análise considera a evolução de métricas como velocidade média, distânci
 
 `G0: Consultar uma síntese da evolução do desempenho do robô, identificar pontos relevantes de investigação, comunicar os resultados à equipe e apoiar a definição de encaminhamentos.`
 
-**Subobjetivos:** `G1` preparar o painel e selecionar o período; `G2` interpretar os resultados; `G3` comunicar os pontos de investigação; `G4` discutir resultados e definir encaminhamentos.
+**Subgoals sequenciais de G0:** `G1 > G2 > G3 > G4`.
+
+- **G1:** preparar o painel e selecionar o período.
+- **G2:** interpretar os resultados e identificar pontos de investigação.
+- **G3:** comunicar os resultados à equipe.
+- **G4:** discutir resultados e definir encaminhamentos.
+
+A notação `>` representa sequência entre goals. Quando há caminhos distintos para cumprir um mesmo goal, eles são descritos como métodos alternativos (`/`), cada um com sua regra de seleção. A consulta de evidências detalhadas é condicional, não uma etapa obrigatória para todas as apresentações.
 
 ### Métodos, operadores e regras de seleção
 
 ### G1: Preparar o painel e selecionar o período
 
-#### Method M1: consultar síntese por período
+#### G1.1: Definir o objetivo e o escopo da análise
 
-- O1 (cognição): identificar o objetivo da análise e o intervalo de treinamentos relevante para a reunião.
-- O2 (interação): acessar o painel de acompanhamento do desempenho.
-- O3 (interação): selecionar o período desejado.
-- O4 (percepção): verificar se o período aplicado corresponde ao intervalo pretendido.
-- O5 (percepção): conferir se os indicadores e parâmetros foram apresentados corretamente.
-- O6 (percepção/cognição): verificar a disponibilidade e a abrangência dos dados exibidos.
+- O1 (cognição): identificar a finalidade da reunião e os resultados que precisam ser examinados.
+- O2 (cognição): definir o intervalo de treinamentos relevante.
+- O3 (interação): acessar o painel de acompanhamento do desempenho.
 
-#### Regras de seleção de G1
+#### G1.2: Selecionar período e consultar a síntese
 
-- SR1: utilizar M1 quando houver dados disponíveis para o período pretendido.
-- SR2: se o período não apresentar dados suficientes, revisar o intervalo selecionado antes de prosseguir.
-- SR3: se persistirem lacunas nos dados, considerar essa limitação nas próximas etapas da análise.
+- O1 (interação): selecionar o período desejado no painel.
+- O2 (percepção): conferir o intervalo aplicado.
+- O3 (percepção): verificar os indicadores e parâmetros apresentados.
+- O4 (cognição): avaliar se a abrangência dos dados atende ao objetivo da reunião.
 
-### G2: Interpretar os resultados
+### G2: Interpretar os resultados e identificar pontos de investigação
 
-#### Method M1: examinar a evolução dos indicadores
+#### G2.1: Examinar a evolução do desempenho
 
-- O1 (percepção): observar os gráficos de evolução do desempenho apresentados no painel.
-- O2 (percepção): conferir os valores de velocidade média, distância percorrida, taxa de quedas, estabilidade, gols marcados e força de chute.
-- O3 (percepção/cognição): identificar variações significativas, tendências e possíveis regressões.
-- O4 (percepção/cognição): relacionar mudanças de parâmetros ou configurações com as diferenças de desempenho observadas.
-- O5 (cognição): distinguir os resultados efetivamente medidos das possíveis explicações para suas variações.
-- O6 (cognição): definir quais indicadores ou comportamentos precisam de investigação adicional.
+- O1 (percepção): observar os gráficos e valores da evolução do desempenho.
+- O2 (percepção): conferir velocidade média, distância, quedas, estabilidade, gols e força de chute.
+- O3 (cognição): identificar tendências, variações inesperadas e possíveis regressões.
+- O4 (cognição): relacionar variações observadas a alterações de parâmetros, sem presumir causalidade.
 
-#### Regras de seleção de G2
+#### G2.2: Definir pontos que precisam de investigação
 
-- SR1: priorizar a análise de indicadores com variações relevantes ou resultados inesperados.
-- SR2: quando houver melhoria em um indicador acompanhada de regressão em outro, considerar ambos antes de definir uma prioridade.
-- SR3: quando os dados não permitirem estabelecer uma interpretação segura, indicar a necessidade de investigação adicional, sem assumir uma causa como comprovada.
+- O1 (cognição): identificar os indicadores e comportamentos que exigem esclarecimento.
+- O2 (cognição): ponderar a relevância e a criticidade das variações observadas.
+- O3 (cognição): diferenciar achados medidos de explicações ainda não confirmadas.
+- O4 (cognição): organizar os pontos a comunicar à equipe.
 
-### G3: Comunicar os pontos de investigação
+### G3: Comunicar os resultados à equipe
 
-#### Method M1: apresentar a síntese sem consulta adicional
+#### Method M1 — Apresentar diretamente a síntese
 
-- O1 (cognição): organizar os principais resultados e pontos de investigação identificados em G2.
-- O2 (percepção): conferir que o painel apresenta o período e os indicadores correspondentes à análise.
-- O3 (tarefa do usuário): explicar à equipe a evolução do desempenho e os pontos considerados relevantes.
-- O4 (percepção/cognição): verificar se os resultados apresentados são suficientes para sustentar a discussão.
+**SR1:** utilizar M1 quando os indicadores consolidados forem suficientes para explicar os resultados e não houver solicitação de detalhamento.
 
-#### Method M2: apresentar a síntese com consulta a evidências detalhadas
+- O1 (percepção): conferir o período e os indicadores exibidos no painel.
+- O2 (cognição): organizar a exposição dos principais resultados.
+- O3 (comunicação): explicar a evolução do desempenho e os pontos de investigação.
+- O4 (percepção/cognição): verificar se a síntese é suficiente para sustentar a discussão.
 
-- O1 (tarefa do usuário): apresentar a evolução do desempenho e identificar uma dúvida ou solicitação de esclarecimento.
-- O2 (interação): selecionar o indicador ou a execução relacionada à dúvida.
-- O3 (interação): abrir a evidência detalhada correspondente.
-- O4 (percepção): conferir o ID, o período e os resultados da execução consultada.
-- O5 (cognição): interpretar a evidência e relacioná-la à síntese apresentada.
-- O6 (tarefa do usuário): esclarecer a dúvida utilizando as informações consultadas.
+#### Method M2 — Apresentar a síntese e consultar evidências detalhadas
+
+**SR1:** utilizar M2 quando surgir uma dúvida, divergência ou solicitação de evidência específica; repetir a consulta, se necessário, mantendo o contexto da apresentação. Se não houver necessidade de detalhamento, permanecer em M1
+
+- O1 (comunicação): apresentar a síntese até surgir uma dúvida ou necessidade de esclarecimento.
+- O2 (interação): selecionar o indicador ou a execução relacionada à questão.
+- O3 (interação): abrir a evidência detalhada.
+- O4 (percepção): conferir ID, período e resultados da execução consultada.
+- O5 (cognição): relacionar a evidência à dúvida levantada.
+- O6 (comunicação): esclarecer a questão para a equipe.
 - O7 (interação): retornar ao painel principal.
-- O8 (percepção): confirmar que o período, os indicadores e o contexto anterior foram preservados.
-- O9 (tarefa do usuário): retomar a apresentação do ponto em que foi interrompida.
+- O8 (percepção): confirmar que período e seleções anteriores foram preservados.
+- O9 (comunicação): retomar a apresentação do ponto em que foi interrompida.
 
-#### Regras de seleção de G3
-
-- SR1: utilizar M1 quando a síntese apresentar informações suficientes para a comunicação dos resultados.
-- SR2: utilizar M2 quando surgir uma dúvida, divergência ou solicitação de evidência detalhada durante a reunião.
-- SR3: após consultar uma evidência, retornar ao painel e retomar a apresentação sem reiniciar a análise.
-- SR4: repetir a consulta a evidências quando diferentes resultados exigirem esclarecimentos adicionais.
 
 ### G4: Discutir resultados e definir encaminhamentos
 
-#### Method M1: discutir e estabelecer próximos encaminhamentos
+#### G4.1: Discutir os resultados com a equipe
 
-- O1 (tarefa do usuário): discutir com a equipe os resultados apresentados e as possíveis explicações.
-- O2 (cognição): considerar a relevância e a criticidade dos pontos identificados.
-- O3 (tarefa do usuário): definir, em conjunto com a equipe, quais questões precisam de investigação prioritária.
-- O4 (tarefa do usuário): estabelecer responsáveis e próximos encaminhamentos.
-- O5 (cognição): verificar se os encaminhamentos estão coerentes com os resultados discutidos e as necessidades de investigação.
+- O1 (comunicação): ouvir dúvidas e interpretações dos participantes.
+- O2 (cognição): considerar os pontos levantados e sua relação com os indicadores.
+- O3 (interação, quando necessário): consultar novamente informações do painel para esclarecer questões.
+- O4 (comunicação): discutir os principais problemas e oportunidades de investigação.
+
+#### G4.2: Definir prioridades e próximos encaminhamentos
+
+- O1 (cognição): avaliar a relevância e a criticidade dos pontos discutidos.
+- O2 (comunicação): decidir com a equipe quais questões serão investigadas primeiro.
+- O3 (comunicação): definir responsáveis e próximos encaminhamentos fora do sistema.
+- O4 (cognição): confirmar que as decisões são coerentes com os resultados apresentados.
 
 ### Interpretação do GOMS
 
-Carlos deve inicialmente selecionar o período de análise e consultar a síntese preparada pelo sistema. A partir dos indicadores apresentados, interpreta a evolução do desempenho e identifica os pontos que precisam ser investigados. Durante a reunião, a comunicação pode seguir dois métodos: apresentar diretamente as informações consolidadas ou consultar evidências detalhadas quando houver necessidade de esclarecimento.
-
-As regras de seleção de G3 mostram que a abertura de evidências não deve ser obrigatória, mas precisa estar disponível a qualquer momento durante a apresentação. A análise evidencia a necessidade de preservar o período e os indicadores selecionados, permitindo que Carlos retorne ao painel sem perder o contexto anterior.
-
-O modelo também diferencia as ações realizadas na interface das atividades cognitivas e de comunicação. O sistema disponibiliza informações e evidências, enquanto a interpretação, a definição de prioridades e os encaminhamentos permanecem sob responsabilidade de Carlos e da equipe. Dessa forma, o protótipo deve priorizar a continuidade da análise, a clareza dos indicadores e a facilidade de acesso às informações detalhadas.
+A sequência `G1 > G2 > G3 > G4` mostra que Carlos prepara a análise, interpreta os indicadores, comunica os resultados e participa da definição dos encaminhamentos. Em G1, G2 e G4, as etapas dependentes aparecem como subgoals numerados (`G1.1 > G1.2`, `G2.1 > G2.2` e `G4.1 > G4.2`). Em G3, os métodos são alternativos (`M1 / M2`): Carlos apresenta apenas a síntese quando ela é suficiente ou consulta evidências detalhadas quando surge uma dúvida. Cada método possui uma regra de seleção, evitando tratar uma decisão condicional como operação obrigatória. O principal requisito de interação é preservar o período, os indicadores e o ponto da apresentação após uma consulta detalhada. O sistema apoia a discussão, mas não substitui a interpretação ou a decisão da equipe.
 
 
 ## CTT — T03: Consultar síntese e comunicar pontos de investigação
