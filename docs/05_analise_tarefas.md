@@ -167,7 +167,60 @@ A4 = I41 []>> S42
 
 ---
 
+## HTA — T02: Localizar e comparar execuções anteriores
 
+**Autor(a):** Manuella Filipe Peres — 22.224.029-3
+
+### Descrição da tarefa
+
+O objetivo é localizar duas execuções anteriores de treinamento, comparar seus resultados e formular uma hipótese fundamentada para explicar as diferenças de desempenho observadas. A tarefa começa quando Marina (P02), no cenário C02, precisa investigar diferenças entre experimentos e termina quando registra uma hipótese acompanhada das evidências e ressalvas necessárias.
+
+A análise considera identificadores, datas, versões, parâmetros e métricas dos treinamentos, incluindo velocidade média, distância percorrida, taxa de quedas, estabilidade, gols marcados e força de chute. Marina pode localizar execuções por identificadores conhecidos ou utilizar filtros do histórico. A comparação deve permitir distinguir diferenças observadas de possíveis explicações, sem considerar que uma alteração de parâmetro ou versão comprove, isoladamente, a causa de uma mudança de desempenho.
+
+### Diagrama
+
+![HTA T02](../assets/05_tarefas/hta_t02.svg)
+
+**Leitura do diagrama:** o objetivo 0 é decomposto em localizar duas execuções (1), comparar métricas e parâmetros (2), formular uma hipótese com ressalvas (3) e registrar a análise (4). A localização pode ser realizada por busca de ID ou filtros do histórico. As métricas e os parâmetros representam evidências complementares. A última etapa registra a hipótese e sua justificativa, vinculadas às execuções selecionadas.
+
+### Decomposição e planos
+
+| ID | Objetivo ou operação | Plano/ordem | Problema de interação e decisão de design | Input | Feedback |
+|---|---|---|---|---|---|
+| 0 | Localizar e comparar execuções anteriores | `1 > 2 > 3 > 4` | Preservar o contexto das duas execuções durante toda a análise. | Histórico dos treinamentos, IDs, datas, versões, parâmetros e métricas. | Confirmação das execuções selecionadas e do registro da hipótese com evidências e ressalvas. |
+| 1 | Localizar duas execuções | `1.1 > 1.2` | Permitir busca por ID ou filtros, preservando as seleções. | Identificadores conhecidos ou atributos disponíveis para filtragem. | Resultados encontrados e identificação das execuções selecionadas. |
+| 1.1 | Localizar primeira execução | operação | Exibir ID, data, versão e demais informações necessárias para identificar o registro. | ID ou filtros de pesquisa. | Execução encontrada e adicionada à comparação. |
+| 1.2 | Localizar segunda execução e confirmar seleção | operação | Mostrar claramente quais duas execuções foram selecionadas. | Segunda execução desejada. | Confirmação dos dois IDs selecionados. |
+| 2 | Comparar métricas e parâmetros | `2.1 + 2.2` | Apresentar informações lado a lado, com unidades e identificação. | Resultados das duas execuções. | Métricas e parâmetros exibidos para comparação. |
+| 2.1 | Comparar métricas de desempenho | operação | Evidenciar diferenças de velocidade, distância, quedas, estabilidade, gols e força de chute. | Métricas de desempenho das execuções. | Valores e diferenças apresentados com unidades. |
+| 2.2 | Comparar parâmetros, versões e condições | operação | Identificar diferenças de configuração e limitações de comparabilidade. | Parâmetros, versões e condições dos treinamentos. | Divergências de configuração identificáveis. |
+| 3 | Formular hipótese e ressalvas | `3.1 > 3.2` | Separar os resultados efetivamente medidos das explicações propostas. | Diferenças de desempenho e configuração. | Evidências disponíveis para fundamentar a hipótese. |
+| 3.1 | Identificar diferenças observadas | operação | Destacar divergências relevantes sem atribuir automaticamente uma causa. | Resultados comparados. | Diferenças observadas disponíveis para consulta. |
+| 3.2 | Formular explicação e indicar limitações | operação | Permitir registrar hipóteses e ressalvas decorrentes das evidências. | Divergências identificadas e condições dos experimentos. | Hipótese e limitações definidas pelo usuário. |
+| 4 | Registrar hipótese, evidências e ressalvas | operação | Associar o registro aos IDs das execuções e confirmar o salvamento. | Hipótese, evidências, ressalvas e identificadores. | Confirmação de salvamento e associação às duas execuções. |
+
+**Planos detalhados:**
+
+**Plano 0:** concluir 1, depois 2, formular a hipótese em 3 e registrar a análise em 4.
+
+**Plano 1:** localizar a primeira execução e depois a segunda. Utilizar busca por identificador quando o ID for conhecido ou filtros do histórico quando não for. Caso os resultados sejam insuficientes ou incorretos, revisar a busca antes de prosseguir.
+
+**Plano 2:** comparar métricas e parâmetros das duas execuções. Essas evidências são complementares e devem ser consideradas em conjunto.
+
+**Plano 3:** identificar as diferenças observadas e, a partir delas, formular uma hipótese explicativa. Indicar as limitações e evitar afirmar causalidade quando as evidências não forem conclusivas.
+
+**Plano 4:** registrar a hipótese, as evidências utilizadas e as ressalvas, conferindo se o salvamento foi realizado e vinculado às duas execuções corretas.
+
+**Verificação do HTA:**
+
+- **O objetivo 0 representa uma meta do usuário?** Sim. A tarefa busca compreender diferenças entre experimentos e registrar uma explicação fundamentada, não executar procedimentos internos do algoritmo.
+- **As subtarefas são necessárias e suficientes?** Sim. Localização, comparação, formulação e registro representam as etapas necessárias para cumprir a tarefa.
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim. `>` indica sequência, `+` representa evidências complementares, e a localização admite métodos alternativos de busca e repetição dos filtros.
+- **A decomposição parou em nível útil para projeto de interação?** Sim. As operações correspondem a atividades humanas relacionadas à consulta, comparação e registro de informações.
+
+**Interpretação:** o principal problema de interação identificado é a possibilidade de perder o contexto das execuções durante a pesquisa e a comparação. A interface deve preservar IDs, filtros e seleções, além de apresentar as métricas e os parâmetros lado a lado.
+
+Outro risco é confundir diferenças observadas com relações causais comprovadas. Por exemplo, uma mudança de versão acompanhada de melhoria de velocidade não demonstra, isoladamente, que a versão causou o ganho. O protótipo deve permitir registrar hipóteses, evidências e ressalvas, garantindo rastreabilidade entre a análise e os treinamentos selecionados.
 
 ## GOMS — T02: Localizar e comparar execuções anteriores
 
@@ -227,6 +280,61 @@ A4 = I41 []>> S42
 
 ### **Interpretação do GOMS:** 
 O critério que separa M1 de M2 é informação de que Marina dispõe no início da tarefa, e não uma preferência arbitrária por tela. Ambos alcançam a mesma meta e terminam com um registro contextualizado. A análise revela a necessidade de preservar seleções e filtros entre pesquisa e comparação, além de diferenciar o que foi medido da explicação que Marina propõe. Não se supõe que uma diferença de versão, sozinha, prove a causa da diferença de desempenho.
+
+
+## CTT — T02: Localizar e comparar execuções anteriores
+
+**Autor(a):** Manuella Filipe Peres — 22.224.029-3
+
+### Descrição
+
+O CTT descreve o encadeamento temporal das atividades necessárias para localizar duas execuções anteriores, comparar os resultados e registrar uma hipótese sobre as diferenças encontradas. Na T02, Marina (P02, cenário C02) investiga experimentos para compreender variações no desempenho do robô.
+
+As relações temporais mais importantes são a escolha entre busca por identificador e busca por filtros, a possibilidade de repetir consultas quando os resultados não forem suficientes e a análise complementar de métricas e parâmetros.
+
+Após localizar e selecionar as duas execuções, Marina examina os resultados, identifica diferenças observadas e formula uma hipótese com suas respectivas limitações. O registro só é realizado depois que essas etapas foram concluídas.
+
+**Limites e exceções:** o sistema disponibiliza o histórico, apresenta as informações para comparação e salva os registros. A interpretação das diferenças e a formulação da hipótese permanecem sob responsabilidade de Marina. Quando uma execução não é encontrada, a busca pode ser repetida ou refinada.
+
+### Diagrama
+
+![CTT T02](../assets/05_tarefas/ctt_t02.svg)
+
+A tarefa abstrata A0 (localizar e comparar execuções anteriores) se decompõe em quatro subtarefas abstratas, ligadas por habilitação (`>>`): localizar execuções (A1), comparar resultados (A2), formular hipótese (A3) e registrar hipótese (A4).
+
+Em A1, Marina escolhe entre buscar por ID (I11) e filtrar o histórico (I12). Após encontrar os registros desejados, seleciona as duas execuções (I13), passando suas informações para a comparação. A busca por filtros pode ser repetida quando necessário.
+
+Em A2, Marina consulta as métricas de desempenho (I21) e os parâmetros e versões (I22), que podem ser examinados em qualquer ordem (`|||`). Após reunir as informações, distingue diferenças observadas de explicações possíveis (U23).
+
+Em A3, Marina formula uma hipótese (U31) e identifica as ressalvas e limitações aplicáveis (U32). Em A4, informa a hipótese, as evidências e as ressalvas (I41), que são passadas ao sistema (`[]>>`) para salvar o registro e confirmar o salvamento (S42).
+
+**Expressão temporal do modelo:**
+
+```text
+A0 = A1 >> A2 >> A3 >> A4
+A1 = (I11 [] I12*) []>> I13
+A2 = (I21 ||| I22) >> U23
+A3 = U31 >> U32
+A4 = I41 []>> S42
+```
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| `>>` | **Habilitação:** uma atividade depende da conclusão da anterior. | `A1 >> A2 >> A3 >> A4`: localizar, comparar, formular e registrar. |
+| `[]>>` | **Habilitação com passagem de informação:** uma atividade fornece informações para a próxima. | `I41 []>> S42`: os dados informados são enviados para salvamento. |
+| `[]` | **Escolha:** uma alternativa é selecionada entre os métodos possíveis. | `I11 [] I12`: Marina escolhe busca por ID ou filtros. |
+| `\|\|\|` | **Concorrência:** atividades podem ocorrer em qualquer ordem ou simultaneamente. | `I21 \|\|\| I22`: comparação de métricas e parâmetros. |
+| `*` | **Iteração:** uma atividade pode ser repetida conforme necessário. | `I12*`: Marina pode ajustar e repetir a busca por filtros. |
+
+### Interpretação e implicações de design
+
+A modelagem evidencia a importância de oferecer diferentes formas de localização de execuções. Quando Marina conhece os identificadores, pode utilizar a busca direta. Caso contrário, deve conseguir localizar os registros utilizando filtros de período, versão ou configuração.
+
+Após selecionar duas execuções, a interface precisa manter os IDs e os demais metadados visíveis durante a comparação. As métricas e os parâmetros devem estar disponíveis de forma complementar para que Marina consiga identificar divergências e formular hipóteses fundamentadas.
+
+O CTT também demonstra que a formulação de uma hipótese depende da análise anterior das evidências. O sistema não deve transformar automaticamente correlações observadas em explicações causais. A confirmação do salvamento deve indicar que a hipótese e suas ressalvas foram associadas corretamente às duas execuções.
 
 ---
 
