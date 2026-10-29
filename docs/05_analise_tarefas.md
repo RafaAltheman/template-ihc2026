@@ -433,7 +433,7 @@ A análise considera a evolução de métricas como velocidade média, distânci
 
 ### Diagrama
 
-![HTA T03](../assets/05_tarefas/hta03.svg)
+![HTA T03](../assets/05_tarefas/hta_t03.svg)
 
 **Leitura do diagrama:** o objetivo 0 é decomposto em preparar o painel (1), interpretar o desempenho (2), comunicar a interpretação (3) e discutir os resultados e definir encaminhamentos (4). A subdivisão do item 3 representa uma apresentação que pode ser temporariamente interrompida para consultar evidências detalhadas, sem necessidade de reiniciar a análise. A linha inferior dos nós 1.1, 1.2, 2.1, 2.2, 3.1, 3.2, 4.1 e 4.2 representa o nível operacional.
 
