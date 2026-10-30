@@ -44,13 +44,7 @@ Registrar conclusões e hipóteses com justificativas, evidências e ressalvas, 
 
 Acompanhar a evolução dos indicadores e parâmetros ao longo do tempo por meio de um painel de síntese.
 
-Consultar evidências detalhadas e retornar ao contexto anterior sem perder o período, os filtros ou as execuções selecionadas.
-
 Apoiar a comunicação dos resultados durante reuniões, mantendo a interpretação e a definição dos encaminhamentos sob responsabilidade da equipe.
-
-O escopo da prototipação será concentrado nas interações necessárias para realizar essas três tarefas. A proposta não inclui a implementação interna dos algoritmos de treinamento, nem a automatização da interpretação dos resultados ou da definição de prioridades.
-
-Por se tratar de um protótipo em papel, as telas serão representadas em baixa fidelidade, priorizando a organização das informações, os controles de navegação, os fluxos entre telas e os estados de interação. O objetivo é identificar dificuldades de uso e revisar a estrutura da solução antes da implementação de uma interface funcional.
 
 ## 1.1 Possíveis famílias de interface
 
@@ -75,15 +69,15 @@ Os fluxos foram definidos com base nas três tarefas priorizadas na Entrega 5, c
 
 | Fluxo | Tarefa/objetivo | Por que foi priorizado |
 |---|---|---|
-| PF01 | **T01 — Avaliar melhoria de um treinamento:** selecionar uma execução, definir um baseline comparável, analisar métricas e evidências e registrar uma conclusão sobre o desempenho. | É uma atividade frequente e crítica para a evolução do robô. Uma avaliação incorreta pode levar a ajustes inadequados nos treinamentos e ao desperdício de recursos computacionais. |
-| PF02 | **T02 — Localizar e comparar execuções anteriores:** buscar duas execuções por ID ou filtros, comparar métricas e parâmetros e registrar uma hipótese sobre as diferenças encontradas. | Garante rastreabilidade dos experimentos e permite investigar variações de desempenho. A comparação estruturada reduz o risco de perder informações ou atribuir causas sem evidências suficientes. |
-| PF03 | **T03 — Consultar síntese e comunicar pontos de investigação:** selecionar um período, visualizar a evolução dos indicadores, identificar pontos relevantes e apresentar os resultados à equipe, consultando evidências detalhadas quando necessário. | Apoia reuniões de acompanhamento e decisões sobre futuras investigações. O fluxo permite organizar os resultados e manter o contexto da análise durante a comunicação com a equipe. |
+| PF01 | T01 — Avaliar melhoria de um treinamento: selecionar uma execução, definir um baseline comparável, analisar métricas e evidências e registrar uma conclusão sobre o desempenho. | É uma atividade frequente e crítica para a evolução do robô. A classificação em melhoria, não melhoria e sem evidências indica se os treinos estão seguindo o caminho certo |
+| PF02 | T02 — Localizar e comparar execuções anteriores: buscar duas execuções por ID ou filtros, comparar métricas e parâmetros e registrar uma hipótese sobre as diferenças encontradas. | Garante rastreabilidade dos experimentos e permite investigar variações de desempenho. |
+| PF03 | T03 — Consultar síntese e comunicar pontos de investigação: selecionar um período, visualizar a evolução dos indicadores, identificar pontos relevantes e apresentar os resultados à equipe, consultando evidências detalhadas quando necessário. | Apoia reuniões de acompanhamento e decisões sobre futuras investigações. O fluxo permite organizar os resultados e manter o contexto da análise durante a comunicação com a equipe. |
 
 ### Descrição dos fluxos
 
 **PF01 — Avaliação de melhoria do treinamento**
 
-O usuário acessa o histórico de treinamentos e seleciona uma execução para avaliação. Em seguida, escolhe um baseline, verifica a compatibilidade entre as execuções e consulta as métricas e evidências disponíveis. Após analisar os resultados, classifica o treinamento como melhoria, não melhoria ou evidências insuficientes, registrando uma justificativa associada às execuções.
+O usuário acessa o histórico de treinamentos e seleciona uma execução para avaliação. Em seguida, escolhe um baseline e consulta as métricas e evidências disponíveis. Após analisar os resultados, classifica o treinamento como melhoria, não melhoria ou evidências insuficientes, registrando uma justificativa associada às execuções.
 
 **PF02 — Localização e comparação de execuções**
 
@@ -102,7 +96,7 @@ Essa integração permite reutilizar componentes e informações, evitando a cri
 
 ## 3. Telas e estados
 
-A navegação foi estruturada por meio de um menu lateral compartilhado entre as telas, contendo as opções Painel Geral, Histórico, Comparação, Avaliação e Reunião. Essa organização busca manter a consistência da interface e facilitar o deslocamento entre funcionalidades relacionadas.
+A navegação foi estruturada por meio de um menu lateral compartilhado entre as telas, contendo as opções Painel Geral, Histórico, Comparação, Avaliação, Reunião. Essa organização busca manter a consistência da interface e facilitar o deslocamento entre funcionalidades relacionadas.
 
 Durante a simulação em papel, os controles desenhados representam ações do usuário, enquanto a troca das folhas corresponde às transições entre telas. A numeração P01 a P10 identifica os estados do protótipo e permite relacioná-los aos fluxos e às tarefas analisadas anteriormente.
 
