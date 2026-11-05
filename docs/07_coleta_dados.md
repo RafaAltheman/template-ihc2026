@@ -187,6 +187,8 @@ Cada integrante será responsável pela elaboração de um instrumento de coleta
 
 #### Instrumento — Questionário
 
+link para Google Forms: https://forms.gle/dz8nd6X6n1UnEjFR8 
+
 **Texto de apresentação:**
 
 Este questionário faz parte de uma atividade acadêmica da disciplina de Interação Humano-Computador. Nosso objetivo é compreender como equipes de robótica consultam, interpretam e comparam resultados de treinamentos e experimentos.
