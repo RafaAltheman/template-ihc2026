@@ -497,7 +497,7 @@ As respostas também poderão indicar que determinadas funcionalidades não são
 **Ficha para registro durante a observação**
 
 | Momento | Ação observada | Informação/ferramenta consultada | Dificuldade identificada | 
-|---|---|---|---|---|
+|---|---|---|---|
 | 00:00 | A preencher | A preencher | A preencher |
 | ... | ... | ... | ... |
 
