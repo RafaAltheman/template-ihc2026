@@ -68,9 +68,14 @@ Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem
 
 | ID | Dimensão | Métrica | Tarefa/escopo | Meta | Como medir | Justificativa |
 |---|---|---|---|---|---|---|
-| MU01 | eficácia | taxa de conclusão sem ajuda | T01 | ≥ {{x}}% | teste observado | {{...}} |
-| MU02 | eficiência | tempo mediano | T02 | ≤ {{tempo}} | cronômetro/log | {{...}} |
-| MU03 | satisfação | escala pós-tarefa | T01–T03 | ≥ {{valor}} | questionário | {{...}} |
+| MU01 | Eficácia | Taxa de conclusão correta, sem ajuda do moderador. | T01 — Avaliar melhoria de treinamento. | >= 80% dos participantes. | Observar quantos participantes identificam ganhos e regressões, selecionam uma conclusão justificada e concluem o registro sem receber instruções adicionais. | A avaliação é crítica porque interpretações incorretas podem orientar ajustes inadequados nos treinamentos. |
+| MU02 | Eficácia | Taxa de conclusão correta, sem ajuda do moderador. | T02 — Localizar e comparar execuções. | >= 80% dos participantes. | Verificar quantos localizam as duas execuções solicitadas, realizam a comparação e registram uma hipótese distinguindo evidências e ressalvas. | A comparação é critica para entender se os ajustes no treinamento estão trazendo resultados positivos. |
+| MU03 | Eficácia | Taxa de conclusão da apresentação e consulta de evidências. | T03 — Consultar síntese e comunicar resultados. | >= 80% dos participantes. | Observar quantos selecionam o período, identificam ao menos um ponto relevante, consultam uma evidência e retornam ao contexto anterior. | A interface precisa apoiar reuniões sem prejudicar a continuidade da análise. |
+| MU04 | Eficiência | Tempo mediano para concluir cada tarefa com sucesso. | T01 e T02. | <= 6 minutos por tarefa. | Cronometrar desde o início do cenário até a conclusão, considerando apenas execuções bem-sucedidas e registrando a mediana separadamente para T01 e T02. | A avaliação e a comparação devem ocorrer sem navegação excessiva ou repetição desnecessária de ações. |
+| MU06 | Satisfação | Avaliação subjetiva de facilidade de uso após cada tarefa. | T01, T02 e T03. | Mediana >= 4 em escala de 1 a 5 | Aplicar uma pergunta pós-tarefa com escala de 1 (muito difícil) a 5 (muito fácil) e calcular a mediana por tarefa. | A satisfação complementa as medidas de eficácia e eficiência, permitindo identificar desconforto mesmo quando a tarefa é concluída. |
+| MU07 | Prevenção de erros | Quantidade de erros críticos que comprometem a integridade da análise. | T01 e T02. | Zero erros críticos nos testes avaliados. | Registrar casos de associação da conclusão à execução errada, seleção incorreta de referência sem percepção da incompatibilidade ou interpretação de registro não salvo como salvo. | Erros desse tipo comprometem a confiabilidade das análises e precisam receber prioridade de correção. |
+| MU08 | Continuidade da interação | Taxa de retorno ao contexto anterior sem refazer seleções. | T03 — Consulta de evidência durante a reunião. | >= 80% dos participantes. | Observar quantos conseguem retornar à apresentação mantendo o período, o indicador e o ponto anterior, sem intervenção do moderador. | Preservar o contexto evita retrabalho e interrupções durante as reuniões. |
+
 
 ### 3.3 Priorização das metas (se exigida na disciplina)
 
