@@ -1,7 +1,7 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
 **Data:** {{05/11/2026}}  
-**Status:** 🟨 em andamento   
+**Status:** 🟩 Concluida  
 **Responsabilidade:** 1 solução por equipe
 
 ## Objetivo da atividade
@@ -79,24 +79,103 @@ Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem
 
 ### 3.3 Priorização das metas (se exigida na disciplina)
 
-Se o professor solicitar porcentagens que somem 100%, trate-as como **peso de prioridade**, não como métrica de usabilidade.
+Os pesos representam a importância relativa de cada meta para o projeto e não devem ser confundidos com os valores aceitáveis de desempenho ou com os resultados dos testes.
 
 | Meta | Peso de prioridade | Justificativa |
 |---|---:|---|
-| MU01 | {{...}}% | {{...}} |
+| **MU01 — Eficácia na avaliação de treinamentos** | 20% | A interpretação correta dos resultados é fundamental para orientar decisões sobre os treinamentos do robô. |
+| **MU02 — Eficácia na comparação de execuções** | 15% | A localização e comparação correta dos experimentos sustenta a rastreabilidade das análises. |
+| **MU03 — Eficácia na comunicação dos resultados** | 15% | A apresentação deve permitir identificar questões relevantes para discussão e investigação. |
+| **MU04 — Eficiência na avaliação e comparação** | 10% | Reduzir o esforço necessário para interpretar e comparar experimentos melhora a utilização recorrente da interface. |
+| **MU05 — Eficiência na consulta durante reuniões** | 5% | A rapidez é relevante, mas não deve se sobrepor à compreensão correta das informações. |
+| **MU06 — Satisfação dos usuários** | 10% | A percepção de facilidade e conforto é importante para a aceitação da interface. |
+| **MU07 — Prevenção de erros críticos** | 15% | Atribuir resultados a execuções incorretas ou registrar conclusões equivocadas pode comprometer decisões técnicas. |
+| **MU08 — Continuidade da navegação** | 10% | Preservar informações durante consultas e retornos evita retrabalho e interrupções. |
 | **Total** | **100%** | |
+
+Nós atribuímos maior peso às metas de eficácia e prevenção de erros, pois o objetivo principal da interface é apoiar a interpretação correta dos resultados experimentais.
+
+A eficiência e a satisfação também são consideradas importantes, mas a rapidez não deve comprometer a qualidade das decisões realizadas pelos usuários.
 
 ## 4. Como o ciclo será iterado
 
-Explique que artefatos serão revisitados após protótipos e avaliações.
+O desenvolvimento da interface seguirá um processo iterativo centrado no usuário, no qual os conhecimentos obtidos em cada etapa serão utilizados para revisar os artefatos anteriores.
+
+O ciclo será organizado em quatro atividades principais: compreender o contexto de uso, propor soluções de interação, avaliar as soluções e revisar o projeto.
+
+### Etapa 1 — Compreensão das necessidades
+
+As Entregas 1 a 5 estabeleceram o escopo de IHC, as personas, os cenários e as tarefas principais. A Entrega 7 definiu instrumentos para investigar as hipóteses H01b, H02 e H03, que permanecem abertas na rastreabilidade.
+
+Após a aplicação dos instrumentos, os resultados deverão ser utilizados para verificar se as atividades e necessidades consideradas pela equipe correspondem ao trabalho real dos usuários.
+
+**Artefatos revisitados:** personas, cenários, descrição das tarefas, escopo de interação e `RASTREABILIDADE.md`.
+
+### Etapa 2 — Revisão dos protótipos
+
+A Entrega 6 apresentou telas em papel para representar os fluxos de consulta ao histórico, comparação de execuções, avaliação de treinamentos e acompanhamento do desempenho.
+
+As observações obtidas em avaliações formativas deverão orientar ajustes na organização das informações, no funcionamento dos controles e na navegação entre telas.
+
+Alguns pontos que merecem investigação são:
+
+- Clareza das legendas dos gráficos e identificação das execuções.
+- Compreensão do termo baseline e dos critérios de comparação.
+- Apresentação das diferenças de configuração.
+- Identificação de estados de erro e ausência de dados.
+- Comportamento dos botões de retorno.
+- Preservação do contexto durante a consulta a evidências.
+- Feedback após o registro de avaliações e hipóteses.
+
+Esses pontos representam aspectos a verificar, não resultados de usabilidade já comprovados.
+
+**Artefatos revisitados:** protótipos da Entrega 6, fluxos de navegação e descrições das telas.
+
+### Etapa 3 — Avaliação da usabilidade
+
+Nas etapas posteriores da disciplina, serão elaborados cenários de teste para verificar as metas quantitativas e qualitativas definidas nesta entrega.
+
+Os participantes serão convidados a realizar tarefas próximas às atividades de T01, T02 e T03, sem receber orientações sobre quais controles devem utilizar.
+
+Durante a interação, serão registrados os resultados das tarefas, os tempos de execução, os erros, os pedidos de ajuda e as dificuldades observadas.
+
+Após cada tarefa, poderá ser aplicada uma pergunta de satisfação utilizando a escala definida na meta MU06.
+
+Os resultados serão comparados aos critérios de aceitação estabelecidos nesta entrega, permitindo identificar quais aspectos da interface atendem às metas e quais precisam de revisão.
+
+**Artefatos produzidos ou revisitados:** roteiros de teste, registros de observação, métricas de usabilidade, relatórios de avaliação e matriz de rastreabilidade.
+
+### Etapa 4 — Revisão e nova iteração
+
+A equipe analisará os problemas identificados, considerando sua gravidade, frequência e impacto na conclusão das tarefas.
+
+Problemas que provocarem erros críticos, perda de informações ou impossibilidade de concluir uma tarefa terão prioridade sobre ajustes puramente visuais.
+
+Após a revisão, os fluxos afetados deverão ser avaliados novamente, quando possível, para verificar se as alterações produziram melhorias.
+
+O ciclo poderá ser repetido sempre que novas evidências indicarem a necessidade de modificar a interface, as tarefas ou os requisitos de usabilidade.
+
+### Registro das decisões
+
+As decisões de revisão deverão registrar:
+
+1. O problema identificado e a tarefa afetada.
+2. A evidência obtida durante a coleta ou avaliação.
+3. A alteração proposta ou realizada.
+4. A meta de usabilidade relacionada.
+5. O resultado da nova avaliação, quando disponível.
+
+As alterações relevantes serão incorporadas ao arquivo `../RASTREABILIDADE.md`, mantendo a ligação entre necessidades dos usuários, tarefas, protótipos e critérios de avaliação.
+
+Dessa forma, a evolução da interface será fundamentada em evidências obtidas durante o processo de IHC, e não apenas nas preferências da equipe.
 
 ## Checklist
 
-- [ ] Capacidades e restrições têm impacto de IHC explicitado.
-- [ ] Está claro o limite entre contribuição técnica do TCC e camada interativa da disciplina.
-- [ ] Resultados/processamento simulados no protótipo foram explicitados.
-- [ ] Metas de usabilidade avaliam a interação, não substituem métricas técnicas do TCC.
-- [ ] Normas/princípios estão contextualizados, não apenas copiados.
-- [ ] Metas quantitativas são mensuráveis e associadas a tarefas/público.
-- [ ] Eficácia, eficiência e satisfação são consideradas quando pertinentes.
-- [ ] Metas poderão ser verificadas nas Entregas 12–14.
+- [X] Capacidades e restrições têm impacto de IHC explicitado.
+- [X] Está claro o limite entre contribuição técnica do TCC e camada interativa da disciplina.
+- [X] Resultados/processamento simulados no protótipo foram explicitados.
+- [X] Metas de usabilidade avaliam a interação, não substituem métricas técnicas do TCC.
+- [X] Normas/princípios estão contextualizados, não apenas copiados.
+- [X] Metas quantitativas são mensuráveis e associadas a tarefas/público.
+- [X] Eficácia, eficiência e satisfação são consideradas quando pertinentes.
+- [X] Metas poderão ser verificadas nas Entregas 12–14.
