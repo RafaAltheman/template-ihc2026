@@ -26,7 +26,7 @@ Dashboards, relatórios, filtros e CRUDs devem aparecer no modelo conceitual por
 
 # 1. Cenários de interação
 
-## CI01 — Análise do desempenho do robô
+## CI01 Análise do desempenho do robô
 
 **Autor(a):** Letizia Lowatzki Baptistella  22.125.063-2  
 **Origem:** cenário problema C01  Análise de Performance do Robô.
