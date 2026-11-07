@@ -53,7 +53,7 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 | Consideração de informações ausentes | Evitar conclusões sem evidências suficientes para relacionar os resultados às configurações. | Entrega 3, P01: informações distribuídas entre execuções; C01: necessidade de consultar e relacionar resultados anteriores. |
 | Utilização dos resultados para decidir novos ajustes | Apoiar a escolha dos parâmetros do próximo treinamento. | C01 refinado, questão Q7: decidir se mantém os parâmetros ou realiza novos ajustes. |
 
-## CI02 — Recuperação da configuração de um treinamento anterior
+## CI02 Recuperação da configuração de um treinamento anterior
 
 **Autor(a):** Manuella Filipe Peres 22.224.029-3  
 **Origem:** cenário problema C02 Recuperação da configuração de um treinamento anterior.
