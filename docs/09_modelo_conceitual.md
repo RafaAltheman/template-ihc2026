@@ -14,7 +14,7 @@ Em TCCs algorítmicos ou orientados a dados, esta entrega deve evitar que a inte
 
 Exemplos:
 
--  query plan , custo estimado, recomendação e impacto para um DBA;
+- `query plan`, custo estimado, recomendação e impacto para um DBA;
 - modelo, dataset, versão, execução e métrica para engenheiro de IA;
 - período, indicador, grupo, tendência e filtro para gestor/analista;
 - alerta, severidade, evidência, responsável e status para analista de segurança.
@@ -83,7 +83,7 @@ Essa situação facilita a interpretação dos resultados e reduz a dependência
 | Avaliação sobre utilizar o treinamento como referência ou realizar nova execução | Representar a decisão tomada quando não é possível confirmar as configurações. | C02 refinado, questão Q5: avaliar se o experimento pode ser utilizado como referência ou se são necessárias informações adicionais ou nova execução. |
 | Preservação das informações do experimento como referência e backup | Apoiar a comparação com treinamentos posteriores e a recuperação do contexto da pesquisa. | C02 refinado, questão Q7: utilização do treinamento como referência e manutenção das informações como backup. |
 
-## CI03 — Avaliação de treinamentos em reunião de orientação
+## CI03   Avaliação de treinamentos em reunião de orientação
 
 **Autor(a):** Rafaela Altheman de Campos 22.125.062-4  
 **Origem:** cenário problema C03 Avaliação de treinamentos em reunião de orientação.
@@ -113,48 +113,48 @@ Dessa forma, a reunião consegue se concentrar na interpretação dos resultados
 
 # 2. Design centrado na comunicação
 
-## CI01 — Análise do desempenho do robô
+## CI01   Análise do desempenho do robô
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
-| Avaliar desempenho |  U: Quero verificar se o treinamento melhorou a caminhada do robô.  /  D: Consulte os indicadores e o comportamento do robô nesta execução.  | Permitir uma avaliação baseada em diferentes informações. |
-| > Consultar métricas |  U: Quero analisar a velocidade, a distância, as quedas e a estabilidade.  /  D: Estes são os indicadores registrados para esta execução.  | Apresentar os principais indicadores do treinamento. |
-| > Observar comportamento |  U: Quero verificar como o robô se comportou durante a execução.  /  D: Consulte a visualização correspondente ao treinamento.  | Relacionar resultados quantitativos ao comportamento observado. |
-| Consultar metas |  U: Quero verificar se o resultado atingiu o que a equipe esperava.  /  D: Estas são as metas de distância, velocidade, quedas e equilíbrio definidas para o treinamento.  | Relacionar a avaliação aos objetivos definidos pela equipe. |
-| Comparar treinamentos |  U: Quero comparar esta execução com uma anterior.  /  D: Consulte os resultados e as configurações das execuções que deseja comparar.  | Permitir identificar diferenças entre experimentos. |
-| > Verificar diferenças |  U: O que mudou entre os treinamentos?  /  D: Consulte as diferenças entre as métricas e os parâmetros disponíveis.  | Relacionar alterações de configuração aos resultados. |
-| > Considerar informações disponíveis |  U: Tenho informações suficientes para comparar estas execuções?  /  D: Verifique os registros disponíveis para cada treinamento e considere os dados que não foram registrados.  | Comunicar limitações e evitar conclusões sem evidência suficiente. |
-| Planejar ajustes |  U: Quero decidir o que devo ajustar no próximo treinamento.  /  D: Considere o conjunto das métricas, o comportamento observado e as diferenças entre as execuções.  | Apoiar a decisão sobre novos experimentos. |
+| Avaliar desempenho | `U: Quero verificar se o treinamento melhorou a caminhada do robô.` / `D: Consulte os indicadores e o comportamento do robô nesta execução.` | Permitir uma avaliação baseada em diferentes informações. |
+| > Consultar métricas | `U: Quero analisar a velocidade, a distância, as quedas e a estabilidade.` / `D: Estes são os indicadores registrados para esta execução.` | Apresentar os principais indicadores do treinamento. |
+| > Observar comportamento | `U: Quero verificar como o robô se comportou durante a execução.` / `D: Consulte a visualização correspondente ao treinamento.` | Relacionar resultados quantitativos ao comportamento observado. |
+| Consultar metas | `U: Quero verificar se o resultado atingiu o que a equipe esperava.` / `D: Estas são as metas de distância, velocidade, quedas e equilíbrio definidas para o treinamento.` | Relacionar a avaliação aos objetivos definidos pela equipe. |
+| Comparar treinamentos | `U: Quero comparar esta execução com uma anterior.` / `D: Consulte os resultados e as configurações das execuções que deseja comparar.` | Permitir identificar diferenças entre experimentos. |
+| > Verificar diferenças | `U: O que mudou entre os treinamentos?` / `D: Consulte as diferenças entre as métricas e os parâmetros disponíveis.` | Relacionar alterações de configuração aos resultados. |
+| > Considerar informações disponíveis | `U: Tenho informações suficientes para comparar estas execuções?` / `D: Verifique os registros disponíveis para cada treinamento e considere os dados que não foram registrados.` | Comunicar limitações e evitar conclusões sem evidência suficiente. |
+| Planejar ajustes | `U: Quero decidir o que devo ajustar no próximo treinamento.` / `D: Considere o conjunto das métricas, o comportamento observado e as diferenças entre as execuções.` | Apoiar a decisão sobre novos experimentos. |
 
-## CI02 — Recuperação da configuração de um treinamento anterior
-
-| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
-|---|---|---|
-| Recuperar treinamento |  U: Quero encontrar um treinamento realizado anteriormente.  /  D: Consulte os registros e os arquivos das execuções disponíveis.  | Facilitar a localização de uma execução. |
-| > Localizar execução |  U: Quero encontrar o treinamento que apresentou menor frequência de quedas.  /  D: Consulte os arquivos de métricas para identificar a execução com esse resultado.  | Ajudar a identificar o experimento desejado. |
-| Consultar resultados |  U: Quero verificar o desempenho desse treinamento.  /  D: Estes são os resultados registrados para a execução selecionada.  | Apresentar os indicadores relacionados ao experimento. |
-| Recuperar configurações |  U: Quero saber quais parâmetros foram utilizados.  /  D: Consulte as configurações e os registros disponíveis para esta execução.  | Permitir recuperar o contexto técnico do treinamento. |
-| > Consultar registros complementares |  U: Quero verificar se existem outras informações sobre essa configuração.  /  D: Consulte as anotações da equipe, os arquivos de configuração e o histórico do código.  | Orientar a recuperação de informações distribuídas entre diferentes registros. |
-| > Identificar dados ausentes |  U: Por que não aparece o valor deste parâmetro?  /  D: Esta informação não está disponível nos registros consultados.  | Comunicar ausência de informação sem presumir valores. |
-| Comparar execuções |  U: Quero comparar esse treinamento com outro mais recente.  /  D: Consulte as métricas, os parâmetros e as condições disponíveis para cada execução.  | Facilitar a identificação de diferenças entre experimentos. |
-| > Verificar condições |  U: Os treinamentos foram realizados nas mesmas condições?  /  D: Verifique as informações disponíveis. Quando os registros não forem suficientes, será necessário buscar esclarecimentos com os responsáveis pelos experimentos.  | Evitar comparações inadequadas. |
-| Avaliar referência |  U: Posso utilizar esse treinamento como referência?  /  D: Considere as configurações e as condições registradas. Se faltarem informações, avalie a necessidade de obter dados adicionais ou realizar uma nova execução.  | Apoiar a decisão sobre a confiabilidade do experimento como referência. |
-| Preservar informações |  U: Quero manter esse treinamento como referência para minha pesquisa.  /  D: Mantenha os registros disponíveis associados à identificação do experimento para consultas futuras.  | Apoiar novas investigações e a recuperação do experimento. |
-
-## CI03 — Avaliação de treinamentos em reunião de orientação
+## CI02   Recuperação da configuração de um treinamento anterior
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
-| Preparar apresentação |  U: Quero apresentar os resultados mais relevantes do treinamento.  /  D: Consulte a execução e selecione os indicadores que serão discutidos na reunião.  | Organizar as informações para a reunião. |
-| Consultar visão geral |  U: Quero entender rapidamente como foi o desempenho.  /  D: Consulte os principais indicadores registrados para esta execução.  | Facilitar a leitura geral pelo orientador. |
-| > Analisar métricas |  U: A recompensa aumentou. Isso significa que a caminhada melhorou?  /  D: A recompensa deve ser analisada junto à distância, velocidade, estabilidade e frequência de quedas.  | Evitar conclusões baseadas em uma única métrica. |
-| > Observar execução |  U: Quero ver como o robô se comportou.  /  D: Consulte a visualização da execução correspondente no simulador.  | Relacionar os indicadores ao comportamento do robô. |
-| Comparar resultados |  U: Como esse treinamento se compara ao anterior?  /  D: Consulte as diferenças entre os indicadores e as configurações das execuções.  | Apoiar a discussão sobre a evolução do treinamento. |
-| Consultar detalhes |  U: Quero entender quais alterações foram realizadas.  /  D: Consulte os parâmetros e as informações registradas para cada execução.  | Permitir aprofundamento quando surgirem dúvidas. |
-| Registrar orientação |  U: Quero guardar os pontos discutidos para a equipe.  /  D: Registre os problemas identificados, os pontos que precisam de investigação e os próximos ajustes nas anotações compartilhadas do projeto.  | Preservar as decisões da reunião. |
-| Planejar próximos passos |  U: O que ainda precisamos investigar antes de iniciar outro treinamento?  /  D: Consulte os pontos identificados durante a reunião e as informações que ainda precisam ser verificadas.  | Apoiar o planejamento dos próximos experimentos. |
+| Recuperar treinamento | `U: Quero encontrar um treinamento realizado anteriormente.` / `D: Consulte os registros e os arquivos das execuções disponíveis.` | Facilitar a localização de uma execução. |
+| > Localizar execução | `U: Quero encontrar o treinamento que apresentou menor frequência de quedas.` / `D: Consulte os arquivos de métricas para identificar a execução com esse resultado.` | Ajudar a identificar o experimento desejado. |
+| Consultar resultados | `U: Quero verificar o desempenho desse treinamento.` / `D: Estes são os resultados registrados para a execução selecionada.` | Apresentar os indicadores relacionados ao experimento. |
+| Recuperar configurações | `U: Quero saber quais parâmetros foram utilizados.` / `D: Consulte as configurações e os registros disponíveis para esta execução.` | Permitir recuperar o contexto técnico do treinamento. |
+| > Consultar registros complementares | `U: Quero verificar se existem outras informações sobre essa configuração.` / `D: Consulte as anotações da equipe, os arquivos de configuração e o histórico do código.` | Orientar a recuperação de informações distribuídas entre diferentes registros. |
+| > Identificar dados ausentes | `U: Por que não aparece o valor deste parâmetro?` / `D: Esta informação não está disponível nos registros consultados.` | Comunicar ausência de informação sem presumir valores. |
+| Comparar execuções | `U: Quero comparar esse treinamento com outro mais recente.` / `D: Consulte as métricas, os parâmetros e as condições disponíveis para cada execução.` | Facilitar a identificação de diferenças entre experimentos. |
+| > Verificar condições | `U: Os treinamentos foram realizados nas mesmas condições?` / `D: Verifique as informações disponíveis. Quando os registros não forem suficientes, será necessário buscar esclarecimentos com os responsáveis pelos experimentos.` | Evitar comparações inadequadas. |
+| Avaliar referência | `U: Posso utilizar esse treinamento como referência?` / `D: Considere as configurações e as condições registradas. Se faltarem informações, avalie a necessidade de obter dados adicionais ou realizar uma nova execução.` | Apoiar a decisão sobre a confiabilidade do experimento como referência. |
+| Preservar informações | `U: Quero manter esse treinamento como referência para minha pesquisa.` / `D: Mantenha os registros disponíveis associados à identificação do experimento para consultas futuras.` | Apoiar novas investigações e a recuperação do experimento. |
 
-**Convenção:**  U  = usuário;  D  = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
+## CI03 Avaliação de treinamentos em reunião de orientação
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Preparar apresentação | `U: Quero apresentar os resultados mais relevantes do treinamento.` / `D: Consulte a execução e selecione os indicadores que serão discutidos na reunião.` | Organizar as informações para a reunião. |
+| Consultar visão geral | `U: Quero entender rapidamente como foi o desempenho.` / `D: Consulte os principais indicadores registrados para esta execução.` | Facilitar a leitura geral pelo orientador. |
+| > Analisar métricas | `U: A recompensa aumentou. Isso significa que a caminhada melhorou?` / `D: A recompensa deve ser analisada junto à distância, velocidade, estabilidade e frequência de quedas.` | Evitar conclusões baseadas em uma única métrica. |
+| > Observar execução | `U: Quero ver como o robô se comportou.` / `D: Consulte a visualização da execução correspondente no simulador.` | Relacionar os indicadores ao comportamento do robô. |
+| Comparar resultados | `U: Como esse treinamento se compara ao anterior?` / `D: Consulte as diferenças entre os indicadores e as configurações das execuções.` | Apoiar a discussão sobre a evolução do treinamento. |
+| Consultar detalhes | `U: Quero entender quais alterações foram realizadas.` / `D: Consulte os parâmetros e as informações registradas para cada execução.` | Permitir aprofundamento quando surgirem dúvidas. |
+| Registrar orientação | `U: Quero guardar os pontos discutidos para a equipe.` / `D: Registre os problemas identificados, os pontos que precisam de investigação e os próximos ajustes nas anotações compartilhadas do projeto.` | Preservar as decisões da reunião. |
+| Planejar próximos passos | `U: O que ainda precisamos investigar antes de iniciar outro treinamento?` / `D: Consulte os pontos identificados durante a reunião e as informações que ainda precisam ser verificadas.` | Apoiar o planejamento dos próximos experimentos. |
+
+**Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
 
 ## 3. Mapa de objetivos
