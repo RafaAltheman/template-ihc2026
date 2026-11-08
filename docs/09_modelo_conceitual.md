@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
 **Data:** 06/11/2026 <br>
-**Status:** 🟨 em andamento <br>
+**Status:** 🟩 concluída <br>
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -196,13 +196,6 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 Consolide as informações em **uma tabela única**.
 
-*Legenda**
-
-- **Origem:** *domínio* = conceito do mundo da robótica e dos treinamentos; *aplicação* = produzido ou calculado pelo sistema; *usuário* = informado pelo usuário.
-- **Prevenção:** PP = prevenção passiva (explicação ou dica); PA = prevenção ativa (o sistema impede a fala inválida); AL = alerta, ou prevenção apoiada (pede decisão informada ao usuário).
-- **Recuperação:** RA = recuperação apoiada; CE = captura de erro (indica algo a fazer fora do sistema).
-- **+** marca o identificador do grupo. **—** significa que não se aplica.
-
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
 | Treinamento | + identificação | domínio | Nome ou código que identifica o treinamento nos registros e na pasta do experimento | texto | não nulo; único | — | PP: exibida junto a resultados, parâmetros e anotações | — |
@@ -253,9 +246,9 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 
 **Objetivos que precisam aparecer nos diagramas MoLIC:** todos os 20 do dicionário, com fluxo completo para os de prioridade alta. Os demais podem ter fluxos mais curtos.
 
-**Tópicos/conversas:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
+**Tópicos:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
 
-**Signos obrigatórios nos diagramas:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
+**Signos:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
 
 
 ## Checklist
