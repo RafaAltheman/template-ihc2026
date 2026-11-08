@@ -1,5 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1410 600" width="1410" height="600" font-family="Arial, Helvetica, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjZWQ5ODllYS1mODRjLTQwM2YtOGM3MS1mMzI3MGNmNWExZDUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaAZCQoGInGwRt400xiiXVlYAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplYzUxNzE1NS1hYWMzLTQ0YzYtYTQxOC1mMmRiYzVhNWJhODdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNodIEpV+kO+vrUwfXQiRdz5AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggaB3FFs603UVC0lWZ8QXk0l38vLDoWWHtHBp2erbQXVGkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEGxrK3mIDtiCcQdJcD9Y7wAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAdygOw74LOZdNIYjAuoTpyI1q8zvoH7/z5jSIl8tqV6mRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjDZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmNlZDk4OWVhLWY4NGMtNDAzZi04YzcxLWYzMjcwY2Y1YTFkNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjEyNWRkNDAxLTEwNzUtNDQwYy05NjdhLWVkMWVhZTZiMmMzZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBoHcUWzrTdRULSVZnxBeTSXfy8sOhZYe0cGnZ6ttBdUaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggBEnCwABOxuqg0AodAKHqOyLmBa5f7XesBIVf/yEZ7nuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggWz92PmPMZJGtwQXVb9E02DAVuSVS4jiD3JTFD+QHyYN0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQFkI77xu2qsf/x83Pwocra+fwbrDkfcKocozP5VWRpIw5EjbdHXkb8qQsrbHEV5u4R+QhJKzA9rLF61Ai88A7yQ=</c2pa:manifest></metadata>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect width="1410" height="600" fill="#fff"/>
+<rect x="20" y="20" width="270" height="250" fill="#e6e6e6" stroke="#999"/>
+<text x="35" y="40" font-size="13" font-style="italic" fill="#333">Legenda</text>
+<rect x="35" y="50" width="240" height="34" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="89" y1="50" x2="89" y2="84" stroke="#222" stroke-width="1.3"/>
+<text x="62" y="71.0" text-anchor="middle" font-size="12" fill="#222">papel</text>
+<text font-size="12.5" fill="#111"><tspan x="99" y="71.5">objetivo final</tspan></text>
+<rect x="35" y="94" width="240" height="34" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="89" y1="94" x2="89" y2="128" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="62" y="115.0" text-anchor="middle" font-size="12" fill="#222">papel</text>
+<text font-size="12.5" fill="#111"><tspan x="99" y="115.5">objetivo instrumental</tspan></text>
+<path d="M35,138 H90" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="100" y="142" font-size="12" font-style="italic" fill="#333">instrumenta diretamente</text>
+<path d="M35,160 H90" fill="none" stroke="#333" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="100" y="164" font-size="12" font-style="italic" fill="#333">instrumenta indiretamente</text>
+<text x="35" y="190" font-size="14" font-style="italic" fill="#333">Papéis</text>
+<text x="60" y="210" font-size="13" fill="#222">E: estudante / integrante técnico</text>
+<text x="60" y="228" font-size="13" fill="#222">P: pesquisador(a)</text>
+<text x="60" y="246" font-size="13" fill="#222">O: orientador(a)</text>
+<rect x="320" y="20" width="330" height="100" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="642" y="35" text-anchor="end" font-size="12" font-style="italic" fill="#333">treinamento</text>
+<rect x="320" y="140" width="330" height="300" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="642" y="155" text-anchor="end" font-size="12" font-style="italic" fill="#333">desempenho</text>
+<rect x="690" y="20" width="330" height="250" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="1012" y="35" text-anchor="end" font-size="12" font-style="italic" fill="#333">configuração</text>
+<rect x="690" y="290" width="330" height="265" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="1012" y="305" text-anchor="end" font-size="12" font-style="italic" fill="#333">comparação</text>
+<rect x="1060" y="20" width="330" height="148" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="1382" y="35" text-anchor="end" font-size="12" font-style="italic" fill="#333">referência</text>
+<rect x="1060" y="180" width="330" height="190" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="1382" y="195" text-anchor="end" font-size="12" font-style="italic" fill="#333">reunião de orientação</text>
+<rect x="1060" y="390" width="330" height="160" rx="3" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="1382" y="405" text-anchor="end" font-size="12" font-style="italic" fill="#333">planejamento</text>
+<path d="M630,248 H642 V396 H632" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M630,304 H642 V396 H632" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M630,74 H665 V130 H708" fill="none" stroke="#333" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<path d="M710,186 H700 V130 H708" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M710,242 H700 V130 H708" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1000,74 H1040 V444 H1002" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1000,130 H1030 V394 H1002" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M710,344 H700 V512 H708" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M710,394 H700 V512 H708" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M710,444 H700 V512 H708" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1000,512 H1050 V72 H1078" fill="none" stroke="#333" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<path d="M1000,512 H1078" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1225,94 V106" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1080,230 H1070 V340 H1078" fill="none" stroke="#333" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<path d="M1370,284 H1380 V340 H1372" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M1225,362 V418" fill="none" stroke="#333" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<path d="M1225,464 V488" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M475,418 V578 H1225 V536" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<rect x="340" y="52" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="394" y1="52" x2="394" y2="96" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="367" y="78.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="404" y="78.5">localizar treinamento anterior</tspan></text>
+<rect x="340" y="170" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="394" y1="170" x2="394" y2="214" stroke="#222" stroke-width="1.3"/>
+<text x="367" y="196.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="404" y="189.0">observar comportamento do robô</tspan><tspan x="404" y="204.0">na simulação</tspan></text>
+<rect x="340" y="226" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="394" y1="226" x2="394" y2="270" stroke="#222" stroke-width="1.3"/>
+<text x="367" y="252.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="404" y="252.5">consultar metas de desempenho</tspan></text>
+<rect x="340" y="282" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="394" y1="282" x2="394" y2="326" stroke="#222" stroke-width="1.3"/>
+<text x="367" y="308.0" text-anchor="middle" font-size="12" fill="#222">E O P</text>
+<text font-size="12.5" fill="#111"><tspan x="404" y="308.5">consultar avaliação do treinamento</tspan></text>
+<rect x="340" y="374" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="394" y1="374" x2="394" y2="418" stroke="#222" stroke-width="1.3"/>
+<text x="367" y="400.0" text-anchor="middle" font-size="12" fill="#222">E O P</text>
+<text font-size="12.5" fill="#111"><tspan x="404" y="400.5">avaliar desempenho do treinamento</tspan></text>
+<rect x="710" y="52" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="764" y1="52" x2="764" y2="96" stroke="#222" stroke-width="1.3"/>
+<text x="737" y="78.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="78.5">consultar condições de execução</tspan></text>
+<rect x="710" y="108" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="764" y1="108" x2="764" y2="152" stroke="#222" stroke-width="1.3"/>
+<text x="737" y="134.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="127.0">consultar configuração</tspan><tspan x="774" y="142.0">do treinamento</tspan></text>
+<rect x="710" y="164" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="764" y1="164" x2="764" y2="208" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="737" y="190.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="190.5">consultar registros complementares</tspan></text>
+<rect x="710" y="220" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="764" y1="220" x2="764" y2="264" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="737" y="246.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="239.0">identificar informações</tspan><tspan x="774" y="254.0">não registradas</tspan></text>
+<rect x="710" y="322" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="764" y1="322" x2="764" y2="366" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="737" y="348.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="348.5">verificar informações disponíveis</tspan></text>
+<rect x="710" y="372" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="764" y1="372" x2="764" y2="416" stroke="#222" stroke-width="1.3"/>
+<text x="737" y="398.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="391.0">verificar diferenças</tspan><tspan x="774" y="406.0">entre treinamentos</tspan></text>
+<rect x="710" y="422" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="764" y1="422" x2="764" y2="466" stroke="#222" stroke-width="1.3"/>
+<text x="737" y="448.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="441.0">verificar comparabilidade</tspan><tspan x="774" y="456.0">das condições</tspan></text>
+<rect x="710" y="490" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="764" y1="490" x2="764" y2="534" stroke="#222" stroke-width="1.3"/>
+<text x="737" y="516.0" text-anchor="middle" font-size="12" fill="#222">E P O</text>
+<text font-size="12.5" fill="#111"><tspan x="774" y="516.5">comparar treinamentos</tspan></text>
+<rect x="1080" y="50" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="50" x2="1134" y2="94" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="76.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="76.5">avaliar treinamento como referência</tspan></text>
+<rect x="1080" y="106" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="106" x2="1134" y2="150" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="132.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="132.5">preservar treinamento como referência</tspan></text>
+<rect x="1080" y="208" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="1134" y1="208" x2="1134" y2="252" stroke="#222" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="1107" y="234.0" text-anchor="middle" font-size="12" fill="#222">E O</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="227.0">selecionar execuções e indicadores</tspan><tspan x="1144" y="242.0">a apresentar</tspan></text>
+<rect x="1080" y="262" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="262" x2="1134" y2="306" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="288.0" text-anchor="middle" font-size="12" fill="#222">E O</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="288.5">consultar anotações de evidências</tspan></text>
+<rect x="1080" y="318" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="318" x2="1134" y2="362" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="344.0" text-anchor="middle" font-size="12" fill="#222">E O</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="344.5">registrar conclusões da reunião</tspan></text>
+<rect x="1080" y="420" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="420" x2="1134" y2="464" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="446.0" text-anchor="middle" font-size="12" fill="#222">E O P</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="446.5">consultar pendências de investigação</tspan></text>
+<rect x="1080" y="490" width="290" height="44" rx="8" fill="#fff" stroke="#222" stroke-width="1.3"/>
+<line x1="1134" y1="490" x2="1134" y2="534" stroke="#222" stroke-width="1.3"/>
+<text x="1107" y="516.0" text-anchor="middle" font-size="12" fill="#222">E P</text>
+<text font-size="12.5" fill="#111"><tspan x="1144" y="509.0">planejar ajustes do</tspan><tspan x="1144" y="524.0">próximo treinamento</tspan></text>
 </svg>
