@@ -1,7 +1,7 @@
 # Entrega 6 — Prototipação em papel
 
 **Data:** {{28/10/2026}}  
-**Status:** 🟩 concluída
+**Status:** 🟦 revisada após feedback
 **Responsabilidade:** 1 solução integrada por equipe
 
 ## Objetivo da atividade
@@ -90,9 +90,6 @@ O usuário seleciona um período de análise e consulta um painel com a evoluç�
 ### Integração entre os fluxos
 
 Os três fluxos compartilham informações sobre execuções, métricas e parâmetros dos treinamentos. O histórico e a comparação de resultados atendem principalmente aos fluxos PF01 e PF02, enquanto o painel de evolução temporal atende ao PF03.
-
-Essa integração permite reutilizar componentes e informações, evitando a criação de telas independentes para funcionalidades semelhantes. A prototipação em papel deverá representar tanto os caminhos principais quanto situações relevantes, como ausência de dados, incompatibilidade entre execuções e retorno ao painel após a consulta de evidências.
-
 
 ## 3. Telas e estados
 
@@ -355,228 +352,174 @@ A organização proposta busca preservar o contexto das análises e reduzir a ne
 
 Os estados alternativos foram incluídos para observar como o usuário reage a situações inesperadas e se os controles apresentados permitem a recuperação da tarefa.
 
-
 ## 4. Simulação / walkthrough
 
-Realize uma simulação com uma pessoa que não participou da elaboração dessas telas. Um colega pode ser usado **para essa iteração formativa**, mas isso não substitui os participantes finais da Entrega 14.
+**Moderador:** Tá, então é o seguinte: a gente fez umas telas de um sistema para acompanhar o desempenho de um robô que é treinado para jogar futebol. Eu vou te dar algumas tarefas e você vai falando o que está pensando enquanto tenta fazer, beleza?
 
-Transcrição da simulação:
+**Participante:** Tá bom. Eu não entendo muito de robô, mas vamos lá, kkk.
 
-Moderador: Tá, então é o seguinte: a gente fez umas telas de um sistema pra acompanhar o desempenho de um robô que é treinado pra jogar futebol. Eu vou te dar umas tarefas e você vai falando o que tá pensando enquanto tenta fazer, beleza?
+**Moderador:** Não tem problema. A ideia é justamente ver se dá para entender as telas sem a gente ficar explicando.
 
-Participante: Tá bom. Eu não entendo muito de robô, mas vamos lá, kkk.
+**Moderador:** Primeiro, imagina que você precisa encontrar dois treinamentos, o 103 e o 104, e comparar os resultados deles.
 
-Moderador: Não tem problema. A ideia é justamente ver se dá pra entender as telas sem a gente ficar explicando.
+**Participante:** Tá... deixa eu olhar aqui. Tem painel geral, histórico, comparação... Acho que eu iria direto em comparação.
 
-Moderador: Primeiro, imagina que você precisa encontrar dois treinamentos, o 103 e o 104, e comparar os resultados deles.
+**Moderador:** Pode tentar.
 
-Participante: Tá... deixa eu olhar aqui. Tem painel geral, histórico, comparação... Acho que eu iria direto em comparação.
+**Participante:** Ué, mas eu tenho que escolher os treinamentos antes, né? Acho que seria no histórico então.
 
-Moderador: Pode tentar.
+**Moderador:** Pode seguir.
 
-Participante: Ué, mas eu tenho que escolher os treinamentos antes, né? Acho que seria no histórico então.
+**Participante:** Ah, aqui tem os dois. O 104 e o 103. Vou marcar eles.
 
-Moderador: Pode seguir.
+**Participante:** Pera, é para marcar só dois? Ah, tá escrito ali embaixo, selecionados zero de dois. Beleza.
 
-Participante: Ah, aqui tem os dois. O 104 e o 103. Vou marcar eles.
+**Participante:** Agora apareceu dois de dois. Vou clicar em comparar selecionadas.
 
-Participante: Pera, é pra marcar só dois? Ah, tá escrito ali embaixo, selecionados zero de dois. Beleza.
+**Moderador:** E aí, conseguiu entender essa tela?
 
-Participante: Agora apareceu dois de dois. Vou clicar em comparar selecionadas.
+**Participante:** Acho que sim. Tá mostrando os dois lado a lado, né? A velocidade de um é 0,32 e do outro 0,28.
 
-Moderador: E aí, conseguiu entender essa tela?
+**Participante:** Nossa, mas olha aqui, o que tá mais rápido também cai mais. Então não é necessariamente melhor, né?
 
-Participante: Acho que sim. Tá mostrando os dois lado a lado, né? A velocidade de um é 0,32 e do outro 0,28.
+**Moderador:** O que mais você olharia?
 
-Participante: Nossa, mas olha aqui, o que tá mais rápido também cai mais. Então não é necessariamente melhor, né?
+**Participante:** A estabilidade também. Aqui tá 78 e 84. Então o 104 tá mais rápido, só que tá menos estável.
 
-Moderador: O que mais você olharia?
+**Participante:** Só não entendi esse negócio de diferenças de configuração. Era para aparecer o que mudou?
 
-Participante: A estabilidade também. Aqui tá 78 e 84. Então o 104 tá mais rápido, só que tá menos estável.
+**Moderador:** O que você esperava encontrar ali?
 
-Participante: Só não entendi esse negócio de diferenças de configuração. Era pra aparecer o que mudou?
+**Participante:** Ah, sei lá, tipo, qual configuração usaram no 103 e qual usaram no 104. Porque aí daria para entender o que mudou.
 
-Moderador: O que você esperava encontrar ali?
+**Moderador:** Entendi. Agora imagina que você precisa registrar uma explicação para essa diferença.
 
-Participante: Ah, sei lá, tipo, qual configuração usaram no 103 e qual usaram no 104. Porque aí daria pra entender o que mudou.
+**Participante:** Acho que é nesse registrar hipótese aqui.
 
-Moderador: Entendi. Agora imagina que você precisa registrar uma explicação pra essa diferença.
+**Participante:** Ah, beleza. Tem as diferenças observadas e aí eu escrevo o que acho que aconteceu.
 
-Participante: Acho que é nesse registrar hipótese aqui.
+**Participante:** Eu colocaria que alguma mudança deixou ele mais rápido, mas acabou fazendo ele cair mais. Só que eu não sei exatamente o que mudou, então não dá para afirmar.
 
-Participante: Ah, beleza. Tem as diferenças observadas e aí eu escrevo o que acho que aconteceu.
+**Moderador:** E as ressalvas?
 
-Participante: Eu colocaria que alguma mudança deixou ele mais rápido, mas acabou fazendo ele cair mais. Só que eu não sei exatamente o que mudou, então não dá pra afirmar.
+**Participante:** Acho que é isso que eu falei, que não dá para ter certeza se foi por causa da configuração. Eu colocaria aí.
 
-Moderador: E as ressalvas?
+**Moderador:** Agora você precisa decidir se o treinamento 104 realmente melhorou em relação ao 103.
 
-Participante: Acho que é isso que eu falei, que não dá pra ter certeza se foi por causa da configuração. Eu colocaria aí.
+**Participante:** Tá. Vou voltar aqui... acho que é avaliação.
 
-Moderador: Agora você precisa decidir se o treinamento 104 realmente melhorou em relação ao 103.
+**Participante:** Ah, aqui tem o 104 e o baseline 103. Baseline é o treinamento que eu tô usando para comparar?
 
-Participante: Tá. Vou voltar aqui... acho que é avaliação.
+**Moderador:** Isso.
 
-Participante: Ah, aqui tem o 104 e o baseline 103. Baseline é o treinamento que eu tô usando pra comparar?
+**Participante:** Tá, entendi. Mas acho que podia ter escrito referência também, porque baseline eu não saberia de primeira.
 
-Moderador: Isso.
+**Participante:** Aqui tem o gráfico, mas eu não tô entendendo qual linha é qual. Tem duas linhas e não tem uma legenda.
 
-Participante: Tá, entendi. Mas acho que podia ter escrito referência também, porque baseline eu não saberia de primeira.
+**Moderador:** O que você faria?
 
-Participante: Aqui tem o gráfico, mas eu não tô entendendo qual linha é qual. Tem duas linhas e não tem uma legenda.
+**Participante:** Eu tentaria abrir esse detalhe aqui do comportamento do robô.
 
-Moderador: O que você faria?
+**Participante:** Ah, aqui seria o vídeo dele andando. Legal. Porque só os números não mostram se ele tá andando esquisito ou caindo toda hora.
 
-Participante: Eu tentaria abrir esse detalhe aqui do comportamento do robô.
+**Participante:** Só que agora eu quero voltar para a avaliação. Esse botão tá escrito voltar à apresentação... Mas eu não tava apresentando nada.
 
-Participante: Ah, aqui seria o vídeo dele andando. Legal. Porque só os números não mostram se ele tá andando esquisito ou caindo toda hora.
+**Moderador:** E isso te atrapalharia?
 
-Participante: Só que agora eu quero voltar pra avaliação. Esse botão tá escrito voltar à apresentação... Mas eu não tava apresentando nada.
+**Participante:** Um pouco, porque eu ia ficar com medo de voltar para uma tela nada a ver. Eu colocaria só "Voltar" ou "Voltar à avaliação".
 
-Moderador: E isso te atrapalharia?
+**Moderador:** Tá. Agora você precisa escolher uma classificação.
 
-Participante: Um pouco, porque eu ia ficar com medo de voltar pra uma tela nada a ver. Eu colocaria só "Voltar" ou "Voltar à avaliação".
+**Participante:** Eu acho que colocaria não melhoria. Porque ele ficou mais rápido, mas a estabilidade piorou e ele caiu mais.
 
-Moderador: Tá. Agora você precisa escolher uma classificação.
+**Participante:** Aí eu escreveria isso na justificativa e salvaria.
 
-Participante: Eu acho que colocaria não melhoria. Porque ele ficou mais rápido, mas a estabilidade piorou e ele caiu mais.
+**Moderador:** E essa tela de confirmação?
 
-Participante: Aí eu escreveria isso na justificativa e salvaria.
+**Participante:** Ah, essa tá boa. Mostra que salvou mesmo. Eu gosto quando aparece isso, porque senão fico naquela dúvida se foi ou não.
 
-Moderador: E essa tela de confirmação?
+**Moderador:** Agora imagina que você vai mostrar para a equipe como o robô evoluiu nos últimos 30 dias.
 
-Participante: Ah, essa tá boa. Mostra que salvou mesmo. Eu gosto quando aparece isso, porque senão fico naquela dúvida se foi ou não.
+**Participante:** Tá, acho que agora eu iria no painel geral.
 
-Moderador: Agora imagina que você quer trocar o treinamento usado como referência.
+**Participante:** Ah, aqui já tem os últimos 30 dias. Tem velocidade, distância, quedas... Essa tela parece mais fácil.
 
-Participante: Tá, vou naquele trocar baseline.
+**Moderador:** E como você faria para apresentar isso para a equipe?
 
-Participante: Aqui aparece uma lista. Acho que eu escolheria o 102, porque é outro treinamento anterior.
+**Participante:** Tem reunião aqui no menu. Vou clicar.
 
-Moderador: Pode selecionar.
+**Participante:** Ah, aqui parece uma apresentação mesmo. Tem o gráfico maior e os pontos para discutir.
 
-Participante: Opa, apareceu que não é compatível.
+**Participante:** Só esse botão de próximo indicador que eu fiquei meio perdido. Próximo indicador qual?
 
-Participante: Ah, entendi, porque é outra versão. Tem outras diferenças também.
+**Moderador:** O que você colocaria no lugar?
 
-Moderador: O que você faria nessa situação?
+**Participante:** Talvez "Próximo: estabilidade", por exemplo. Aí eu já saberia o que vai aparecer.
 
-Participante: Eu acho que escolheria outro. Se o sistema tá falando que não dá pra comparar direito, melhor não arriscar.
+**Moderador:** E se alguém da reunião perguntasse por que a taxa de quedas aumentou?
 
-Participante: Mas achei legal que ele explica o motivo. Se só aparecesse "incompatível", eu não ia entender nada.
+**Participante:** Eu clicaria em abrir evidência para mostrar o treinamento específico.
 
-Moderador: Você usaria a opção de continuar com ressalva?
+**Participante:** Aí depois voltaria para a reunião.
 
-Participante: Talvez, se eu precisasse muito comparar esses dois. Mas aí teria que deixar bem claro que a comparação pode não ser justa.
+**Participante:** Isso eu achei importante, porque imagina ter que escolher o período tudo de novo no meio da reunião. Ia ser chato.
 
-Moderador: Agora imagina que você vai mostrar pra equipe como o robô evoluiu nos últimos 30 dias.
+**Moderador:** Agora falando de tudo que você viu, o que achou mais fácil?
 
-Participante: Tá, acho que agora eu iria no painel geral.
+**Participante:** Acho que o histórico e a comparação. Dá para entender bem o que tem que fazer.
 
-Participante: Ah, aqui já tem os últimos 30 dias. Tem velocidade, distância, quedas... Essa tela parece mais fácil.
+**Moderador:** E o que achou mais difícil?
 
-Moderador: E como você faria pra apresentar isso pra equipe?
+**Participante:** Fiquei um pouco perdido nos gráficos porque não sabia qual linha representava qual execução. E também não entendi o termo baseline de primeira.
 
-Participante: Tem reunião aqui no menu. Vou clicar.
+**Moderador:** Você mudaria alguma coisa na navegação?
 
-Participante: Ah, aqui parece uma apresentação mesmo. Tem o gráfico maior e os pontos pra discutir.
+**Participante:** Ah, eu deixaria os botões de voltar mais claros. Tipo, mostrar para onde vai voltar.
 
-Participante: Só esse botão de próximo indicador que eu fiquei meio perdido. Próximo indicador qual?
+**Moderador:** E teve alguma coisa que você gostou?
 
-Moderador: O que você colocaria no lugar?
+**Participante:** Gostei da comparação lado a lado e da confirmação quando salva. E também achei importante conseguir abrir uma evidência e voltar para a reunião sem perder o que estava mostrando.
 
-Participante: Talvez "Próximo: estabilidade", por exemplo. Aí eu já saberia o que vai aparecer.
+**Moderador:** Tá ótimo, era isso. Valeu pela ajuda!
 
-Moderador: E se alguém da reunião perguntasse por que a taxa de quedas aumentou?
-
-Participante: Eu clicaria em abrir evidência pra mostrar o treinamento específico.
-
-Participante: Aí depois voltaria pra reunião.
-
-Participante: Isso eu achei importante, porque imagina ter que escolher o período tudo de novo no meio da reunião. Ia ser chato.
-
-Moderador: Agora vou te mostrar mais uma tela, que é pra configurar um novo treinamento do robô. O que você acha que faria aqui?
-
-Participante: Nossa, essa tem bem mais coisa, hein, kkk.
-
-Participante: Tem o nome, o robô, o simulador... Essa parte eu entendi. Mas esses números aqui eu não faço ideia do que significam.
-
-Moderador: Quais?
-
-Participante: Learning rate, batch size, gamma... Essas coisas. Acho que quem trabalha com isso vai entender, mas eu teria medo de mudar alguma coisa errada.
-
-Moderador: O que te ajudaria?
-
-Participante: Talvez deixar os valores recomendados já preenchidos. E colocar um negocinho explicando cada um.
-
-Participante: Aqui embaixo tem iniciar treinamento. Se eu clicar, começa direto?
-
-Moderador: O que você esperaria?
-
-Participante: Eu esperaria aparecer uma confirmação antes, porque parece que demora bastante, né? Vai que eu coloquei alguma coisa errada.
-
-Moderador: Entendi.
-
-Participante: E depois que começa, eu ia querer ver se tá rodando mesmo, quanto falta, se deu erro... Alguma tela de progresso.
-
-Moderador: Beleza. Agora falando de tudo que você viu, o que achou mais fácil?
-
-Participante: Acho que o histórico e a comparação. Dá pra entender bem o que tem que fazer.
-
-Moderador: E o que achou mais difícil?
-
-Participante: A parte do treinamento, por causa dos parâmetros. E também fiquei um pouco perdido nos gráficos porque não sabia qual linha representava qual execução.
-
-Moderador: Você mudaria alguma coisa na navegação?
-
-Participante: Ah, eu deixaria os botões de voltar mais claros. Tipo, mostrar pra onde vai voltar.
-
-Moderador: E teve alguma coisa que você gostou?
-
-Participante: Gostei da comparação lado a lado e da confirmação quando salva. E também daquele aviso quando os treinamentos não são compatíveis, porque ele explica o que tá errado.
-
-Moderador: Tá ótimo, era isso. Valeu pela ajuda!
-
-Participante: Imagina, espero ter ajudado, kkk.
-
+**Participante:** Imagina, espero ter ajudado, kkk.
 
 ### 4.1 Registro de observações do walkthrough
 
-| Observação | Tela/ação | Evidência (fala simulada do participante) | Consequência para o design |
+| Observação | Tela/ação | Evidência disponível no protótipo | Consequência para o design |
 |---|---|---|---|
-| O participante inicialmente tentou acessar a comparação diretamente, sem selecionar as execuções. | P02 — Acesso ao histórico e seleção de execuções. | "Acho que eu iria direto em comparação. Ué, mas eu tenho que escolher os treinamentos antes, né?" | Tornar mais clara a necessidade de selecionar duas execuções antes de iniciar uma comparação, oferecendo orientação na tela de comparação quando não houver seleções. |
-| O contador de execuções selecionadas ajudou o participante a compreender a quantidade necessária para continuar. | P02 — Seleção das execuções EXEC-103 e EXEC-104. | "Pera, é pra marcar só dois? Ah, tá escrito ali embaixo, selecionados zero de dois. Beleza." | Manter o contador de seleções e destacar visualmente quando as duas execuções necessárias estiverem selecionadas. |
-| A apresentação das métricas lado a lado facilitou a identificação de diferenças de desempenho. | P03 — Comparação das métricas. | "Nossa, mas olha aqui, o que tá mais rápido também cai mais. Então não é necessariamente melhor, né?" | Preservar a visualização comparativa, permitindo observar simultaneamente indicadores positivos e negativos. |
-| As diferenças de configuração não estavam suficientemente claras para explicar as alterações de desempenho. | P03 — Consulta às diferenças de configuração. | "Só não entendi esse negócio de diferenças de configuração. Era pra aparecer o que mudou?" | Apresentar os parâmetros modificados, com os valores de cada execução, facilitando a identificação de possíveis relações com as mudanças observadas. |
-| A separação entre diferenças observadas, hipóteses e ressalvas foi compreendida. | P04 — Registro de hipótese explicativa. | "Ah, beleza. Tem as diferenças observadas e aí eu escrevo o que acho que aconteceu." | Manter a organização dos campos, diferenciando resultados medidos de explicações ainda não comprovadas. |
-| O termo técnico "baseline" gerou dúvida durante a avaliação. | P05 — Identificação da execução de referência. | "Baseline é o treinamento que eu tô usando pra comparar?" | Apresentar o termo como "Baseline (execução de referência)", mantendo a terminologia técnica com uma explicação complementar. |
-| O gráfico de avaliação não permitia identificar claramente qual linha correspondia a cada execução. | P05 — Análise dos gráficos de desempenho. | "Aqui tem o gráfico, mas eu não tô entendendo qual linha é qual. Tem duas linhas e não tem uma legenda." | Adicionar uma legenda que identifique cada execução e seu respectivo traçado no gráfico. |
-| O botão de retorno da evidência detalhada não correspondia ao contexto da avaliação. | P08 — Retorno da evidência para a avaliação. | "Esse botão tá escrito voltar à apresentação... Mas eu não tava apresentando nada." | Utilizar um botão de retorno contextual, identificando a tela de origem, como "Voltar à avaliação" ou "Voltar à reunião". |
-| A confirmação de salvamento foi facilmente compreendida e transmitiu segurança. | P06 — Confirmação do registro. | "Ah, essa tá boa. Mostra que salvou mesmo. Eu gosto quando aparece isso, porque senão fico naquela dúvida se foi ou não." | Manter a confirmação explícita do salvamento, acompanhada dos identificadores das execuções e da conclusão registrada. |
-| O aviso de incompatibilidade entre execuções foi compreendido e auxiliou a decisão do participante. | P11 e P12 — Seleção de baseline e aviso de incompatibilidade. | "Ah, entendi, porque é outra versão. Tem outras diferenças também. Eu acho que escolheria outro." | Manter a apresentação das incompatibilidades identificadas e oferecer uma opção clara para selecionar outra referência. |
-| O participante considerou importante informar os riscos de continuar uma comparação com referência incompatível. | P12 — Opção de continuar com ressalvas. | "Talvez, se eu precisasse muito comparar esses dois. Mas aí teria que deixar bem claro que a comparação pode não ser justa." | Destacar visualmente as limitações da comparação e exigir o registro de uma ressalva quando o usuário decidir continuar. |
-| O painel geral apresentou uma organização compreensível para consultar as informações iniciais. | P01 — Consulta à síntese dos últimos 30 dias. | "Ah, aqui já tem os últimos 30 dias. Tem velocidade, distância, quedas... Essa tela parece mais fácil." | Manter os indicadores principais agrupados e o período de análise visível. |
-| O botão de navegação da reunião não deixava claro qual indicador seria apresentado em seguida. | P07 — Apresentação dos resultados. | "Só esse botão de próximo indicador que eu fiquei meio perdido. Próximo indicador qual?" | Identificar o indicador seguinte no próprio botão ou apresentar uma sequência visível dos indicadores da reunião. |
-| O participante demonstrou preocupação com a possibilidade de perder o contexto ao consultar evidências durante a reunião. | P07 e P08 — Abertura de evidência e retorno à apresentação. | "Isso eu achei importante, porque imagina ter que escolher o período tudo de novo no meio da reunião. Ia ser chato." | Preservar o período, o indicador e o ponto anterior da apresentação durante a navegação entre as telas. |
-| A tela de iniciar treinamento apresentou termos técnicos que podem dificultar sua utilização por pessoas menos familiarizadas com aprendizado por reforço. | P14 — Configuração de treinamento (exploratória). | "Learning rate, batch size, gamma... Essas coisas. Acho que quem trabalha com isso vai entender, mas eu teria medo de mudar alguma coisa errada." | Incluir explicações sobre os parâmetros e apresentar valores padrão para orientar sua configuração. |
-| O participante demonstrou preocupação com o início imediato de um treinamento e com a falta de informações sobre seu andamento. | P14 — Ação de iniciar treinamento (exploratória). | "Eu esperaria aparecer uma confirmação antes, porque parece que demora bastante, né?" | Propor uma etapa de confirmação antes do início e um estado de acompanhamento com progresso, situação da execução e possíveis erros. |
+| A comparação depende da seleção prévia de duas execuções. | P02 — Histórico de execuções. | A tela apresenta a seleção de treinamentos e um contador indicando a quantidade selecionada. | Manter o contador e orientar o usuário quando ainda não houver duas execuções selecionadas. |
+| A apresentação das métricas lado a lado facilita a identificação de ganhos e regressões. | P03 — Comparação de execuções. | A comparação entre EXEC-103 e EXEC-104 apresenta velocidade média, estabilidade e taxa de quedas. | Preservar a apresentação conjunta das métricas, permitindo interpretar o desempenho sem considerar apenas um indicador. |
+| A área de diferenças de configuração precisa apresentar informações suficientes para a análise. | P03 — Diferenças de configuração. | A tela identifica uma área destinada às diferenças, mas não apresenta todos os valores dos parâmetros. | Apresentar os parâmetros e seus respectivos valores quando disponíveis, permitindo compreender quais configurações foram modificadas. |
+| A separação entre observações, hipóteses e ressalvas contribui para a organização da análise. | P04 — Registro de hipóteses e ressalvas. | A tela apresenta áreas distintas para registrar diferenças observadas, possíveis explicações e limitações. | Manter essa separação, evitando que hipóteses sejam interpretadas como causas comprovadas. |
+| O termo técnico "baseline" pode dificultar a compreensão da referência utilizada. | P05 — Avaliação do treinamento. | A tela utiliza o termo "baseline" para identificar a execução de referência. | Utilizar "Baseline (execução de referência)", mantendo o termo técnico acompanhado de uma explicação. |
+| Os gráficos precisam permitir a identificação das execuções representadas. | P05 — Gráfico de avaliação. | O gráfico apresenta séries de desempenho sem uma legenda suficientemente clara. | Acrescentar legendas com os identificadores das execuções e utilizar estilos de linha distintos. |
+| A confirmação do salvamento permite verificar a conclusão do registro. | P06 — Confirmação do registro. | A tela identifica as execuções relacionadas e apresenta a classificação registrada. | Manter a confirmação explícita, permitindo ao usuário conferir as informações salvas. |
+| O controle "Próximo indicador" não informa qual conteúdo será apresentado em seguida. | P07 — Reunião e apresentação. | A tela apresenta a opção de avançar entre indicadores, mas não identifica o próximo. | Alterar a identificação para algo contextual, como "Próximo: Estabilidade". |
+| O retorno da evidência detalhada precisa corresponder à atividade de origem. | P08 — Evidência detalhada. | A tela apresenta "Voltar à apresentação", embora também possa ser acessada a partir da avaliação. | Utilizar um retorno contextual, como "Voltar à avaliação" ou "Voltar à apresentação", preservando o contexto anterior. |
+| A ausência de resultados em uma busca precisa ser comunicada claramente. | P09 — Busca sem resultados. | A tela apresenta uma mensagem de ausência de resultados e alternativas para modificar a pesquisa. | Manter as orientações para corrigir o identificador ou utilizar filtros. |
+| A ausência de dados em um período precisa ser diferenciada de um resultado igual a zero. | P10 — Painel sem dados. | A tela comunica que não existem resultados no período selecionado e permite alterar o intervalo. | Manter a mensagem específica e os caminhos para continuar a consulta. |
 
 ## 5. Alterações após a simulação
 
-As observações apresentadas na simulação foram utilizadas para identificar possíveis melhorias na organização das informações, na clareza dos controles e na continuidade da navegação. A tabela apresenta propostas de alteração que poderão ser incorporadas à próxima versão do protótipo após validação com um participante real.
+As alterações propostas estão relacionadas às telas P01 a P10.
 
-| Antes | Problema | Depois (alteração proposta) | Justificativa |
+A tabela apresenta as decisões de revisão da equipe, que deverão ser incorporadas às próximas versões do protótipo.
+
+| Antes | Problema identificado | Depois (alteração proposta) | Justificativa |
 |---|---|---|---|
-| A tela de comparação pode ser acessada pelo menu mesmo sem duas execuções selecionadas, sem uma orientação específica sobre como iniciar a comparação. | O participante tentou acessar diretamente a comparação e somente depois percebeu que precisava selecionar os treinamentos no histórico. | Apresentar uma mensagem de orientação quando não houver duas execuções selecionadas, acompanhada de um botão "Selecionar execuções" que encaminhe ao histórico. | Facilitar o entendimento da sequência de ações e reduzir dúvidas durante o início da comparação. |
-| A área de diferenças de configuração apresenta informações pouco detalhadas sobre as alterações realizadas entre os treinamentos. | O participante não conseguiu identificar quais parâmetros haviam sido modificados, dificultando a formulação de uma hipótese. | Apresentar uma tabela com os parâmetros, seus valores nas duas execuções e as diferenças identificadas. | Permitir que o usuário relacione os resultados observados às configurações utilizadas, sem assumir automaticamente uma relação causal. |
-| A tela de avaliação utiliza apenas o termo "baseline" para identificar a referência. | O participante demonstrou dúvida sobre o significado do termo, apesar de compreender a finalidade da comparação. | Utilizar a identificação "Baseline (execução de referência)" e disponibilizar uma explicação breve sobre sua função. | Manter a terminologia técnica utilizada pela equipe e facilitar a compreensão por usuários com diferentes níveis de conhecimento. |
-| Os gráficos apresentam diferentes linhas sem uma identificação visual suficientemente clara. | O participante não conseguiu distinguir com segurança os resultados da execução avaliada e da referência. | Acrescentar legendas com os identificadores das execuções e utilizar diferentes estilos de linha para representá-las. | Evitar interpretações incorretas das métricas e facilitar a identificação de tendências, melhorias e regressões. |
-| A tela de evidências possui um botão fixo denominado "Voltar à apresentação". | O participante acessou a evidência pela tela de avaliação e ficou em dúvida sobre o destino do botão. | Adaptar o botão de retorno conforme a origem, utilizando "Voltar à avaliação" ou "Voltar à reunião". | Tornar a navegação previsível e permitir que o usuário retorne à atividade anterior sem perder seu contexto. |
-| A seleção de uma referência incompatível apresenta riscos para a comparação, mas a continuidade com ressalvas precisa ser compreendida pelo usuário. | O participante demonstrou preocupação em continuar uma análise mesmo sabendo que as condições dos experimentos eram diferentes. | Destacar as incompatibilidades identificadas, explicar suas consequências e exigir uma ressalva quando o usuário optar por continuar. | Evitar conclusões equivocadas e registrar as limitações consideradas durante a análise. |
-| O botão "Próximo indicador" não informa qual conteúdo será exibido em seguida. | O participante não conseguiu prever qual métrica seria apresentada ao avançar na reunião. | Substituir a descrição genérica por uma identificação contextual, como "Próximo: estabilidade", e indicar o indicador atual. | Facilitar a condução da reunião e melhorar a previsibilidade das ações disponíveis. |
-| A navegação entre a reunião e a evidência detalhada depende do retorno à tela anterior. | O participante demonstrou preocupação com a possibilidade de precisar selecionar novamente o período e o indicador após consultar uma evidência. | Preservar o período, os indicadores e o ponto da apresentação durante a abertura de evidências, retornando ao estado anterior. | Reduzir retrabalho e evitar interrupções desnecessárias durante a comunicação dos resultados à equipe. |
-| A tela de configuração de treinamento apresenta hiperparâmetros técnicos sem explicações complementares. | O participante demonstrou insegurança para modificar valores como learning rate, batch size e gamma. | Acrescentar descrições curtas, valores padrão e informações sobre a finalidade de cada parâmetro. | Facilitar a compreensão da configuração e reduzir a possibilidade de alterações realizadas sem entendimento de suas consequências. |
-| A ação "Iniciar treinamento" aparece diretamente após o preenchimento das configurações. | O participante demonstrou receio de iniciar uma execução demorada sem revisar as informações. | Adicionar uma confirmação com resumo dos parâmetros antes da execução e propor uma tela posterior de acompanhamento do treinamento. | Permitir a revisão das configurações e fornecer feedback sobre o início e o andamento de uma operação potencialmente demorada. |
+| P05 — A execução de referência é identificada apenas pelo termo "baseline". | O termo técnico pode dificultar a compreensão de usuários com menor familiaridade com o vocabulário de robótica e aprendizado por reforço. | Utilizar a identificação "Baseline (execução de referência)", acompanhada do identificador da execução selecionada. | Manter a terminologia técnica utilizada pela equipe, oferecendo uma explicação que facilite a compreensão da referência utilizada na avaliação. |
+| P05 — O gráfico apresenta diferentes séries de desempenho sem uma legenda suficientemente clara. | A ausência de identificação das séries pode dificultar a associação entre os resultados apresentados e suas respectivas execuções. | Adicionar uma legenda com os identificadores EXEC-103 e EXEC-104, utilizando estilos de linha distintos para representar cada execução. | Facilitar a interpretação das métricas e reduzir o risco de conclusões incorretas sobre melhorias e regressões. |
+| P08 — O botão de retorno apresenta a identificação fixa "Voltar à apresentação". | A evidência detalhada pode ser acessada tanto durante a avaliação de um treinamento quanto durante uma reunião, tornando o destino do retorno pouco claro em determinados contextos. | Adaptar a identificação do retorno conforme a origem, utilizando "Voltar à avaliação" ou "Voltar à apresentação", preservando o contexto anterior. | Melhorar a previsibilidade da navegação e permitir que o usuário retome sua atividade sem precisar repetir etapas anteriores. |
+| P07 — O controle "Próximo indicador" não informa qual conteúdo será apresentado em seguida. | O usuário pode não conseguir identificar antecipadamente qual métrica será exibida ao avançar na apresentação. | Utilizar uma identificação contextual, como "Próximo: Estabilidade", indicando o conteúdo seguinte. | Facilitar a condução das reuniões e tornar mais clara a sequência de informações apresentadas. |
 
+### Decisões de revisão e delimitação do escopo
+
+Após o feedback recebido, a equipe decidiu manter o escopo da interface concentrado na consulta, comparação, avaliação e comunicação dos resultados de treinamentos.
+
+A configuração e o início de novos treinamentos permanecem fora do escopo de IHC, conforme a decisão registrada anteriormente na matriz de rastreabilidade. Dessa forma, a equipe não dará continuidade à tela exploratória de configuração de treinamento.
+
+O conjunto de dez telas permanece como base para as próximas etapas do projeto, sem a necessidade de incluir funcionalidades de execução ou controle de treinamentos.
 
 ## Checklist
 

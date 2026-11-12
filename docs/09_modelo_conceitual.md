@@ -2,6 +2,7 @@
 
 **Data:** 06/11/2026 <br>
 **Status:** 🟩 concluída <br>
+**Status:** 🟩 concluída <br>
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -250,7 +251,9 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 **Objetivos que precisam aparecer nos diagramas MoLIC:** todos os 18 do dicionário, com fluxo completo para os de prioridade alta. 
 
 **Tópicos:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
+**Tópicos:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
 
+**Signos:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
 **Signos:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
 
 
