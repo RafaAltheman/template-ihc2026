@@ -175,20 +175,19 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 | O04 | **consultar avaliação do treinamento**: verificar se o treinamento teve melhora, não melhora ou falta de evidências | P01, P02, P03 | CI01 | Média |
 | O05 | **avaliar desempenho do treinamento** (final): decidir se o treinamento representou melhoria, sem depender de uma única métrica | P01, P02, P03 | CI01, CI03 | Alta |
 | O06 | **consultar condições de execução**: conhecer a situação em que o treinamento foi realizado | P01, P02, P03 | CI02 | Média |
-| O07 | **consultar configuração do treinamento**: recuperar os parâmetros usados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O08 | **consultar registros complementares** (instrumental): buscar parâmetros em anotações, arquivos de configuração e histórico do código | P01, P02 | CI02 | Média |
-| O09 | **identificar informações não registradas** (instrumental): distinguir o que foi recuperado do que ainda precisa ser investigado | P01, P02 | CI01, CI02 | Alta |
-| O10 | **verificar informações disponíveis** (instrumental): saber se há dados suficientes para comparar e concluir | P01, P02 | CI01, CI02 | Alta |
-| O11 | **verificar diferenças entre treinamentos**: relacionar alterações de parâmetros às mudanças nos resultados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O12 | **verificar comparabilidade das condições**: confirmar se os treinamentos foram realizados em condições comparáveis | P01, P02 | CI02 | Alta |
-| O13 | **comparar treinamentos** (final): comparar resultados, parâmetros e condições de dois ou mais treinamentos | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O14 | **avaliar treinamento como referência** (final): decidir se pode servir de referência, se faltam informações ou se é preciso nova execução | P01, P02 | CI01, CI02 | Média |
-| O15 | **preservar treinamento como referência** (final): manter os registros como referência e backup | P01, P02 | CI02 | Média |
-| O16 | **selecionar execuções e indicadores a apresentar** (instrumental): preparar a reunião com o tempo disponível | P01, P03 | CI03 | Média |
-| O17 | **consultar anotações de evidências**: rever problemas, pontos de investigação e ajustes já registrados | P01, P03 | CI03 | Média |
-| O18 | **registrar conclusões da reunião** (final): guardar problemas, pontos a investigar e próximos ajustes | P01, P03 | CI03 | Média |
-| O19 | **consultar pendências de investigação**: saber o que falta verificar antes de definir ajustes | P01, P02, P03 | CI03 | Média |
-| O20 | **planejar ajustes do próximo treinamento** (final): decidir se mantém ou altera parâmetros | P01, P02 | CI01, CI03 | Alta |
+| O07 | **consultar registros complementares** (instrumental): buscar parâmetros em anotações, arquivos de configuração e histórico do código | P01, P02 | CI02 | Média |
+| O08 | **identificar informações não registradas** (instrumental): distinguir o que foi recuperado do que ainda precisa ser investigado | P01, P02 | CI01, CI02 | Alta |
+| O09 | **verificar informações disponíveis** (instrumental): saber se há dados suficientes para comparar e concluir | P01, P02 | CI01, CI02 | Alta |
+| O10 | **verificar diferenças entre treinamentos**: relacionar alterações de parâmetros às mudanças nos resultados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
+| O11 | **verificar comparabilidade das condições**: confirmar se os treinamentos foram realizados em condições comparáveis | P01, P02 | CI02 | Alta |
+| O12 | **comparar treinamentos** (final): comparar resultados, parâmetros e condições de dois ou mais treinamentos | P01, P02, P03 | CI01, CI02, CI03 | Alta |
+| O13 | **avaliar treinamento como referência** (final): decidir se pode servir de referência, se faltam informações ou se é preciso nova execução | P01, P02 | CI01, CI02 | Média |
+| O14 | **preservar treinamento como referência** (final): manter os registros como referência e backup | P01, P02 | CI02 | Média |
+| O15 | **selecionar execuções e indicadores a apresentar** (instrumental): preparar a reunião com o tempo disponível | P01, P03 | CI03 | Média |
+| O16 | **consultar anotações de evidências**: rever problemas, pontos de investigação e ajustes já registrados | P01, P03 | CI03 | Média |
+| O17 | **registrar conclusões da reunião** (final): guardar problemas, pontos a investigar e próximos ajustes | P01, P03 | CI03 | Média |
+| O18 | **consultar pendências de investigação**: saber o que falta verificar antes de definir ajustes | P01, P02, P03 | CI03 | Média |
+| O19 | **planejar ajustes do próximo treinamento** (final): decidir se mantém ou altera parâmetros | P01, P02 | CI01, CI03 | Alta |
 
 
 
