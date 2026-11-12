@@ -58,7 +58,7 @@ A hipótese H01a já foi fechada com base nas experiências da própria equipe d
 | Frequência com que o usuário avalia resultados e compara treinamentos. | H01b, H02 | Verificar se essa atividade é recorrente e relevante para os integrantes de outras equipes de robótica. | Prioridade da funcionalidade de avaliação e do acesso ao histórico. |
 | Métricas utilizadas para avaliar o desempenho do robô. | H02, H03 | Identificar quais indicadores são realmente utilizados na análise e quais são considerados mais importantes. | Seleção de métricas, organização dos gráficos e apresentação dos resultados. |
 | Critérios utilizados para determinar se um treinamento apresentou melhoria. | H02 | Compreender como o usuário interpreta ganhos e regressões em diferentes indicadores. | Organização da comparação e opções de classificação do resultado. |
-| Procedimento utilizado para selecionar uma execução de referência (baseline). | H02, H03 | Verificar quais condições tornam duas execuções comparáveis e quais diferenças comprometem a análise. | Seleção do baseline e apresentação de avisos de incompatibilidade. |
+| Procedimento utilizado para selecionar uma execução de referência (baseline). | H02, H03 | Verificar quais condições tornam duas execuções comparáveis e quais diferenças comprometem a análise. | Identificação da execução de referência e apresentação de diferenças relevantes para a comparação. |
 | Utilização de vídeos, simulações e outras evidências comportamentais. | H02 | Investigar se os indicadores numéricos são suficientes ou se o usuário precisa observar o comportamento do robô. | Necessidade de acesso a evidências visuais durante a avaliação. |
 | Familiaridade com termos técnicos e parâmetros dos experimentos. | H03 | Identificar quais conceitos são compreendidos e quais precisam de explicações adicionais. | Terminologia, legendas, unidades e ajuda contextual. |
 | Ferramentas e fontes utilizadas atualmente para consultar resultados. | H01b, H02 | Verificar se as informações estão distribuídas entre diferentes ferramentas e como são recuperadas. | Organização do histórico e apresentação integrada das informações. |
@@ -95,7 +95,7 @@ As respostas serão identificadas por códigos, como Q01 e Q02, e armazenadas em
 | Processo utilizado para localizar resultados de experimentos anteriores. | H01b, H02 | Compreender como os usuários recuperam informações e quais dificuldades encontram nessa atividade. | Busca por identificador, filtros e organização do histórico. |
 | Ferramentas utilizadas para armazenar e consultar resultados e configurações. | H01b, H02 | Identificar se os dados ficam distribuídos entre arquivos e sistemas diferentes. | Estrutura dos registros e apresentação integrada dos resultados. |
 | Informações necessárias para identificar corretamente uma execução. | H02 | Verificar quais metadados permitem confirmar que o resultado encontrado corresponde ao experimento desejado. | Exibição de ID, data, versão, ambiente e parâmetros. |
-| Critérios utilizados para comparar diferentes execuções. | H02, H03 | Identificar quais condições tornam os experimentos comparáveis e quais diferenças comprometem a análise. | Apresentação de parâmetros e avisos de incompatibilidade. |
+| Critérios utilizados para comparar diferentes execuções. | H02, H03 | Identificar quais condições tornam os experimentos comparáveis e quais diferenças comprometem a análise. | Apresentação de parâmetros e sinalização de diferenças que podem limitar a comparação. |
 | Dificuldades para recuperar configurações e resultados antigos. | H01b, H02 | Investigar problemas de rastreabilidade e situações em que informações anteriores não são encontradas. | Filtros, preservação de seleções e detalhamento das execuções. |
 | Forma como hipóteses e conclusões são registradas após uma comparação. | H02 | Entender se os usuários precisam documentar as interpretações e disponibilizá-las para outras pessoas. | Campos de justificativa, ressalvas e confirmação de salvamento. |
 | Conhecimento dos termos utilizados em métricas e configurações. | H03 | Verificar se o vocabulário técnico é compreendido pelos diferentes integrantes. | Nomenclatura e explicações das informações exibidas. |
@@ -193,9 +193,14 @@ link para Google Forms: https://forms.gle/dz8nd6X6n1UnEjFR8
 
 Este questionário faz parte de uma atividade acadêmica da disciplina de Interação Humano-Computador. Nosso objetivo é compreender como equipes de robótica consultam, interpretam e comparam resultados de treinamentos e experimentos.
 
-Não existem respostas certas ou erradas. A participação é voluntária, e você pode interromper o preenchimento a qualquer momento.
+O preenchimento tem duração estimada de 8 a 12 minutos. Algumas perguntas podem exigir que você relembre experiências ou dificuldades técnicas, o que pode gerar um pequeno desconforto. Caso não queira responder alguma questão não obrigatória, poderá deixá-la em branco.
 
-As respostas serão utilizadas apenas para fins acadêmicos, sem identificação pessoal.
+Não existem respostas certas ou erradas. A participação é voluntária, e você pode interromper o preenchimento a qualquer momento, sem qualquer prejuízo.
+
+As respostas serão utilizadas apenas para fins acadêmicos, sem identificação pessoal. Não solicitamos informações confidenciais das equipes.
+
+Ao continuar, você poderá indicar se concorda ou não em participar da pesquisa.
+
 
 **Q00 — Consentimento**
 
@@ -397,7 +402,15 @@ A análise também considerará diferenças entre participantes com maior e meno
 
 "Queremos entender como você trabalha com os resultados dos experimentos de robótica, principalmente quando precisa encontrar treinamentos anteriores e comparar o desempenho.
 
-Não estamos avaliando seu conhecimento. A ideia é compreender como essas atividades acontecem na prática, quais ferramentas você utiliza e quais dificuldades aparecem."
+Esta entrevista terá duração aproximada de 20 a 30 minutos. Não estamos avaliando seu conhecimento. A ideia é compreender como essas atividades acontecem na prática, quais ferramentas você utiliza e quais dificuldades aparecem.
+
+Algumas perguntas podem fazer você lembrar de situações difíceis ou desconfortáveis no trabalho. Sua participação é voluntária e você pode deixar de responder qualquer pergunta ou encerrar a entrevista a qualquer momento, sem qualquer prejuízo.
+
+Suas respostas serão utilizadas exclusivamente para fins acadêmicos, preservando sua identidade. Não solicitaremos informações confidenciais, senhas ou códigos privados.
+
+Caso seja necessário gravar o áudio, solicitaremos sua autorização separadamente. Você poderá participar mesmo que não autorize a gravação.
+
+Você concorda em participar da entrevista?"
 
 **Bloco 1 — Contexto e experiência**
 
@@ -451,11 +464,12 @@ As respostas também poderão indicar que determinadas funcionalidades não são
 
 ---
 
-### Instrumento I03 — Observação contextual
+### Instrumento I03 — Estudo de Campo
+
 
 **Autor(a):** Rafaela Altheman de Campos — 22.125.062-4
 
-**Técnica:** Observação contextual com registro estruturado.
+**Técnica:** Estudo de Campo, por meio de observação guiada e registro estruturado das atividades realizadas pelo participante.
 
 **Objetivo:** Observar como integrantes de equipes de robótica consultam, interpretam e apresentam resultados de experimentos, identificando as informações utilizadas, as dificuldades encontradas e as estratégias adotadas para recuperar dados e comunicar conclusões.
 
@@ -468,7 +482,7 @@ As respostas também poderão indicar que determinadas funcionalidades não são
 #### Procedimento padronizado de aplicação
 
 1. **Preparação:** selecionar um participante que realize atividades de acompanhamento ou apresentação de resultados experimentais. Combinar a observação em um contexto adequado (reunião semanal da equipe de robótica, por exemplo) e preparar a ficha de registro.
-2. **Apresentação e consentimento:** explicar que a atividade pretende compreender a rotina de análise e comunicação de resultados. Informar que a participação é voluntária e solicitar autorização antes de iniciar.
+2. **Apresentação e consentimento:** antes de iniciar, o observador apresentará ao participante o seguinte texto: "Esta atividade faz parte de uma pesquisa acadêmica de Interação Humano-Computador. Queremos compreender como você consulta, interpreta e apresenta resultados de experimentos. A observação terá duração aproximada de 20 a 40 minutos. Não estamos avaliando seu desempenho pessoal. Você poderá sentir algum desconforto ao comentar dificuldades do seu trabalho, mas poderá recusar perguntas, solicitar uma pausa ou encerrar sua participação a qualquer momento, sem qualquer prejuízo. Não solicitaremos senhas, códigos privados ou informações confidenciais. Sua identidade será preservada e os registros serão utilizados apenas para fins acadêmicos. Você concorda em participar?" A observação somente será iniciada após o consentimento. Caso a atividade envolva uma reunião com outras pessoas, também será solicitada autorização dos demais envolvidos.
 3. **Aplicação:** acompanhar a atividade realizada pelo participante, observando como ele seleciona informações, consulta métricas, interpreta resultados e busca evidências adicionais. O observador deverá evitar interferir na execução da tarefa.
 4. **Encerramento:** realizar perguntas breves para esclarecer pontos observados e permitir comentários adicionais do participante.
 5. **Armazenamento e anonimização:** organizar as notas por códigos, retirar informações identificáveis e manter os registros em ambiente de acesso restrito.
@@ -529,8 +543,6 @@ A familiaridade demonstrada com indicadores e terminologias também poderá forn
 
 Os resultados serão relacionados à tarefa T03 da Entrega 5, principalmente à consulta de uma síntese do desempenho, à identificação de pontos que precisam de investigação e à comunicação das informações durante reuniões técnicas.
 
-Caso a observação ocorra com um participante proxy ou por meio de uma atividade representativa, essa condição será documentada como limitação metodológica.
-
 ---
 
 ## Síntese
@@ -543,7 +555,7 @@ O questionário busca identificar padrões relacionados à frequência de análi
 
 A entrevista semiestruturada permite aprofundar a compreensão dos procedimentos utilizados para localizar execuções anteriores, recuperar configurações, comparar resultados e registrar conclusões.
 
-A observação contextual pretende identificar como as informações são consultadas, interpretadas e comunicadas em situações de trabalho, permitindo observar dificuldades que nem sempre são mencionadas diretamente pelos participantes.
+O Estudo de Campo, realizado por meio de observação guiada, pretende identificar como as informações são consultadas, interpretadas e comunicadas em situações de trabalho. A técnica permitirá registrar as ações e dificuldades observadas durante a atividade, sem interferência direta do pesquisador, complementando os registros com perguntas de esclarecimento ao final.
 
 O conjunto dos instrumentos busca verificar se o cenário de uso proposto pela disciplina corresponde a necessidades reais, sem pressupor que as funcionalidades inicialmente desenhadas sejam necessariamente adequadas.
 
