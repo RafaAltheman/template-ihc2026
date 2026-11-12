@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
 **Data:** 06/11/2026 <br>
-**Status:** 🟨 em andamento <br>
+**Status:** 🟩 concluída <br>
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -47,7 +47,6 @@ A análise é realizada durante os ciclos de desenvolvimento do robô, em um com
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
 |---|---|---|
 | Consulta conjunta das métricas e do comportamento visual | Permitir que Rafael relacione os valores ao comportamento do robô. | C01 refinado e Entrega 3, P01: necessidade de analisar diferentes métricas e relacioná-las ao comportamento observado. |
-| Consulta das metas de desempenho | Dar contexto aos indicadores e permitir avaliar o resultado em relação ao que a equipe pretendia alcançar. | C01 refinado, questão Q8: metas de distância, velocidade, quedas, equilíbrio, gols |
 | Análise conjunta dos indicadores | Evitar que uma melhora isolada seja interpretada como melhoria geral. | C01 refinado, questão Q1: considerar as informações em conjunto para avaliar o treinamento. |
 | Comparação de treinamentos anteriores | Facilitar a identificação de diferenças entre métricas e configurações. | C01 refinado, questões Q4 e Q5: escolha de treinamentos de referência e comparação de resultados e configurações. |
 | Consideração de informações ausentes | Evitar conclusões sem evidências suficientes para relacionar os resultados às configurações. | Entrega 3, P01: informações distribuídas entre execuções; C01: necessidade de consultar e relacionar resultados anteriores. |
@@ -64,9 +63,9 @@ Marina Oliveira, pesquisadora de robótica, está investigando diferentes estrat
 Após consultar resultados recentes que não apresentaram melhorias significativas, Marina se lembra de um treinamento realizado algumas semanas antes, no qual o robô percorreu uma distância maior e apresentou menor frequência de quedas. Ela decide investigar esse experimento para compreender quais configurações contribuíram para o resultado obtido. <br>
 **Para localizar o treinamento, Marina consulta os registros das execuções e examina os arquivos de métricas disponíveis, procurando identificar o experimento que apresentou os resultados que deseja investigar.**
 Para isso, Marina precisa identificar os parâmetros utilizados naquela execução. Entretanto, os parâmetros são configurados diretamente no código antes dos treinamentos, e diferentes alterações foram realizadas desde então. Ao consultar a pasta do experimento, ela encontra o modelo salvo e algumas anotações da equipe, mas essas informações não reúnem todos os valores utilizados na configuração original. <br>
-**Na interface, Marina consulta as informações disponíveis sobre a execução selecionada, incluindo os resultados, os parâmetros registrados e as observações associadas ao experimento. Quando necessário, ela também precisa consultar os arquivos de configuração e o histórico do código para recuperar informações que não estejam reunidas nos registros da execução.**<br>
+**Na interface, Marina consulta as informações disponíveis sobre a execução selecionada, incluindo os resultados e as observações associadas ao experimento. Quando necessário, ela também precisa consultar os arquivos de configuração e o histórico do código para recuperar informações que não estejam reunidas nos registros da execução.**<br>
 **Quando algum parâmetro não está disponível, a interface indica que a informação não foi registrada, sem apresentar um valor presumido. Assim, Marina consegue distinguir os dados recuperados daqueles que ainda precisam ser investigados.** <br>
-Marina procura relacionar os resultados do treinamento anterior aos das execuções recentes, mas encontra dificuldades para confirmar se os experimentos foram realizados nas mesmas condições. **Para verificar se os resultados podem ser comparados, ela consulta as informações disponíveis sobre os parâmetros, as configurações e as condições de execução. Quando os registros não são suficientes, precisa buscar esclarecimentos com os integrantes responsáveis pelos experimentos.** <br>
+Marina procura relacionar os resultados do treinamento anterior aos das execuções recentes, mas encontra dificuldades para confirmar se os experimentos foram realizados nas mesmas condições. **Para verificar se os resultados podem ser comparados, ela consulta as informações disponíveis sobre os parâmetros de execução. Quando os registros não são suficientes, precisa buscar esclarecimentos com os integrantes responsáveis pelos experimentos.** <br>
 Sem essa confirmação, Marina não consegue determinar com segurança quais alterações podem ter influenciado as diferenças observadas no desempenho do robô. **Quando não consegue confirmar as configurações utilizadas, ela avalia se o treinamento pode ser utilizado como referência ou se será necessário obter informações adicionais ou realizar uma nova execução.** <br>
 **Depois de identificar o experimento relevante, Marina pretende manter suas informações como referência e backup para avaliar, após novos ajustes, se o desempenho do robô melhorou ou piorou.**
 Essa situação facilita a interpretação dos resultados e reduz a dependência da busca manual por informações distribuídas entre diferentes arquivos e registros, apoiando a escolha de experimentos anteriores como referência para novas investigações.
@@ -91,7 +90,7 @@ Essa situação facilita a interpretação dos resultados e reduz a dependência
 ### Cenário de interação
 
 Carlos Almeida, professor e orientador de uma equipe universitária de robótica humanoide, acompanha o desenvolvimento de um robô projetado para jogar futebol. Como não participa diretamente de todos os treinamentos, utiliza as reuniões com os estudantes para compreender os resultados obtidos e orientar as próximas etapas do desenvolvimento.
-**Antes da reunião, o estudante responsável pela apresentação seleciona os resultados que pretende discutir com Carlos. A interface permite consultar as informações das execuções e organizar os indicadores relevantes para a apresentação, considerando o tempo disponível para a discussão.** <br>
+**Antes da reunião, a estudante responsável pela apresentação seleciona os resultados que pretende discutir com Carlos. A interface permite consultar as informações das execuções e organizar os indicadores relevantes para a apresentação, considerando o tempo disponível para a discussão.** <br>
 Durante uma reunião de acompanhamento, uma estudante apresenta os resultados de um treinamento recente. O gráfico da recompensa indica um aumento em relação à execução anterior, sugerindo inicialmente uma possível melhoria. Entretanto, Carlos precisa compreender se essa evolução numérica corresponde a um avanço real no comportamento do robô. <br>
 **Para avaliar o treinamento, Carlos consulta a diversos indicadores, como distância percorrida, velocidade, estabilidade e frequência de quedas. Também pode relacionar esses resultados ao comportamento do robô durante a simulação.** <br>
 Para isso, pergunta qual foi a distância percorrida, quantas quedas ocorreram e quais alterações foram realizadas em comparação ao treinamento anterior. **Quando precisa investigar algum resultado, Carlos consulta as informações da execução, incluindo os arquivos de métricas, as anotações da equipe e a visualização do robô no simulador, sem depender apenas do gráfico apresentado inicialmente.** <br>
@@ -99,13 +98,14 @@ Ao observar o comportamento do robô, Carlos percebe que ele permanece equilibra
 Como algumas informações precisam ser recuperadas e comparadas durante a reunião, a equipe encontra dificuldades para concluir a avaliação no tempo disponível. **As conclusões discutidas durante o acompanhamento podem ser registradas nas anotações de evidências, incluindo os problemas identificados, os pontos que exigem investigação e os próximos ajustes propostos.** <br>
 Ao final da discussão, Carlos utiliza as informações apresentadas para orientar a equipe sobre quais aspectos precisam ser investigados e quais ajustes podem ser considerados nos próximos treinamentos. **Caso a avaliação não possa ser concluída, a equipe identifica quais informações ainda precisam ser analisadas antes de definir os próximos ajustes.** <br>
 Dessa forma, a reunião consegue se concentrar na interpretação dos resultados e na definição dos próximos passos, reduzindo o tempo gasto para recuperar informações e facilitando o acompanhamento da evolução do projeto.
-**(Apesar de termos descrito, anteriomente, como papel do estudante separar a execução que será apresentada, esta etapa poderia ser feita por Carlos também, sendo este uma das personas pelo qual a interface foi modelada)**
+
+**OBS: Apesar de termos descrito anteriomente como papel do estudante separar a execução que será apresentada, esta etapa poderia ser feita por Carlos também, sendo este uma das personas pelo qual a interface foi modelada. Além disso, paramos de utilizar a "recompensa" como parâmetro primordial pois não estamos tratando apenas de treinos de caminhada de robôs humanoides, mas sim de robôs humanoides que jogam futebol (houve mudança do escopo)**
 
 ### Diferenças relevantes
 
 | Alteração | Por que foi necessária | Evidência/artefato que justifica |
 |---|---|---|
-| Seleção prévia dos resultados para apresentação | Permitir que a estudante organize as informações relevantes antes da reunião. | C03 refinado, questões Q1 e Q3: preparação da apresentação e ausência de indicadores importantes. |
+| Seleção prévia dos resultados para apresentação | Permitir que a estudante (ou Carlos) organize as informações relevantes antes da reunião. | C03 refinado, questões Q1 e Q3: preparação da apresentação e ausência de indicadores importantes. |
 | Visão conjunta dos principais indicadores | Permitir que Carlos avalie o desempenho sem depender apenas da recompensa. | C03 refinado, questão Q2: considerar distância, velocidade, estabilidade e frequência de quedas. |
 | Relação entre indicadores e execução visual | Ajudar a interpretar se a evolução numérica corresponde à melhoria real da caminhada. | C03 refinado, questões Q2 e Q4: relacionar métricas ao comportamento observado e questionar resultados aparentemente positivos. |
 | Consulta dos detalhes durante a reunião | Permitir investigar dúvidas sem depender da busca manual em diferentes arquivos e registros. | C03 refinado: necessidade de consultar arquivos de métricas, anotações e simulador durante a reunião. |
@@ -166,37 +166,33 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 ### Dicionário de objetivos
 
-
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
 | O01 | **localizar treinamento anterior** (instrumental): encontrar um treinamento já realizado a partir de seus resultados ou de sua data | P01, P02, P03 | CI01, CI02, CI03 | Alta |
 | O02 | **observar comportamento do robô na simulação**: relacionar os resultados numéricos ao comportamento do robô | P01, P02, P03 | CI01, CI03 | Alta |
-| O03 | **consultar metas de desempenho**: dar contexto aos indicadores em relação ao que a equipe pretendia alcançar | P01, P02, P03 | CI01 | Média |
-| O04 | **consultar avaliação do treinamento**: verificar se o treinamento teve melhora, não melhora ou falta de evidências | P01, P02, P03 | CI01 | Média |
-| O05 | **avaliar desempenho do treinamento** (final): decidir se o treinamento representou melhoria, sem depender de uma única métrica | P01, P02, P03 | CI01, CI03 | Alta |
-| O06 | **consultar condições de execução**: conhecer a situação em que o treinamento foi realizado | P01, P02, P03 | CI02 | Média |
-| O07 | **consultar configuração do treinamento**: recuperar os parâmetros usados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O08 | **consultar registros complementares** (instrumental): buscar parâmetros em anotações, arquivos de configuração e histórico do código | P01, P02 | CI02 | Média |
-| O09 | **identificar informações não registradas** (instrumental): distinguir o que foi recuperado do que ainda precisa ser investigado | P01, P02 | CI01, CI02 | Alta |
-| O10 | **verificar informações disponíveis** (instrumental): saber se há dados suficientes para comparar e concluir | P01, P02 | CI01, CI02 | Alta |
-| O11 | **verificar diferenças entre treinamentos**: relacionar alterações de parâmetros às mudanças nos resultados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O12 | **verificar comparabilidade das condições**: confirmar se os treinamentos foram realizados em condições comparáveis | P01, P02 | CI02 | Alta |
-| O13 | **comparar treinamentos** (final): comparar resultados, parâmetros e condições de dois ou mais treinamentos | P01, P02, P03 | CI01, CI02, CI03 | Alta |
-| O14 | **avaliar treinamento como referência** (final): decidir se pode servir de referência, se faltam informações ou se é preciso nova execução | P01, P02 | CI01, CI02 | Média |
-| O15 | **preservar treinamento como referência** (final): manter os registros como referência e backup | P01, P02 | CI02 | Média |
-| O16 | **selecionar execuções e indicadores a apresentar** (instrumental): preparar a reunião com o tempo disponível | P01, P03 | CI03 | Média |
-| O17 | **consultar anotações de evidências**: rever problemas, pontos de investigação e ajustes já registrados | P01, P03 | CI03 | Média |
-| O18 | **registrar conclusões da reunião** (final): guardar problemas, pontos a investigar e próximos ajustes | P01, P03 | CI03 | Média |
-| O19 | **consultar pendências de investigação**: saber o que falta verificar antes de definir ajustes | P01, P02, P03 | CI03 | Média |
-| O20 | **planejar ajustes do próximo treinamento** (final): decidir se mantém ou altera parâmetros | P01, P02 | CI01, CI03 | Alta |
-
+| O03 | **consultar avaliação do treinamento**: verificar se o treinamento teve melhora, não melhora ou falta de evidências | P01, P02, P03 | CI01 | Média |
+| O04 | **avaliar desempenho do treinamento** (final): decidir se o treinamento representou melhoria, sem depender de uma única métrica | P01, P02, P03 | CI01, CI03 | Alta |
+| O05 | **consultar condições de execução**: conhecer a situação em que o treinamento foi realizado | P01, P02, P03 | CI02 | Média |
+| O06 | **consultar registros complementares** (instrumental): buscar parâmetros em anotações, arquivos de configuração e histórico do código | P01, P02 | CI02 | Média |
+| O07 | **identificar informações não registradas** (instrumental): distinguir o que foi recuperado do que ainda precisa ser investigado | P01, P02 | CI01, CI02 | Alta |
+| O08 | **verificar informações disponíveis** (instrumental): saber se há dados suficientes para comparar e concluir | P01, P02 | CI01, CI02 | Alta |
+| O09 | **verificar diferenças entre treinamentos**: relacionar alterações de parâmetros às mudanças nos resultados | P01, P02, P03 | CI01, CI02, CI03 | Alta |
+| O10 | **verificar comparabilidade das condições**: confirmar se os treinamentos foram realizados em condições comparáveis | P01, P02 | CI02 | Alta |
+| O11 | **comparar treinamentos** (final): comparar resultados, parâmetros e condições de dois ou mais treinamentos | P01, P02, P03 | CI01, CI02, CI03 | Alta |
+| O12 | **avaliar treinamento como referência** (final): decidir se pode servir de referência, se faltam informações ou se é preciso nova execução | P01, P02 | CI01, CI02 | Média |
+| O13 | **preservar treinamento como referência** (final): manter os registros como referência e backup | P01, P02 | CI02 | Média |
+| O14 | **selecionar execuções e indicadores a apresentar** (instrumental): preparar a reunião com o tempo disponível | P01, P03 | CI03 | Média |
+| O15 | **consultar anotações de evidências**: rever problemas, pontos de investigação e ajustes já registrados | P01, P03 | CI03 | Média |
+| O16 | **registrar conclusões da reunião** (final): guardar problemas, pontos a investigar e próximos ajustes | P01, P03 | CI03 | Média |
+| O17 | **consultar pendências de investigação**: saber o que falta verificar antes de definir ajustes | P01, P02, P03 | CI03 | Média |
+| O18 | **planejar ajustes do próximo treinamento** (final): decidir se mantém ou altera parâmetros | P01, P02 | CI01, CI03 | Alta |
 
 
 ## 4. Esquema conceitual de signos
 
 Consolide as informações em **uma tabela única**.
 
-*Legenda**
+**Legenda**
 
 - **Origem:** *domínio* = conceito do mundo da robótica e dos treinamentos; *aplicação* = produzido ou calculado pelo sistema; *usuário* = informado pelo usuário.
 - **Prevenção:** PP = prevenção passiva (explicação ou dica); PA = prevenção ativa (o sistema impede a fala inválida); AL = alerta, ou prevenção apoiada (pede decisão informada ao usuário).
@@ -210,14 +206,14 @@ Consolide as informações em **uma tabela única**.
 | Treinamento | responsável | domínio | Integrante que realizou o treinamento; a quem pedir esclarecimentos | texto (integrante da equipe) | — | — | PP: exibe "não registrado" quando ausente | CE: consultar outros integrantes da equipe |
 | Treinamento | modelo salvo | domínio | Resultado do treinamento guardado na pasta do experimento | arquivo | associado a um treinamento | — | — | CE: "modelo indisponível; verifique a pasta do experimento" |
 | Treinamento | situação do registro | aplicação | Indica, para cada indicador, parâmetro e condição, se a informação foi registrada; nunca é substituída por valor presumido | seleção simples | {registrado, não registrado} | registrado | PA: não exibe valor quando não registrado | CE: "informação não disponível nos registros consultados; consulte os registros complementares ou o responsável" |
-| Indicadores | velocidade média | domínio | Velocidade do robô na execução | número real |>= 0 | — | PP: unidade exibida junto ao valor | — |
+| Indicadores | velocidade média | domínio | Velocidade do robô na execução | número real | >= 0 | — | PP: unidade exibida junto ao valor | — |
 | Indicadores | distância percorrida | domínio | Deslocamento total do robô | número real | >= 0 | — | PP: unidade exibida | — |
 | Indicadores | taxa de quedas | domínio | Frequência de quedas do robô | número real | >= 0 | — | PP: explica a unidade (ex.: quedas por período) | — |
 | Indicadores | estabilidade | domínio | Tempo em que o robô permanece equilibrado | número real | [0, 100] % | — | PP: explica o que significa | — |
 | Indicadores | gols | domínio | Gols marcados no treino | número inteiro | >= 0 | — | — | — |
 | Comportamento | visualização da simulação | aplicação | Reprodução do comportamento do robô no treinamento; permite relacionar indicadores e comportamento | vídeo ou animação | associada a um treinamento | — | — | CE: "visualização indisponível para este treinamento" |
-| Avaliação | resultado da avaliação | aplicação | Síntese do treinamento em relação às metas: melhora, não melhora ou falta de evidências | seleção simples | {melhora, não melhora, falta de evidências} | falta de evidências | PP: explica o critério usado | — |
-| Avaliação | justificativa da avaliação | aplicação | Indicadores e metas que sustentam o resultado, mostrando o que melhorou e o que piorou | texto | — | — | — | — |
+| Avaliação | resultado da avaliação | aplicação | Síntese do treinamento em relação aos objetivos definidos pela equipe: melhora, não melhora ou falta de evidências | seleção simples | {melhora, não melhora, falta de evidências} | falta de evidências | PP: explica o critério usado | — |
+| Avaliação | justificativa da avaliação | aplicação | Indicadores que sustentam o resultado, mostrando o que melhorou e o que piorou | texto | — | — | — | — |
 | Configuração | + parâmetro | domínio | Valor ajustável do treinamento (ex.: da caminhada) | texto | — | — | — | — |
 | Configuração | valor do parâmetro | domínio | Valor usado no treinamento; nunca presumido | número ou texto | — | — | PP: exibe "não registrado" quando a situação do registro for essa | CE: consultar arquivos de configuração, histórico do código ou o responsável |
 | Configuração | fonte do registro | aplicação | De onde veio a informação exibida | seleção simples | {registro da execução, arquivo de configuração, histórico do código, anotação de evidência} | — | PP: mostra a fonte ao lado do valor | — |
@@ -251,11 +247,11 @@ Consolide as informações em **uma tabela única**.
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
 
-**Objetivos que precisam aparecer nos diagramas MoLIC:** todos os 20 do dicionário, com fluxo completo para os de prioridade alta. Os demais podem ter fluxos mais curtos.
+**Objetivos que precisam aparecer nos diagramas MoLIC:** todos os 18 do dicionário, com fluxo completo para os de prioridade alta. 
 
-**Tópicos/conversas:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
+**Tópicos:** Avaliar desempenho, Consultar avaliações, Comparar treinamentos, Recuperar treinamento, Recuperar configurações, Avaliar referência, Preservar informações, Preparar apresentação, Registrar orientação e Planejar ajustes.
 
-**Signos obrigatórios nos diagramas:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
+**Signos:** treinamento, situação do registro, visualização da simulação, resultado da avaliação, parâmetro e valor do parâmetro, condições de execução, informações disponíveis, comparabilidade, referência, anotação de evidência e decisão sobre o parâmetro.
 
 
 ## Checklist
