@@ -42,7 +42,7 @@ Os princípios gerais foram organizados em dois grupos: princípios direcionados
 
 | Princípio/norma | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
 |---|---|---|---|
-| Usabilidade (ISO 9241-11:2018) | Define a avaliação da usabilidade a partir de eficácia, eficiência e satisfação em um contexto de uso específico. Serve como referência para compreender a qualidade da interação no contexto do projeto. | Estabelecer metas mensuráveis de conclusão das tarefas, tempo de execução, erros e satisfação, associadas a usuários e atividades definidos. | [ISO 9241-11:2018](https://committee.iso.org/standard/63500.html) |
+| Nielsen (1993) | Define a avaliação da usabilidade a partir de eficácia, eficiência e satisfação em um contexto de uso específico. Serve como referência para compreender a qualidade da interação no contexto do projeto. | Estabelecer metas mensuráveis de conclusão das tarefas, tempo de execução, erros e satisfação, associadas a usuários e atividades definidos. | https://www.nngroup.com/books/usability-engineering/ |
 | LGPD — Lei nº 13.709/2018 | É relevante para o tratamento de dados pessoais eventualmente coletados nas pesquisas com participantes. Métricas técnicas anônimas de robôs não constituem, por si só, dados pessoais. | Solicitar consentimento e demais autorizações pertinentes nas atividades de pesquisa, minimizar dados pessoais, restringir acesso aos registros e utilizar resultados anonimizados na documentação. | [Guia da ANPD para fins acadêmicos e pesquisas](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-tratamento-de-dados-pessoais-para-fins-academicos-e-para-a-realizacao-de-estudos-e-pesquisas) |
 
 ### 2.2 Princípios direcionados à interface
