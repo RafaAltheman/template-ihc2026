@@ -6,11 +6,10 @@
 
 ## Objetivo da atividade
 
-Esta entrega tem como objetivo avaliar a interface do projeto por meio de inspeção heurística, utilizando as dez heurísticas de usabilidade propostas por Jakob Nielsen.
+Encontrar problemas de usabilidade por inspeção sistemática da interface com as **10 heurísticas de Nielsen**. Cada avaliador trabalha individualmente primeiro; depois a equipe consolida problemas duplicados e prioridades.
 
-A avaliação busca identificar problemas relacionados à usabilidade, consistência, compreensão das informações, prevenção de erros e recuperação de situações inesperadas.
+> **Parte de violações:** registre somente problemas reais. Não invente uma violação para “preencher” cada heurística. Para provar que todas foram exercitadas, use a **matriz de cobertura H1–H10**. Para heurísticas sem violação, a disciplina solicita um exemplo didático de boa prática.
 
-Por se tratar de uma interface administrativa e analítica, também são considerados aspectos como a clareza dos indicadores, a padronização das unidades de medida, a comparação entre execuções e a apresentação das condições de treinamento.
 
 ## 1. Heurísticas adotadas
 
