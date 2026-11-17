@@ -1,70 +1,115 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 16/11/2026  
-**Status:** 🟨 em andamento  
-**Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
+**Status:** em andamento
+**Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas e estados relevantes do projeto.
 
 ## Objetivo da atividade
 
-Avaliar a interface do sistema por meio de inspeção heurística, identificando problemas de usabilidade que possam prejudicar a interação dos usuários. A avaliação utiliza as dez heurísticas de Nielsen como referência e considera as características de uma interface administrativa e analítica, na qual a apresentação correta dos dados, a comparação entre execuções e a interpretação dos resultados são aspectos importantes.
+Realizar uma avaliação de usabilidade do protótipo por meio de inspeção heurística, utilizando as dez heurísticas de Nielsen como referência para identificar problemas na interface.
 
-A inspeção considera os estados disponíveis no protótipo da Entrega 11, incluindo telas principais, comparação de execuções, apresentação de indicadores, mensagens de erro, resultados vazios e confirmações de ações.
+A avaliação busca verificar se a interface apresenta informações de maneira clara, consistente e compreensível, considerando as atividades realizadas pelos usuários no sistema. Também procura identificar boas práticas presentes no protótipo e registrar problemas que possam prejudicar a interpretação dos dados, a comparação das execuções e a utilização das funcionalidades.
+
+A inspeção foi realizada sobre o protótipo da Entrega 11, considerando as telas e os estados especiais disponíveis. Os problemas encontrados foram registrados com identificação, heurística relacionada, evidência, severidade e recomendação de melhoria.
 
 ## 1. Heurísticas adotadas
 
-1. **Visibilidade do estado do sistema:** o sistema deve manter o usuário informado sobre o que está acontecendo, por meio de retornos adequados e em tempo razoável.
-2. **Correspondência entre o sistema e o mundo real:** a interface deve utilizar termos, conceitos e unidades familiares ao usuário, apresentando as informações de maneira lógica e compreensível.
-3. **Controle e liberdade do usuário:** o usuário deve conseguir desfazer ações indesejadas e retornar de situações inesperadas sem dificuldade.
-4. **Consistência e padronização:** elementos, informações, termos e comportamentos semelhantes devem seguir os mesmos padrões em toda a interface.
-5. **Prevenção de erros:** a interface deve evitar situações que possam induzir o usuário ao erro, principalmente em ações importantes ou na interpretação de informações.
-6. **Reconhecimento em vez de memorização:** as opções e informações necessárias devem estar visíveis ou facilmente acessíveis, reduzindo a necessidade de memorização.
-7. **Flexibilidade e eficiência de uso:** a interface deve oferecer formas eficientes de realizar tarefas, atendendo tanto usuários iniciantes quanto experientes.
-8. **Estética e design minimalista:** as informações apresentadas devem ser relevantes para a tarefa, evitando elementos desnecessários e excesso de informações.
-9. **Reconhecimento, diagnóstico e recuperação de erros:** mensagens de erro devem ser claras, explicar o problema e orientar o usuário sobre como recuperar-se.
-10. **Ajuda e documentação:** quando necessário, o sistema deve oferecer informações que auxiliem o usuário a compreender funcionalidades, indicadores e procedimentos.
+A avaliação utiliza as dez heurísticas de usabilidade de Jakob Nielsen:
+
+1. **Visibilidade do status do sistema:** o sistema deve manter o usuário informado sobre o que está acontecendo, fornecendo feedback adequado e em tempo razoável.
+
+2. **Compatibilidade entre o sistema e o mundo real:** o sistema deve utilizar linguagem, conceitos e informações familiares ao usuário, seguindo convenções do mundo real e apresentando os dados de maneira lógica.
+
+3. **Controle e liberdade do usuário:** o usuário deve ter liberdade para desfazer ações indesejadas e sair de situações inesperadas sem dificuldades.
+
+4. **Consistência e padrões:** elementos, informações e ações semelhantes devem seguir os mesmos padrões em toda a interface, evitando que o usuário precise entender diferentes convenções para situações equivalentes.
+
+5. **Prevenção de erros:** a interface deve evitar situações que possam levar o usuário a cometer erros, antecipando problemas e apresentando informações que ajudem a tomar decisões corretas.
+
+6. **Reconhecimento em vez de memorização:** o sistema deve apresentar informações e opções de maneira visível, reduzindo a necessidade de o usuário memorizar dados, caminhos ou instruções.
+
+7. **Flexibilidade e eficiência de uso:** a interface deve permitir que usuários com diferentes níveis de experiência realizem suas atividades de maneira eficiente.
+
+8. **Estética e design minimalista:** a interface deve apresentar apenas informações relevantes para a atividade, evitando elementos desnecessários e excesso de informações.
+
+9. **Reconhecer, diagnosticar e recuperar erros:** mensagens de erro devem ser claras, indicar o problema e orientar o usuário sobre como recuperar a situação.
+
+10. **Ajuda e documentação:** quando necessário, o sistema deve oferecer informações que auxiliem o usuário a compreender as funcionalidades e realizar suas atividades.
 
 ## Cobertura especial para interfaces administrativas e analíticas
 
-Por se tratar de uma interface voltada ao acompanhamento e à análise de execuções, a inspeção também considera aspectos específicos desse contexto:
+Por se tratar de uma interface voltada à visualização e comparação de dados de execuções, a inspeção também considera aspectos específicos desse contexto:
 
-- Clareza dos indicadores e das unidades de medida apresentados.
-- Consistência das informações entre o painel principal e as telas de comparação.
-- Identificação das condições utilizadas durante o treinamento.
-- Facilidade para localizar execuções e consultar seus resultados.
-- Clareza na apresentação de dados ausentes ou não confirmados.
-- Diferenciação entre ausência de resultados, falhas de carregamento e erros.
-- Facilidade de interpretação das informações apresentadas em gráficos, indicadores e comparações.
+- Clareza na apresentação de métricas e indicadores.
+- Consistência das unidades de medida.
+- Facilidade para comparar diferentes execuções.
+- Identificação das condições de treinamento.
+- Clareza sobre a disponibilidade ou ausência de dados.
+- Apresentação de mensagens de erro e estados vazios.
+- Compreensão das informações necessárias para interpretar os resultados.
+
+Esses aspectos foram relacionados às heurísticas de Nielsen durante a análise, principalmente nos pontos em que a apresentação dos dados pode influenciar a interpretação dos resultados.
 
 ## 2. Escopo da inspeção
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | Protótipo da Entrega 11 — Figma IHC |
-| Link do protótipo | [Protótipo no Figma](https://www.figma.com/proto/qHpoJxQF4Sthdy99w7Scul/IHC?node-id=32-2023&t=MJOhlZgAfoJJp8Dt-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=32%3A2023) |
-| Telas/estados | P01 — Painel principal; P03 — Comparação; P06 — Confirmação; P09 — Filtros sem resultados; P10 — Estado vazio; telas 02, 03, 04, 05, 06, 07, 09, 15, 18, 21, 29, 33, 37, 42, 43 e 45. |
-| Fluxos | Localização de treinamentos; seleção de execuções; consulta de indicadores; comparação de execuções; confirmação de registros; aplicação de filtros; tratamento de resultados vazios e recuperação de erros. |
-| Dispositivo/viewport | Inspeção do protótipo no Figma. Resolução específica não registrada. |
-| Avaliadores | Manuella Filipe Peres; Letizia Lowatzki Baptistella; Rafaela Altheman de Campos. |
+| **Projeto** | Projeto do Grupo 27 |
+| **Versão avaliada** | Protótipo da Entrega 11 — Figma IHC |
+| **Link do protótipo** | [Acessar protótipo no Figma](https://www.figma.com/proto/qHpoJxQF4Sthdy99w7Scul/IHC?node-id=32-2023&t=MJOhlZgAfoJJp8Dt-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=32%3A2023) |
+| **Página e ponto inicial** | Página 0:1, com início no nó 32:2023 |
+| **Data da inspeção registrada** | 16/11/2026 |
+| **Telas examinadas** | P01, P03, P06, P09, P10 e telas 02, 03, 04, 05, 06, 07, 09, 15, 16, 17, 18, 21, 29, 33, 37, 42, 43 e 45 |
+| **Estados especiais examinados** | Estado vazio, erro, filtro sem resultados, confirmação e comparação com condições não confirmadas |
+| **Avaliadores** | Manuella Filipe Peres, Letizia Lowatzki Baptistella e Rafaela Altheman de Campos |
+| **Tipo de inspeção registrada** | Inspeção estática do protótipo pela equipe |
 
-A inspeção contempla os estados vazios, de erro, de ausência de resultados e de confirmação presentes no protótipo. Os estados de carregamento e de permissões não foram avaliados nesta inspeção.
+### Estados examinados
+
+| Estado | Telas/identificação | Descrição |
+|---|---|---|
+| **Vazio** | P10 e tela 42 | Situação em que não existem resultados disponíveis para apresentar. |
+| **Erro** | Telas 33 e 45 | Situações relacionadas à apresentação e recuperação de erros. |
+| **Filtro sem resultados** | P09 e tela 29 | Situação em que a busca ou o filtro não retorna resultados. |
+| **Confirmação** | P06 e telas 07, 09 e 21 | Situações em que o sistema apresenta ou permite conferir registros e confirmações. |
+| **Comparação com condições não confirmadas** | Telas 04 e 05 | Situação em que as condições de treinamento não estão confirmadas para a comparação. |
+
+**Estados não avaliados:** estados de carregamento e situações relacionadas a permissões de acesso não foram contemplados na inspeção registrada. Portanto, não foram atribuídos achados ou conclusões sobre esses estados.
+
+### Limitações do escopo
+
+A avaliação foi realizada por inspeção estática do protótipo. Dessa forma, as observações correspondem aos elementos visuais e às informações disponíveis nas telas examinadas.
+
+A inspeção não representa um teste completo de todas as interações possíveis, nem comprova o comportamento de funcionalidades que dependam de execução real, carregamento de dados ou permissões de acesso.
 
 ## 3. Procedimento individual
 
-Cada integrante deve realizar a inspeção das telas e dos estados relevantes do protótipo, utilizando as dez heurísticas de Nielsen como referência. Durante a avaliação, devem ser observados os elementos da interface, as informações apresentadas, os caminhos de navegação e os retornos fornecidos pelo sistema.
+A avaliação heurística considera a análise da interface a partir das dez heurísticas de Nielsen. Durante a inspeção, devem ser observadas as telas, os estados e os fluxos relevantes do sistema, identificando situações em que a interface possa dificultar a compreensão ou a realização das atividades.
 
-Os problemas identificados devem ser registrados com um identificador, a heurística relacionada, a tela ou o estado em que aparecem, a descrição do problema, a evidência, a severidade e uma recomendação de melhoria.
+O procedimento utilizado como referência para a inspeção foi:
 
-Quando não houver violação identificada em determinada heurística, deve ser registrado um exemplo de boa prática observado na interface.
+1. Acessar o protótipo da Entrega 11 no Figma.
+2. Percorrer as telas e os fluxos disponíveis.
+3. Observar a apresentação das informações, os elementos visuais e as mensagens do sistema.
+4. Verificar a interface considerando cada uma das dez heurísticas.
+5. Identificar possíveis violações e registrar as telas em que aparecem.
+6. Atribuir um nível de severidade aos problemas identificados.
+7. Registrar recomendações para corrigir os problemas encontrados.
+8. Identificar exemplos de boas práticas nas heurísticas em que não foi confirmada nenhuma violação.
+
+O formulário disponível registra os resultados de uma inspeção estática conjunta da equipe. Assim, os achados apresentados nesta entrega são tratados como resultados consolidados, sem atribuição individual não comprovada.
 
 ### Escala de severidade (0–4)
 
+A severidade é utilizada para indicar o impacto do problema identificado na experiência do usuário.
+
 | Severidade | Classificação | Descrição |
-|---|---|---|
-| 0 | Sem problema | Não foi identificada violação da heurística. |
-| 1 | Cosmético | Problema visual ou textual de baixo impacto, sem prejudicar significativamente a tarefa. |
-| 2 | Pequeno | Problema que pode causar alguma dificuldade, mas permite que o usuário conclua a tarefa. |
-| 3 | Grave | Problema que prejudica significativamente a compreensão ou a execução de uma tarefa. |
-| 4 | Catastrófico | Problema crítico que pode comprometer a tarefa ou levar a uma interpretação incorreta importante. |
+|---:|---|---|
+| **0** | Sem problema | Não foi identificada uma violação que precise de correção. |
+| **1** | Cosmética | Problema visual ou textual de baixo impacto, que não compromete a realização da atividade. |
+| **2** | Pequena | Problema que pode causar alguma dificuldade, mas não compromete significativamente a utilização do sistema. |
+| **3** | Grave | Problema que pode prejudicar a compreensão das informações ou levar o usuário a realizar uma interpretação ou ação inadequada. |
+| **4** | Catastrófica/imperativa | Problema de impacto muito alto, que pode comprometer significativamente a interpretação dos dados ou a tomada de decisão e exige correção prioritária. |
 
 ---
 
@@ -72,57 +117,41 @@ Quando não houver violação identificada em determinada heurística, deve ser 
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
+A matriz abaixo apresenta a cobertura registrada na inspeção estática da equipe. Os resultados não representam uma atribuição individual independente dos achados.
+
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 — Visibilidade do estado do sistema | P06; telas 07, 09 e 21 — confirmação de registros. | Não | — | As telas de confirmação apresentam retorno após a realização da ação, permitindo identificar que o registro foi confirmado. |
-| H2 — Correspondência entre o sistema e o mundo real | P01 — painel principal; P03 — comparação; tela 04 — comparação de métricas e parâmetros. | Sim | V01 | — |
-| H3 — Controle e liberdade do usuário | Tela 15 — apresentação de indicadores; tela 43 — consulta de evidências; tela 45 — recuperação de erro. | Não | — | A interface apresenta caminhos para consultar informações e recuperar-se de situações de erro. |
-| H4 — Consistência e padronização | P01; P03; telas 04 e 05 — comparação de execuções e condições de treinamento. | Sim | V01, V02 | — |
-| H5 — Prevenção de erros | P03; telas 05 e 06 — comparação e confirmação. | Sim | V02 | — |
-| H6 — Reconhecimento em vez de memorização | Tela 02 — localização de treinamento; tela 03 — seleção de execuções; tela 43 — consulta de evidências. | Não | — | As informações e opções necessárias são apresentadas na interface, reduzindo a necessidade de memorização. |
-| H7 — Flexibilidade e eficiência de uso | Tela 02 — localização de treinamento; tela 04 — comparação de métricas; telas 15 a 18 — apresentação de indicadores. | Não | — | A organização das telas permite consultar informações e indicadores relacionados às execuções. |
-| H8 — Estética e design minimalista | P01 — painel principal; P03 — comparação; P10 — estado vazio. | Sim | V03 | — |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | P09; tela 29 — ausência de resultados; tela 33 — correção e nova tentativa; tela 45 — recuperação de erro. | Não | — | As mensagens e os estados apresentados permitem reconhecer situações de ausência de resultados e erros. |
-| H10 — Ajuda e documentação | Tela 02 — localização de treinamento; tela 05 — comparação; tela 37 — investigação de dados ausentes. | Não | — | A organização das informações e dos elementos da interface auxilia a compreensão das funcionalidades. |
+| **H1 — Visibilidade do status do sistema** | P06 — Confirmar registro; tela 07 — Conferir hipótese registrada; tela 09 — Conferir avaliação registrada; tela 21 — Conferir registro. | Não | — | A interface apresenta telas específicas para conferir registros e confirmações, permitindo que o usuário consulte informações relacionadas às ações realizadas. |
+| **H2 — Compatibilidade entre o sistema e o mundo real** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros. | Sim | V01 | — |
+| **H3 — Controle e liberdade do usuário** | Tela 15 — Apresentar indicadores; tela 43 — Observar evidência da execução; tela 45 — Recuperar erro de registro. | Não | — | A existência de uma tela voltada à recuperação de erro de registro representa um ponto positivo para orientar o usuário diante de uma situação inesperada. |
+| **H4 — Consistência e padrões** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade. | Sim | V01, V02 | — |
+| **H5 — Prevenção de erros** | P03 — Comparação; tela 05 — Verificar comparabilidade; tela 06 — Registrar hipótese e ressalvas. | Sim | V02 | — |
+| **H6 — Reconhecimento em vez de memorização** | Tela 02 — Localizar treinamento; tela 03 — Selecionar execuções; tela 43 — Observar evidência. | Não | — | A apresentação das opções de localização e seleção de execuções auxilia o usuário a identificar os elementos necessários sem depender exclusivamente da memorização de caminhos. |
+| **H7 — Flexibilidade e eficiência de uso** | Tela 02 — Localizar treinamento; tela 04 — Comparar métricas e parâmetros; telas 15 a 18 — Apresentar indicadores. | Não | — | A organização das telas de indicadores e comparação permite consultar diferentes informações relacionadas às execuções. |
+| **H8 — Estética e design minimalista** | P01 — Painel geral; P03 — Comparação; P10 — Painel sem dados do período. | Sim | V03 | — |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | P09 — Busca sem resultados; tela 29 — Busca sem resultados; tela 33 — Corrigir ou tentar novamente; tela 45 — Recuperar erro de registro. | Não | — | A existência de estados específicos para busca sem resultados e recuperação de erros auxilia na compreensão de situações em que a operação não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Tela 02 — Localizar treinamento; tela 05 — Verificar comparabilidade; tela 37 — Investigar dado não registrado. | Não | — | A apresentação de informações relacionadas à localização de treinamentos e à investigação de dados não registrados auxilia na compreensão das atividades disponíveis. |
 
 ### 5. Declaração de violações
 
+Os achados registrados na inspeção conjunta estão descritos integralmente na seção **7. Consolidação da equipe**. Eles são apresentados aqui como referência da cobertura, sem afirmar que foram identificados individualmente por esta avaliadora.
+
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
-|---|---|---|---|---|---|---|---|
-| V01 | H2 — Correspondência entre o sistema e o mundo real; H4 — Consistência e padronização. | P01, P03 e tela 04. | A velocidade da execução EXEC-104 aparece com valores e unidades inconsistentes. No painel principal, é apresentada como “0,32 m/s”, enquanto na comparação aparece como “0.32 cm/s”. | Comparação entre as informações de velocidade apresentadas em P01, P03 e tela 04. | 4 | A divergência de unidade pode alterar completamente a interpretação do indicador e comprometer a comparação entre execuções. | Padronizar a unidade de velocidade em todas as telas, verificar o valor apresentado e manter a mesma convenção de representação numérica. |
-| V02 | H4 — Consistência e padronização; H5 — Prevenção de erros. | P03 e telas 04 e 05. | A interface apresenta informações ambíguas sobre as condições de treinamento. Em P03 aparece “Diferença de configuração: Nenhuma”, enquanto na tela 04 aparece “Condições de treinamento: não confirmadas” e na tela 05 “Condições não confirmadas”. | Textos apresentados nas telas de comparação de execuções. | 3 | A informação pode levar o usuário a interpretar que as configurações são iguais, mesmo quando não foi possível confirmar as condições utilizadas. | Diferenciar claramente a ausência de diferenças identificadas da ausência de confirmação das condições. Quando os dados não estiverem disponíveis, informar que não foi possível verificar a equivalência. |
-| V03 | H8 — Estética e design minimalista. | P10 — estado vazio. | A mensagem apresentada contém um erro de digitação: “Não há resultados dsponíveis no período escolhido”. | Mensagem exibida no estado vazio de P10. | 1 | O problema não impede a compreensão da mensagem, mas prejudica o acabamento textual e a qualidade percebida da interface. | Corrigir a palavra “dsponíveis” para “disponíveis”. |
-
-**Qualidade do relato:** Os achados foram descritos com identificação, localização, evidência, severidade e recomendação. As violações priorizadas estão relacionadas principalmente à consistência e à interpretação dos dados apresentados pela interface.
-
-### Evidências da avaliação — Avaliador A01
-
-**V01 — Inconsistência na unidade de velocidade**
-
-<!-- INSERIR PRINT 01: P01 — Painel principal, mostrando a velocidade da execução EXEC-104 como 0,32 m/s. -->
-
-<!-- INSERIR PRINT 02: P03 — Comparação, mostrando a velocidade da execução EXEC-104 como 0.32 cm/s. -->
-
-<!-- INSERIR PRINT 03: Tela 04 — Comparação de métricas e condições de treinamento não confirmadas. -->
-
-**V02 — Ambiguidade nas condições de treinamento**
-
-<!-- INSERIR PRINT 04: Tela 05 — Exibição da mensagem "Condições não confirmadas". -->
-
-**V03 — Erro de digitação no estado vazio**
-
-<!-- INSERIR PRINT 05: P10 — Estado vazio, mostrando a mensagem "Não há resultados dsponíveis no período escolhido". -->
+|---|---|---|---|---|---:|---|---|
+| V01 | H2 e H4 | P01, P03 e tela 04 | Inconsistência na unidade de velocidade da execução EXEC-104. | P01 apresenta 0,32 m/s, enquanto P03 e tela 04 apresentam 0.32 cm/s. | 4 | A diferença de unidade altera significativamente a interpretação da medida. | Padronizar a unidade e verificar os valores apresentados. |
+| V02 | H4 e H5 | P03, tela 04 e tela 05 | Ambiguidade na indicação das condições de treinamento. | P03 apresenta "Diferença de configuração: Nenhuma", enquanto as telas 04 e 05 indicam condições não confirmadas. | 3 | A informação pode levar o usuário a interpretar incorretamente a comparabilidade das execuções. | Diferenciar ausência de diferenças identificadas de condições não verificadas. |
+| V03 | H8 | P10 | Erro de digitação na mensagem do estado vazio. | A mensagem apresenta "dsponíveis" em vez de "disponíveis". | 1 | O problema é textual e não impede a compreensão geral da mensagem. | Corrigir o erro de digitação. |
 
 ### 6. Boas práticas — heurísticas não violadas (atividade didática)
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| H1 — Visibilidade do estado do sistema | Telas de confirmação de registros. | P06; telas 07, 09 e 21. | O sistema apresenta um retorno após a confirmação, permitindo que o usuário reconheça o resultado da ação. |
-| H3 — Controle e liberdade do usuário | Consulta de evidências e recuperação de situações de erro. | Telas 15, 43 e 45. | A interface oferece caminhos para consultar informações e lidar com situações inesperadas. |
-| H6 — Reconhecimento em vez de memorização | Localização de treinamentos e seleção de execuções. | Telas 02 e 03. | As opções necessárias são apresentadas na interface, facilitando a identificação das funcionalidades. |
-| H7 — Flexibilidade e eficiência de uso | Consulta de métricas e indicadores. | Tela 04 e telas 15 a 18. | A organização das informações permite que o usuário consulte diferentes indicadores relacionados às execuções. |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | Estados sem resultados e mensagens de erro. | P09; telas 29, 33 e 45. | A interface apresenta estados específicos para situações de ausência de resultados e erro, facilitando o reconhecimento do problema. |
-| H10 — Ajuda e documentação | Organização das informações sobre treinamentos, comparações e dados ausentes. | Telas 02, 05 e 37. | A apresentação contextual das informações auxilia o entendimento das funcionalidades disponíveis. |
+| **H1 — Visibilidade do status do sistema** | Telas de conferência de registros e confirmações. | P06 e telas 07, 09 e 21. | A interface apresenta espaços específicos para consultar informações relacionadas aos registros. |
+| **H3 — Controle e liberdade do usuário** | Tela destinada à recuperação de erro de registro. | Tela 45. | A existência de uma situação de recuperação demonstra preocupação em orientar o usuário diante de um erro. |
+| **H6 — Reconhecimento em vez de memorização** | Localização de treinamento e seleção de execuções. | Telas 02 e 03. | As telas apresentam informações e opções que auxiliam o usuário a reconhecer os elementos necessários. |
+| **H7 — Flexibilidade e eficiência de uso** | Organização de métricas e indicadores. | Tela 04 e telas 15 a 18. | A interface reúne informações relacionadas à análise das execuções. |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | Estados de busca sem resultados e recuperação de erro. | P09, tela 29, tela 33 e tela 45. | A existência desses estados auxilia na identificação de situações em que o sistema não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Informações relacionadas à localização de treinamentos, comparabilidade e dados não registrados. | Telas 02, 05 e 37. | As telas apresentam informações que ajudam a compreender as atividades e situações do sistema. |
 
 ---
 
@@ -130,57 +159,41 @@ Quando não houver violação identificada em determinada heurística, deve ser 
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
+A matriz abaixo apresenta a cobertura registrada na inspeção estática da equipe. Os resultados não representam uma atribuição individual independente dos achados.
+
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 — Visibilidade do estado do sistema | P06; telas 07, 09 e 21 — confirmação de registros. | Não | — | As telas de confirmação apresentam retorno após a realização da ação, permitindo identificar que o registro foi confirmado. |
-| H2 — Correspondência entre o sistema e o mundo real | P01 — painel principal; P03 — comparação; tela 04 — comparação de métricas e parâmetros. | Sim | V01 | — |
-| H3 — Controle e liberdade do usuário | Tela 15 — apresentação de indicadores; tela 43 — consulta de evidências; tela 45 — recuperação de erro. | Não | — | A interface apresenta caminhos para consultar informações e recuperar-se de situações de erro. |
-| H4 — Consistência e padronização | P01; P03; telas 04 e 05 — comparação de execuções e condições de treinamento. | Sim | V01, V02 | — |
-| H5 — Prevenção de erros | P03; telas 05 e 06 — comparação e confirmação. | Sim | V02 | — |
-| H6 — Reconhecimento em vez de memorização | Tela 02 — localização de treinamento; tela 03 — seleção de execuções; tela 43 — consulta de evidências. | Não | — | As informações e opções necessárias são apresentadas na interface, reduzindo a necessidade de memorização. |
-| H7 — Flexibilidade e eficiência de uso | Tela 02 — localização de treinamento; tela 04 — comparação de métricas; telas 15 a 18 — apresentação de indicadores. | Não | — | A organização das telas permite consultar informações e indicadores relacionados às execuções. |
-| H8 — Estética e design minimalista | P01 — painel principal; P03 — comparação; P10 — estado vazio. | Sim | V03 | — |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | P09; tela 29 — ausência de resultados; tela 33 — correção e nova tentativa; tela 45 — recuperação de erro. | Não | — | As mensagens e os estados apresentados permitem reconhecer situações de ausência de resultados e erros. |
-| H10 — Ajuda e documentação | Tela 02 — localização de treinamento; tela 05 — comparação; tela 37 — investigação de dados ausentes. | Não | — | A organização das informações e dos elementos da interface auxilia a compreensão das funcionalidades. |
+| **H1 — Visibilidade do status do sistema** | P06 — Confirmar registro; tela 07 — Conferir hipótese registrada; tela 09 — Conferir avaliação registrada; tela 21 — Conferir registro. | Não | — | A interface apresenta telas específicas para conferir registros e confirmações, permitindo que o usuário consulte informações relacionadas às ações realizadas. |
+| **H2 — Compatibilidade entre o sistema e o mundo real** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros. | Sim | V01 | — |
+| **H3 — Controle e liberdade do usuário** | Tela 15 — Apresentar indicadores; tela 43 — Observar evidência da execução; tela 45 — Recuperar erro de registro. | Não | — | A existência de uma tela voltada à recuperação de erro de registro representa um ponto positivo para orientar o usuário diante de uma situação inesperada. |
+| **H4 — Consistência e padrões** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade. | Sim | V01, V02 | — |
+| **H5 — Prevenção de erros** | P03 — Comparação; tela 05 — Verificar comparabilidade; tela 06 — Registrar hipótese e ressalvas. | Sim | V02 | — |
+| **H6 — Reconhecimento em vez de memorização** | Tela 02 — Localizar treinamento; tela 03 — Selecionar execuções; tela 43 — Observar evidência. | Não | — | A apresentação das opções de localização e seleção de execuções auxilia o usuário a identificar os elementos necessários sem depender exclusivamente da memorização de caminhos. |
+| **H7 — Flexibilidade e eficiência de uso** | Tela 02 — Localizar treinamento; tela 04 — Comparar métricas e parâmetros; telas 15 a 18 — Apresentar indicadores. | Não | — | A organização das telas de indicadores e comparação permite consultar diferentes informações relacionadas às execuções. |
+| **H8 — Estética e design minimalista** | P01 — Painel geral; P03 — Comparação; P10 — Painel sem dados do período. | Sim | V03 | — |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | P09 — Busca sem resultados; tela 29 — Busca sem resultados; tela 33 — Corrigir ou tentar novamente; tela 45 — Recuperar erro de registro. | Não | — | A existência de estados específicos para busca sem resultados e recuperação de erros auxilia na compreensão de situações em que a operação não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Tela 02 — Localizar treinamento; tela 05 — Verificar comparabilidade; tela 37 — Investigar dado não registrado. | Não | — | A apresentação de informações relacionadas à localização de treinamentos e à investigação de dados não registrados auxilia na compreensão das atividades disponíveis. |
 
 ### 5. Declaração de violações
 
+Os achados registrados na inspeção conjunta estão descritos integralmente na seção **7. Consolidação da equipe**. Eles são apresentados aqui como referência da cobertura, sem afirmar que foram identificados individualmente por esta avaliadora.
+
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
-|---|---|---|---|---|---|---|---|
-| V01 | H2 — Correspondência entre o sistema e o mundo real; H4 — Consistência e padronização. | P01, P03 e tela 04. | A velocidade da execução EXEC-104 aparece com valores e unidades inconsistentes. No painel principal, é apresentada como “0,32 m/s”, enquanto na comparação aparece como “0.32 cm/s”. | Comparação entre as informações de velocidade apresentadas em P01, P03 e tela 04. | 4 | A divergência de unidade pode alterar completamente a interpretação do indicador e comprometer a comparação entre execuções. | Padronizar a unidade de velocidade em todas as telas, verificar o valor apresentado e manter a mesma convenção de representação numérica. |
-| V02 | H4 — Consistência e padronização; H5 — Prevenção de erros. | P03 e telas 04 e 05. | A interface apresenta informações ambíguas sobre as condições de treinamento. Em P03 aparece “Diferença de configuração: Nenhuma”, enquanto na tela 04 aparece “Condições de treinamento: não confirmadas” e na tela 05 “Condições não confirmadas”. | Textos apresentados nas telas de comparação de execuções. | 3 | A informação pode levar o usuário a interpretar que as configurações são iguais, mesmo quando não foi possível confirmar as condições utilizadas. | Diferenciar claramente a ausência de diferenças identificadas da ausência de confirmação das condições. Quando os dados não estiverem disponíveis, informar que não foi possível verificar a equivalência. |
-| V03 | H8 — Estética e design minimalista. | P10 — estado vazio. | A mensagem apresentada contém um erro de digitação: “Não há resultados dsponíveis no período escolhido”. | Mensagem exibida no estado vazio de P10. | 1 | O problema não impede a compreensão da mensagem, mas prejudica o acabamento textual e a qualidade percebida da interface. | Corrigir a palavra “dsponíveis” para “disponíveis”. |
-
-**Qualidade do relato:** Os problemas identificados possuem localização definida e estão associados às heurísticas correspondentes. As recomendações propostas buscam melhorar a consistência das informações, evitar interpretações equivocadas e aprimorar a comunicação textual.
-
-### Evidências da avaliação — Avaliador A02
-
-**V01 — Inconsistência na unidade de velocidade**
-
-<!-- INSERIR PRINT 01: P01 — Painel principal, mostrando a velocidade da execução EXEC-104 como 0,32 m/s. -->
-
-<!-- INSERIR PRINT 02: P03 — Comparação, mostrando a velocidade da execução EXEC-104 como 0.32 cm/s. -->
-
-<!-- INSERIR PRINT 03: Tela 04 — Comparação de métricas e condições de treinamento não confirmadas. -->
-
-**V02 — Ambiguidade nas condições de treinamento**
-
-<!-- INSERIR PRINT 04: Tela 05 — Exibição da mensagem "Condições não confirmadas". -->
-
-**V03 — Erro de digitação no estado vazio**
-
-<!-- INSERIR PRINT 05: P10 — Estado vazio, mostrando a mensagem "Não há resultados dsponíveis no período escolhido". -->
+|---|---|---|---|---|---:|---|---|
+| V01 | H2 e H4 | P01, P03 e tela 04 | Inconsistência na unidade de velocidade da execução EXEC-104. | P01 apresenta 0,32 m/s, enquanto P03 e tela 04 apresentam 0.32 cm/s. | 4 | A diferença de unidade altera significativamente a interpretação da medida. | Padronizar a unidade e verificar os valores apresentados. |
+| V02 | H4 e H5 | P03, tela 04 e tela 05 | Ambiguidade na indicação das condições de treinamento. | P03 apresenta "Diferença de configuração: Nenhuma", enquanto as telas 04 e 05 indicam condições não confirmadas. | 3 | A informação pode levar o usuário a interpretar incorretamente a comparabilidade das execuções. | Diferenciar ausência de diferenças identificadas de condições não verificadas. |
+| V03 | H8 | P10 | Erro de digitação na mensagem do estado vazio. | A mensagem apresenta "dsponíveis" em vez de "disponíveis". | 1 | O problema é textual e não impede a compreensão geral da mensagem. | Corrigir o erro de digitação. |
 
 ### 6. Boas práticas — heurísticas não violadas (atividade didática)
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| H1 — Visibilidade do estado do sistema | Telas de confirmação de registros. | P06; telas 07, 09 e 21. | O sistema apresenta um retorno após a confirmação, permitindo que o usuário reconheça o resultado da ação. |
-| H3 — Controle e liberdade do usuário | Consulta de evidências e recuperação de situações de erro. | Telas 15, 43 e 45. | A interface oferece caminhos para consultar informações e lidar com situações inesperadas. |
-| H6 — Reconhecimento em vez de memorização | Localização de treinamentos e seleção de execuções. | Telas 02 e 03. | As opções necessárias são apresentadas na interface, facilitando a identificação das funcionalidades. |
-| H7 — Flexibilidade e eficiência de uso | Consulta de métricas e indicadores. | Tela 04 e telas 15 a 18. | A organização das informações permite que o usuário consulte diferentes indicadores relacionados às execuções. |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | Estados sem resultados e mensagens de erro. | P09; telas 29, 33 e 45. | A interface apresenta estados específicos para situações de ausência de resultados e erro, facilitando o reconhecimento do problema. |
-| H10 — Ajuda e documentação | Organização das informações sobre treinamentos, comparações e dados ausentes. | Telas 02, 05 e 37. | A apresentação contextual das informações auxilia o entendimento das funcionalidades disponíveis. |
+| **H1 — Visibilidade do status do sistema** | Telas de conferência de registros e confirmações. | P06 e telas 07, 09 e 21. | A interface apresenta espaços específicos para consultar informações relacionadas aos registros. |
+| **H3 — Controle e liberdade do usuário** | Tela destinada à recuperação de erro de registro. | Tela 45. | A existência de uma situação de recuperação demonstra preocupação em orientar o usuário diante de um erro. |
+| **H6 — Reconhecimento em vez de memorização** | Localização de treinamento e seleção de execuções. | Telas 02 e 03. | As telas apresentam informações e opções que auxiliam o usuário a reconhecer os elementos necessários. |
+| **H7 — Flexibilidade e eficiência de uso** | Organização de métricas e indicadores. | Tela 04 e telas 15 a 18. | A interface reúne informações relacionadas à análise das execuções. |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | Estados de busca sem resultados e recuperação de erro. | P09, tela 29, tela 33 e tela 45. | A existência desses estados auxilia na identificação de situações em que o sistema não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Informações relacionadas à localização de treinamentos, comparabilidade e dados não registrados. | Telas 02, 05 e 37. | As telas apresentam informações que ajudam a compreender as atividades e situações do sistema. |
 
 ---
 
@@ -188,110 +201,203 @@ Quando não houver violação identificada em determinada heurística, deve ser 
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
+A matriz abaixo apresenta a cobertura registrada na inspeção estática da equipe. Os resultados não representam uma atribuição individual independente dos achados.
+
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 — Visibilidade do estado do sistema | P06; telas 07, 09 e 21 — confirmação de registros. | Não | — | As telas de confirmação apresentam retorno após a realização da ação, permitindo identificar que o registro foi confirmado. |
-| H2 — Correspondência entre o sistema e o mundo real | P01 — painel principal; P03 — comparação; tela 04 — comparação de métricas e parâmetros. | Sim | V01 | — |
-| H3 — Controle e liberdade do usuário | Tela 15 — apresentação de indicadores; tela 43 — consulta de evidências; tela 45 — recuperação de erro. | Não | — | A interface apresenta caminhos para consultar informações e recuperar-se de situações de erro. |
-| H4 — Consistência e padronização | P01; P03; telas 04 e 05 — comparação de execuções e condições de treinamento. | Sim | V01, V02 | — |
-| H5 — Prevenção de erros | P03; telas 05 e 06 — comparação e confirmação. | Sim | V02 | — |
-| H6 — Reconhecimento em vez de memorização | Tela 02 — localização de treinamento; tela 03 — seleção de execuções; tela 43 — consulta de evidências. | Não | — | As informações e opções necessárias são apresentadas na interface, reduzindo a necessidade de memorização. |
-| H7 — Flexibilidade e eficiência de uso | Tela 02 — localização de treinamento; tela 04 — comparação de métricas; telas 15 a 18 — apresentação de indicadores. | Não | — | A organização das telas permite consultar informações e indicadores relacionados às execuções. |
-| H8 — Estética e design minimalista | P01 — painel principal; P03 — comparação; P10 — estado vazio. | Sim | V03 | — |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | P09; tela 29 — ausência de resultados; tela 33 — correção e nova tentativa; tela 45 — recuperação de erro. | Não | — | As mensagens e os estados apresentados permitem reconhecer situações de ausência de resultados e erros. |
-| H10 — Ajuda e documentação | Tela 02 — localização de treinamento; tela 05 — comparação; tela 37 — investigação de dados ausentes. | Não | — | A organização das informações e dos elementos da interface auxilia a compreensão das funcionalidades. |
+| **H1 — Visibilidade do status do sistema** | P06 — Confirmar registro; tela 07 — Conferir hipótese registrada; tela 09 — Conferir avaliação registrada; tela 21 — Conferir registro. | Não | — | A interface apresenta telas específicas para conferir registros e confirmações, permitindo que o usuário consulte informações relacionadas às ações realizadas. |
+| **H2 — Compatibilidade entre o sistema e o mundo real** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros. | Sim | V01 | — |
+| **H3 — Controle e liberdade do usuário** | Tela 15 — Apresentar indicadores; tela 43 — Observar evidência da execução; tela 45 — Recuperar erro de registro. | Não | — | A existência de uma tela voltada à recuperação de erro de registro representa um ponto positivo para orientar o usuário diante de uma situação inesperada. |
+| **H4 — Consistência e padrões** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade. | Sim | V01, V02 | — |
+| **H5 — Prevenção de erros** | P03 — Comparação; tela 05 — Verificar comparabilidade; tela 06 — Registrar hipótese e ressalvas. | Sim | V02 | — |
+| **H6 — Reconhecimento em vez de memorização** | Tela 02 — Localizar treinamento; tela 03 — Selecionar execuções; tela 43 — Observar evidência. | Não | — | A apresentação das opções de localização e seleção de execuções auxilia o usuário a identificar os elementos necessários sem depender exclusivamente da memorização de caminhos. |
+| **H7 — Flexibilidade e eficiência de uso** | Tela 02 — Localizar treinamento; tela 04 — Comparar métricas e parâmetros; telas 15 a 18 — Apresentar indicadores. | Não | — | A organização das telas de indicadores e comparação permite consultar diferentes informações relacionadas às execuções. |
+| **H8 — Estética e design minimalista** | P01 — Painel geral; P03 — Comparação; P10 — Painel sem dados do período. | Sim | V03 | — |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | P09 — Busca sem resultados; tela 29 — Busca sem resultados; tela 33 — Corrigir ou tentar novamente; tela 45 — Recuperar erro de registro. | Não | — | A existência de estados específicos para busca sem resultados e recuperação de erros auxilia na compreensão de situações em que a operação não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Tela 02 — Localizar treinamento; tela 05 — Verificar comparabilidade; tela 37 — Investigar dado não registrado. | Não | — | A apresentação de informações relacionadas à localização de treinamentos e à investigação de dados não registrados auxilia na compreensão das atividades disponíveis. |
 
 ### 5. Declaração de violações
 
+Os achados registrados na inspeção conjunta estão descritos integralmente na seção **7. Consolidação da equipe**. Eles são apresentados aqui como referência da cobertura, sem afirmar que foram identificados individualmente por esta avaliadora.
+
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
-|---|---|---|---|---|---|---|---|
-| V01 | H2 — Correspondência entre o sistema e o mundo real; H4 — Consistência e padronização. | P01, P03 e tela 04. | A velocidade da execução EXEC-104 aparece com valores e unidades inconsistentes. No painel principal, é apresentada como “0,32 m/s”, enquanto na comparação aparece como “0.32 cm/s”. | Comparação entre as informações de velocidade apresentadas em P01, P03 e tela 04. | 4 | A divergência de unidade pode alterar completamente a interpretação do indicador e comprometer a comparação entre execuções. | Padronizar a unidade de velocidade em todas as telas, verificar o valor apresentado e manter a mesma convenção de representação numérica. |
-| V02 | H4 — Consistência e padronização; H5 — Prevenção de erros. | P03 e telas 04 e 05. | A interface apresenta informações ambíguas sobre as condições de treinamento. Em P03 aparece “Diferença de configuração: Nenhuma”, enquanto na tela 04 aparece “Condições de treinamento: não confirmadas” e na tela 05 “Condições não confirmadas”. | Textos apresentados nas telas de comparação de execuções. | 3 | A informação pode levar o usuário a interpretar que as configurações são iguais, mesmo quando não foi possível confirmar as condições utilizadas. | Diferenciar claramente a ausência de diferenças identificadas da ausência de confirmação das condições. Quando os dados não estiverem disponíveis, informar que não foi possível verificar a equivalência. |
-| V03 | H8 — Estética e design minimalista. | P10 — estado vazio. | A mensagem apresentada contém um erro de digitação: “Não há resultados dsponíveis no período escolhido”. | Mensagem exibida no estado vazio de P10. | 1 | O problema não impede a compreensão da mensagem, mas prejudica o acabamento textual e a qualidade percebida da interface. | Corrigir a palavra “dsponíveis” para “disponíveis”. |
-
-**Qualidade do relato:** Os achados foram organizados de acordo com as heurísticas violadas, considerando o impacto dos problemas na compreensão dos dados e na utilização da interface. As recomendações priorizam a correção de inconsistências que podem comprometer a interpretação dos resultados.
-
-### Evidências da avaliação — Avaliador A03
-
-**V01 — Inconsistência na unidade de velocidade**
-
-<!-- INSERIR PRINT 01: P01 — Painel principal, mostrando a velocidade da execução EXEC-104 como 0,32 m/s. -->
-
-<!-- INSERIR PRINT 02: P03 — Comparação, mostrando a velocidade da execução EXEC-104 como 0.32 cm/s. -->
-
-<!-- INSERIR PRINT 03: Tela 04 — Comparação de métricas e condições de treinamento não confirmadas. -->
-
-**V02 — Ambiguidade nas condições de treinamento**
-
-<!-- INSERIR PRINT 04: Tela 05 — Exibição da mensagem "Condições não confirmadas". -->
-
-**V03 — Erro de digitação no estado vazio**
-
-<!-- INSERIR PRINT 05: P10 — Estado vazio, mostrando a mensagem "Não há resultados dsponíveis no período escolhido". -->
+|---|---|---|---|---|---:|---|---|
+| V01 | H2 e H4 | P01, P03 e tela 04 | Inconsistência na unidade de velocidade da execução EXEC-104. | P01 apresenta 0,32 m/s, enquanto P03 e tela 04 apresentam 0.32 cm/s. | 4 | A diferença de unidade altera significativamente a interpretação da medida. | Padronizar a unidade e verificar os valores apresentados. |
+| V02 | H4 e H5 | P03, tela 04 e tela 05 | Ambiguidade na indicação das condições de treinamento. | P03 apresenta "Diferença de configuração: Nenhuma", enquanto as telas 04 e 05 indicam condições não confirmadas. | 3 | A informação pode levar o usuário a interpretar incorretamente a comparabilidade das execuções. | Diferenciar ausência de diferenças identificadas de condições não verificadas. |
+| V03 | H8 | P10 | Erro de digitação na mensagem do estado vazio. | A mensagem apresenta "dsponíveis" em vez de "disponíveis". | 1 | O problema é textual e não impede a compreensão geral da mensagem. | Corrigir o erro de digitação. |
 
 ### 6. Boas práticas — heurísticas não violadas (atividade didática)
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| H1 — Visibilidade do estado do sistema | Telas de confirmação de registros. | P06; telas 07, 09 e 21. | O sistema apresenta um retorno após a confirmação, permitindo que o usuário reconheça o resultado da ação. |
-| H3 — Controle e liberdade do usuário | Consulta de evidências e recuperação de situações de erro. | Telas 15, 43 e 45. | A interface oferece caminhos para consultar informações e lidar com situações inesperadas. |
-| H6 — Reconhecimento em vez de memorização | Localização de treinamentos e seleção de execuções. | Telas 02 e 03. | As opções necessárias são apresentadas na interface, facilitando a identificação das funcionalidades. |
-| H7 — Flexibilidade e eficiência de uso | Consulta de métricas e indicadores. | Tela 04 e telas 15 a 18. | A organização das informações permite que o usuário consulte diferentes indicadores relacionados às execuções. |
-| H9 — Reconhecimento, diagnóstico e recuperação de erros | Estados sem resultados e mensagens de erro. | P09; telas 29, 33 e 45. | A interface apresenta estados específicos para situações de ausência de resultados e erro, facilitando o reconhecimento do problema. |
-| H10 — Ajuda e documentação | Organização das informações sobre treinamentos, comparações e dados ausentes. | Telas 02, 05 e 37. | A apresentação contextual das informações auxilia o entendimento das funcionalidades disponíveis. |
+| **H1 — Visibilidade do status do sistema** | Telas de conferência de registros e confirmações. | P06 e telas 07, 09 e 21. | A interface apresenta espaços específicos para consultar informações relacionadas aos registros. |
+| **H3 — Controle e liberdade do usuário** | Tela destinada à recuperação de erro de registro. | Tela 45. | A existência de uma situação de recuperação demonstra preocupação em orientar o usuário diante de um erro. |
+| **H6 — Reconhecimento em vez de memorização** | Localização de treinamento e seleção de execuções. | Telas 02 e 03. | As telas apresentam informações e opções que auxiliam o usuário a reconhecer os elementos necessários. |
+| **H7 — Flexibilidade e eficiência de uso** | Organização de métricas e indicadores. | Tela 04 e telas 15 a 18. | A interface reúne informações relacionadas à análise das execuções. |
+| **H9 — Reconhecer, diagnosticar e recuperar erros** | Estados de busca sem resultados e recuperação de erro. | P09, tela 29, tela 33 e tela 45. | A existência desses estados auxilia na identificação de situações em que o sistema não apresenta o resultado esperado. |
+| **H10 — Ajuda e documentação** | Informações relacionadas à localização de treinamentos, comparabilidade e dados não registrados. | Telas 02, 05 e 37. | As telas apresentam informações que ajudam a compreender as atividades e situações do sistema. |
 
 ---
 
 ## 7. Consolidação da equipe
 
-A inspeção identificou três problemas principais na interface, relacionados à apresentação dos indicadores, à consistência das informações de treinamento e à qualidade textual de uma mensagem de estado vazio.
+A consolidação reúne os problemas identificados na inspeção estática do protótipo. Os achados foram organizados por identificação, heurística violada, tela, consequência, evidência, severidade e recomendação.
 
-| ID | Heurística(s) | Problema | Telas afetadas | Severidade | Prioridade | Encaminhamento |
-|---|---|---|---|---|---|---|
-| V01 | H2 e H4 | Inconsistência na unidade de velocidade da execução EXEC-104. | P01, P03 e tela 04. | 4 | Alta | Padronizar a unidade e verificar os valores apresentados em todas as telas. |
-| V02 | H4 e H5 | Ambiguidade na indicação das condições de treinamento. | P03 e telas 04 e 05. | 3 | Alta | Diferenciar ausência de diferenças identificadas de condições não confirmadas. |
-| V03 | H8 | Erro de digitação na mensagem do estado vazio. | P10. | 1 | Baixa | Corrigir o texto da mensagem. |
+### 7.1. Quadro consolidado dos achados
 
-### Análise da consolidação
+| ID | Heurística | Tela/estado | Problema observado | Consequência | Severidade |
+|---|---|---|---|---|---:|
+| **V01** | H2 e H4 | P01, P03 e tela 04 | Inconsistência na unidade de velocidade da execução EXEC-104. | Pode causar interpretação incorreta da velocidade e comprometer a comparação das execuções. | **4** |
+| **V02** | H4 e H5 | P03, tela 04 e tela 05 | Ambiguidade na indicação das condições de treinamento. | Pode levar o usuário a considerar execuções comparáveis sem confirmação suficiente das condições. | **3** |
+| **V03** | H8 | P10 | Erro de digitação na mensagem do estado vazio. | Prejudica o acabamento textual da interface, sem impedir a compreensão geral. | **1** |
 
-O problema V01 apresenta a maior severidade, pois envolve uma informação quantitativa utilizada para interpretar o desempenho de uma execução. A utilização de unidades diferentes para o mesmo indicador pode provocar uma leitura incorreta dos resultados e comprometer comparações.
+### 7.2. Detalhamento dos achados
 
-O problema V02 também exige atenção, pois a interface utiliza mensagens que podem transmitir interpretações diferentes sobre as condições de treinamento. A ausência de confirmação das condições não deve ser apresentada como se fosse uma confirmação de igualdade entre configurações.
+#### V01 — Inconsistência na unidade de velocidade da execução EXEC-104
 
-O problema V03 possui menor impacto funcional, mas deve ser corrigido para melhorar a qualidade textual e a apresentação da interface.
+| Campo | Descrição |
+|---|---|
+| **ID** | V01 |
+| **Heurísticas violadas** | H2 — Compatibilidade entre o sistema e o mundo real; H4 — Consistência e padrões |
+| **Tela/estado** | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros |
+| **Ação/condição** | Consultar a velocidade da execução EXEC-104 e comparar a informação apresentada em diferentes telas. |
+| **Problema observado** | A velocidade da execução EXEC-104 é apresentada com unidades diferentes em telas distintas. No painel principal (P01), o valor aparece como **0,32 m/s**, enquanto na tela de comparação (P03) e na tela 04 aparece como **0.32 cm/s**. Além da diferença na unidade de medida, existe uma diferença na formatação decimal. Isso pode levar o usuário a interpretar incorretamente a velocidade da execução e comprometer a comparação dos resultados. |
+| **Consequência** | A inconsistência pode gerar dúvidas sobre qual valor está correto e prejudicar a interpretação das métricas utilizadas para analisar o desempenho das execuções. |
+| **Evidência** | P01 apresenta "0,32 m/s", enquanto P03 e tela 04 apresentam "0.32 cm/s" para a velocidade de EXEC-104. |
+| **Severidade** | **4 — Catastrófica/imperativa** |
+| **Justificativa da severidade** | A diferença entre metros por segundo e centímetros por segundo altera a interpretação da medida por um fator de 100. Por se tratar de uma métrica quantitativa utilizada na análise das execuções, a inconsistência pode comprometer conclusões técnicas e decisões baseadas nos resultados. |
+| **Recomendação** | Padronizar a unidade de velocidade em todas as telas do sistema, utilizando a mesma unidade de medida e o mesmo formato decimal. Também é necessário verificar se os valores apresentados correspondem corretamente aos dados originais da execução. |
 
-A equipe deve priorizar a correção de V01 e V02 antes de considerar a interface pronta para uma avaliação final. V03 pode ser corrigido juntamente com os demais ajustes textuais.
+**Evidências visuais:**
+
+<!-- INSERIR PRINT V01-01: P01 — Painel geral mostrando EXEC-104 com velocidade de 0,32 m/s. -->
+
+<!-- INSERIR PRINT V01-02: P03 — Comparação mostrando EXEC-104 com velocidade de 0.32 cm/s. -->
+
+<!-- INSERIR PRINT V01-03: Tela 04 — Comparação de métricas mostrando EXEC-104 com velocidade de 0.32 cm/s. -->
+
+#### V02 — Ambiguidade na indicação das condições de treinamento
+
+| Campo | Descrição |
+|---|---|
+| **ID** | V02 |
+| **Heurísticas violadas** | H4 — Consistência e padrões; H5 — Prevenção de erros |
+| **Tela/estado** | P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade |
+| **Ação/condição** | Verificar se duas execuções podem ser comparadas de maneira confiável, considerando suas condições de treinamento. |
+| **Problema observado** | As telas apresentam informações que podem gerar interpretações contraditórias sobre as condições de treinamento das execuções. Na tela P03, aparece a mensagem **"Diferença de configuração: Nenhuma"**. Entretanto, na tela 04, aparece a indicação **"Condições de treinamento: não confirmadas"**, enquanto na tela 05 é apresentada a mensagem **"Condições não confirmadas"**. A ausência de confirmação das condições não significa necessariamente que não existam diferenças entre as configurações. Dessa forma, a apresentação atual pode levar o usuário a interpretar que as execuções possuem condições equivalentes, mesmo quando essa informação não foi confirmada. |
+| **Consequência** | O usuário pode considerar duas execuções plenamente comparáveis sem ter informações suficientes para confirmar que as condições de treinamento são equivalentes. Isso pode prejudicar a interpretação dos resultados. |
+| **Evidência** | P03 apresenta "Diferença de configuração: Nenhuma". A tela 04 apresenta "Condições de treinamento: não confirmadas". A tela 05 apresenta "Condições não confirmadas". |
+| **Severidade** | **3 — Grave** |
+| **Justificativa da severidade** | A ambiguidade pode prejudicar a interpretação dos resultados e levar o usuário a realizar comparações sem ter certeza de que as condições de treinamento são equivalentes. Entretanto, o problema não impede diretamente a utilização do sistema. |
+| **Recomendação** | Diferenciar claramente a ausência de diferenças identificadas da falta de confirmação das condições de treinamento. Quando não houver informações suficientes para confirmar a equivalência entre duas execuções, o sistema deve informar que as condições não foram verificadas, evitando apresentar uma mensagem que possa sugerir que não existem diferenças. |
+
+**Evidências visuais:**
+
+<!-- INSERIR PRINT V02-01: P03 — Comparação mostrando a mensagem "Diferença de configuração: Nenhuma". -->
+
+<!-- INSERIR PRINT V02-02: Tela 04 — Comparação de métricas mostrando "Condições de treinamento: não confirmadas". -->
+
+<!-- INSERIR PRINT V02-03: Tela 05 — Verificação de comparabilidade mostrando "Condições não confirmadas". -->
+
+#### V03 — Erro de digitação na mensagem do estado vazio
+
+| Campo | Descrição |
+|---|---|
+| **ID** | V03 |
+| **Heurística violada** | H8 — Estética e design minimalista |
+| **Tela/estado** | P10 — Painel sem dados do período |
+| **Ação/condição** | Consultar um período em que não existem resultados disponíveis. |
+| **Problema observado** | Na tela P10, apresentada quando não existem resultados disponíveis para o período escolhido, a mensagem exibida contém um erro de digitação: **"Não há resultados dsponíveis no período escolhido"**. A palavra "disponíveis" está escrita incorretamente, o que prejudica o acabamento visual e a qualidade textual da interface. |
+| **Consequência** | O erro de escrita reduz a qualidade da apresentação e pode transmitir uma impressão de falta de revisão do conteúdo textual. |
+| **Evidência** | A mensagem apresentada na tela P10 contém a palavra "dsponíveis". |
+| **Severidade** | **1 — Cosmética** |
+| **Justificativa da severidade** | O problema não compromete a funcionalidade do sistema nem impede que o usuário compreenda a mensagem. Entretanto, o erro de digitação prejudica a apresentação e o profissionalismo da interface. |
+| **Recomendação** | Corrigir a palavra "dsponíveis" para "disponíveis", mantendo a mensagem como **"Não há resultados disponíveis no período escolhido"**. Também é recomendável revisar os textos da interface para evitar outros erros de digitação. |
+
+**Evidência visual:**
+
+<!-- INSERIR PRINT V03-01: P10 — Painel sem dados mostrando "Não há resultados dsponíveis no período escolhido". -->
+
+### 7.3. Distribuição dos achados por heurística
+
+| Heurística | Quantidade de achados | IDs |
+|---|---:|---|
+| H1 — Visibilidade do status do sistema | 0 | — |
+| H2 — Compatibilidade entre o sistema e o mundo real | 1 | V01 |
+| H3 — Controle e liberdade do usuário | 0 | — |
+| H4 — Consistência e padrões | 2 | V01, V02 |
+| H5 — Prevenção de erros | 1 | V02 |
+| H6 — Reconhecimento em vez de memorização | 0 | — |
+| H7 — Flexibilidade e eficiência de uso | 0 | — |
+| H8 — Estética e design minimalista | 1 | V03 |
+| H9 — Reconhecer, diagnosticar e recuperar erros | 0 | — |
+| H10 — Ajuda e documentação | 0 | — |
+
+**Observação:** a quantidade de ocorrências por heurística não corresponde necessariamente à quantidade total de problemas, pois um mesmo achado pode violar mais de uma heurística.
+
+### 7.4. Limitações identificadas na inspeção
+
+A inspeção foi realizada sobre os elementos disponíveis no protótipo. Dessa forma, não foi possível avaliar estados de carregamento e situações relacionadas a permissões de acesso.
+
+Também é importante considerar que a ausência de violações registradas em uma heurística não significa que todos os caminhos e interações do sistema tenham sido testados. A avaliação representa os elementos examinados no escopo definido.
+
+---
 
 ## 8. Síntese e plano de melhoria
 
-A avaliação heurística permitiu identificar problemas de usabilidade relacionados principalmente à consistência e à interpretação das informações apresentadas pelo sistema. Como a interface possui caráter administrativo e analítico, a precisão dos indicadores e a clareza das condições utilizadas nas comparações são fundamentais.
+A avaliação heurística identificou três problemas no protótipo, relacionados à consistência das informações, à interpretação das condições de treinamento e à qualidade textual de uma mensagem de estado vazio.
 
-O principal problema identificado foi a divergência na unidade de velocidade da execução EXEC-104, que pode comprometer a interpretação dos dados. Também foi identificada ambiguidade na apresentação das condições de treinamento, além de um erro de digitação em uma mensagem de estado vazio.
+O achado de maior severidade é o V01, relacionado à apresentação de unidades diferentes para a velocidade da execução EXEC-104. Esse problema pode comprometer a interpretação de uma métrica importante para a análise dos resultados.
 
-O plano de melhoria proposto é:
+O V02 também merece atenção, pois a apresentação de mensagens diferentes sobre a confirmação das condições de treinamento pode levar o usuário a interpretar incorretamente a comparabilidade entre execuções.
 
-| Ordem | Ação de melhoria | Problema relacionado | Resultado esperado |
-|---|---|---|---|
-| 1 | Padronizar a unidade de velocidade em todas as telas e revisar os valores apresentados. | V01 | Garantir que o indicador seja apresentado de maneira consistente e compreensível. |
-| 2 | Revisar os textos referentes às condições de treinamento e diferenciar informações confirmadas de informações não verificadas. | V02 | Evitar interpretações equivocadas durante a comparação de execuções. |
-| 3 | Corrigir o erro de digitação na mensagem do estado vazio. | V03 | Melhorar a qualidade textual e a apresentação da interface. |
-| 4 | Realizar nova inspeção nas telas alteradas após a implementação das correções. | V01, V02 e V03 | Verificar se os problemas foram resolvidos e se não surgiram novas inconsistências. |
-| 5 | Avaliar os estados de carregamento e permissões, que não fizeram parte da inspeção registrada. | Cobertura complementar | Ampliar a cobertura da avaliação para estados ainda não examinados. |
+Por fim, o V03 apresenta menor severidade, mas deve ser corrigido para melhorar a qualidade textual e o acabamento da interface.
 
-A avaliação demonstra que a interface possui elementos que auxiliam a consulta de informações, a confirmação de registros e o reconhecimento de estados de erro e ausência de resultados. Entretanto, os problemas encontrados mostram que a consistência dos indicadores e a clareza das mensagens precisam ser aprimoradas para garantir uma interpretação confiável dos dados.
+### 8.1. Plano de melhoria
+
+| Prioridade | ID | Problema | Ação de melhoria | Resultado esperado |
+|---|---|---|---|---|
+| **1 — Alta** | V01 | Inconsistência na unidade de velocidade da execução EXEC-104. | Verificar o valor correto e padronizar a unidade de velocidade em todas as telas. | Apresentar a métrica de maneira consistente, evitando interpretações incorretas. |
+| **2 — Alta** | V02 | Ambiguidade na indicação das condições de treinamento. | Diferenciar ausência de diferenças identificadas de condições não confirmadas. | Permitir que o usuário compreenda quando uma comparação está efetivamente validada. |
+| **3 — Baixa** | V03 | Erro de digitação na mensagem do estado vazio. | Corrigir "dsponíveis" para "disponíveis". | Melhorar a clareza e a qualidade textual da interface. |
+
+### 8.2. Recomendações gerais
+
+Além das correções específicas, recomenda-se:
+
+- Manter um padrão único para a apresentação de unidades de medida.
+- Verificar a consistência das informações quantitativas entre o painel e as telas de comparação.
+- Utilizar mensagens diferentes para indicar ausência de diferenças e falta de confirmação de informações.
+- Revisar os textos apresentados nos estados vazios e nas mensagens do sistema.
+- Realizar uma nova inspeção após a implementação das melhorias.
+- Verificar os estados de carregamento e permissões em uma avaliação posterior, pois eles não fizeram parte do escopo examinado.
+
+### 8.3. Verificação após as melhorias
+
+Após a implementação das correções, recomenda-se repetir a inspeção nas telas relacionadas aos achados identificados.
+
+| ID | Verificação necessária | Critério para considerar resolvido |
+|---|---|---|
+| V01 | Conferir a velocidade da execução EXEC-104 em P01, P03 e tela 04. | A mesma unidade e convenção de apresentação devem ser utilizadas em todas as telas, com os valores devidamente conferidos. |
+| V02 | Conferir as mensagens sobre configuração e condições de treinamento em P03, tela 04 e tela 05. | As mensagens devem distinguir claramente informações confirmadas de informações não verificadas. |
+| V03 | Conferir a mensagem apresentada em P10. | A palavra deve estar corrigida para "disponíveis". |
+
+A resolução dos problemas somente deve ser considerada confirmada após a verificação das telas atualizadas. Até essa verificação, os achados permanecem registrados como problemas identificados na versão avaliada.
 
 ## Checklist
 
-- [x] As dez heurísticas de Nielsen foram consideradas.
-- [x] O escopo da inspeção foi identificado.
-- [x] Foram considerados estados vazios, de erro, de ausência de resultados e de confirmação.
-- [x] Os problemas identificados receberam identificadores.
-- [x] Os achados apresentam heurística, tela, descrição, evidência, severidade e recomendação.
-- [x] Foi utilizada uma escala de severidade de 0 a 4.
-- [x] Foram registrados exemplos de boas práticas para heurísticas sem violações identificadas.
-- [x] Os achados foram organizados em uma consolidação da equipe.
-- [x] Foi elaborado um plano de melhoria.
-- [ ] Os prints de evidência foram inseridos no repositório.
-- [ ] As avaliações individuais independentes de cada integrante foram registradas e validadas.
-- [ ] Os estados de carregamento e permissões foram avaliados.
-- [ ] As correções foram implementadas e verificadas em uma nova inspeção.
+- [x] Identificar a versão do protótipo avaliada.
+- [x] Registrar a data da inspeção.
+- [x] Definir o escopo das telas e estados examinados.
+- [x] Utilizar as dez heurísticas de Nielsen.
+- [x] Registrar a cobertura das heurísticas.
+- [x] Identificar e documentar os achados V01, V02 e V03.
+- [x] Atribuir severidade aos problemas identificados.
+- [x] Registrar justificativas e recomendações.
+- [x] Apresentar exemplos de boas práticas nas heurísticas sem violação confirmada.
+- [x] Consolidar os achados da equipe.
+- [x] Elaborar o plano de melhoria.
+- [x] Registrar os estados que não foram avaliados.
+- [ ] Inserir as evidências visuais dos achados.
+- [ ] Confirmar e registrar as avaliações individuais realizadas por cada integrante.
+- [ ] Realizar nova inspeção após as correções, quando implementadas.
