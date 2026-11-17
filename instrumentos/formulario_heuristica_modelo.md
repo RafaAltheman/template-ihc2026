@@ -1,44 +1,32 @@
 
 # Formulário de avaliação heurística — modelo
 
-**Avaliador:** A preencher pela integrante responsável pela inspeção — Equipe 27  
-**Versão:** Protótipo da Entrega 11 — [Figma IHC](https://www.figma.com/design/qHpoJxQF4Sthdy99w7Scul/IHC?node-id=0-1&t=AqgOAOI2AlypX9Q3-1)  
-**Data:** A preencher na aplicação  
-**Estados especiais examinados:** A verificar durante a inspeção: busca sem resultados, período sem dados, filtros, comparação com informações incompletas, mensagens de erro e confirmação de registros. Estados de carregamento e permissões serão examinados somente se estiverem representados no protótipo.
+**Avaliador:** Equipe 27 — Letizia Lowatzki Baptistella, Manuella Filipe Peres e Rafaela Altheman de Campos (inspeção estática do protótipo)  
+**Versão:** Protótipo da Entrega 11 — Figma IHC, página 0:1, com início em 32:2023  
+**Data:** 16/11/2026  
+**Estados especiais examinados:** Vazio (P10 e tela 42), erro (telas 33 e 45), filtro sem resultado (P09 e tela 29), confirmação (P06 e telas 07, 09 e 21), comparação com condições não confirmadas (telas 04 e 05). Carregamento e permissões não foram avaliados por não fazerem parte dos estados examinados nesta inspeção.
 
 ## Cobertura
 
 | H | Heurística | Fluxos/telas examinados | Violação? | IDs |
 |---:|---|---|---|---|
-| 1 | Visibilidade do status do sistema | A examinar: histórico, resultados de busca, avaliação e confirmação de registro (P02, P05, P06, P09 e P10 como referências da Entrega 6). | A verificar | — |
-| 2 | Compatibilidade sistema–mundo real | A examinar: linguagem das métricas, parâmetros, execuções e apresentação de resultados (P01, P03 e P07). | A verificar | — |
-| 3 | Controle e liberdade do usuário | A examinar: retorno da evidência para a apresentação, correção de filtros e navegação (P02, P07 e P08). | A verificar | — |
-| 4 | Consistência e padrões | A examinar: identificação de execuções, filtros, indicadores, botões e registros (P01–P08). | A verificar | — |
-| 5 | Prevenção de erros | A examinar: seleção de execuções, comparabilidade, registro de avaliações e hipóteses (P03, P04 e P05). | A verificar | — |
-| 6 | Reconhecimento em vez de memorização | A examinar: histórico, comparação, identificação de indicadores e preservação do contexto (P02, P03 e P07). | A verificar | — |
-| 7 | Flexibilidade e eficiência de uso | A examinar: busca, filtros, comparação de treinamentos e consulta de evidências (P02, P03, P07 e P08). | A verificar | — |
-| 8 | Estética e design minimalista | A examinar: organização do painel, gráficos, tabelas e apresentação de informações (P01, P03 e P07). | A verificar | — |
-| 9 | Reconhecer, diagnosticar e recuperar erros | A examinar: busca sem resultados, período vazio, informações ausentes e falhas de registro (P09 e P10, além dos estados disponíveis no Figma). | A verificar | — |
-| 10 | Ajuda e documentação | A examinar: explicações de indicadores, unidades, legendas, baseline e mensagens de orientação. | A verificar | — |
+| 1 | Visibilidade do status do sistema | P06 — Confirmar registro; tela 07 — Conferir hipótese registrada; tela 09 — Conferir avaliação registrada; tela 21 — Conferir registro. | não | — |
+| 2 | Compatibilidade sistema–mundo real | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros. | sim | V01 |
+| 3 | Controle e liberdade do usuário | Tela 15 — Apresentar indicadores; tela 43 — Observar evidência da execução; tela 45 — Recuperar erro de registro. | não | — |
+| 4 | Consistência e padrões | P01 — Painel geral; P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade. | sim | V01, V02 |
+| 5 | Prevenção de erros | P03 — Comparação; tela 05 — Verificar comparabilidade; tela 06 — Registrar hipótese e ressalvas. | sim | V02 |
+| 6 | Reconhecimento em vez de memorização | Tela 02 — Localizar treinamento; tela 03 — Selecionar execuções; tela 43 — Observar evidência. | não | — |
+| 7 | Flexibilidade e eficiência de uso | Tela 02 — Localizar treinamento; tela 04 — Comparar métricas e parâmetros; telas 15–18 — Apresentar indicadores. | não | — |
+| 8 | Estética e design minimalista | P01 — Painel geral; P03 — Comparação; P10 — Painel sem dados do período. | sim | V03 |
+| 9 | Reconhecer, diagnosticar e recuperar erros | P09 — Busca sem resultados; tela 29 — Busca sem resultados; tela 33 — Corrigir ou tentar novamente; tela 45 — Recuperar erro de registro. | não | — |
+| 10 | Ajuda e documentação | Tela 02 — Localizar treinamento; tela 05 — Verificar comparabilidade; tela 37 — Investigar dado não registrado. | não | — |
 
-As referências P01–P10 correspondem às telas do protótipo em papel da Entrega 6. Na inspeção, deverão ser registrados os frames e estados correspondentes efetivamente encontrados no Figma.
-
-Os avaliadores deverão examinar os fluxos T01, T02 e T03, considerando os princípios de visibilidade, feedback, consistência, prevenção de erros, controle do usuário e recuperação trabalhados na disciplina.
+**Observação:** "Não" indica que nenhuma violação específica foi confirmada nos elementos examinados durante esta inspeção estática. Não significa que todos os caminhos interativos foram testados ou que o protótipo está livre de problemas.
 
 ## Problemas
 
 | ID | H | Tela/estado | Ação/condição | Problema | Consequência | Evidência | Severidade 0–4 | Justificativa | Recomendação |
 |---|---|---|---|---|---|---|---:|---|---|
-| V01 | | | | | | | | | |
-
-Esta tabela será preenchida após a inspeção, somente com problemas efetivamente identificados.
-
-A severidade será classificada de 0 a 4:
-
-- 0 — Não representa problema de usabilidade.
-- 1 — Problema cosmético.
-- 2 — Problema menor.
-- 3 — Problema maior.
-- 4 — Problema crítico.
-
-Cada violação deverá estar associada à heurística correspondente, ao estado da interface e a uma evidência verificável.
+| V01 | 2, 4 | P01 — Painel geral; P03 e tela 04 — Comparação de execuções | Consultar velocidade e comparar EXEC-104 com EXEC-103. | A velocidade é apresentada com unidades inconsistentes entre o painel e a comparação. | Pode causar interpretação incorreta da grandeza física e comprometer conclusões sobre o desempenho do robô. | P01 apresenta "0,32 m/s", enquanto P03 e tela 04 apresentam "0.32 cm/s" para a velocidade de EXEC-104. | 4 | A diferença entre m/s e cm/s altera a interpretação da medida por um fator de 100, podendo comprometer decisões técnicas. | Padronizar as unidades de velocidade, confirmar os valores corretos e utilizar a mesma convenção de apresentação em todas as telas. |
+| V02 | 4, 5 | P03 — Comparação de execuções; tela 04 — Comparar métricas e parâmetros; tela 05 — Verificar comparabilidade | Verificar se duas execuções podem ser comparadas de maneira confiável. | O protótipo apresenta uma informação afirmativa sobre ausência de diferenças de configuração em uma tela, enquanto outras indicam condições de treinamento não confirmadas. | O usuário pode considerar as execuções plenamente comparáveis antes de verificar as condições necessárias. | P03: "Diferença de configuração: Nenhuma". Tela 04: "Condições de treinamento: não confirmadas". Tela 05: "Condições não confirmadas". | 3 | A comunicação pode gerar confiança excessiva na comparação, especialmente quando informações de configuração ainda não foram verificadas. | Diferenciar explicitamente "nenhuma diferença identificada" de "condições não verificadas", evitando afirmar equivalência quando faltarem informações. |
+| V03 | 8 | P10 — Painel sem dados do período | Consultar um intervalo sem resultados. | A mensagem de estado vazio apresenta erro de escrita. | Reduz o acabamento e a clareza textual da mensagem, embora a recuperação continue compreensível. | P10: "Não há resultados dsponíveis no período escolhido". | 1 | Problema textual de baixo impacto, sem impedir a compreensão geral da mensagem. | Corrigir "dsponíveis" para "disponíveis" e revisar a escrita das mensagens de estado. |
