@@ -144,8 +144,6 @@ Foi utilizada uma escala de 0 a 4:
 
 **Foco da análise:** consistência das métricas, interpretação dos resultados e confiabilidade das informações apresentadas na interface.
 
-**Situação:** registro preparado para validação pela avaliadora.
-
 ## 4. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Elementos analisados | Resultado |
@@ -265,8 +263,6 @@ Corrigir a palavra `dsponíveis` para `disponíveis`.
 
 **Foco da análise:** organização dos fluxos de interação, comparação entre execuções, controle do usuário e prevenção de decisões equivocadas.
 
-**Situação:** registro preparado para validação pela avaliadora.
-
 ## 4. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Elementos analisados | Resultado |
@@ -381,8 +377,6 @@ Corrigir a escrita e manter o padrão de linguagem utilizado nos demais estados 
 # Avaliador A03 — Rafaela Altheman de Campos
 
 **Foco da análise:** clareza da comunicação, feedback das ações, recuperação de erros e continuidade da navegação durante apresentações.
-
-**Situação:** registro preparado para validação pela avaliadora.
 
 ## 4. Matriz de cobertura das 10 heurísticas
 
