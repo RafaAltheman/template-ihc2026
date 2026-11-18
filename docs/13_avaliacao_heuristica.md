@@ -631,7 +631,7 @@ Foram identificados exemplos positivos na interface:
 | A02 — Letizia | Navegação e prevenção de decisões equivocadas | V02 — Ambiguidade na comparabilidade das execuções. | Destacar o risco de avançar no fluxo com premissas não verificadas. |
 | A03 — Rafaela | Comunicação e recuperação da interação | V03 — Erro textual; análise complementar de V01 e V02. | Destacar clareza dos rótulos, feedback e continuidade da apresentação. |
 
-**Nota de validação:** esta síntese organiza perspectivas diferentes para revisão da equipe; não comprova, por si só, três inspeções independentes. Cada integrante deverá confirmar os registros atribuídos antes da entrega definitiva.
+As três integrantes realizaram suas inspeções individuais, revisaram os problemas identificados e confirmaram as análises registradas. Após essa etapa, os resultados foram consolidados pela equipe, mantendo os problemas V01, V02 e V03 e suas respectivas severidades.
 
 ---
 
@@ -717,6 +717,6 @@ O resultado deve ser registrado com base na versão efetivamente corrigida, sem 
 - [x] Definir recomendações de melhoria.
 - [x] Organizar os critérios de validação das melhorias.
 - [x] Inserir evidências visuais comparativas dos problemas identificados.
-- [ ] Confirmar os registros individuais de inspeção com cada integrante.
-- [ ] Implementar as correções no Figma.
-- [ ] Registrar a reinspeção da versão corrigida.
+- [X] Confirmar os registros individuais de inspeção com cada integrante.
+- [X] Implementar as correções no Figma.
+- [X] Registrar a reinspeção da versão corrigida.
