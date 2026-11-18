@@ -98,17 +98,10 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F07 — Conferir hipótese registrada
-
-![F07](../assets/11_figma/F07.png)
-
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
 
 ### F08 — Avaliação de desempenho
 
-![F08](../assets/11_figma/F08.png)
+![F08](../assets/11_figma/F08.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
@@ -117,7 +110,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 ### F09 — Conferir avaliação registrada
 
-![F09](../assets/11_figma/F09.png)
+![F09](../assets/11_figma/F09.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
@@ -126,39 +119,25 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 ### F10 — Avaliar treino como referência 
 
-![F10](../assets/11_figma/F10.png)
+![F10](../assets/11_figma/F10.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F11 — Análise concluída
-
-![F06](../assets/11_figma/F11.png)
-
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
 
 ### F12 — Próximo ajuste
 
-![F12](../assets/11_figma/F12.png)
+![F12](../assets/11_figma/F12.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F13 — Análise pronta para compartilhar
-
-![F13](../assets/11_figma/F13.png)
-
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
 
 ### F14 — Preparar conversa para reunião
 
-![F14](../assets/11_figma/F14.png)
+![F14](../assets/11_figma/F14.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
@@ -166,80 +145,91 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 ### F15 — Apresentar indicadores (Reunião)
 
-![F09](../assets/11_figma/F15.png)
+![F09](../assets/11_figma/F15.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
 
-### F16 — Consultar evidências registradas
 
-![F10](../assets/11_figma/F16.png)
+### F18 — Registrar conclusões e orientações
 
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
-
-### F17 — Registrar conclusões e orientações
-
-![F06](../assets/11_figma/F17.png)
+![F12](../assets/11_figma/F18.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F18 — Conferir registro
 
-![F12](../assets/11_figma/F18.png)
+### F20 — Consultar pendências de investigação
 
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
-
-### F19 — Consultar pendências de investigação
-
-![F13](../assets/11_figma/F19.png)
+![F14](../assets/11_figma/F20.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F20 — Reunião concluída
+### F21 — Reunião concluída
 
-![F14](../assets/11_figma/F20.png)
-
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
-
-### F21 — Escolher origem da análise
-
-![F21](../assets/11_figma/F21.png)
+![F21](../assets/11_figma/F21.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F22 — Enviar treinamento
 
-![F14](../assets/11_figma/F22.png)
+### F23 — Enviar treinamento
 
-**Objetivo do usuário:** {{...}}  
-**Signos principais:** {{...}}  
-**Origem no MoLIC:** {{M01/cena ...}}
-
-### F23 — Confirmar envio incompleto
-
-![F14](../assets/11_figma/F23.png)
+![F14](../assets/11_figma/F23.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
 **Origem no MoLIC:** {{M01/cena ...}}
 
-### F24 — Recuperar falha no envio
+### F24 — Confirmar envio incompleto
 
-![F14](../assets/11_figma/F24.png)
+![F14](../assets/11_figma/F24.jpeg)
+
+**Objetivo do usuário:** {{...}}  
+**Signos principais:** {{...}}  
+**Origem no MoLIC:** {{M01/cena ...}}
+
+### F27 — Busca sem resultado
+
+![F14](../assets/11_figma/F27.jpeg)
+
+**Objetivo do usuário:** {{...}}  
+**Signos principais:** {{...}}  
+**Origem no MoLIC:** {{M01/cena ...}}
+
+### F30 — Observar evidência 
+
+![F14](../assets/11_figma/F30.jpeg)
+
+**Objetivo do usuário:** {{...}}  
+**Signos principais:** {{...}}  
+**Origem no MoLIC:** {{M01/cena ...}}
+
+### F36 — Reconhecer limitação
+
+![F14](../assets/11_figma/F36.jpeg)
+
+**Objetivo do usuário:** {{...}}  
+**Signos principais:** {{...}}  
+**Origem no MoLIC:** {{M01/cena ...}}
+
+### F43 — Recuperar erro de registro 
+
+![F14](../assets/11_figma/F43.jpeg)
+
+**Objetivo do usuário:** {{...}}  
+**Signos principais:** {{...}}  
+**Origem no MoLIC:** {{M01/cena ...}}
+
+### F48 — Observar evidência 
+
+![F14](../assets/11_figma/F48.jpeg)
 
 **Objetivo do usuário:** {{...}}  
 **Signos principais:** {{...}}  
