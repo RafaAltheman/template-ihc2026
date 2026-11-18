@@ -554,7 +554,7 @@ A pasta `evidencias` deve ser mantida no mesmo diretório deste documento para q
 
 ### EV01 — Inconsistência na unidade de velocidade
 
-![EV01 — Unidade de velocidade](evidencias/EV01_unidade_velocidade.png)
+![EV01 — Unidade de velocidade](../assets/13_heuristica/E01.jpeg)
 
 **Problema relacionado:** V01.
 
@@ -574,7 +574,7 @@ A pasta `evidencias` deve ser mantida no mesmo diretório deste documento para q
 
 ### EV02 — Ambiguidade das condições de treinamento
 
-![EV02 — Condições de treinamento](evidencias/EV02_condicoes_comparabilidade.png)
+![EV02 — Condições de treinamento](../assets/13_heuristica/E03.jpeg)
 
 **Problema relacionado:** V02.
 
@@ -594,7 +594,7 @@ A pasta `evidencias` deve ser mantida no mesmo diretório deste documento para q
 
 ### EV03 — Erro de digitação no estado vazio
 
-![EV03 — Mensagem de estado vazio](evidencias/EV03_erro_estado_vazio.png)
+![EV03 — Mensagem de estado vazio](../assets/13_heuristica/E02.jpeg)
 
 **Problema relacionado:** V03.
 
@@ -612,7 +612,7 @@ A pasta `evidencias` deve ser mantida no mesmo diretório deste documento para q
 
 ### EV04 — Exemplos de boas práticas
 
-![EV04 — Exemplos de boas práticas](evidencias/EV04_boas_praticas.png)
+![EV04 — Exemplos de boas práticas](../assets/13_heuristica/E04.jpeg)
 
 Foram identificados exemplos positivos na interface:
 
