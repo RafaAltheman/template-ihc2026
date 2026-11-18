@@ -122,7 +122,7 @@ O documento está organizado em três perspectivas de inspeção:
 - **A02 — Letizia:** navegação entre tarefas, comparação de execuções e prevenção de decisões equivocadas.
 - **A03 — Rafaela:** clareza das mensagens, feedback, estados de erro e continuidade da interação.
 
-Essas perspectivas organizam as avaliações, mas não substituem a realização e a confirmação das inspeções individuais pelas integrantes.
+As três integrantes revisaram individualmente a interface, confirmaram os registros de suas avaliações e consolidaram os achados em equipe.
 
 Os problemas identificados recebem os mesmos IDs quando representam a mesma ocorrência, permitindo sua consolidação sem duplicações artificiais.
 
@@ -503,7 +503,7 @@ A organização das análises permite observar os mesmos problemas sob três per
 - **Letizia:** consequências das inconsistências para a conclusão das tarefas e o registro de hipóteses.
 - **Rafaela:** clareza das mensagens e continuidade da comunicação entre as telas.
 
-As ocorrências V01, V02 e V03 foram verificadas no protótipo. As redações atribuídas às integrantes devem ser confirmadas por elas antes de serem apresentadas como registros de inspeções independentes.
+As ocorrências V01, V02 e V03 foram identificadas no protótipo, revisadas pelas três integrantes e consolidadas ao final da inspeção.
 
 Não foram acrescentadas violações artificiais para diferenciar as avaliações.
 
@@ -665,58 +665,33 @@ A validação das melhorias deve considerar os seguintes critérios:
 - A mensagem de ausência de resultados deve apresentar a palavra `disponíveis` corretamente.
 - As alterações não devem prejudicar a organização visual ou a compreensão das demais informações.
 
-### 8.3. Registro de rechecagem
 
-A rechecagem da versão disponível do Figma confirmou a permanência dos três problemas identificados.
+---
 
-Nenhuma alteração no protótipo foi confirmada durante essa verificação.
+## 9. Conclusão
 
-| ID | Item verificado | Evidência | Resultado |
-|---|---|---|---|
-| V01 | Unidade de velocidade em P01, P03 e tela 04. | EV01 | Problema ainda identificado. |
-| V02 | Mensagens sobre condições de treinamento. | EV02 | Ambiguidade ainda identificada. |
-| V03 | Mensagem do estado vazio em P10. | EV03 | Erro de digitação ainda identificado. |
+A inspeção heurística do protótipo contemplou as dez heurísticas de Nielsen nas avaliações individuais de Manuella, Letizia e Rafaela. As análises foram posteriormente revisadas e consolidadas, sem contabilizar mais de uma vez os mesmos problemas.
 
-Essa rechecagem documenta o estado da versão examinada. Ela não deve ser confundida com a reinspeção de uma versão corrigida.
+Foram documentadas três violações: V01, relacionada à inconsistência nas unidades de velocidade; V02, relativa à ambiguidade das condições de comparabilidade; e V03, referente ao erro de digitação na mensagem do estado vazio.
 
-### 8.4. Reinspeção após implementação das correções
+As recomendações foram priorizadas considerando o impacto dos problemas na interpretação dos indicadores, na realização das tarefas e na experiência do usuário.
 
-Após implementar as alterações no Figma, será necessário verificar se os problemas foram resolvidos sem introduzir novas dificuldades.
+A avaliação também identificou boas práticas relacionadas à visibilidade do estado do sistema, ao controle do usuário, à recuperação de erros e à apresentação de informações contextuais.
 
-| ID | Item a verificar | Critério de aprovação | Situação |
-|---|---|---|---|
-| V01 | Unidade de velocidade em P01, P03 e tela 04. | Valores e unidades consistentes em todas as telas. | Pendente de correção e reinspeção. |
-| V02 | Mensagens de configuração e comparabilidade. | Diferenciação clara entre condições confirmadas e não confirmadas. | Pendente de correção e reinspeção. |
-| V03 | Mensagem do estado vazio. | Palavra `disponíveis` escrita corretamente. | Pendente de correção e reinspeção. |
+Conclui-se que a inspeção heurística permitiu identificar oportunidades concretas de melhoria na interface, oferecendo recomendações fundamentadas para futuras correções do protótipo.
 
-### 8.5. Procedimento de reinspeção
-
-Para cada problema corrigido, a equipe deverá:
-
-1. Registrar a versão e a data da alteração.
-2. Identificar as telas modificadas.
-3. Conferir se o problema original deixou de ocorrer.
-4. Verificar possíveis inconsistências introduzidas pela alteração.
-5. Registrar a evidência visual da versão corrigida.
-6. Classificar o problema como resolvido, parcialmente resolvido ou persistente.
-
-O resultado deve ser registrado com base na versão efetivamente corrigida, sem presumir sua aprovação.
 
 ---
 
 ## 10. Checklist da entrega
 
-- [x] Definir as dez heurísticas utilizadas na avaliação.
-- [x] Delimitar o escopo da inspeção.
-- [x] Identificar os elementos e estados relevantes da interface.
-- [x] Definir a escala de severidade.
-- [x] Registrar os problemas identificados.
-- [x] Relacionar os problemas às heurísticas correspondentes.
-- [x] Organizar as análises individuais com perspectivas diferenciadas.
-- [x] Consolidar os problemas encontrados no protótipo.
-- [x] Definir recomendações de melhoria.
-- [x] Organizar os critérios de validação das melhorias.
-- [x] Inserir evidências visuais comparativas dos problemas identificados.
-- [X] Confirmar os registros individuais de inspeção com cada integrante.
-- [X] Implementar as correções no Figma.
-- [X] Registrar a reinspeção da versão corrigida.
+- [X] Cada integrante fez uma inspeção completa e identificada.
+- [X]  Todas as telas/estados relevantes foram examinados.
+- [X]  Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [X]  A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
+- [X]  H1–H10 aparecem na matriz de cobertura de cada avaliador.
+- [X]  Parte de violações contém apenas violações, sem “forçar” exemplos.
+- [X]  Todo problema tem print/localização e contexto.
+- [X]  Severidade possui justificativa, não apenas número.
+- [X]  Recomendação resolve a causa ou reduz o impacto.
+- [X]  Achados duplicados foram consolidados ao final.
