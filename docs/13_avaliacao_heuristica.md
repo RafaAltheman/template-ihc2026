@@ -710,26 +710,6 @@ O resultado deve ser registrado com base na versão efetivamente corrigida, sem 
 
 ---
 
-## 9. Conclusão
-
-A avaliação heurística do protótipo permitiu documentar três problemas de usabilidade associados à interpretação das métricas, à consistência das informações de comparação e à clareza da comunicação.
-
-As análises foram organizadas em perspectivas complementares: confiabilidade das informações, organização dos fluxos de interação e comunicação com o usuário.
-
-Essa organização permite avaliar como um mesmo problema pode comprometer diferentes aspectos da experiência de uso.
-
-O problema de maior severidade corresponde à divergência nas unidades de velocidade, pois pode comprometer a interpretação do desempenho do robô.
-
-A ambiguidade nas condições de treinamento também exige atenção, uma vez que a comparação entre execuções precisa distinguir informações confirmadas de dados indisponíveis.
-
-O erro textual no estado vazio apresenta menor impacto funcional, mas sua correção contribui para o acabamento e a clareza da interface.
-
-Também foram identificados elementos positivos, como a existência de mensagens de confirmação, alternativas para recuperar pesquisas, identificação das execuções e possibilidade de retornar à apresentação mantendo o contexto.
-
-As evidências obtidas orientam a priorização das melhorias e oferecem critérios objetivos para a reinspeção posterior.
-
-As avaliações individuais atribuídas às integrantes precisam ser confirmadas por elas, e a validação das correções dependerá da implementação e reinspeção de uma versão atualizada do protótipo.
-
 ## 10. Checklist da entrega
 
 - [x] Definir as dez heurísticas utilizadas na avaliação.
