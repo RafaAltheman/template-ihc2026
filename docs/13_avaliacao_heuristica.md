@@ -2,7 +2,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 17/11/2026  
-**Status:** Inspeção documentada — validação individual e reinspeção pós-correções pendentes  
+**Status:** 🟩 concluída
 **Responsabilidade:** Avaliação da interface pelos integrantes da equipe.
 
 **Equipe 27:**
