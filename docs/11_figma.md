@@ -62,7 +62,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 | M02 | O09 | F03 → F04 | F05 — condições não confirmadas | Manuella |
 | M02 | O10 | F04 → F05 | F36 — investigar informações ausentes | Manuella |
 | M02 | O11 | F02 → F03 → F04 → F05 | F02E/F27 — busca sem resultados; F36 — dados ausentes | Manuella |
-| M02 | O12 | F05 → F06 → Tela 07 → F10 | Registrar ressalvas ou manter decisão pendente | Manuella |
+| M02 | O12 | F05 → F06 → F07 → F10 | Registrar ressalvas ou manter decisão pendente | Manuella |
 | M03 | O02 | F15 → F48 → F15 | Retornar à apresentação no mesmo ponto | Rafaela |
 | M03 | O09 | F15 → F04 | Registrar limitações da comparação | Rafaela |
 | M03 | O11 | F15 → F04  | Condições não confirmadas; retorno à apresentação | Rafaela |
