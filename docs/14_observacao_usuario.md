@@ -203,7 +203,13 @@ Nenhum
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT02 | total | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface, nível iniciante | Foi necessário ajudar no entendimento das tarefas e dos gráficos e métricas | 13:27 | 5 | {{Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
+| UT01 | parcial | Entendimento das métricas | Dificuldade de reconhecimento das métricas, nível iniciante | Foi necessário ajudar no entendimento das tarefas e métricas | 3:24 | 4 | Demonstrou satisfação, apesar do desconhecimento do assunto, conseguiu entender bem o funcionamento da interface |
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT02 | parcial | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface | Foi necessário ajudar no entendimento dos gráficos (como qual linha do gráfico se refere à qual experimento) e métricas | 4:39 | 4,5 | Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT03 | total | Não houve nenhum erro | Não houve | Não foi necessário | 4:15 | 5 | Ficou muito satisfeita com o desempenho das telas requeridas para a tarefa 3, tudo bem claro e botões bem objetivos. |
 
 **Link da gravação (se autorizado):** {{[link](https://www.youtube.com/watch?v=_Eauqhbo4q0)}}  
 **Resposta pós-teste:** 
