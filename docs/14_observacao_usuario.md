@@ -130,7 +130,7 @@ Ao término das três sessões, a equipe consolidará os resultados quantitativo
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT01 | total | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface, nível iniciante | Foi necessário ajudar no entendimento das tarefas e dos gráficos e métricas | 13:27 | 5 | {{Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
+| UT02 | total | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface, nível iniciante | Foi necessário ajudar no entendimento das tarefas e dos gráficos e métricas | 13:27 | 5 | {{Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
 
 **Link da gravação (se autorizado):** {{[link](https://www.youtube.com/watch?v=_Eauqhbo4q0)}}  
 **Resposta pós-teste:** 
