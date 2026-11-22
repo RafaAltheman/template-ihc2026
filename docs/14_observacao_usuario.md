@@ -125,7 +125,7 @@ Ao término das três sessões, a equipe consolidará os resultados quantitativo
 
 ## C. Resultados — por participante
 
-### U01 
+### U01 — Participante sem conhecimento prévio na área
 
 obs: a Satisfação foi coletada após o vídeo ser gravado
 
@@ -136,9 +136,117 @@ obs: a Satisfação foi coletada após o vídeo ser gravado
 | UT03 | parcial | 1 | Encerrou a reunião com pendências, sem corrigí-las antes de salvar o registro da reunião. | 1 | 03:00 | 3 | Seguiu o fluxo com naturalidade, pareceu mais certeira nas ações que estava tomando. Apesar da tela ter avisado que havia pendências no registro, a participante não corrigiu a pendência e concluiu a tarefa desta forma. A interface permite esse tipo de conclusão, a medida que pode-se ter registros incompletos caso necessário. |
 
 **Link da gravação (se autorizado):** https://youtu.be/w8avTW-YeKE
-**Resposta pós-teste:** ver em /assets/14_testes/Pós-teste - U01.pdf
+**Resposta pós-teste:**
 
-> Repita para U02, U03...
+# Questionário Pós-Teste — Avaliação de Usabilidade
+
+### 1. De maneira geral, como você avalia a facilidade de utilização da interface?
+
+- [ ] 1 — Muito difícil
+- [X] 2 — Difícil
+- [ ] 3 — Nem fácil, nem difícil
+- [ ] 4 — Fácil
+- [ ] 5 — Muito fácil
+
+### 2. Qual das três atividades você considerou mais difícil? Por quê?
+
+- [ ] UT01 — Avaliar o desempenho de um treinamento
+- [ ] UT02 — Localizar e comparar treinamentos anteriores
+- [X] UT03 — Consultar evidências durante uma reunião
+
+*Por quê?*
+Fiquei em duvida sobre o contexto da tarefa… o que de fato seria uma Reunião de metricas?
+
+### 3. Os indicadores e as informações apresentados na interface foram fáceis de compreender?
+
+- [X] Sim
+- [ ] Parcialmente
+- [ ] Não
+
+*Houve algum termo, número ou informação que causou dúvida?*
+
+Nenhum
+
+### 4. Você conseguiu identificar facilmente para onde deveria navegar durante as atividades?
+
+- [ ] Sim
+- [X] Parcialmente
+- [ ] Não
+
+*Em algum momento ficou sem saber como como continuar?*
+
+Sim, fiquei com duvidas em qual deveria ser o fluxo correto.
+
+
+### 5. O que você mais gostou na interface?
+
+Gostei do design, achei limpo.
+
+### 6. O que você mudaria para tornar a interface mais fácil de utilizar?
+
+Usaria termos mais genéricos, ou universais
+
+### 7. Considerando toda a experiência, qual é sua satisfação geral com o protótipo?
+
+- [ ] 1 — Muito insatisfeito(a)
+- [ ] 2 — Insatisfeito(a)
+- [ ] 3 — Neutro(a)
+- [X] 4 — Satisfeito(a)
+- [ ] 5 — Muito satisfeito(a)
+
+### Comentários adicionais (opcional)
+
+Nenhum
+
+
+### U02 — Participante sem conhecimento prévio na área
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT02 | total | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface, nível iniciante | Foi necessário ajudar no entendimento das tarefas e dos gráficos e métricas | 13:27 | 5 | {{Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
+
+**Link da gravação (se autorizado):** {{[link](https://www.youtube.com/watch?v=_Eauqhbo4q0)}}  
+**Resposta pós-teste:** 
+
+
+### 1. De maneira geral, como você avalia a facilidade de utilização da interface?
+- [ ] 1 — Muito difícil
+- [ ] 2 — Difícil
+- [ ] 3 — Nem fácil, nem difícil
+- [x] 4 — Fácil
+- [ ] 5 — Muito fácil
+### 2. Qual das três atividades você considerou mais difícil? Por quê?
+- [ ] UT01 — Avaliar o desempenho de um treinamento
+- [x] UT02 — Localizar e comparar treinamentos anteriores
+- [ ] UT03 — Consultar evidências durante uma reunião
+**Por quê?**
+Achou difícil entender em qual tela estava, se confundiu com a tela inicial
+### 3. Os indicadores e as informações apresentados na interface foram fáceis de compreender?
+- [x] Sim
+- [ ] Parcialmente
+- [ ] Não
+**Houve algum termo, número ou informação que causou dúvida?**
+Não
+### 4. Você conseguiu identificar facilmente para onde deveria navegar durante as atividades?
+- [x] Sim
+- [ ] Parcialmente
+- [ ] Não
+**Em algum momento ficou sem saber como continuar?**
+Não
+### 5. O que você mais gostou na interface?
+A parte visual, como a foto do robô, deixando mais claro sobre qual treinamento e modelo de robô estamos falando
+### 6. O que você mudaria para tornar a interface mais fácil de utilizar?
+Deixaria mais colorido e mais claro sobre em que página está, quais métricas estamos comparando (como legenda nos gráficos)
+### 7. Considerando toda a experiência, qual é sua satisfação geral com o protótipo?
+- [ ] 1 — Muito insatisfeito(a)
+- [ ] 2 — Insatisfeito(a)
+- [ ] 3 — Neutro(a)
+- [ ] 4 — Satisfeito(a)
+- [x] 5 — Muito satisfeito(a)
+### Comentários adicionais (opcional)
+N/A
+
+
 
 ## D. Consolidação por tarefa
 
