@@ -208,9 +208,7 @@ Nenhum
 | UT03 | total | Não houve nenhum erro | Não houve | Não foi necessário | 4:15 | 5 | Ficou muito satisfeita com o desempenho das telas requeridas para a tarefa 3, tudo bem claro e botões bem objetivos. |
 
 **Link da gravação (se autorizado):** {{[link](https://www.youtube.com/watch?v=_Eauqhbo4q0)}}  
-**Resposta pós-teste:** 
-
-
+# Questionário Pós-Teste — Avaliação de Usabilidade
 ### 1. De maneira geral, como você avalia a facilidade de utilização da interface?
 - [ ] 1 — Muito difícil
 - [ ] 2 — Difícil
