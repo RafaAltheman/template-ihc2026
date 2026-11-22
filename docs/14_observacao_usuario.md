@@ -1,7 +1,7 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
-**Data:** {{22/11/2026}}  
-**Status:**  em andamento 
+**Data:** {{22/11/2026}}  <br>
+**Status:**  em andamento <br>
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 
 ## Objetivo da atividade
@@ -43,9 +43,10 @@ Serão avaliadas as três tarefas principais do projeto:
 
 A avaliação considera os cenários de interação CI01, CI02 e CI03 da Entrega 9 e os modelos MoLIC M01, M02 e M03 da Entrega 10.
 
-O protótipo utiliza dados demonstrativos e interações simuladas. O teste avalia a usabilidade da interface, não o desempenho científico do algoritmo de aprendizado por reforço.
+O protótipo utiliza dados demonstrativos e interações simuladas. O teste avalia a usabilidade da interface, não o desempenho científico do algoritmo.
 
-**Versão de referência:** registrar a data e a versão efetivamente utilizadas antes da primeira sessão, mantendo o mesmo protótipo para todos os participantes.
+**Versão de referência:** todos os testes utilizaram a mesma versão da interface.
+
 
 ### Passo 2 — Participantes
 
@@ -58,7 +59,7 @@ Como os participantes não representam diretamente os profissionais especializad
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
 | U01 | Participante sem conhecimento prévio na área | Pessoa sem familiaridade com robótica ou análise de desempenho de treinamentos. Sua participação permite observar a compreensão inicial da interface, a clareza dos indicadores e possíveis dificuldades de navegação por usuários não especializados. | Letizia Lowatzki Baptistella |
-| U02 | Participante sem conhecimento prévio na área | Pessoa sem experiência com robótica ou sistemas de análise de treinamentos. Sua participação permite identificar dificuldades de interpretação das informações, localização de execuções e comparação de resultados sem conhecimento técnico prévio. | Manuella Filipe Peres |
+| U02 | Participante observar a compreensão inicial da interface, a clareza dos indicadores e possíveis dificuldades de navegação por usuários não especializados. | Manuella Filipe Peres |
 | U03 | Estudante da disciplina de IHC | Colega de turma que possui conhecimentos básicos sobre usabilidade e avaliação de interfaces, mas não participou do desenvolvimento do projeto. Sua participação permite avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | Rafaela Altheman de Campos |
 
 Cada participante realizará as tarefas UT01, UT02 e UT03, totalizando até nove execuções de tarefas observadas.
@@ -67,14 +68,14 @@ Cada participante realizará as tarefas UT01, UT02 e UT03, totalizando até nove
 
 - **Termo/registro de consentimento:** utilizar o modelo preparado na Entrega 12, com aceite obtido antes do início de cada sessão. Inserir aqui o link definitivo do termo utilizado.
 - **Gravação de tela/áudio/vídeo:** a definir conforme autorização específica de cada participante. Caso não haja autorização, a equipe realizará somente registros escritos de observação e cronometragem.
-- **Forma de anonimização:** os participantes serão identificados exclusivamente pelos códigos `U01`, `U02` e `U03`, sem divulgação de nomes reais.
+- **Forma de anonimização:** os participantes serão identificados exclusivamente pelos códigos `U01`, `U02` e `U03`
 - **Local e período de armazenamento:** definir antes da aplicação; os registros devem permanecer em local de acesso restrito à equipe, pelo período informado no consentimento.
 
 Antes de iniciar a avaliação, o participante será informado sobre o objetivo acadêmico da atividade, a natureza voluntária da participação, o uso das informações coletadas e o direito de interromper o teste.
 
 ### Passo 4 — Teste piloto
 
-**Data:** PENDENTE — realizar antes das sessões finais.
+**Data:** 22/11/2026
 
 **O que será validado:**
 
@@ -86,7 +87,7 @@ Também será verificado se os estados de erro e recuperação necessários aos 
 
 O piloto poderá ser realizado por um integrante da equipe, exclusivamente para validar o procedimento, sem ser contabilizado como participante final.
 
-**Mudanças após piloto:** PENDENTE — registrar os ajustes efetivamente realizados no roteiro, nas instruções ou no ambiente de teste. Caso nenhuma alteração seja necessária, registrar essa constatação.
+**Mudanças após piloto:** Nenhuma mudança foi feita
 
 ### Passo 5 — Tarefas
 
@@ -116,24 +117,26 @@ A satisfação será registrada após cada tarefa, utilizando escala de 1 a 5, c
 
 6. **Aplicar verbalização do pensamento, quando adotada:** solicitar que o participante explique o que está tentando fazer e o que compreendeu das informações apresentadas, sem interferir em suas decisões.
 
-7. **Registrar satisfação:** após cada tarefa, perguntar o nível de satisfação com a interação, utilizando escala de 1 a 5.
+7. **Realizar pós-teste:** fazer perguntas breves sobre facilidade de navegação, compreensão dos indicadores, dificuldades encontradas, mensagens de erro e percepção geral da interface.
 
-8. **Realizar pós-teste:** fazer perguntas breves sobre facilidade de navegação, compreensão dos indicadores, dificuldades encontradas, mensagens de erro e percepção geral da interface.
-
-9. **Encerrar a sessão:** agradecer a participação, esclarecer a finalidade dos registros e explicar que os resultados serão analisados de forma anônima para identificar oportunidades de melhoria.
+8. **Encerrar a sessão:** agradecer a participação, esclarecer a finalidade dos registros e explicar que os resultados serão analisados de forma anônima para identificar oportunidades de melhoria.
 
 Ao término das três sessões, a equipe consolidará os resultados quantitativos e qualitativos para comparação com as metas MU01–MU08 e com os problemas identificados na inspeção heurística da Entrega 13.
 
 ## C. Resultados — por participante
 
-### U01 — {{perfil resumido}}
+### U01 
+
+obs: a Satisfação foi coletada após o vídeo ser gravado
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT01 | parcial | 1 | Entrou no lugar correto, mas não conseguiu completar o fluxo. Isso levou a um recomeço na tentativa. Além disso, ficou confusa sobre a finalização da tarefa. | 0 | 02:10 | 3 | "Será que é aqui que clica?", "Será que foi?". Pareceu incerta sobre o que deveria aingir e se de fato havia concluido o que foi solicitado. Apesar de ter dificuldades, ela conclluiu o fluxo. |
+| UT02 | parcial| 4 | Acessou, primeiramente, o local errado para inicair a tarefa. Isso levou a um recomeço na tentativa. Não soube onde clicar após entrar na tela de comparação. Ficou na dúvida sobre a finalização da tarefa | 0 | 03:11 | 3 | "Será que é aqui de novo?". Não localizou facilmente o quadro de "Comparação" e, mais uma vez, não entendeu se havia finalizado a tarefa solicitada. Demorou para processar as informações na tela, mas concluiu o objetivo  |
+| UT03 | parcial | 1 | Encerrou a reunião com pendências, sem corrigí-las antes de salvar o registro da reunião. | 1 | 03:00 | 3 | Seguiu o fluxo com naturalidade, pareceu mais certeira nas ações que estava tomando. Apesar da tela ter avisado que havia pendências no registro, a participante não corrigiu a pendência e concluiu a tarefa desta forma. A interface permite esse tipo de conclusão, a medida que pode-se ter registros incompletos caso necessário. |
 
-**Link da gravação (se autorizado):** {{...}}  
-**Resposta pós-teste:** {{...}}
+**Link da gravação (se autorizado):** https://youtu.be/w8avTW-YeKE
+**Resposta pós-teste:** ver em /assets/14_testes/Pós-teste - U01.pdf
 
 > Repita para U02, U03...
 
