@@ -126,14 +126,59 @@ Ao término das três sessões, a equipe consolidará os resultados quantitativo
 
 ## C. Resultados — por participante
 
-### U01 — {{perfil resumido}}
+### U02 — Participante sem conhecimento prévio na área
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT01 | total | Reconhecimento de telas e entendimento dos gráficos | Erro de reconhecimento da interface, nível iniciante | Foi necessário ajudar no entendimento das tarefas e dos gráficos e métricas | 13:27 | 5 | {{Demonstrou satisfação apesar dos pontos que acreditou que poderiam ser melhorados como legenda nos gráficos e melhor explicação de qual tela o usuário está |
 
-**Link da gravação (se autorizado):** {{...}}  
-**Resposta pós-teste:** {{...}}
+**Link da gravação (se autorizado):** {{[link](https://www.youtube.com/watch?v=_Eauqhbo4q0)}}  
+**Resposta pós-teste:** 
+
+# Questionário Pós-Teste — Avaliação de Usabilidade
+
+**Projeto:** Plataforma de Análise de Desempenho de Robôs Humanoides
+**Participante:** Juliana Silva do Nascimento
+**Data:** 22/11/2026
+
+**Objetivo:** Identificar a percepção geral do participante sobre a facilidade de uso, compreensão das informações e dificuldades encontradas durante a interação com o protótipo.
+### 1. De maneira geral, como você avalia a facilidade de utilização da interface?
+- [ ] 1 — Muito difícil
+- [ ] 2 — Difícil
+- [ ] 3 — Nem fácil, nem difícil
+- [x] 4 — Fácil
+- [ ] 5 — Muito fácil
+### 2. Qual das três atividades você considerou mais difícil? Por quê?
+- [ ] UT01 — Avaliar o desempenho de um treinamento
+- [x] UT02 — Localizar e comparar treinamentos anteriores
+- [ ] UT03 — Consultar evidências durante uma reunião
+**Por quê?**
+Achou difícil entender em qual tela estava, se confundiu com a tela inicial
+### 3. Os indicadores e as informações apresentados na interface foram fáceis de compreender?
+- [x] Sim
+- [ ] Parcialmente
+- [ ] Não
+**Houve algum termo, número ou informação que causou dúvida?**
+Não
+### 4. Você conseguiu identificar facilmente para onde deveria navegar durante as atividades?
+- [x] Sim
+- [ ] Parcialmente
+- [ ] Não
+**Em algum momento ficou sem saber como continuar?**
+Não
+### 5. O que você mais gostou na interface?
+A parte visual, como a foto do robô, deixando mais claro sobre qual treinamento e modelo de robô estamos falando
+### 6. O que você mudaria para tornar a interface mais fácil de utilizar?
+Deixaria mais colorido e mais claro sobre em que página está, quais métricas estamos comparando (como legenda nos gráficos)
+### 7. Considerando toda a experiência, qual é sua satisfação geral com o protótipo?
+- [ ] 1 — Muito insatisfeito(a)
+- [ ] 2 — Insatisfeito(a)
+- [ ] 3 — Neutro(a)
+- [ ] 4 — Satisfeito(a)
+- [x] 5 — Muito satisfeito(a)
+### Comentários adicionais (opcional)
+N/A
+
 
 > Repita para U02, U03...
 
